@@ -1,0 +1,37 @@
+name: render-and-release
+# NOTE (R8): this workflow NEVER downloads YouTube videos.
+# All YT acquisition happens OFF-GitHub, on our own server (ytagent local methods).
+# This workflow only renders committed project state (script/timeline/voice/music/clips)
+# and attaches the QC-passed final.mp4 to a Release.
+on:
+  workflow_dispatch:
+    inputs:
+      project:
+        description: "project slug under projects/"
+        required: true
+        default: blackpink
+permissions:
+  contents: write
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.11" }
+      - name: deps
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+          pip install edge-tts numpy requests
+      - name: render
+        env:
+          NIM_API_KEY: ${{ secrets.NIM_API_KEY }}
+        run: python3 pipeline/render_final.py --project projects/${{ github.event.inputs.project }}
+      - name: qc
+        run: python3 pipeline/qc.py --project projects/${{ github.event.inputs.project }} --assert
+      - name: release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: v1.0-${{ github.event.inputs.project }}
+          files: projects/${{ github.event.inputs.project }}/final.mp4

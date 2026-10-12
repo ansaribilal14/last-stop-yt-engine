@@ -72,3 +72,18 @@ RESEARCH → SCRIPT/NARRATION → SOURCE (video-only) → DOWNLOAD →
 CHARACTER-CLIP EXTRACTION → EDITORIAL TIMELINE → VOICE/BGM/RENDER/QC.
 The engine repo holds the loop; projects are state directories fed to it.
 Trigger contract: `build a documentary on <subject>` must suffice.
+
+## R8 — NO YOUTUBE DOWNLOADS ON GITHUB ACTIONS. EVER.
+
+> "never use GitHub actions to download any yt video anymore if it's in the
+> system remove it fully, use other methods all by being on your own server"
+
+1. The former download-farm workflow (`.github/workflows/yt-download-farm.yml`)
+   is REMOVED from the system. No workflow in this org may contact YouTube,
+   dispatch ytagent farm methods, or transfer video from YouTube on
+   GitHub-hosted runners.
+2. ALL YouTube acquisition runs locally on our own server via ytagent's
+   direct methods (android_vr + BGutil POT, SOCKS5 relays, Cobalt relays,
+   Invidious) or character-clip-extractor's built-in downloader.
+3. GitHub Actions is used ONLY for: rendering committed project state,
+   QC, and attaching `final.mp4` to Releases.
