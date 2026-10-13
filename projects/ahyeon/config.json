@@ -1,0 +1,19 @@
+{
+  "slug": "ahyeon",
+  "title": "Ahyeon — The 5th Gen It Girl",
+  "total": 1800.0,
+  "fps": 30,
+  "primary_tag": "ahyeon",
+  "voice": {"engine": "edge-tts", "name": "en-US-AndrewMultilingualNeural", "rate": "-3%"},
+  "acts": [
+    {"act": 0, "preset": "overture", "intensity": 0.55, "root": "D3", "minor": true},
+    {"act": 1, "preset": "trainee",  "intensity": 0.42, "root": "C3", "minor": false},
+    {"act": 2, "preset": "dawn",     "intensity": 0.50, "root": "G3", "minor": false},
+    {"act": 3, "preset": "tension",  "intensity": 0.68, "root": "D3", "minor": true},
+    {"act": 4, "preset": "dawn",     "intensity": 0.62, "root": "A3", "minor": false},
+    {"act": 5, "preset": "triumph",  "intensity": 0.80, "root": "C3", "minor": false},
+    {"act": 6, "preset": "warm",     "intensity": 0.75, "root": "F3", "minor": false},
+    {"act": 7, "preset": "trainee",  "intensity": 0.45, "root": "D3", "minor": false},
+    {"act": 8, "preset": "resolve",  "intensity": 0.60, "root": "C3", "minor": false}
+  ]
+}
