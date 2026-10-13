@@ -27,7 +27,8 @@ def fetch_list(url):
 def works(proxy):
     try:
         r = subprocess.run(
-            ["yt-dlp","--no-cache-dir","--no-check-certificates","--proxy",proxy,
+            ["python3","-m","yt_dlp","--no-cache-dir","--no-check-certificates",
+             "--js-runtimes","node","--proxy",proxy,
              "--extractor-args","youtube:player_client=tv_simply",
              "--extractor-args","youtubepot-bgutilhttp:base_url=http://127.0.0.1:4416",
              "--simulate","--print","%(id)s",
