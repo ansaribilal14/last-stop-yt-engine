@@ -10,7 +10,7 @@ import json, os, random, subprocess, sys, urllib.request
 OUT = "/tmp/good_proxies.json"
 UA = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36"
 
-def fetch_list(url):
+def fetch_list(url, scheme="http"):
     try:
         req = urllib.request.Request(url, headers={"User-Agent": UA})
         txt = urllib.request.urlopen(req, timeout=15).read().decode()
@@ -19,7 +19,7 @@ def fetch_list(url):
             line = line.strip()
             if ":" in line and line.replace(":", "").replace(".", "").isdigit():
                 ip, port = line.split(":")[:2]
-                out.append(f"http://{ip}:{port}")
+                out.append(f"{scheme}://{ip}:{port}")
         return out
     except Exception:
         return []
@@ -41,17 +41,23 @@ def works(proxy):
 def main():
     max_good = int(sys.argv[1]) if len(sys.argv) > 1 else 10
     lists = [
-        "https://raw.githubusercontent.com/TheSpeedX/PROXY-List/master/http.txt",
-        "https://raw.githubusercontent.com/monosans/proxy-list/main/proxies/http.txt",
-        "https://raw.githubusercontent.com/proxifly/free-proxy-list/main/proxies/all/data.txt",
+        ("https://raw.githubusercontent.com/TheSpeedX/PROXY-List/master/http.txt", "http"),
+        ("https://raw.githubusercontent.com/monosans/proxy-list/main/proxies/http.txt", "http"),
+        ("https://raw.githubusercontent.com/TheSpeedX/PROXY-List/master/socks5.txt", "socks5"),
+        ("https://raw.githubusercontent.com/monosans/proxy-list/main/proxies/socks5.txt", "socks5"),
+        ("https://raw.githubusercontent.com/proxifly/free-proxy-list/main/proxies/all/data.txt", "http"),
     ]
     pool = []
-    for u in lists:
-        got = fetch_list(u)
-        print(f"{u.split('/')[5] if len(u.split('/'))>5 else u}: {len(got)}", flush=True)
+    for u, sch in lists:
+        got = fetch_list(u, sch)
+        print(f"{u.split('/')[5] if len(u.split('/'))>5 else u}/{sch}: {len(got)}", flush=True)
         pool += got
+    # bias: socks5 first (survives bot-walls better), then http
+    socks = [p for p in pool if p.startswith("socks5")]
+    http = [p for p in pool if not p.startswith("socks5")]
+    random.shuffle(socks); random.shuffle(http)
+    pool = (socks[:160] + http[:100])
     random.shuffle(pool)
-    pool = pool[:220]
     good = []
     with cf.ThreadPoolExecutor(max_workers=24) as ex:
         for res in ex.map(works, pool):
