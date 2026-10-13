@@ -1,0 +1,8 @@
+projects/blackpink/ytdl_cache/
+projects/blackpink/clips/
+projects/blackpink/render/
+projects/blackpink/narration/wav/
+*.mp4
+*.webm
+*.wav
+__pycache__/
