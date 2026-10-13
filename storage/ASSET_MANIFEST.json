@@ -1,0 +1,43 @@
+{
+  "updated": "2026-10-13T16:15:00Z",
+  "assets": [
+    {
+      "id": "blackpink-final-v1",
+      "file": "final.mp4",
+      "project": "blackpink",
+      "size_bytes": 2006454860,
+      "sha256": "0f54b89446c4efb4b82d9836927896282e65492a2f9da393e07a45c9ab443e52",
+      "github_release": {
+        "repo": "ansaribilal14/last-stop-yt-engine",
+        "tag": "v1.0-blackpink",
+        "url": "https://github.com/ansaribilal14/last-stop-yt-engine/releases/download/v1.0-blackpink/final.mp4",
+        "state": "uploaded",
+        "verified": true
+      },
+      "storageto_mirror": {
+        "url": "https://storage.to/ore3tWmVc",
+        "expires_at": "2026-10-16T15:59:33Z",
+        "owner_token_file": "REDACTED-in-git",
+        "verified": true
+      },
+      "qc": "2040.0s 1920x1080 30fps h264 aac48k stereo -14LUFS PASS"
+    },
+    {
+      "id": "blackpink-clips-v1",
+      "file": "clips_v1.zip",
+      "project": "blackpink",
+      "size_bytes": 247172906,
+      "github_release": {
+        "repo": "ansaribilal14/last-stop-yt-engine",
+        "tag": "media-v1",
+        "url": "https://github.com/ansaribilal14/last-stop-yt-engine/releases/download/media-v1/clips_v1.zip",
+        "state": "uploaded"
+      },
+      "storageto_mirror": {
+        "url": "https://storage.to/4sYiCufJ0",
+        "expires_at": "2026-10-16T15:58:33Z"
+      },
+      "note": "146 harvested subject clips, rollback insurance"
+    }
+  ]
+}
