@@ -1,0 +1,36 @@
+name: assemble-release-asset
+on:
+  workflow_dispatch:
+    inputs:
+      release_tag:
+        required: true
+      prefix:
+        description: "part filename prefix"
+        required: true
+      final_name:
+        required: true
+permissions:
+  contents: write
+jobs:
+  join:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - name: Join parts + upload final + cleanup
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TAG: ${{ inputs.release_tag }}
+          PREFIX: ${{ inputs.prefix }}
+          NAME: ${{ inputs.final_name }}
+        run: |
+          set -e
+          mkdir -p /tmp/join && cd /tmp/join
+          gh release download "$TAG" --repo "$GITHUB_REPOSITORY" -p "${PREFIX}*" --clobber
+          ls -la
+          cat $(ls ${PREFIX}* | sort) > "/tmp/join/$NAME"
+          echo "SHA256: $(sha256sum /tmp/join/$NAME)"
+          ls -la "/tmp/join/$NAME"
+          gh release upload "$TAG" "/tmp/join/$NAME" --repo "$GITHUB_REPOSITORY" --clobber
+          for f in ${PREFIX}*; do gh api -X DELETE "repos/$GITHUB_REPOSITORY/releases/assets/$(gh api "repos/$GITHUB_REPOSITORY/releases/tags/$TAG" --jq ".assets[] | select(.name==\"$f\") | .id")"; done
+          gh api -X DELETE "repos/$GITHUB_REPOSITORY/releases/assets/$(gh api "repos/$GITHUB_REPOSITORY/releases/tags/$TAG" --jq ".assets[] | select(.name==\"speedtest.bin\") | .id")" || true
+          echo "DONE: $NAME assembled + parts removed"
