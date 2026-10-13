@@ -1,0 +1,33 @@
+name: release-from-storage
+on:
+  workflow_dispatch:
+    inputs:
+      storage_url:
+        description: "Direct URL of file to fetch (storage.to)"
+        required: true
+      release_tag:
+        description: "Target release tag"
+        required: true
+      asset_name:
+        description: "Asset filename in release"
+        required: true
+permissions:
+  contents: write
+jobs:
+  relay:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Fetch + upload to release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          URL: ${{ inputs.storage_url }}
+          TAG: ${{ inputs.release_tag }}
+          NAME: ${{ inputs.asset_name }}
+        run: |
+          set -e
+          echo "Downloading $URL"
+          curl -L --retry 3 -o "/tmp/$NAME" "$URL"
+          ls -la "/tmp/$NAME"
+          gh release upload "$TAG" "/tmp/$NAME" --repo "${GITHUB_REPOSITORY}" --clobber
+          echo "Uploaded $NAME to release $TAG"
