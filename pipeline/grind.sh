@@ -19,6 +19,7 @@ PYEOF
 }
 
 try_one() {
+  local CACHE=/home/z/my-project/engine/projects/blackpink/ytdl_cache
   local VID="$1"
   local URL="https://www.youtube.com/watch?v=$VID"
   local PROXIES=$(python3 -c "
