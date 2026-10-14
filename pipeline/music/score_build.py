@@ -128,11 +128,22 @@ def render_cue(cue):
     return t0, buf.astype(np.float32)
 
 def master(canvas):
-    # gentle low-shelf tame: kill <32Hz rumble (old bed's distortion band)
-    from scipy.signal import butter, sosfilt
-    for ch in range(2):
-        canvas[:, ch] = sosfilt(butter(2, 32, "high", fs=SR, output="sos"), canvas[:, ch])
-        canvas[:, ch] = limit(canvas[:, ch].astype(np.float64), .88).astype(np.float32)
+    # chunked master: HP32 + lookahead limiter with 1s context (3GB-RAM safe)
+    from scipy.signal import butter, sosfilt, sosfilt_zi
+    from sfx import limit
+    sos = butter(2, 32, "high", fs=SR, output="sos")
+    N = len(canvas); CH = SR * 30; OVL = SR
+    zi = [sosfilt_zi(sos), sosfilt_zi(sos)]
+    s0 = 0
+    while s0 < N:
+        e0 = min(N, s0 + CH)
+        bs = max(0, s0 - OVL)
+        seg = canvas[bs:e0].astype(np.float64)
+        for c in range(2):
+            y, zi[c] = sosfilt(sos, seg[:, c], zi=zi[c])
+            seg[:, c] = limit(y, .88)
+        canvas[bs:e0] = seg.astype(np.float32)
+        s0 = e0
     return canvas
 
 def main():
@@ -155,7 +166,7 @@ def main():
     peak = float(np.abs(canvas).max())
     canvas *= min(1.0, 0.72 / max(peak, 1e-6))
     import soundfile as sf
-    sf.write(out_path, canvas, SR, subtype="FLOAT")
+    sf.write(out_path, canvas, SR, subtype="PCM_16")
     rms = float(np.sqrt((canvas ** 2).mean()))
     print(f"bed.wav written: {total:.1f}s peak {peak:.3f} rms {20*np.log10(rms+1e-9):.1f} dBFS")
     with open(f"{BASE}/render/music_credits.txt", "w") as f:

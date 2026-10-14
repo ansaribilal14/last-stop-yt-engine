@@ -1,0 +1,242 @@
+{
+ "out_dir": "/home/z/my-project/engine/projects/ahyeon/clips",
+ "jobs": [
+  {
+   "src": "/home/z/my-project/engine/projects/ahyeon/ytdl_cache/batterup.mp4",
+   "label": "batterup",
+   "n": 9,
+   "seg_len": 9.5,
+   "tags": [
+    "babymonster",
+    "ahyeon"
+   ]
+  },
+  {
+   "src": "/home/z/my-project/engine/projects/ahyeon/ytdl_cache/sheesh.mp4",
+   "label": "sheesh",
+   "n": 9,
+   "seg_len": 9.5,
+   "tags": [
+    "babymonster",
+    "ahyeon"
+   ]
+  },
+  {
+   "src": "/home/z/my-project/engine/projects/ahyeon/ytdl_cache/forever.mp4",
+   "label": "forever",
+   "n": 9,
+   "seg_len": 9.5,
+   "tags": [
+    "babymonster",
+    "ahyeon"
+   ]
+  },
+  {
+   "src": "/home/z/my-project/engine/projects/ahyeon/ytdl_cache/drip.mp4",
+   "label": "drip",
+   "n": 9,
+   "seg_len": 9.5,
+   "tags": [
+    "babymonster",
+    "ahyeon"
+   ]
+  },
+  {
+   "src": "/home/z/my-project/engine/projects/ahyeon/ytdl_cache/hotsauce.mp4",
+   "label": "hotsauce",
+   "n": 9,
+   "seg_len": 9.5,
+   "tags": [
+    "babymonster",
+    "ahyeon"
+   ]
+  },
+  {
+   "src": "/home/z/my-project/engine/projects/ahyeon/ytdl_cache/shit.mp4",
+   "label": "shit",
+   "n": 9,
+   "seg_len": 9.5,
+   "tags": [
+    "babymonster",
+    "ahyeon"
+   ]
+  },
+  {
+   "src": "/home/z/my-project/engine/projects/ahyeon/ytdl_cache/choom.mp4",
+   "label": "choom",
+   "n": 9,
+   "seg_len": 9.5,
+   "tags": [
+    "babymonster",
+    "ahyeon"
+   ]
+  },
+  {
+   "src": "/home/z/my-project/engine/projects/ahyeon/ytdl_cache/moon.mp4",
+   "label": "moon",
+   "n": 9,
+   "seg_len": 9.5,
+   "tags": [
+    "babymonster",
+    "ahyeon"
+   ]
+  },
+  {
+   "src": "/home/z/my-project/engine/projects/ahyeon/ytdl_cache/sitm.mp4",
+   "label": "sitm",
+   "n": 9,
+   "seg_len": 9.5,
+   "tags": [
+    "babymonster"
+   ]
+  },
+  {
+   "src": "/home/z/my-project/engine/projects/ahyeon/ytdl_cache/dream.mp4",
+   "label": "dream",
+   "n": 9,
+   "seg_len": 9.5,
+   "tags": [
+    "babymonster"
+   ]
+  },
+  {
+   "src": "/home/z/my-project/engine/projects/ahyeon/ytdl_cache/nextmovement.mp4",
+   "label": "nextmovement",
+   "n": 6,
+   "seg_len": 9.5,
+   "tags": [
+    "babymonster",
+    "ahyeon",
+    "ygent"
+   ]
+  },
+  {
+   "src": "/home/z/my-project/engine/projects/ahyeon/ytdl_cache/leval1.mp4",
+   "label": "leval1",
+   "n": 6,
+   "seg_len": 9.5,
+   "tags": [
+    "babymonster",
+    "ygent"
+   ]
+  },
+  {
+   "src": "/home/z/my-project/engine/projects/ahyeon/ytdl_cache/leval_ahyeon.mp4",
+   "label": "leval_ahyeon",
+   "n": 6,
+   "seg_len": 9.5,
+   "tags": [
+    "ahyeon",
+    "babymonster"
+   ]
+  },
+  {
+   "src": "/home/z/my-project/engine/projects/ahyeon/ytdl_cache/reveal_ahyeon.mp4",
+   "label": "reveal_ahyeon",
+   "n": 6,
+   "seg_len": 9.5,
+   "tags": [
+    "ahyeon"
+   ]
+  },
+  {
+   "src": "/home/z/my-project/engine/projects/ahyeon/ytdl_cache/dangerously.mp4",
+   "label": "dangerously",
+   "n": 6,
+   "seg_len": 9.5,
+   "tags": [
+    "ahyeon"
+   ]
+  },
+  {
+   "src": "/home/z/my-project/engine/projects/ahyeon/ytdl_cache/batterup_stage.mp4",
+   "label": "batterup_stage",
+   "n": 7,
+   "seg_len": 9.5,
+   "tags": [
+    "babymonster",
+    "ahyeon"
+   ]
+  },
+  {
+   "src": "/home/z/my-project/engine/projects/ahyeon/ytdl_cache/sheesh_stage.mp4",
+   "label": "sheesh_stage",
+   "n": 7,
+   "seg_len": 9.5,
+   "tags": [
+    "babymonster",
+    "ahyeon"
+   ]
+  },
+  {
+   "src": "/home/z/my-project/engine/projects/ahyeon/ytdl_cache/mama_golden.mp4",
+   "label": "mama_golden",
+   "n": 7,
+   "seg_len": 9.5,
+   "tags": [
+    "ahyeon",
+    "babymonster"
+   ]
+  },
+  {
+   "src": "/home/z/my-project/engine/projects/ahyeon/ytdl_cache/kspo.mp4",
+   "label": "kspo",
+   "n": 7,
+   "seg_len": 9.5,
+   "tags": [
+    "babymonster",
+    "ahyeon"
+   ]
+  },
+  {
+   "src": "/home/z/my-project/engine/projects/ahyeon/ytdl_cache/dome_fancam.mp4",
+   "label": "dome_fancam",
+   "n": 7,
+   "seg_len": 9.5,
+   "tags": [
+    "babymonster",
+    "ahyeon"
+   ]
+  },
+  {
+   "src": "/home/z/my-project/engine/projects/ahyeon/ytdl_cache/choom_stage.mp4",
+   "label": "choom_stage",
+   "n": 7,
+   "seg_len": 9.5,
+   "tags": [
+    "ahyeon",
+    "babymonster"
+   ]
+  },
+  {
+   "src": "/home/z/my-project/engine/projects/ahyeon/ytdl_cache/likethat.mp4",
+   "label": "likethat",
+   "n": 4,
+   "seg_len": 9.5,
+   "tags": [
+    "ahyeon",
+    "babymonster"
+   ]
+  },
+  {
+   "src": "/home/z/my-project/engine/projects/ahyeon/ytdl_cache/reallylikeyou.mp4",
+   "label": "reallylikeyou",
+   "n": 4,
+   "seg_len": 9.5,
+   "tags": [
+    "babymonster",
+    "ahyeon"
+   ]
+  },
+  {
+   "src": "/home/z/my-project/engine/projects/ahyeon/ytdl_cache/interview.mp4",
+   "label": "interview",
+   "n": 4,
+   "seg_len": 9.5,
+   "tags": [
+    "ahyeon",
+    "babymonster"
+   ]
+  }
+ ]
+}

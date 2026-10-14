@@ -14,6 +14,7 @@ OUT = f"{BASE}/narration"
 VOICE = "en-US-AndrewMultilingualNeural"
 RATE = "-3%"
 sys.path.insert(0, "/home/z/my-project/engine/pipeline")
+sys.path.insert(0, f"/home/z/my-project/engine/projects/{PROJ}")
 
 def probe(path):
     import subprocess
@@ -26,7 +27,7 @@ async def tts_words(text, path):
     """Edge TTS streaming: save mp3 + collect word boundaries."""
     import edge_tts, struct
     words = []
-    cm = edge_tts.Communicate(text, VOICE, rate=RATE)
+    cm = edge_tts.Communicate(text, VOICE, rate=RATE, boundary="WordBoundary")
     with open(path, "wb") as f:
         async for chunk in cm.stream():
             if chunk["type"] == "audio":
