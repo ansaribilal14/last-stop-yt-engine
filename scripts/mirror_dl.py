@@ -52,11 +52,14 @@ def probe_dur(p):
 
 def ytdlp_fetch(url, out, log):
     """Download best mp4 <=1080p. Returns (ok, title)."""
-    cmd = YTDLP + ["--no-playlist", "--socket-timeout", "20", "--retries", "2",
-                   "--impersonate", "firefox",
-                   "-f", "bv*[height<=1080][ext=mp4]+ba[ext=m4a]/b[height<=1080][ext=mp4]/bv*+ba/b[height<=720]",
-                   "--merge-output-format", "mp4", "--print", "after_move:%(title)s",
-                   "-o", out, "--no-progress", url]
+    cmd = YTDLP + ["--no-playlist", "--socket-timeout", "20", "--retries", "2"]
+    # curl_cffi impersonation breaks some vkvideo servers (Invalid Content-Length);
+    # only Dailymotion's extractor requires it.
+    if "dailymotion.com" in url:
+        cmd += ["--impersonate", "firefox"]
+    cmd += ["-f", "bv*[height<=1080][ext=mp4]+ba[ext=m4a]/b[height<=1080][ext=mp4]/bv*+ba/b[height<=720]",
+            "--merge-output-format", "mp4", "--print", "after_move:%(title)s",
+            "-o", out, "--no-progress", url]
     try:
         r = subprocess.run(cmd, capture_output=True, text=True, timeout=300)
     except subprocess.TimeoutExpired:
@@ -180,7 +183,7 @@ def main():
             print("[mirror_dl] run budget nearly spent — deferring rest", flush=True)
             break
         key, q, kind = s["key"], s["q"], s.get("kind", "mv")
-        toks = expected_tokens(q)
+        toks = s.get("title_tokens") or expected_tokens(q)
         out = f"{base}/ytdl_cache/{key}.mp4"
         def log(m): print(m, flush=True)
         src_t0 = time.time()

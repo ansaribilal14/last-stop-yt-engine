@@ -80,9 +80,20 @@
   "faces_ok": true
  },
  "nextmovement": {
-  "status": "failed",
-  "fails": 9,
-  "tries": "manually-deferred"
+  "status": "ok",
+  "dur": 182.8,
+  "mirror": "dm-x8wfb4s",
+  "title": "STUDIO YG group dance practice (NOT the NEXT MOVEMENT film)",
+  "ah_present": false,
+  "verify": "weak",
+  "faces_ok": true,
+  "note": "wrong_title_right_group: relabelled editorially as trainee/practice b-roll",
+  "kind_hint": "practice",
+  "tags_hint": [
+   "babymonster",
+   "practice",
+   "group"
+  ]
  },
  "leval1": {
   "status": "ok",
@@ -93,14 +104,22 @@
   "faces_ok": true
  },
  "leval_ahyeon": {
-  "status": "failed",
-  "fails": 2,
-  "tries": "15:09"
+  "status": "ok",
+  "dur": 1072.8,
+  "mirror": "vkvideo-240036795-ep2",
+  "title": null,
+  "ah_present": false,
+  "verify": "weak",
+  "faces_ok": true
  },
  "reveal_ahyeon": {
-  "status": "failed",
-  "fails": 2,
-  "tries": "15:25"
+  "status": "ok",
+  "dur": 87.0,
+  "mirror": "vkvideo-224763217",
+  "title": null,
+  "ah_present": false,
+  "verify": "weak",
+  "faces_ok": true
  },
  "dangerously": {
   "status": "ok",
@@ -112,9 +131,13 @@
   "faces_ok": true
  },
  "batterup_stage": {
-  "status": "failed",
-  "fails": 1,
-  "tries": "15:37"
+  "status": "ok",
+  "dur": 195.6,
+  "mirror": "https://www.dailymotion.com/video/x8q80se",
+  "title": "BABYMONSTER - 'BATTER UP' DANCE PERFORMANCE (DEBUT SPECIAL)",
+  "ah_present": false,
+  "verify": "weak",
+  "faces_ok": true
  },
  "sheesh_stage": {
   "status": "ok",
@@ -123,6 +146,64 @@
   "title": "SHEESH\u2502BABYMONSTER ONE TAKE STAGE\u2502INKIGAYO 240414 |",
   "ah_present": false,
   "verify": "weak",
+  "faces_ok": true
+ },
+ "mama_golden": {
+  "status": "ok",
+  "dur": 255.5,
+  "mirror": "https://vkvideo.ru/video-33654179_456316899",
+  "title": "[#2025MAMA] BABYMONSTER - What It Sounds Like + Golden (Kpop Demon Hunter)",
+  "ah_present": false,
+  "verify": "weak",
+  "faces_ok": true
+ },
+ "kspo": {
+  "status": "ok",
+  "dur": 1121.2,
+  "mirror": "https://vkvideo.ru/video-116740563_456241711",
+  "title": "BABYMONSTER [HELLO MONSTERS] IN NORTH AMERICA DOCUMENTARY - YG PRODUCTION EP.8",
+  "ah_present": true,
+  "verify": "weak",
+  "faces_ok": true
+ },
+ "dome_fancam": {
+  "status": "dropped",
+  "reason": "no clean mirror after 20+ attempts; kspo tour footage + contextual images cover dome narrative"
+ },
+ "choom_stage": {
+  "status": "ok",
+  "dur": 264.9,
+  "mirror": "https://vkvideo.ru/video-218040067_456242066",
+  "title": "'COMEBACK' BABYMONSTER - \ucda4 (CHOOM) #\uc5e0\uce74\uc6b4\ud2b8\ub2e4\uc6b4 EP.928 | Mnet 260514 \ubc29\uc1a1",
+  "ah_present": false,
+  "verify": "strong",
+  "faces_ok": true
+ },
+ "likethat": {
+  "status": "ok",
+  "dur": 177.2,
+  "mirror": "https://vkvideo.ru/video-228263160_456240546",
+  "title": "BABYMONSTER - 'LIKE THAT' EXCLUSIVE PERFORMANCE VIDEO [M8r3x4Re8-I]",
+  "ah_present": true,
+  "verify": "strong",
+  "faces_ok": true
+ },
+ "reallylikeyou": {
+  "status": "ok",
+  "dur": 226.0,
+  "mirror": "https://m.vk.com/video-225727512_456239698",
+  "title": "[\u0440\u0443\u0441.\u0441\u0430\u0431] Babymonster - Really like you M/V",
+  "ah_present": true,
+  "verify": "strong",
+  "faces_ok": true
+ },
+ "interview": {
+  "status": "ok",
+  "dur": 428.0,
+  "mirror": "https://vkvideo.ru/video-213294280_456244690",
+  "title": "BABYMONSTER (\ubca0\uc774\ube44\ubaac\uc2a4\ud130) AHYEON (\uc544\ud604) / s voice memo / 2026.06.29",
+  "ah_present": true,
+  "verify": "strong",
   "faces_ok": true
  }
 }
