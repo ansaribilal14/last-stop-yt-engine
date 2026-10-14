@@ -1,10 +1,18 @@
 {
- "batterup": "ok",
- "sheesh": "ok",
- "forever": "ok",
- "drip": "ok",
- "hotsauce": "ok",
- "shit": "ok",
- "choom": "ok",
- "moon": "ok"
+ "batterup": {
+  "status": "ok",
+  "dur": 198.4,
+  "mirror": "https://vkvideo.ru/video-229903698_456239020",
+  "title": "BABYMONSTER - 'BATTER UP' M V",
+  "ah_present": false,
+  "faces_ok": true
+ },
+ "sheesh": {
+  "status": "ok",
+  "dur": 176.0,
+  "mirror": "https://vkvideo.ru/video-228475198_456239067",
+  "title": "BABYMONSTER - SHEESH",
+  "ah_present": false,
+  "faces_ok": true
+ }
 }
