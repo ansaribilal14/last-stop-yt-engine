@@ -1,0 +1,3345 @@
+[
+ {
+  "id": "co1",
+  "scene_id": "s01",
+  "kind": "clips",
+  "card": null,
+  "voice": 47.712,
+  "lead": 0.8,
+  "slot": 60.4,
+  "frames": 1812,
+  "start": 0.0,
+  "voice_at": 0.8,
+  "shots": [
+   {
+    "type": "video",
+    "asset_id": "sheesh",
+    "src": "ytdl_cache/sheesh.mp4",
+    "source_in": 45.16,
+    "source_out": 52.68,
+    "ah_score": 0.3272,
+    "section": "verse1",
+    "tags": [
+     "babymonster",
+     "ahyeon"
+    ],
+    "reason": "calm beat, verse1 of sheesh",
+    "display_start": 0.0,
+    "display_end": 8.5
+   },
+   {
+    "type": "video",
+    "asset_id": "batterup",
+    "src": "ytdl_cache/batterup.mp4",
+    "source_in": 109.77,
+    "source_out": 115.39,
+    "ah_score": 0.3898,
+    "section": "verse2",
+    "tags": [
+     "babymonster",
+     "ahyeon"
+    ],
+    "reason": "calm beat, verse2 of batterup",
+    "display_start": 8.5,
+    "display_end": 17.0
+   },
+   {
+    "type": "video",
+    "asset_id": "choom",
+    "src": "ytdl_cache/choom.mp4",
+    "source_in": 72.3,
+    "source_out": 77.51,
+    "ah_score": 0.4147,
+    "section": "chorus1",
+    "tags": [
+     "babymonster",
+     "ahyeon"
+    ],
+    "reason": "build beat, chorus1 of choom",
+    "display_start": 17.0,
+    "display_end": 22.21
+   },
+   {
+    "type": "image",
+    "asset_id": "asset-c5195297c25980f67530",
+    "src": "../../assets/ahyeon/originals/floor-boards--cbab825f.jpg",
+    "entity": "practice_room",
+    "license": "CC BY-NC-SA 2.0",
+    "attribution": "akahawkeyefan \u2014 CC BY-NC-SA 2.0 \u2014 via Openverse",
+    "display_start": 22.21,
+    "display_end": 26.21,
+    "motion": "pull_out",
+    "reason": "'practice room' spoken at 22.5s \u2014 show the place"
+   },
+   {
+    "type": "video",
+    "asset_id": "choom",
+    "src": "ytdl_cache/choom.mp4",
+    "source_in": 120.66,
+    "source_out": 127.5,
+    "ah_score": 0.5971,
+    "section": "chorus2",
+    "tags": [
+     "babymonster",
+     "ahyeon"
+    ],
+    "reason": "peak beat, chorus2 of choom",
+    "display_start": 26.21,
+    "display_end": 34.71
+   },
+   {
+    "type": "video",
+    "asset_id": "sheesh",
+    "src": "ytdl_cache/sheesh.mp4",
+    "source_in": 52.68,
+    "source_out": 60.08,
+    "ah_score": 0.5416,
+    "section": "chorus1",
+    "tags": [
+     "babymonster",
+     "ahyeon"
+    ],
+    "reason": "peak beat, chorus1 of sheesh",
+    "display_start": 34.71,
+    "display_end": 43.21
+   },
+   {
+    "type": "video",
+    "asset_id": "batterup",
+    "src": "ytdl_cache/batterup.mp4",
+    "source_in": 191.29,
+    "source_out": 195.79,
+    "ah_score": 0.2552,
+    "section": "final_chorus",
+    "tags": [
+     "babymonster",
+     "ahyeon"
+    ],
+    "reason": "payoff beat, final_chorus of batterup",
+    "display_start": 43.21,
+    "display_end": 47.71
+   }
+  ],
+  "music_cue": "act0",
+  "dur": 60.4
+ },
+ {
+  "id": "co2",
+  "scene_id": "s02",
+  "kind": "card",
+  "card": {
+   "kind": "title",
+   "lines": [
+    "AHYEON",
+    "THE 5TH GEN IT GIRL"
+   ]
+  },
+  "voice": 2.808,
+  "lead": 0.8,
+  "slot": 21.6,
+  "frames": 648,
+  "start": 60.4,
+  "voice_at": 61.2,
+  "shots": [
+   {
+    "type": "video",
+    "asset_id": "reallylikeyou",
+    "src": "ytdl_cache/reallylikeyou.mp4",
+    "source_in": 125.98,
+    "source_out": 129.03,
+    "reason": "card background loop (blurred)"
+   }
+  ],
+  "music_cue": "act0",
+  "dur": 21.6
+ },
+ {
+  "id": "a1c",
+  "scene_id": "s03",
+  "kind": "card",
+  "card": {
+   "kind": "chapter",
+   "num": "ACT ONE",
+   "title": "CHUNCHEON"
+  },
+  "voice": 1.872,
+  "lead": 0.8,
+  "slot": 18.666667,
+  "frames": 560,
+  "start": 82.0,
+  "voice_at": 82.8,
+  "shots": [
+   {
+    "type": "video",
+    "asset_id": "likethat",
+    "src": "ytdl_cache/likethat.mp4",
+    "source_in": 94.13,
+    "source_out": 97.05,
+    "reason": "card background loop (blurred)"
+   }
+  ],
+  "music_cue": "act1",
+  "dur": 18.666667
+ },
+ {
+  "id": "a1b01",
+  "scene_id": "s04",
+  "kind": "clips",
+  "card": null,
+  "voice": 32.328,
+  "lead": 0.8,
+  "slot": 42.633333,
+  "frames": 1279,
+  "start": 100.6667,
+  "voice_at": 101.4667,
+  "shots": [
+   {
+    "type": "video",
+    "asset_id": "nextmovement",
+    "src": "ytdl_cache/nextmovement.mp4",
+    "source_in": 40.02,
+    "source_out": 45.48,
+    "ah_score": 0.2321,
+    "section": "verse1",
+    "tags": [
+     "babymonster",
+     "ahyeon",
+     "ygent"
+    ],
+    "reason": "calm beat, verse1 of nextmovement",
+    "display_start": 0.0,
+    "display_end": 5.46
+   },
+   {
+    "type": "image",
+    "asset_id": "asset-e7338dc590037baeb8ac",
+    "src": "../../assets/ahyeon/originals/the-magic-of-the-han-river--2c0119d0.jpg",
+    "entity": "seoul",
+    "license": "CC BY 2.0",
+    "attribution": "UNC - CFC - USFK \u2014 CC BY 2.0 \u2014 via Openverse",
+    "display_start": 5.46,
+    "display_end": 9.46,
+    "motion": "pull_out",
+    "reason": "'Seoul' spoken at 5.8s \u2014 show the place"
+   },
+   {
+    "type": "video",
+    "asset_id": "nextmovement",
+    "src": "ytdl_cache/nextmovement.mp4",
+    "source_in": 62.27,
+    "source_out": 67.23,
+    "ah_score": 0.4394,
+    "section": "chorus1",
+    "tags": [
+     "babymonster",
+     "ahyeon",
+     "ygent"
+    ],
+    "reason": "peak beat, chorus1 of nextmovement",
+    "display_start": 9.46,
+    "display_end": 17.96
+   },
+   {
+    "type": "video",
+    "asset_id": "nextmovement",
+    "src": "ytdl_cache/nextmovement.mp4",
+    "source_in": 165.86,
+    "source_out": 174.36,
+    "ah_score": 0.0,
+    "section": "final_chorus",
+    "tags": [
+     "babymonster",
+     "ahyeon",
+     "ygent"
+    ],
+    "reason": "peak beat, final_chorus of nextmovement",
+    "display_start": 17.96,
+    "display_end": 26.46
+   },
+   {
+    "type": "video",
+    "asset_id": "nextmovement",
+    "src": "ytdl_cache/nextmovement.mp4",
+    "source_in": 111.88,
+    "source_out": 117.75,
+    "ah_score": 0.094,
+    "section": "chorus2",
+    "tags": [
+     "babymonster",
+     "ahyeon",
+     "ygent"
+    ],
+    "reason": "payoff beat, chorus2 of nextmovement",
+    "display_start": 26.46,
+    "display_end": 32.33
+   }
+  ],
+  "music_cue": "act1",
+  "dur": 42.633333
+ },
+ {
+  "id": "a1b02",
+  "scene_id": "s05",
+  "kind": "clips",
+  "card": null,
+  "voice": 41.232,
+  "lead": 0.8,
+  "slot": 52.9,
+  "frames": 1587,
+  "start": 143.3,
+  "voice_at": 144.1,
+  "shots": [
+   {
+    "type": "video",
+    "asset_id": "leval1",
+    "src": "ytdl_cache/leval1.mp4",
+    "source_in": 96.93,
+    "source_out": 105.1,
+    "ah_score": 0.5883,
+    "section": "intro",
+    "tags": [
+     "babymonster",
+     "ygent"
+    ],
+    "reason": "calm beat, intro of leval1",
+    "display_start": 0.0,
+    "display_end": 8.5
+   },
+   {
+    "type": "video",
+    "asset_id": "leval1",
+    "src": "ytdl_cache/leval1.mp4",
+    "source_in": 89.8,
+    "source_out": 94.43,
+    "ah_score": 0.6719,
+    "section": "intro",
+    "tags": [
+     "babymonster",
+     "ygent"
+    ],
+    "reason": "calm beat, intro of leval1",
+    "display_start": 8.5,
+    "display_end": 18.39
+   },
+   {
+    "type": "image",
+    "asset_id": "asset-c5195297c25980f67530",
+    "src": "../../assets/ahyeon/originals/floor-boards--cbab825f.jpg",
+    "entity": "practice_room",
+    "license": "CC BY-NC-SA 2.0",
+    "attribution": "akahawkeyefan \u2014 CC BY-NC-SA 2.0 \u2014 via Openverse",
+    "display_start": 18.39,
+    "display_end": 22.39,
+    "motion": "push_in",
+    "reason": "'practice room' spoken at 18.7s \u2014 show the place"
+   },
+   {
+    "type": "video",
+    "asset_id": "leval1",
+    "src": "ytdl_cache/leval1.mp4",
+    "source_in": 743.78,
+    "source_out": 752.21,
+    "ah_score": 0.6778,
+    "section": "chorus2",
+    "tags": [
+     "babymonster",
+     "ygent"
+    ],
+    "reason": "peak beat, chorus2 of leval1",
+    "display_start": 22.39,
+    "display_end": 30.89
+   },
+   {
+    "type": "video",
+    "asset_id": "leval1",
+    "src": "ytdl_cache/leval1.mp4",
+    "source_in": 740.61,
+    "source_out": 743.78,
+    "ah_score": 0.6699,
+    "section": "chorus2",
+    "tags": [
+     "babymonster",
+     "ygent"
+    ],
+    "reason": "peak beat, chorus2 of leval1",
+    "display_start": 30.89,
+    "display_end": 41.23
+   }
+  ],
+  "music_cue": "act1",
+  "dur": 52.9
+ },
+ {
+  "id": "a1b03",
+  "scene_id": "s06",
+  "kind": "clips",
+  "card": null,
+  "voice": 40.224,
+  "lead": 0.8,
+  "slot": 51.766667,
+  "frames": 1553,
+  "start": 196.2,
+  "voice_at": 197.0,
+  "shots": [
+   {
+    "type": "video",
+    "asset_id": "nextmovement",
+    "src": "ytdl_cache/nextmovement.mp4",
+    "source_in": 56.56,
+    "source_out": 62.27,
+    "ah_score": 0.1177,
+    "section": "chorus1",
+    "tags": [
+     "babymonster",
+     "ahyeon",
+     "ygent"
+    ],
+    "reason": "peak beat, chorus1 of nextmovement",
+    "display_start": 0.0,
+    "display_end": 8.5
+   },
+   {
+    "type": "video",
+    "asset_id": "nextmovement",
+    "src": "ytdl_cache/nextmovement.mp4",
+    "source_in": 70.61,
+    "source_out": 77.41,
+    "ah_score": 0.0,
+    "section": "chorus1",
+    "tags": [
+     "babymonster",
+     "ahyeon",
+     "ygent"
+    ],
+    "reason": "peak beat, chorus1 of nextmovement",
+    "display_start": 8.5,
+    "display_end": 17.0
+   },
+   {
+    "type": "video",
+    "asset_id": "nextmovement",
+    "src": "ytdl_cache/nextmovement.mp4",
+    "source_in": 67.23,
+    "source_out": 70.61,
+    "ah_score": 0.1702,
+    "section": "chorus1",
+    "tags": [
+     "babymonster",
+     "ahyeon",
+     "ygent"
+    ],
+    "reason": "peak beat, chorus1 of nextmovement",
+    "display_start": 17.0,
+    "display_end": 25.5
+   },
+   {
+    "type": "video",
+    "asset_id": "reveal_ahyeon",
+    "src": "ytdl_cache/reveal_ahyeon.mp4",
+    "source_in": 27.29,
+    "source_out": 35.79,
+    "ah_score": 0.0,
+    "section": "verse2",
+    "tags": [
+     "ahyeon"
+    ],
+    "reason": "peak beat, verse2 of reveal_ahyeon",
+    "display_start": 25.5,
+    "display_end": 34.0
+   },
+   {
+    "type": "video",
+    "asset_id": "nextmovement",
+    "src": "ytdl_cache/nextmovement.mp4",
+    "source_in": 121.62,
+    "source_out": 127.58,
+    "ah_score": 0.0,
+    "section": "chorus2",
+    "tags": [
+     "babymonster",
+     "ahyeon",
+     "ygent"
+    ],
+    "reason": "payoff beat, chorus2 of nextmovement",
+    "display_start": 34.0,
+    "display_end": 40.22
+   }
+  ],
+  "music_cue": "act1",
+  "dur": 51.766667
+ },
+ {
+  "id": "a1b04",
+  "scene_id": "s07",
+  "kind": "clips",
+  "card": null,
+  "voice": 37.776,
+  "lead": 0.8,
+  "slot": 48.933333,
+  "frames": 1468,
+  "start": 247.9667,
+  "voice_at": 248.7667,
+  "shots": [
+   {
+    "type": "video",
+    "asset_id": "leval1",
+    "src": "ytdl_cache/leval1.mp4",
+    "source_in": 905.32,
+    "source_out": 908.16,
+    "ah_score": 0.6243,
+    "section": "final_chorus",
+    "tags": [
+     "babymonster",
+     "ygent"
+    ],
+    "reason": "peak beat, final_chorus of leval1",
+    "display_start": 0.0,
+    "display_end": 8.5
+   },
+   {
+    "type": "video",
+    "asset_id": "leval1",
+    "src": "ytdl_cache/leval1.mp4",
+    "source_in": 1008.72,
+    "source_out": 1011.72,
+    "ah_score": 0.6349,
+    "section": "final_chorus",
+    "tags": [
+     "babymonster",
+     "ygent"
+    ],
+    "reason": "peak beat, final_chorus of leval1",
+    "display_start": 8.5,
+    "display_end": 17.0
+   },
+   {
+    "type": "video",
+    "asset_id": "leval1",
+    "src": "ytdl_cache/leval1.mp4",
+    "source_in": 351.52,
+    "source_out": 359.07,
+    "ah_score": 0.5722,
+    "section": "chorus1",
+    "tags": [
+     "babymonster",
+     "ygent"
+    ],
+    "reason": "peak beat, chorus1 of leval1",
+    "display_start": 17.0,
+    "display_end": 25.5
+   },
+   {
+    "type": "video",
+    "asset_id": "leval1",
+    "src": "ytdl_cache/leval1.mp4",
+    "source_in": 902.11,
+    "source_out": 905.32,
+    "ah_score": 0.6641,
+    "section": "final_chorus",
+    "tags": [
+     "babymonster",
+     "ygent"
+    ],
+    "reason": "peak beat, final_chorus of leval1",
+    "display_start": 25.5,
+    "display_end": 34.0
+   },
+   {
+    "type": "video",
+    "asset_id": "leval1",
+    "src": "ytdl_cache/leval1.mp4",
+    "source_in": 680.79,
+    "source_out": 684.57,
+    "ah_score": 0.1928,
+    "section": "chorus2",
+    "tags": [
+     "babymonster",
+     "ygent"
+    ],
+    "reason": "payoff beat, chorus2 of leval1",
+    "display_start": 34.0,
+    "display_end": 37.78
+   }
+  ],
+  "music_cue": "act1",
+  "dur": 48.933333
+ },
+ {
+  "id": "a2c",
+  "scene_id": "s08",
+  "kind": "card",
+  "card": {
+   "kind": "chapter",
+   "num": "ACT TWO",
+   "title": "THE VOICE"
+  },
+  "voice": 2.616,
+  "lead": 0.8,
+  "slot": 19.4,
+  "frames": 582,
+  "start": 296.9,
+  "voice_at": 297.7,
+  "shots": [
+   {
+    "type": "video",
+    "asset_id": "choom_stage",
+    "src": "ytdl_cache/choom_stage.mp4",
+    "source_in": 59.44,
+    "source_out": 60.44,
+    "reason": "card background loop (blurred)"
+   }
+  ],
+  "music_cue": "act2",
+  "dur": 19.4
+ },
+ {
+  "id": "a2b01",
+  "scene_id": "s09",
+  "kind": "clips",
+  "card": null,
+  "voice": 35.832,
+  "lead": 0.8,
+  "slot": 46.666667,
+  "frames": 1400,
+  "start": 316.3,
+  "voice_at": 317.1,
+  "shots": [
+   {
+    "type": "video",
+    "asset_id": "dream",
+    "src": "ytdl_cache/dream.mp4",
+    "source_in": 88.43,
+    "source_out": 96.65,
+    "ah_score": 0.2718,
+    "section": "verse2",
+    "tags": [
+     "babymonster"
+    ],
+    "reason": "calm beat, verse2 of dream",
+    "display_start": 0.0,
+    "display_end": 8.5
+   },
+   {
+    "type": "video",
+    "asset_id": "dream",
+    "src": "ytdl_cache/dream.mp4",
+    "source_in": 39.54,
+    "source_out": 41.71,
+    "ah_score": 0.5478,
+    "section": "verse1",
+    "tags": [
+     "babymonster"
+    ],
+    "reason": "calm beat, verse1 of dream",
+    "display_start": 8.5,
+    "display_end": 12.11
+   },
+   {
+    "type": "image",
+    "asset_id": "asset-c5195297c25980f67530",
+    "src": "../../assets/ahyeon/originals/floor-boards--cbab825f.jpg",
+    "entity": "practice_room",
+    "license": "CC BY-NC-SA 2.0",
+    "attribution": "akahawkeyefan \u2014 CC BY-NC-SA 2.0 \u2014 via Openverse",
+    "display_start": 12.11,
+    "display_end": 16.11,
+    "motion": "push_in",
+    "reason": "'practice room' spoken at 12.4s \u2014 show the place"
+   },
+   {
+    "type": "video",
+    "asset_id": "dangerously",
+    "src": "ytdl_cache/dangerously.mp4",
+    "source_in": 137.81,
+    "source_out": 146.07,
+    "ah_score": 0.0,
+    "section": "final_chorus",
+    "tags": [
+     "ahyeon"
+    ],
+    "reason": "peak beat, final_chorus of dangerously",
+    "display_start": 16.11,
+    "display_end": 24.61
+   },
+   {
+    "type": "video",
+    "asset_id": "dangerously",
+    "src": "ytdl_cache/dangerously.mp4",
+    "source_in": 31.76,
+    "source_out": 40.26,
+    "ah_score": 0.2487,
+    "section": "chorus1",
+    "tags": [
+     "ahyeon"
+    ],
+    "reason": "peak beat, chorus1 of dangerously",
+    "display_start": 24.61,
+    "display_end": 33.11
+   },
+   {
+    "type": "video",
+    "asset_id": "dream",
+    "src": "ytdl_cache/dream.mp4",
+    "source_in": 125.0,
+    "source_out": 127.72,
+    "ah_score": 0.4291,
+    "section": "chorus2",
+    "tags": [
+     "babymonster"
+    ],
+    "reason": "payoff beat, chorus2 of dream",
+    "display_start": 33.11,
+    "display_end": 35.83
+   }
+  ],
+  "music_cue": "act2",
+  "dur": 46.666667
+ },
+ {
+  "id": "a2b02",
+  "scene_id": "s10",
+  "kind": "clips",
+  "card": null,
+  "voice": 34.848,
+  "lead": 0.8,
+  "slot": 45.533333,
+  "frames": 1366,
+  "start": 362.9667,
+  "voice_at": 363.7667,
+  "shots": [
+   {
+    "type": "video",
+    "asset_id": "dream",
+    "src": "ytdl_cache/dream.mp4",
+    "source_in": 74.95,
+    "source_out": 77.62,
+    "ah_score": 0.53,
+    "section": "chorus1",
+    "tags": [
+     "babymonster"
+    ],
+    "reason": "peak beat, chorus1 of dream",
+    "display_start": 0.0,
+    "display_end": 8.5
+   },
+   {
+    "type": "video",
+    "asset_id": "dream",
+    "src": "ytdl_cache/dream.mp4",
+    "source_in": 85.84,
+    "source_out": 88.43,
+    "ah_score": 0.5355,
+    "section": "chorus1",
+    "tags": [
+     "babymonster"
+    ],
+    "reason": "peak beat, chorus1 of dream",
+    "display_start": 8.5,
+    "display_end": 17.0
+   },
+   {
+    "type": "video",
+    "asset_id": "dream",
+    "src": "ytdl_cache/dream.mp4",
+    "source_in": 186.09,
+    "source_out": 194.59,
+    "ah_score": 0.0,
+    "section": "final_chorus",
+    "tags": [
+     "babymonster"
+    ],
+    "reason": "peak beat, final_chorus of dream",
+    "display_start": 17.0,
+    "display_end": 25.5
+   },
+   {
+    "type": "video",
+    "asset_id": "dream",
+    "src": "ytdl_cache/dream.mp4",
+    "source_in": 170.42,
+    "source_out": 174.63,
+    "ah_score": 0.2806,
+    "section": "final_chorus",
+    "tags": [
+     "babymonster"
+    ],
+    "reason": "peak beat, final_chorus of dream",
+    "display_start": 25.5,
+    "display_end": 34.85
+   }
+  ],
+  "music_cue": "act2",
+  "dur": 45.533333
+ },
+ {
+  "id": "a2b03",
+  "scene_id": "s11",
+  "kind": "clips",
+  "card": null,
+  "voice": 35.376,
+  "lead": 0.8,
+  "slot": 46.166667,
+  "frames": 1385,
+  "start": 408.5,
+  "voice_at": 409.3,
+  "shots": [
+   {
+    "type": "video",
+    "asset_id": "leval_ahyeon",
+    "src": "ytdl_cache/leval_ahyeon.mp4",
+    "source_in": 648.12,
+    "source_out": 656.62,
+    "ah_score": 0.163,
+    "section": "chorus2",
+    "tags": [
+     "ahyeon",
+     "babymonster"
+    ],
+    "reason": "peak beat, chorus2 of leval_ahyeon",
+    "display_start": 0.0,
+    "display_end": 8.5
+   },
+   {
+    "type": "video",
+    "asset_id": "leval_ahyeon",
+    "src": "ytdl_cache/leval_ahyeon.mp4",
+    "source_in": 335.71,
+    "source_out": 340.13,
+    "ah_score": 0.6395,
+    "section": "chorus1",
+    "tags": [
+     "ahyeon",
+     "babymonster"
+    ],
+    "reason": "peak beat, chorus1 of leval_ahyeon",
+    "display_start": 8.5,
+    "display_end": 17.0
+   },
+   {
+    "type": "video",
+    "asset_id": "leval_ahyeon",
+    "src": "ytdl_cache/leval_ahyeon.mp4",
+    "source_in": 918.0,
+    "source_out": 920.63,
+    "ah_score": 0.4694,
+    "section": "final_chorus",
+    "tags": [
+     "ahyeon",
+     "babymonster"
+    ],
+    "reason": "peak beat, final_chorus of leval_ahyeon",
+    "display_start": 17.0,
+    "display_end": 25.5
+   },
+   {
+    "type": "video",
+    "asset_id": "leval_ahyeon",
+    "src": "ytdl_cache/leval_ahyeon.mp4",
+    "source_in": 332.5,
+    "source_out": 335.71,
+    "ah_score": 0.6358,
+    "section": "chorus1",
+    "tags": [
+     "ahyeon",
+     "babymonster"
+    ],
+    "reason": "peak beat, chorus1 of leval_ahyeon",
+    "display_start": 25.5,
+    "display_end": 35.38
+   }
+  ],
+  "music_cue": "act2",
+  "dur": 46.166667
+ },
+ {
+  "id": "a2b04",
+  "scene_id": "s12",
+  "kind": "clips",
+  "card": null,
+  "voice": 35.208,
+  "lead": 0.8,
+  "slot": 45.966667,
+  "frames": 1379,
+  "start": 454.6667,
+  "voice_at": 455.4667,
+  "shots": [
+   {
+    "type": "video",
+    "asset_id": "nextmovement",
+    "src": "ytdl_cache/nextmovement.mp4",
+    "source_in": 16.97,
+    "source_out": 25.47,
+    "ah_score": 0.0,
+    "section": "intro",
+    "tags": [
+     "babymonster",
+     "ahyeon",
+     "ygent"
+    ],
+    "reason": "calm beat, intro of nextmovement",
+    "display_start": 0.0,
+    "display_end": 8.5
+   },
+   {
+    "type": "video",
+    "asset_id": "dream",
+    "src": "ytdl_cache/dream.mp4",
+    "source_in": 55.41,
+    "source_out": 59.66,
+    "ah_score": 0.0356,
+    "section": "verse1",
+    "tags": [
+     "babymonster"
+    ],
+    "reason": "calm beat, verse1 of dream",
+    "display_start": 8.5,
+    "display_end": 12.75
+   },
+   {
+    "type": "image",
+    "asset_id": "asset-c5195297c25980f67530",
+    "src": "../../assets/ahyeon/originals/floor-boards--cbab825f.jpg",
+    "entity": "practice_room",
+    "license": "CC BY-NC-SA 2.0",
+    "attribution": "akahawkeyefan \u2014 CC BY-NC-SA 2.0 \u2014 via Openverse",
+    "display_start": 12.75,
+    "display_end": 16.75,
+    "motion": "push_in",
+    "reason": "'practice room' spoken at 13.1s \u2014 show the place"
+   },
+   {
+    "type": "video",
+    "asset_id": "dream",
+    "src": "ytdl_cache/dream.mp4",
+    "source_in": 176.14,
+    "source_out": 179.23,
+    "ah_score": 0.0096,
+    "section": "final_chorus",
+    "tags": [
+     "babymonster"
+    ],
+    "reason": "peak beat, final_chorus of dream",
+    "display_start": 16.75,
+    "display_end": 25.25
+   },
+   {
+    "type": "video",
+    "asset_id": "dream",
+    "src": "ytdl_cache/dream.mp4",
+    "source_in": 119.54,
+    "source_out": 121.54,
+    "ah_score": 0.4306,
+    "section": "chorus2",
+    "tags": [
+     "babymonster"
+    ],
+    "reason": "peak beat, chorus2 of dream",
+    "display_start": 25.25,
+    "display_end": 35.21
+   }
+  ],
+  "music_cue": "act2",
+  "dur": 45.966667
+ },
+ {
+  "id": "a3c",
+  "scene_id": "s13",
+  "kind": "card",
+  "card": {
+   "kind": "chapter",
+   "num": "ACT THREE",
+   "title": "THE WAIT"
+  },
+  "voice": 2.04,
+  "lead": 0.8,
+  "slot": 18.833333,
+  "frames": 565,
+  "start": 500.6333,
+  "voice_at": 501.4333,
+  "shots": [
+   {
+    "type": "video",
+    "asset_id": "likethat",
+    "src": "ytdl_cache/likethat.mp4",
+    "source_in": 94.13,
+    "source_out": 97.05,
+    "reason": "card background loop (blurred)"
+   }
+  ],
+  "music_cue": "act3",
+  "dur": 18.833333
+ },
+ {
+  "id": "a3b01",
+  "scene_id": "s14",
+  "kind": "clips",
+  "card": null,
+  "voice": 30.384,
+  "lead": 0.8,
+  "slot": 40.4,
+  "frames": 1212,
+  "start": 519.4667,
+  "voice_at": 520.2667,
+  "shots": [
+   {
+    "type": "video",
+    "asset_id": "leval1",
+    "src": "ytdl_cache/leval1.mp4",
+    "source_in": 311.58,
+    "source_out": 320.08,
+    "ah_score": 0.5491,
+    "section": "chorus1",
+    "tags": [
+     "babymonster",
+     "ygent"
+    ],
+    "reason": "peak beat, chorus1 of leval1",
+    "display_start": 0.0,
+    "display_end": 8.5
+   },
+   {
+    "type": "video",
+    "asset_id": "leval1",
+    "src": "ytdl_cache/leval1.mp4",
+    "source_in": 1014.47,
+    "source_out": 1022.85,
+    "ah_score": 0.1073,
+    "section": "final_chorus",
+    "tags": [
+     "babymonster",
+     "ygent"
+    ],
+    "reason": "peak beat, final_chorus of leval1",
+    "display_start": 8.5,
+    "display_end": 17.0
+   },
+   {
+    "type": "video",
+    "asset_id": "nextmovement",
+    "src": "ytdl_cache/nextmovement.mp4",
+    "source_in": 127.59,
+    "source_out": 133.3,
+    "ah_score": 0.0,
+    "section": "chorus2",
+    "tags": [
+     "babymonster",
+     "ahyeon",
+     "ygent"
+    ],
+    "reason": "peak beat, chorus2 of nextmovement",
+    "display_start": 17.0,
+    "display_end": 25.5
+   },
+   {
+    "type": "video",
+    "asset_id": "leval1",
+    "src": "ytdl_cache/leval1.mp4",
+    "source_in": 638.43,
+    "source_out": 641.85,
+    "ah_score": 0.6226,
+    "section": "chorus2",
+    "tags": [
+     "babymonster",
+     "ygent"
+    ],
+    "reason": "payoff beat, chorus2 of leval1",
+    "display_start": 25.5,
+    "display_end": 30.38
+   }
+  ],
+  "music_cue": "act3",
+  "dur": 40.4
+ },
+ {
+  "id": "a3b02",
+  "scene_id": "s15",
+  "kind": "clips",
+  "card": null,
+  "voice": 32.856,
+  "lead": 0.8,
+  "slot": 43.233333,
+  "frames": 1297,
+  "start": 559.8667,
+  "voice_at": 560.6667,
+  "shots": [
+   {
+    "type": "video",
+    "asset_id": "batterup",
+    "src": "ytdl_cache/batterup.mp4",
+    "source_in": 70.4,
+    "source_out": 77.19,
+    "ah_score": 0.27,
+    "section": "chorus1",
+    "tags": [
+     "babymonster",
+     "ahyeon"
+    ],
+    "reason": "peak beat, chorus1 of batterup",
+    "display_start": 0.0,
+    "display_end": 8.5
+   },
+   {
+    "type": "video",
+    "asset_id": "batterup",
+    "src": "ytdl_cache/batterup.mp4",
+    "source_in": 180.36,
+    "source_out": 187.82,
+    "ah_score": 0.1178,
+    "section": "final_chorus",
+    "tags": [
+     "babymonster",
+     "ahyeon"
+    ],
+    "reason": "peak beat, final_chorus of batterup",
+    "display_start": 8.5,
+    "display_end": 17.0
+   },
+   {
+    "type": "video",
+    "asset_id": "batterup",
+    "src": "ytdl_cache/batterup.mp4",
+    "source_in": 61.73,
+    "source_out": 68.27,
+    "ah_score": 0.1204,
+    "section": "chorus1",
+    "tags": [
+     "babymonster",
+     "ahyeon"
+    ],
+    "reason": "peak beat, chorus1 of batterup",
+    "display_start": 17.0,
+    "display_end": 25.5
+   },
+   {
+    "type": "video",
+    "asset_id": "batterup",
+    "src": "ytdl_cache/batterup.mp4",
+    "source_in": 127.27,
+    "source_out": 132.94,
+    "ah_score": 0.1097,
+    "section": "chorus2",
+    "tags": [
+     "babymonster",
+     "ahyeon"
+    ],
+    "reason": "payoff beat, chorus2 of batterup",
+    "display_start": 25.5,
+    "display_end": 32.86
+   }
+  ],
+  "music_cue": "act3",
+  "dur": 43.233333
+ },
+ {
+  "id": "a3s",
+  "scene_id": "s16",
+  "kind": "card",
+  "card": {
+   "kind": "stat",
+   "big": "22.59M",
+   "small": "first-24h views \u2014 Batter Up, the most-viewed K-pop debut MV ever, without her"
+  },
+  "voice": 4.776,
+  "lead": 0.8,
+  "slot": 17.566667,
+  "frames": 527,
+  "start": 603.1,
+  "voice_at": 603.9,
+  "shots": [
+   {
+    "type": "video",
+    "asset_id": "shit",
+    "src": "ytdl_cache/shit.mp4",
+    "source_in": 110.11,
+    "source_out": 112.53,
+    "reason": "card background loop (blurred)"
+   }
+  ],
+  "music_cue": "act3",
+  "dur": 17.566667
+ },
+ {
+  "id": "a3b03",
+  "scene_id": "s17",
+  "kind": "clips",
+  "card": null,
+  "voice": 38.304,
+  "lead": 0.8,
+  "slot": 49.533333,
+  "frames": 1486,
+  "start": 620.6667,
+  "voice_at": 621.4667,
+  "shots": [
+   {
+    "type": "video",
+    "asset_id": "sitm",
+    "src": "ytdl_cache/sitm.mp4",
+    "source_in": 164.04,
+    "source_out": 170.59,
+    "ah_score": 0.2421,
+    "section": "chorus2",
+    "tags": [
+     "babymonster"
+    ],
+    "reason": "peak beat, chorus2 of sitm",
+    "display_start": 0.0,
+    "display_end": 8.5
+   },
+   {
+    "type": "video",
+    "asset_id": "sitm",
+    "src": "ytdl_cache/sitm.mp4",
+    "source_in": 248.74,
+    "source_out": 257.24,
+    "ah_score": 0.0,
+    "section": "final_chorus",
+    "tags": [
+     "babymonster"
+    ],
+    "reason": "peak beat, final_chorus of sitm",
+    "display_start": 8.5,
+    "display_end": 17.0
+   },
+   {
+    "type": "video",
+    "asset_id": "sitm",
+    "src": "ytdl_cache/sitm.mp4",
+    "source_in": 232.07,
+    "source_out": 236.7,
+    "ah_score": 0.3776,
+    "section": "final_chorus",
+    "tags": [
+     "babymonster"
+    ],
+    "reason": "peak beat, final_chorus of sitm",
+    "display_start": 17.0,
+    "display_end": 25.5
+   },
+   {
+    "type": "video",
+    "asset_id": "sitm",
+    "src": "ytdl_cache/sitm.mp4",
+    "source_in": 172.51,
+    "source_out": 178.52,
+    "ah_score": 0.1447,
+    "section": "chorus2",
+    "tags": [
+     "babymonster"
+    ],
+    "reason": "peak beat, chorus2 of sitm",
+    "display_start": 25.5,
+    "display_end": 34.0
+   },
+   {
+    "type": "video",
+    "asset_id": "sitm",
+    "src": "ytdl_cache/sitm.mp4",
+    "source_in": 161.92,
+    "source_out": 164.05,
+    "ah_score": 0.1959,
+    "section": "chorus2",
+    "tags": [
+     "babymonster"
+    ],
+    "reason": "payoff beat, chorus2 of sitm",
+    "display_start": 34.0,
+    "display_end": 38.3
+   }
+  ],
+  "music_cue": "act3",
+  "dur": 49.533333
+ },
+ {
+  "id": "a3b04",
+  "scene_id": "s18",
+  "kind": "clips",
+  "card": null,
+  "voice": 37.392,
+  "lead": 0.8,
+  "slot": 48.466667,
+  "frames": 1454,
+  "start": 670.2,
+  "voice_at": 671.0,
+  "shots": [
+   {
+    "type": "video",
+    "asset_id": "leval_ahyeon",
+    "src": "ytdl_cache/leval_ahyeon.mp4",
+    "source_in": 447.7,
+    "source_out": 453.54,
+    "ah_score": 0.1561,
+    "section": "chorus1",
+    "tags": [
+     "ahyeon",
+     "babymonster"
+    ],
+    "reason": "peak beat, chorus1 of leval_ahyeon",
+    "display_start": 0.0,
+    "display_end": 8.5
+   },
+   {
+    "type": "video",
+    "asset_id": "leval_ahyeon",
+    "src": "ytdl_cache/leval_ahyeon.mp4",
+    "source_in": 724.53,
+    "source_out": 733.03,
+    "ah_score": 0.0346,
+    "section": "chorus2",
+    "tags": [
+     "ahyeon",
+     "babymonster"
+    ],
+    "reason": "peak beat, chorus2 of leval_ahyeon",
+    "display_start": 8.5,
+    "display_end": 17.0
+   },
+   {
+    "type": "video",
+    "asset_id": "leval_ahyeon",
+    "src": "ytdl_cache/leval_ahyeon.mp4",
+    "source_in": 952.08,
+    "source_out": 958.59,
+    "ah_score": 0.0,
+    "section": "final_chorus",
+    "tags": [
+     "ahyeon",
+     "babymonster"
+    ],
+    "reason": "peak beat, final_chorus of leval_ahyeon",
+    "display_start": 17.0,
+    "display_end": 25.5
+   },
+   {
+    "type": "video",
+    "asset_id": "leval_ahyeon",
+    "src": "ytdl_cache/leval_ahyeon.mp4",
+    "source_in": 697.92,
+    "source_out": 706.42,
+    "ah_score": 0.0,
+    "section": "chorus2",
+    "tags": [
+     "ahyeon",
+     "babymonster"
+    ],
+    "reason": "peak beat, chorus2 of leval_ahyeon",
+    "display_start": 25.5,
+    "display_end": 34.0
+   },
+   {
+    "type": "video",
+    "asset_id": "nextmovement",
+    "src": "ytdl_cache/nextmovement.mp4",
+    "source_in": 118.03,
+    "source_out": 121.42,
+    "ah_score": 0.0,
+    "section": "chorus2",
+    "tags": [
+     "babymonster",
+     "ahyeon",
+     "ygent"
+    ],
+    "reason": "payoff beat, chorus2 of nextmovement",
+    "display_start": 34.0,
+    "display_end": 37.39
+   }
+  ],
+  "music_cue": "act3",
+  "dur": 48.466667
+ },
+ {
+  "id": "a3x",
+  "scene_id": "s19",
+  "kind": "interlude",
+  "card": null,
+  "voice": 0.0,
+  "lead": 0.8,
+  "slot": 12.133333,
+  "frames": 364,
+  "start": 718.6667,
+  "voice_at": 718.6667,
+  "shots": [
+   {
+    "type": "video",
+    "asset_id": "sheesh",
+    "src": "ytdl_cache/sheesh.mp4",
+    "source_in": 60.08,
+    "source_out": 68.64,
+    "ah_score": 0.5009,
+    "section": "chorus1",
+    "tags": [
+     "babymonster",
+     "ahyeon"
+    ],
+    "reason": "peak beat, chorus1 of sheesh",
+    "display_start": 0.0,
+    "display_end": 9.2
+   }
+  ],
+  "music_cue": "act3",
+  "dur": 12.133333
+ },
+ {
+  "id": "a4c",
+  "scene_id": "s20",
+  "kind": "card",
+  "card": {
+   "kind": "chapter",
+   "num": "ACT FOUR",
+   "title": "WORTH THE WAIT"
+  },
+  "voice": 2.208,
+  "lead": 0.8,
+  "slot": 19.0,
+  "frames": 570,
+  "start": 730.8,
+  "voice_at": 731.6,
+  "shots": [
+   {
+    "type": "video",
+    "asset_id": "choom_stage",
+    "src": "ytdl_cache/choom_stage.mp4",
+    "source_in": 138.35,
+    "source_out": 139.92,
+    "reason": "card background loop (blurred)"
+   }
+  ],
+  "music_cue": "act4",
+  "dur": 19.0
+ },
+ {
+  "id": "a4b01",
+  "scene_id": "s21",
+  "kind": "clips",
+  "card": null,
+  "voice": 35.184,
+  "lead": 0.8,
+  "slot": 45.933333,
+  "frames": 1378,
+  "start": 749.8,
+  "voice_at": 750.6,
+  "shots": [
+   {
+    "type": "video",
+    "asset_id": "sheesh",
+    "src": "ytdl_cache/sheesh.mp4",
+    "source_in": 98.6,
+    "source_out": 104.08,
+    "ah_score": 0.1923,
+    "section": "verse2",
+    "tags": [
+     "babymonster",
+     "ahyeon"
+    ],
+    "reason": "calm beat, verse2 of sheesh",
+    "display_start": 0.0,
+    "display_end": 8.5
+   },
+   {
+    "type": "video",
+    "asset_id": "sheesh",
+    "src": "ytdl_cache/sheesh.mp4",
+    "source_in": 8.3,
+    "source_out": 10.88,
+    "ah_score": 0.1602,
+    "section": "intro",
+    "tags": [
+     "babymonster",
+     "ahyeon"
+    ],
+    "reason": "calm beat, intro of sheesh",
+    "display_start": 8.5,
+    "display_end": 11.08
+   },
+   {
+    "type": "image",
+    "asset_id": "asset-184714b29c22a75f8aba",
+    "src": "../../assets/ahyeon/originals/seoul-at-night--4b2574dd.jpg",
+    "entity": "korea_context",
+    "license": "CC BY-NC-SA 2.0",
+    "attribution": "civ33 \u2014 CC BY-NC-SA 2.0 \u2014 via Openverse",
+    "display_start": 11.08,
+    "display_end": 15.08,
+    "motion": "push_in",
+    "reason": "'South Korea' spoken at 11.4s \u2014 show the place"
+   },
+   {
+    "type": "video",
+    "asset_id": "sheesh",
+    "src": "ytdl_cache/sheesh.mp4",
+    "source_in": 68.64,
+    "source_out": 76.2,
+    "ah_score": 0.344,
+    "section": "chorus1",
+    "tags": [
+     "babymonster",
+     "ahyeon"
+    ],
+    "reason": "peak beat, chorus1 of sheesh",
+    "display_start": 15.08,
+    "display_end": 23.58
+   },
+   {
+    "type": "video",
+    "asset_id": "sheesh",
+    "src": "ytdl_cache/sheesh.mp4",
+    "source_in": 175.96,
+    "source_out": 184.46,
+    "ah_score": 0.0,
+    "section": "final_chorus",
+    "tags": [
+     "babymonster",
+     "ahyeon"
+    ],
+    "reason": "peak beat, final_chorus of sheesh",
+    "display_start": 23.58,
+    "display_end": 32.08
+   },
+   {
+    "type": "video",
+    "asset_id": "sheesh",
+    "src": "ytdl_cache/sheesh.mp4",
+    "source_in": 116.08,
+    "source_out": 119.08,
+    "ah_score": 0.1533,
+    "section": "chorus2",
+    "tags": [
+     "babymonster",
+     "ahyeon"
+    ],
+    "reason": "payoff beat, chorus2 of sheesh",
+    "display_start": 32.08,
+    "display_end": 35.18
+   }
+  ],
+  "music_cue": "act4",
+  "dur": 45.933333
+ },
+ {
+  "id": "a4b02",
+  "scene_id": "s22",
+  "kind": "clips",
+  "card": null,
+  "voice": 29.328,
+  "lead": 0.8,
+  "slot": 39.166667,
+  "frames": 1175,
+  "start": 795.7333,
+  "voice_at": 796.5333,
+  "shots": [
+   {
+    "type": "video",
+    "asset_id": "likethat",
+    "src": "ytdl_cache/likethat.mp4",
+    "source_in": 93.63,
+    "source_out": 97.05,
+    "ah_score": 0.7039,
+    "section": "verse2",
+    "tags": [
+     "ahyeon",
+     "babymonster"
+    ],
+    "reason": "calm beat, verse2 of likethat",
+    "display_start": 0.0,
+    "display_end": 8.31
+   },
+   {
+    "type": "image",
+    "asset_id": "asset-c5195297c25980f67530",
+    "src": "../../assets/ahyeon/originals/floor-boards--cbab825f.jpg",
+    "entity": "practice_room",
+    "license": "CC BY-NC-SA 2.0",
+    "attribution": "akahawkeyefan \u2014 CC BY-NC-SA 2.0 \u2014 via Openverse",
+    "display_start": 8.31,
+    "display_end": 12.31,
+    "motion": "pull_out",
+    "reason": "'practice room' spoken at 8.6s \u2014 show the place"
+   },
+   {
+    "type": "video",
+    "asset_id": "sheesh",
+    "src": "ytdl_cache/sheesh.mp4",
+    "source_in": 77.86,
+    "source_out": 86.36,
+    "ah_score": 0.0,
+    "section": "chorus1",
+    "tags": [
+     "babymonster",
+     "ahyeon"
+    ],
+    "reason": "peak beat, chorus1 of sheesh",
+    "display_start": 12.31,
+    "display_end": 20.81
+   },
+   {
+    "type": "video",
+    "asset_id": "sheesh",
+    "src": "ytdl_cache/sheesh.mp4",
+    "source_in": 160.08,
+    "source_out": 168.6,
+    "ah_score": 0.0,
+    "section": "final_chorus",
+    "tags": [
+     "babymonster",
+     "ahyeon"
+    ],
+    "reason": "peak beat, final_chorus of sheesh",
+    "display_start": 20.81,
+    "display_end": 29.33
+   }
+  ],
+  "music_cue": "act4",
+  "dur": 39.166667
+ },
+ {
+  "id": "a4b03",
+  "scene_id": "s23",
+  "kind": "clips",
+  "card": null,
+  "voice": 36.168,
+  "lead": 0.8,
+  "slot": 47.066667,
+  "frames": 1412,
+  "start": 834.9,
+  "voice_at": 835.7,
+  "shots": [
+   {
+    "type": "video",
+    "asset_id": "interview",
+    "src": "ytdl_cache/interview.mp4",
+    "source_in": 140.05,
+    "source_out": 148.55,
+    "ah_score": 0.523,
+    "section": "chorus1",
+    "tags": [
+     "ahyeon",
+     "babymonster"
+    ],
+    "reason": "peak beat, chorus1 of interview",
+    "display_start": 0.0,
+    "display_end": 8.5
+   },
+   {
+    "type": "video",
+    "asset_id": "sheesh_stage",
+    "src": "ytdl_cache/sheesh_stage.mp4",
+    "source_in": 124.26,
+    "source_out": 127.66,
+    "ah_score": 0.5237,
+    "section": "chorus2",
+    "tags": [
+     "babymonster",
+     "ahyeon"
+    ],
+    "reason": "peak beat, chorus2 of sheesh_stage",
+    "display_start": 8.5,
+    "display_end": 17.0
+   },
+   {
+    "type": "video",
+    "asset_id": "sheesh_stage",
+    "src": "ytdl_cache/sheesh_stage.mp4",
+    "source_in": 172.91,
+    "source_out": 181.41,
+    "ah_score": 0.0,
+    "section": "final_chorus",
+    "tags": [
+     "babymonster",
+     "ahyeon"
+    ],
+    "reason": "peak beat, final_chorus of sheesh_stage",
+    "display_start": 17.0,
+    "display_end": 25.5
+   },
+   {
+    "type": "video",
+    "asset_id": "interview",
+    "src": "ytdl_cache/interview.mp4",
+    "source_in": 89.17,
+    "source_out": 99.84,
+    "ah_score": 0.6749,
+    "section": "verse1",
+    "tags": [
+     "ahyeon",
+     "babymonster"
+    ],
+    "reason": "peak beat, verse1 of interview",
+    "display_start": 25.5,
+    "display_end": 36.17
+   }
+  ],
+  "music_cue": "act4",
+  "dur": 47.066667
+ },
+ {
+  "id": "a4b04",
+  "scene_id": "s24",
+  "kind": "clips",
+  "card": null,
+  "voice": 36.888,
+  "lead": 0.8,
+  "slot": 47.9,
+  "frames": 1437,
+  "start": 881.9667,
+  "voice_at": 882.7667,
+  "shots": [
+   {
+    "type": "video",
+    "asset_id": "batterup_stage",
+    "src": "ytdl_cache/batterup_stage.mp4",
+    "source_in": 162.54,
+    "source_out": 171.04,
+    "ah_score": 0.0953,
+    "section": "final_chorus",
+    "tags": [
+     "babymonster",
+     "ahyeon"
+    ],
+    "reason": "peak beat, final_chorus of batterup_stage",
+    "display_start": 0.0,
+    "display_end": 8.5
+   },
+   {
+    "type": "video",
+    "asset_id": "batterup_stage",
+    "src": "ytdl_cache/batterup_stage.mp4",
+    "source_in": 186.9,
+    "source_out": 195.4,
+    "ah_score": 0.0,
+    "section": "final_chorus",
+    "tags": [
+     "babymonster",
+     "ahyeon"
+    ],
+    "reason": "peak beat, final_chorus of batterup_stage",
+    "display_start": 8.5,
+    "display_end": 17.0
+   },
+   {
+    "type": "video",
+    "asset_id": "sheesh_stage",
+    "src": "ytdl_cache/sheesh_stage.mp4",
+    "source_in": 82.88,
+    "source_out": 84.88,
+    "ah_score": 0.2079,
+    "section": "chorus1",
+    "tags": [
+     "babymonster",
+     "ahyeon"
+    ],
+    "reason": "peak beat, chorus1 of sheesh_stage",
+    "display_start": 17.0,
+    "display_end": 25.5
+   },
+   {
+    "type": "video",
+    "asset_id": "batterup_stage",
+    "src": "ytdl_cache/batterup_stage.mp4",
+    "source_in": 177.47,
+    "source_out": 185.97,
+    "ah_score": 0.0635,
+    "section": "final_chorus",
+    "tags": [
+     "babymonster",
+     "ahyeon"
+    ],
+    "reason": "peak beat, final_chorus of batterup_stage",
+    "display_start": 25.5,
+    "display_end": 34.0
+   },
+   {
+    "type": "video",
+    "asset_id": "batterup_stage",
+    "src": "ytdl_cache/batterup_stage.mp4",
+    "source_in": 132.82,
+    "source_out": 135.71,
+    "ah_score": 0.2792,
+    "section": "chorus2",
+    "tags": [
+     "babymonster",
+     "ahyeon"
+    ],
+    "reason": "payoff beat, chorus2 of batterup_stage",
+    "display_start": 34.0,
+    "display_end": 36.89
+   }
+  ],
+  "music_cue": "act4",
+  "dur": 47.9
+ },
+ {
+  "id": "a5c",
+  "scene_id": "s25",
+  "kind": "card",
+  "card": {
+   "kind": "chapter",
+   "num": "ACT FIVE",
+   "title": "MONSTER ERA"
+  },
+  "voice": 2.448,
+  "lead": 0.8,
+  "slot": 19.233333,
+  "frames": 577,
+  "start": 929.8667,
+  "voice_at": 930.6667,
+  "shots": [
+   {
+    "type": "video",
+    "asset_id": "leval_ahyeon",
+    "src": "ytdl_cache/leval_ahyeon.mp4",
+    "source_in": 302.97,
+    "source_out": 305.76,
+    "reason": "card background loop (blurred)"
+   }
+  ],
+  "music_cue": "act5",
+  "dur": 19.233333
+ },
+ {
+  "id": "a5b01",
+  "scene_id": "s26",
+  "kind": "clips",
+  "card": null,
+  "voice": 33.84,
+  "lead": 0.8,
+  "slot": 44.366667,
+  "frames": 1331,
+  "start": 949.1,
+  "voice_at": 949.9,
+  "shots": [
+   {
+    "type": "video",
+    "asset_id": "drip",
+    "src": "ytdl_cache/drip.mp4",
+    "source_in": 172.88,
+    "source_out": 175.67,
+    "ah_score": 0.6694,
+    "section": "final_chorus",
+    "tags": [
+     "babymonster",
+     "ahyeon"
+    ],
+    "reason": "peak beat, final_chorus of drip",
+    "display_start": 0.0,
+    "display_end": 8.5
+   },
+   {
+    "type": "video",
+    "asset_id": "forever",
+    "src": "ytdl_cache/forever.mp4",
+    "source_in": 149.53,
+    "source_out": 155.24,
+    "ah_score": 0.5436,
+    "section": "chorus2",
+    "tags": [
+     "babymonster",
+     "ahyeon"
+    ],
+    "reason": "peak beat, chorus2 of forever",
+    "display_start": 8.5,
+    "display_end": 17.0
+   },
+   {
+    "type": "video",
+    "asset_id": "drip",
+    "src": "ytdl_cache/drip.mp4",
+    "source_in": 113.22,
+    "source_out": 121.72,
+    "ah_score": 0.3556,
+    "section": "chorus2",
+    "tags": [
+     "babymonster",
+     "ahyeon"
+    ],
+    "reason": "peak beat, chorus2 of drip",
+    "display_start": 17.0,
+    "display_end": 25.5
+   },
+   {
+    "type": "video",
+    "asset_id": "forever",
+    "src": "ytdl_cache/forever.mp4",
+    "source_in": 225.52,
+    "source_out": 233.03,
+    "ah_score": 0.0,
+    "section": "final_chorus",
+    "tags": [
+     "babymonster",
+     "ahyeon"
+    ],
+    "reason": "payoff beat, final_chorus of forever",
+    "display_start": 25.5,
+    "display_end": 33.84
+   }
+  ],
+  "music_cue": "act5",
+  "dur": 44.366667
+ },
+ {
+  "id": "a5b02",
+  "scene_id": "s27",
+  "kind": "clips",
+  "card": null,
+  "voice": 35.16,
+  "lead": 0.8,
+  "slot": 45.9,
+  "frames": 1377,
+  "start": 993.4667,
+  "voice_at": 994.2667,
+  "shots": [
+   {
+    "type": "video",
+    "asset_id": "kspo",
+    "src": "ytdl_cache/kspo.mp4",
+    "source_in": 228.1,
+    "source_out": 234.98,
+    "ah_score": 0.5712,
+    "section": "verse1",
+    "tags": [
+     "babymonster",
+     "ahyeon"
+    ],
+    "reason": "calm beat, verse1 of kspo",
+    "display_start": 0.0,
+    "display_end": 8.5
+   },
+   {
+    "type": "video",
+    "asset_id": "kspo",
+    "src": "ytdl_cache/kspo.mp4",
+    "source_in": 559.39,
+    "source_out": 562.07,
+    "ah_score": 0.5137,
+    "section": "verse2",
+    "tags": [
+     "babymonster",
+     "ahyeon"
+    ],
+    "reason": "calm beat, verse2 of kspo",
+    "display_start": 8.5,
+    "display_end": 11.18
+   },
+   {
+    "type": "image",
+    "asset_id": "asset-2a52fe6906686028ef8a",
+    "src": "../../assets/ahyeon/originals/seoul-s-bridge-on-the-han-river--56c3516b.jpg",
+    "entity": "seoul",
+    "license": "CC BY 2.0",
+    "attribution": "baagii2012 \u2014 CC BY 2.0 \u2014 via Openverse",
+    "display_start": 11.18,
+    "display_end": 15.18,
+    "motion": "push_in",
+    "reason": "'Seoul' spoken at 11.5s \u2014 show the place"
+   },
+   {
+    "type": "video",
+    "asset_id": "kspo",
+    "src": "ytdl_cache/kspo.mp4",
+    "source_in": 682.01,
+    "source_out": 689.06,
+    "ah_score": 0.5192,
+    "section": "chorus2",
+    "tags": [
+     "babymonster",
+     "ahyeon"
+    ],
+    "reason": "peak beat, chorus2 of kspo",
+    "display_start": 15.18,
+    "display_end": 23.68
+   },
+   {
+    "type": "video",
+    "asset_id": "kspo",
+    "src": "ytdl_cache/kspo.mp4",
+    "source_in": 664.93,
+    "source_out": 673.43,
+    "ah_score": 0.4704,
+    "section": "chorus2",
+    "tags": [
+     "babymonster",
+     "ahyeon"
+    ],
+    "reason": "peak beat, chorus2 of kspo",
+    "display_start": 23.68,
+    "display_end": 32.18
+   },
+   {
+    "type": "video",
+    "asset_id": "kspo",
+    "src": "ytdl_cache/kspo.mp4",
+    "source_in": 719.84,
+    "source_out": 722.59,
+    "ah_score": 0.6318,
+    "section": "chorus2",
+    "tags": [
+     "babymonster",
+     "ahyeon"
+    ],
+    "reason": "payoff beat, chorus2 of kspo",
+    "display_start": 32.18,
+    "display_end": 35.16
+   }
+  ],
+  "music_cue": "act5",
+  "dur": 45.9
+ },
+ {
+  "id": "a5b03",
+  "scene_id": "s28",
+  "kind": "clips",
+  "card": null,
+  "voice": 37.344,
+  "lead": 0.8,
+  "slot": 48.433333,
+  "frames": 1453,
+  "start": 1039.3667,
+  "voice_at": 1040.1667,
+  "shots": [
+   {
+    "type": "video",
+    "asset_id": "mama_golden",
+    "src": "ytdl_cache/mama_golden.mp4",
+    "source_in": 220.27,
+    "source_out": 225.14,
+    "ah_score": 0.4792,
+    "section": "final_chorus",
+    "tags": [
+     "ahyeon",
+     "babymonster"
+    ],
+    "reason": "peak beat, final_chorus of mama_golden",
+    "display_start": 0.0,
+    "display_end": 8.5
+   },
+   {
+    "type": "video",
+    "asset_id": "mama_golden",
+    "src": "ytdl_cache/mama_golden.mp4",
+    "source_in": 153.8,
+    "source_out": 158.8,
+    "ah_score": 0.3532,
+    "section": "chorus2",
+    "tags": [
+     "ahyeon",
+     "babymonster"
+    ],
+    "reason": "peak beat, chorus2 of mama_golden",
+    "display_start": 8.5,
+    "display_end": 17.0
+   },
+   {
+    "type": "video",
+    "asset_id": "mama_golden",
+    "src": "ytdl_cache/mama_golden.mp4",
+    "source_in": 172.65,
+    "source_out": 179.42,
+    "ah_score": 0.0849,
+    "section": "chorus2",
+    "tags": [
+     "ahyeon",
+     "babymonster"
+    ],
+    "reason": "peak beat, chorus2 of mama_golden",
+    "display_start": 17.0,
+    "display_end": 25.5
+   },
+   {
+    "type": "video",
+    "asset_id": "mama_golden",
+    "src": "ytdl_cache/mama_golden.mp4",
+    "source_in": 81.76,
+    "source_out": 88.53,
+    "ah_score": 0.1598,
+    "section": "chorus1",
+    "tags": [
+     "ahyeon",
+     "babymonster"
+    ],
+    "reason": "peak beat, chorus1 of mama_golden",
+    "display_start": 25.5,
+    "display_end": 34.0
+   },
+   {
+    "type": "video",
+    "asset_id": "mama_golden",
+    "src": "ytdl_cache/mama_golden.mp4",
+    "source_in": 165.31,
+    "source_out": 168.65,
+    "ah_score": 0.1253,
+    "section": "chorus2",
+    "tags": [
+     "ahyeon",
+     "babymonster"
+    ],
+    "reason": "payoff beat, chorus2 of mama_golden",
+    "display_start": 34.0,
+    "display_end": 37.34
+   }
+  ],
+  "music_cue": "act5",
+  "dur": 48.433333
+ },
+ {
+  "id": "a5s",
+  "scene_id": "s29",
+  "kind": "card",
+  "card": {
+   "kind": "stat",
+   "big": "6.68M",
+   "small": "views \u2014 the most-watched 2025 MAMA stage (KPop Demon Hunters medley)"
+  },
+  "voice": 5.328,
+  "lead": 0.8,
+  "slot": 18.133333,
+  "frames": 544,
+  "start": 1087.8,
+  "voice_at": 1088.6,
+  "shots": [
+   {
+    "type": "video",
+    "asset_id": "choom_stage",
+    "src": "ytdl_cache/choom_stage.mp4",
+    "source_in": 138.35,
+    "source_out": 139.92,
+    "reason": "card background loop (blurred)"
+   }
+  ],
+  "music_cue": "act5",
+  "dur": 18.133333
+ },
+ {
+  "id": "a5b04",
+  "scene_id": "s30",
+  "kind": "clips",
+  "card": null,
+  "voice": 28.248,
+  "lead": 0.8,
+  "slot": 37.933333,
+  "frames": 1138,
+  "start": 1105.9333,
+  "voice_at": 1106.7333,
+  "shots": [
+   {
+    "type": "video",
+    "asset_id": "kspo",
+    "src": "ytdl_cache/kspo.mp4",
+    "source_in": 727.94,
+    "source_out": 731.03,
+    "ah_score": 0.6229,
+    "section": "chorus2",
+    "tags": [
+     "babymonster",
+     "ahyeon"
+    ],
+    "reason": "peak beat, chorus2 of kspo",
+    "display_start": 0.0,
+    "display_end": 8.5
+   },
+   {
+    "type": "video",
+    "asset_id": "drip",
+    "src": "ytdl_cache/drip.mp4",
+    "source_in": 168.67,
+    "source_out": 172.88,
+    "ah_score": 0.4601,
+    "section": "final_chorus",
+    "tags": [
+     "babymonster",
+     "ahyeon"
+    ],
+    "reason": "peak beat, final_chorus of drip",
+    "display_start": 8.5,
+    "display_end": 17.0
+   },
+   {
+    "type": "video",
+    "asset_id": "kspo",
+    "src": "ytdl_cache/kspo.mp4",
+    "source_in": 1089.14,
+    "source_out": 1097.64,
+    "ah_score": 0.3436,
+    "section": "final_chorus",
+    "tags": [
+     "babymonster",
+     "ahyeon"
+    ],
+    "reason": "peak beat, final_chorus of kspo",
+    "display_start": 17.0,
+    "display_end": 25.5
+   },
+   {
+    "type": "video",
+    "asset_id": "kspo",
+    "src": "ytdl_cache/kspo.mp4",
+    "source_in": 744.15,
+    "source_out": 746.9,
+    "ah_score": 0.5486,
+    "section": "chorus2",
+    "tags": [
+     "babymonster",
+     "ahyeon"
+    ],
+    "reason": "payoff beat, chorus2 of kspo",
+    "display_start": 25.5,
+    "display_end": 28.25
+   }
+  ],
+  "music_cue": "act5",
+  "dur": 37.933333
+ },
+ {
+  "id": "a6c",
+  "scene_id": "s31",
+  "kind": "card",
+  "card": {
+   "kind": "chapter",
+   "num": "ACT SIX",
+   "title": "IT GIRL"
+  },
+  "voice": 2.52,
+  "lead": 0.8,
+  "slot": 19.333333,
+  "frames": 580,
+  "start": 1143.8667,
+  "voice_at": 1144.6667,
+  "shots": [
+   {
+    "type": "video",
+    "asset_id": "leval_ahyeon",
+    "src": "ytdl_cache/leval_ahyeon.mp4",
+    "source_in": 290.29,
+    "source_out": 294.75,
+    "reason": "card background loop (blurred)"
+   }
+  ],
+  "music_cue": "act6",
+  "dur": 19.333333
+ },
+ {
+  "id": "a6b01",
+  "scene_id": "s32",
+  "kind": "clips",
+  "card": null,
+  "voice": 31.032,
+  "lead": 0.8,
+  "slot": 41.133333,
+  "frames": 1234,
+  "start": 1163.2,
+  "voice_at": 1164.0,
+  "shots": [
+   {
+    "type": "video",
+    "asset_id": "choom",
+    "src": "ytdl_cache/choom.mp4",
+    "source_in": 43.79,
+    "source_out": 47.54,
+    "ah_score": 0.5864,
+    "section": "verse1",
+    "tags": [
+     "babymonster",
+     "ahyeon"
+    ],
+    "reason": "calm beat, verse1 of choom",
+    "display_start": 0.0,
+    "display_end": 8.5
+   },
+   {
+    "type": "video",
+    "asset_id": "moon",
+    "src": "ytdl_cache/moon.mp4",
+    "source_in": 90.44,
+    "source_out": 98.94,
+    "ah_score": 0.1169,
+    "section": "verse2",
+    "tags": [
+     "babymonster",
+     "ahyeon"
+    ],
+    "reason": "calm beat, verse2 of moon",
+    "display_start": 8.5,
+    "display_end": 17.0
+   },
+   {
+    "type": "video",
+    "asset_id": "choom",
+    "src": "ytdl_cache/choom.mp4",
+    "source_in": 97.51,
+    "source_out": 105.04,
+    "ah_score": 0.1889,
+    "section": "verse2",
+    "tags": [
+     "babymonster",
+     "ahyeon"
+    ],
+    "reason": "build beat, verse2 of choom",
+    "display_start": 17.0,
+    "display_end": 24.53
+   },
+   {
+    "type": "image",
+    "asset_id": "asset-116f9b81ceeacfd78358",
+    "src": "../../assets/ahyeon/originals/seoul-by-night-south-korea--6121d003.jpg",
+    "entity": "korea_context",
+    "license": "CC BY 2.0",
+    "attribution": "Emmanuel Dyan \u2014 CC BY 2.0 \u2014 via Openverse",
+    "display_start": 24.53,
+    "display_end": 28.53,
+    "motion": "pull_out",
+    "reason": "'South Korea' spoken at 24.8s \u2014 show the place"
+   },
+   {
+    "type": "video",
+    "asset_id": "moon",
+    "src": "ytdl_cache/moon.mp4",
+    "source_in": 156.17,
+    "source_out": 158.67,
+    "ah_score": 0.553,
+    "section": "final_chorus",
+    "tags": [
+     "babymonster",
+     "ahyeon"
+    ],
+    "reason": "payoff beat, final_chorus of moon",
+    "display_start": 28.53,
+    "display_end": 31.03
+   }
+  ],
+  "music_cue": "act6",
+  "dur": 41.133333
+ },
+ {
+  "id": "a6b02",
+  "scene_id": "s33",
+  "kind": "clips",
+  "card": null,
+  "voice": 30.6,
+  "lead": 0.8,
+  "slot": 40.633333,
+  "frames": 1219,
+  "start": 1204.3333,
+  "voice_at": 1205.1333,
+  "shots": [
+   {
+    "type": "video",
+    "asset_id": "choom",
+    "src": "ytdl_cache/choom.mp4",
+    "source_in": 29.56,
+    "source_out": 36.4,
+    "ah_score": 0.1984,
+    "section": "verse1",
+    "tags": [
+     "babymonster",
+     "ahyeon"
+    ],
+    "reason": "calm beat, verse1 of choom",
+    "display_start": 0.0,
+    "display_end": 6.84
+   },
+   {
+    "type": "image",
+    "asset_id": "asset-6bce0a96fcfc4145b3a7",
+    "src": "../../assets/ahyeon/originals/seoul-by-night--e4214edf.jpg",
+    "entity": "korea_context",
+    "license": "CC BY-SA 2.0",
+    "attribution": "doegox \u2014 CC BY-SA 2.0 \u2014 via Openverse",
+    "display_start": 6.84,
+    "display_end": 10.84,
+    "motion": "pull_out",
+    "reason": "'South Korea' spoken at 7.1s \u2014 show the place"
+   },
+   {
+    "type": "video",
+    "asset_id": "choom",
+    "src": "ytdl_cache/choom.mp4",
+    "source_in": 174.0,
+    "source_out": 178.67,
+    "ah_score": 0.5467,
+    "section": "final_chorus",
+    "tags": [
+     "babymonster",
+     "ahyeon"
+    ],
+    "reason": "peak beat, final_chorus of choom",
+    "display_start": 10.84,
+    "display_end": 19.34
+   },
+   {
+    "type": "video",
+    "asset_id": "choom",
+    "src": "ytdl_cache/choom.mp4",
+    "source_in": 178.67,
+    "source_out": 186.76,
+    "ah_score": 0.304,
+    "section": "final_chorus",
+    "tags": [
+     "babymonster",
+     "ahyeon"
+    ],
+    "reason": "peak beat, final_chorus of choom",
+    "display_start": 19.34,
+    "display_end": 27.84
+   },
+   {
+    "type": "video",
+    "asset_id": "choom",
+    "src": "ytdl_cache/choom.mp4",
+    "source_in": 140.03,
+    "source_out": 142.79,
+    "ah_score": 0.1585,
+    "section": "chorus2",
+    "tags": [
+     "babymonster",
+     "ahyeon"
+    ],
+    "reason": "payoff beat, chorus2 of choom",
+    "display_start": 27.84,
+    "display_end": 30.6
+   }
+  ],
+  "music_cue": "act6",
+  "dur": 40.633333
+ },
+ {
+  "id": "a6b03",
+  "scene_id": "s34",
+  "kind": "clips",
+  "card": null,
+  "voice": 31.44,
+  "lead": 0.8,
+  "slot": 41.6,
+  "frames": 1248,
+  "start": 1244.9667,
+  "voice_at": 1245.7667,
+  "shots": [
+   {
+    "type": "video",
+    "asset_id": "choom_stage",
+    "src": "ytdl_cache/choom_stage.mp4",
+    "source_in": 235.35,
+    "source_out": 242.49,
+    "ah_score": 0.6442,
+    "section": "final_chorus",
+    "tags": [
+     "ahyeon",
+     "babymonster"
+    ],
+    "reason": "peak beat, final_chorus of choom_stage",
+    "display_start": 0.0,
+    "display_end": 8.5
+   },
+   {
+    "type": "video",
+    "asset_id": "choom_stage",
+    "src": "ytdl_cache/choom_stage.mp4",
+    "source_in": 164.91,
+    "source_out": 166.91,
+    "ah_score": 0.6221,
+    "section": "chorus2",
+    "tags": [
+     "ahyeon",
+     "babymonster"
+    ],
+    "reason": "peak beat, chorus2 of choom_stage",
+    "display_start": 8.5,
+    "display_end": 17.0
+   },
+   {
+    "type": "video",
+    "asset_id": "choom",
+    "src": "ytdl_cache/choom.mp4",
+    "source_in": 192.41,
+    "source_out": 200.91,
+    "ah_score": 0.2284,
+    "section": "final_chorus",
+    "tags": [
+     "babymonster",
+     "ahyeon"
+    ],
+    "reason": "peak beat, final_chorus of choom",
+    "display_start": 17.0,
+    "display_end": 25.5
+   },
+   {
+    "type": "video",
+    "asset_id": "choom_stage",
+    "src": "ytdl_cache/choom_stage.mp4",
+    "source_in": 242.49,
+    "source_out": 247.16,
+    "ah_score": 0.1636,
+    "section": "final_chorus",
+    "tags": [
+     "ahyeon",
+     "babymonster"
+    ],
+    "reason": "payoff beat, final_chorus of choom_stage",
+    "display_start": 25.5,
+    "display_end": 31.44
+   }
+  ],
+  "music_cue": "act6",
+  "dur": 41.6
+ },
+ {
+  "id": "a6b04",
+  "scene_id": "s35",
+  "kind": "clips",
+  "card": null,
+  "voice": 34.344,
+  "lead": 0.8,
+  "slot": 44.966667,
+  "frames": 1349,
+  "start": 1286.5667,
+  "voice_at": 1287.3667,
+  "shots": [
+   {
+    "type": "video",
+    "asset_id": "shit",
+    "src": "ytdl_cache/shit.mp4",
+    "source_in": 54.26,
+    "source_out": 60.81,
+    "ah_score": 0.4707,
+    "section": "chorus1",
+    "tags": [
+     "babymonster",
+     "ahyeon"
+    ],
+    "reason": "peak beat, chorus1 of shit",
+    "display_start": 0.0,
+    "display_end": 8.5
+   },
+   {
+    "type": "video",
+    "asset_id": "shit",
+    "src": "ytdl_cache/shit.mp4",
+    "source_in": 109.61,
+    "source_out": 112.53,
+    "ah_score": 0.7624,
+    "section": "chorus2",
+    "tags": [
+     "babymonster",
+     "ahyeon"
+    ],
+    "reason": "peak beat, chorus2 of shit",
+    "display_start": 8.5,
+    "display_end": 17.0
+   },
+   {
+    "type": "video",
+    "asset_id": "shit",
+    "src": "ytdl_cache/shit.mp4",
+    "source_in": 171.88,
+    "source_out": 177.51,
+    "ah_score": 0.5505,
+    "section": "final_chorus",
+    "tags": [
+     "babymonster",
+     "ahyeon"
+    ],
+    "reason": "peak beat, final_chorus of shit",
+    "display_start": 17.0,
+    "display_end": 25.5
+   },
+   {
+    "type": "video",
+    "asset_id": "shit",
+    "src": "ytdl_cache/shit.mp4",
+    "source_in": 60.81,
+    "source_out": 64.23,
+    "ah_score": 0.677,
+    "section": "chorus1",
+    "tags": [
+     "babymonster",
+     "ahyeon"
+    ],
+    "reason": "peak beat, chorus1 of shit",
+    "display_start": 25.5,
+    "display_end": 34.34
+   }
+  ],
+  "music_cue": "act6",
+  "dur": 44.966667
+ },
+ {
+  "id": "a6s",
+  "scene_id": "s36",
+  "kind": "card",
+  "card": {
+   "kind": "stat",
+   "big": "10,000,000,000",
+   "small": "cumulative channel views \u2014 fastest K-pop girl group ever (Sep 3, 2026)"
+  },
+  "voice": 5.328,
+  "lead": 0.8,
+  "slot": 18.133333,
+  "frames": 544,
+  "start": 1331.5333,
+  "voice_at": 1332.3333,
+  "shots": [
+   {
+    "type": "video",
+    "asset_id": "shit",
+    "src": "ytdl_cache/shit.mp4",
+    "source_in": 107.15,
+    "source_out": 109.61,
+    "reason": "card background loop (blurred)"
+   }
+  ],
+  "music_cue": "act6",
+  "dur": 18.133333
+ },
+ {
+  "id": "a6b05",
+  "scene_id": "s37",
+  "kind": "clips",
+  "card": null,
+  "voice": 35.592,
+  "lead": 0.8,
+  "slot": 46.4,
+  "frames": 1392,
+  "start": 1349.6667,
+  "voice_at": 1350.4667,
+  "shots": [
+   {
+    "type": "video",
+    "asset_id": "choom",
+    "src": "ytdl_cache/choom.mp4",
+    "source_in": 83.79,
+    "source_out": 91.88,
+    "ah_score": 0.0799,
+    "section": "chorus1",
+    "tags": [
+     "babymonster",
+     "ahyeon"
+    ],
+    "reason": "peak beat, chorus1 of choom",
+    "display_start": 0.0,
+    "display_end": 8.5
+   },
+   {
+    "type": "video",
+    "asset_id": "interview",
+    "src": "ytdl_cache/interview.mp4",
+    "source_in": 424.53,
+    "source_out": 428.0,
+    "ah_score": 0.0,
+    "section": "final_chorus",
+    "tags": [
+     "ahyeon",
+     "babymonster"
+    ],
+    "reason": "peak beat, final_chorus of interview",
+    "display_start": 8.5,
+    "display_end": 17.0
+   },
+   {
+    "type": "video",
+    "asset_id": "choom",
+    "src": "ytdl_cache/choom.mp4",
+    "source_in": 129.52,
+    "source_out": 138.02,
+    "ah_score": 0.0,
+    "section": "chorus2",
+    "tags": [
+     "babymonster",
+     "ahyeon"
+    ],
+    "reason": "peak beat, chorus2 of choom",
+    "display_start": 17.0,
+    "display_end": 25.5
+   },
+   {
+    "type": "video",
+    "asset_id": "choom",
+    "src": "ytdl_cache/choom.mp4",
+    "source_in": 59.85,
+    "source_out": 63.6,
+    "ah_score": 0.1518,
+    "section": "chorus1",
+    "tags": [
+     "babymonster",
+     "ahyeon"
+    ],
+    "reason": "peak beat, chorus1 of choom",
+    "display_start": 25.5,
+    "display_end": 35.59
+   }
+  ],
+  "music_cue": "act6",
+  "dur": 46.4
+ },
+ {
+  "id": "a7c",
+  "scene_id": "s38",
+  "kind": "card",
+  "card": {
+   "kind": "chapter",
+   "num": "ACT SEVEN",
+   "title": "THE CRAFT"
+  },
+  "voice": 2.544,
+  "lead": 0.8,
+  "slot": 19.333333,
+  "frames": 580,
+  "start": 1396.0667,
+  "voice_at": 1396.8667,
+  "shots": [
+   {
+    "type": "video",
+    "asset_id": "leval_ahyeon",
+    "src": "ytdl_cache/leval_ahyeon.mp4",
+    "source_in": 290.29,
+    "source_out": 294.75,
+    "reason": "card background loop (blurred)"
+   }
+  ],
+  "music_cue": "act7",
+  "dur": 19.333333
+ },
+ {
+  "id": "a7b01",
+  "scene_id": "s39",
+  "kind": "clips",
+  "card": null,
+  "voice": 30.552,
+  "lead": 0.8,
+  "slot": 40.566667,
+  "frames": 1217,
+  "start": 1415.4,
+  "voice_at": 1416.2,
+  "shots": [
+   {
+    "type": "video",
+    "asset_id": "choom_stage",
+    "src": "ytdl_cache/choom_stage.mp4",
+    "source_in": 137.85,
+    "source_out": 139.92,
+    "ah_score": 0.7109,
+    "section": "verse2",
+    "tags": [
+     "ahyeon",
+     "babymonster"
+    ],
+    "reason": "calm beat, verse2 of choom_stage",
+    "display_start": 0.0,
+    "display_end": 8.5
+   },
+   {
+    "type": "video",
+    "asset_id": "sheesh_stage",
+    "src": "ytdl_cache/sheesh_stage.mp4",
+    "source_in": 9.73,
+    "source_out": 16.45,
+    "ah_score": 0.0949,
+    "section": "intro",
+    "tags": [
+     "babymonster",
+     "ahyeon"
+    ],
+    "reason": "calm beat, intro of sheesh_stage",
+    "display_start": 8.5,
+    "display_end": 15.22
+   },
+   {
+    "type": "image",
+    "asset_id": "asset-ca54f4eba8ed539bdc14",
+    "src": "../../assets/ahyeon/originals/the-han-river-in-seoul--57f3d63d.jpg",
+    "entity": "seoul",
+    "license": "CC BY 2.0",
+    "attribution": "BBayanaa \u2014 CC BY 2.0 \u2014 via Openverse",
+    "display_start": 15.22,
+    "display_end": 19.22,
+    "motion": "push_in",
+    "reason": "'Seoul' spoken at 15.5s \u2014 show the place"
+   },
+   {
+    "type": "video",
+    "asset_id": "choom_stage",
+    "src": "ytdl_cache/choom_stage.mp4",
+    "source_in": 127.17,
+    "source_out": 131.64,
+    "ah_score": 0.3667,
+    "section": "verse2",
+    "tags": [
+     "ahyeon",
+     "babymonster"
+    ],
+    "reason": "build beat, verse2 of choom_stage",
+    "display_start": 19.22,
+    "display_end": 30.55
+   }
+  ],
+  "music_cue": "act7",
+  "dur": 40.566667
+ },
+ {
+  "id": "a7b02",
+  "scene_id": "s40",
+  "kind": "clips",
+  "card": null,
+  "voice": 34.152,
+  "lead": 0.8,
+  "slot": 44.733333,
+  "frames": 1342,
+  "start": 1455.9667,
+  "voice_at": 1456.7667,
+  "shots": [
+   {
+    "type": "video",
+    "asset_id": "kspo",
+    "src": "ytdl_cache/kspo.mp4",
+    "source_in": 778.99,
+    "source_out": 784.33,
+    "ah_score": 0.4965,
+    "section": "chorus2",
+    "tags": [
+     "babymonster",
+     "ahyeon"
+    ],
+    "reason": "peak beat, chorus2 of kspo",
+    "display_start": 0.0,
+    "display_end": 8.5
+   },
+   {
+    "type": "video",
+    "asset_id": "mama_golden",
+    "src": "ytdl_cache/mama_golden.mp4",
+    "source_in": 92.97,
+    "source_out": 100.78,
+    "ah_score": 0.1149,
+    "section": "chorus1",
+    "tags": [
+     "ahyeon",
+     "babymonster"
+    ],
+    "reason": "peak beat, chorus1 of mama_golden",
+    "display_start": 8.5,
+    "display_end": 17.0
+   },
+   {
+    "type": "video",
+    "asset_id": "kspo",
+    "src": "ytdl_cache/kspo.mp4",
+    "source_in": 722.6,
+    "source_out": 724.64,
+    "ah_score": 0.6318,
+    "section": "chorus2",
+    "tags": [
+     "babymonster",
+     "ahyeon"
+    ],
+    "reason": "peak beat, chorus2 of kspo",
+    "display_start": 17.0,
+    "display_end": 25.5
+   },
+   {
+    "type": "video",
+    "asset_id": "kspo",
+    "src": "ytdl_cache/kspo.mp4",
+    "source_in": 336.25,
+    "source_out": 339.71,
+    "ah_score": 0.6174,
+    "section": "chorus1",
+    "tags": [
+     "babymonster",
+     "ahyeon"
+    ],
+    "reason": "peak beat, chorus1 of kspo",
+    "display_start": 25.5,
+    "display_end": 34.15
+   }
+  ],
+  "music_cue": "act7",
+  "dur": 44.733333
+ },
+ {
+  "id": "a7b03",
+  "scene_id": "s41",
+  "kind": "clips",
+  "card": null,
+  "voice": 34.224,
+  "lead": 0.8,
+  "slot": 44.833333,
+  "frames": 1345,
+  "start": 1500.7,
+  "voice_at": 1501.5,
+  "shots": [
+   {
+    "type": "video",
+    "asset_id": "interview",
+    "src": "ytdl_cache/interview.mp4",
+    "source_in": 28.68,
+    "source_out": 31.94,
+    "ah_score": 0.5756,
+    "section": "intro",
+    "tags": [
+     "ahyeon",
+     "babymonster"
+    ],
+    "reason": "calm beat, intro of interview",
+    "display_start": 0.0,
+    "display_end": 3.26
+   },
+   {
+    "type": "image",
+    "asset_id": "asset-cb7ebd948ec89b193a1c",
+    "src": "../../assets/ahyeon/originals/seoul-korea--70133c0e.jpg",
+    "entity": "korea_context",
+    "license": "CC BY-NC 2.0",
+    "attribution": "Jaako \u2014 CC BY-NC 2.0 \u2014 via Openverse",
+    "display_start": 3.26,
+    "display_end": 7.26,
+    "motion": "pull_out",
+    "reason": "'South Korea' spoken at 3.6s \u2014 show the place"
+   },
+   {
+    "type": "video",
+    "asset_id": "interview",
+    "src": "ytdl_cache/interview.mp4",
+    "source_in": 340.62,
+    "source_out": 349.12,
+    "ah_score": 0.5693,
+    "section": "bridge",
+    "tags": [
+     "ahyeon",
+     "babymonster"
+    ],
+    "reason": "peak beat, bridge of interview",
+    "display_start": 7.26,
+    "display_end": 15.76
+   },
+   {
+    "type": "video",
+    "asset_id": "interview",
+    "src": "ytdl_cache/interview.mp4",
+    "source_in": 0.0,
+    "source_out": 6.77,
+    "ah_score": 0.612,
+    "section": "intro",
+    "tags": [
+     "ahyeon",
+     "babymonster"
+    ],
+    "reason": "peak beat, intro of interview",
+    "display_start": 15.76,
+    "display_end": 24.26
+   },
+   {
+    "type": "video",
+    "asset_id": "interview",
+    "src": "ytdl_cache/interview.mp4",
+    "source_in": 120.03,
+    "source_out": 124.0,
+    "ah_score": 0.6123,
+    "section": "verse1",
+    "tags": [
+     "ahyeon",
+     "babymonster"
+    ],
+    "reason": "peak beat, verse1 of interview",
+    "display_start": 24.26,
+    "display_end": 34.22
+   }
+  ],
+  "music_cue": "act7",
+  "dur": 44.833333
+ },
+ {
+  "id": "a8c",
+  "scene_id": "s42",
+  "kind": "card",
+  "card": {
+   "kind": "chapter",
+   "num": "ACT EIGHT",
+   "title": "THE DOME"
+  },
+  "voice": 1.896,
+  "lead": 0.8,
+  "slot": 18.7,
+  "frames": 561,
+  "start": 1545.5333,
+  "voice_at": 1546.3333,
+  "shots": [
+   {
+    "type": "video",
+    "asset_id": "shit",
+    "src": "ytdl_cache/shit.mp4",
+    "source_in": 61.31,
+    "source_out": 64.23,
+    "reason": "card background loop (blurred)"
+   }
+  ],
+  "music_cue": "act8",
+  "dur": 18.7
+ },
+ {
+  "id": "a8b01",
+  "scene_id": "s43",
+  "kind": "clips",
+  "card": null,
+  "voice": 29.304,
+  "lead": 0.8,
+  "slot": 39.133333,
+  "frames": 1174,
+  "start": 1564.2333,
+  "voice_at": 1565.0333,
+  "shots": [
+   {
+    "type": "video",
+    "asset_id": "kspo",
+    "src": "ytdl_cache/kspo.mp4",
+    "source_in": 366.7,
+    "source_out": 373.21,
+    "ah_score": 0.3103,
+    "section": "chorus1",
+    "tags": [
+     "babymonster",
+     "ahyeon"
+    ],
+    "reason": "peak beat, chorus1 of kspo",
+    "display_start": 0.0,
+    "display_end": 8.5
+   },
+   {
+    "type": "video",
+    "asset_id": "kspo",
+    "src": "ytdl_cache/kspo.mp4",
+    "source_in": 987.65,
+    "source_out": 993.45,
+    "ah_score": 0.2843,
+    "section": "final_chorus",
+    "tags": [
+     "babymonster",
+     "ahyeon"
+    ],
+    "reason": "peak beat, final_chorus of kspo",
+    "display_start": 8.5,
+    "display_end": 17.0
+   },
+   {
+    "type": "video",
+    "asset_id": "kspo",
+    "src": "ytdl_cache/kspo.mp4",
+    "source_in": 425.68,
+    "source_out": 429.31,
+    "ah_score": 0.4067,
+    "section": "chorus1",
+    "tags": [
+     "babymonster",
+     "ahyeon"
+    ],
+    "reason": "peak beat, chorus1 of kspo",
+    "display_start": 17.0,
+    "display_end": 25.5
+   },
+   {
+    "type": "video",
+    "asset_id": "kspo",
+    "src": "ytdl_cache/kspo.mp4",
+    "source_in": 955.04,
+    "source_out": 957.54,
+    "ah_score": 0.488,
+    "section": "final_chorus",
+    "tags": [
+     "babymonster",
+     "ahyeon"
+    ],
+    "reason": "payoff beat, final_chorus of kspo",
+    "display_start": 25.5,
+    "display_end": 29.3
+   }
+  ],
+  "music_cue": "act8",
+  "dur": 39.133333
+ },
+ {
+  "id": "a8b02",
+  "scene_id": "s44",
+  "kind": "clips",
+  "card": null,
+  "voice": 36.408,
+  "lead": 0.8,
+  "slot": 47.333333,
+  "frames": 1420,
+  "start": 1603.3667,
+  "voice_at": 1604.1667,
+  "shots": [
+   {
+    "type": "video",
+    "asset_id": "choom",
+    "src": "ytdl_cache/choom.mp4",
+    "source_in": 13.01,
+    "source_out": 19.02,
+    "ah_score": 0.1628,
+    "section": "intro",
+    "tags": [
+     "babymonster",
+     "ahyeon"
+    ],
+    "reason": "peak beat, intro of choom",
+    "display_start": 0.0,
+    "display_end": 8.5
+   },
+   {
+    "type": "video",
+    "asset_id": "choom",
+    "src": "ytdl_cache/choom.mp4",
+    "source_in": 153.69,
+    "source_out": 157.32,
+    "ah_score": 0.3108,
+    "section": "bridge",
+    "tags": [
+     "babymonster",
+     "ahyeon"
+    ],
+    "reason": "peak beat, bridge of choom",
+    "display_start": 8.5,
+    "display_end": 17.0
+   },
+   {
+    "type": "video",
+    "asset_id": "choom",
+    "src": "ytdl_cache/choom.mp4",
+    "source_in": 105.14,
+    "source_out": 109.56,
+    "ah_score": 0.3338,
+    "section": "verse2",
+    "tags": [
+     "babymonster",
+     "ahyeon"
+    ],
+    "reason": "peak beat, verse2 of choom",
+    "display_start": 17.0,
+    "display_end": 25.5
+   },
+   {
+    "type": "video",
+    "asset_id": "choom",
+    "src": "ytdl_cache/choom.mp4",
+    "source_in": 51.8,
+    "source_out": 59.85,
+    "ah_score": 0.0396,
+    "section": "verse1",
+    "tags": [
+     "babymonster",
+     "ahyeon"
+    ],
+    "reason": "peak beat, verse1 of choom",
+    "display_start": 25.5,
+    "display_end": 34.0
+   },
+   {
+    "type": "video",
+    "asset_id": "choom",
+    "src": "ytdl_cache/choom.mp4",
+    "source_in": 47.72,
+    "source_out": 50.13,
+    "ah_score": 0.3945,
+    "section": "verse1",
+    "tags": [
+     "babymonster",
+     "ahyeon"
+    ],
+    "reason": "payoff beat, verse1 of choom",
+    "display_start": 34.0,
+    "display_end": 36.41
+   }
+  ],
+  "music_cue": "act8",
+  "dur": 47.333333
+ },
+ {
+  "id": "a8b03",
+  "scene_id": "s45",
+  "kind": "clips",
+  "card": null,
+  "voice": 48.384,
+  "lead": 0.8,
+  "slot": 61.166667,
+  "frames": 1835,
+  "start": 1650.7,
+  "voice_at": 1651.5,
+  "shots": [
+   {
+    "type": "video",
+    "asset_id": "shit",
+    "src": "ytdl_cache/shit.mp4",
+    "source_in": 27.57,
+    "source_out": 36.0,
+    "ah_score": 0.5753,
+    "section": "verse1",
+    "tags": [
+     "babymonster",
+     "ahyeon"
+    ],
+    "reason": "calm beat, verse1 of shit",
+    "display_start": 0.0,
+    "display_end": 8.5
+   },
+   {
+    "type": "video",
+    "asset_id": "sheesh",
+    "src": "ytdl_cache/sheesh.mp4",
+    "source_in": 16.28,
+    "source_out": 24.72,
+    "ah_score": 0.1108,
+    "section": "intro",
+    "tags": [
+     "babymonster",
+     "ahyeon"
+    ],
+    "reason": "calm beat, intro of sheesh",
+    "display_start": 8.5,
+    "display_end": 17.0
+   },
+   {
+    "type": "video",
+    "asset_id": "shit",
+    "src": "ytdl_cache/shit.mp4",
+    "source_in": 102.73,
+    "source_out": 106.65,
+    "ah_score": 0.7266,
+    "section": "verse2",
+    "tags": [
+     "babymonster",
+     "ahyeon"
+    ],
+    "reason": "build beat, verse2 of shit",
+    "display_start": 17.0,
+    "display_end": 25.5
+   },
+   {
+    "type": "video",
+    "asset_id": "shit",
+    "src": "ytdl_cache/shit.mp4",
+    "source_in": 106.65,
+    "source_out": 109.61,
+    "ah_score": 0.7624,
+    "section": "verse2",
+    "tags": [
+     "babymonster",
+     "ahyeon"
+    ],
+    "reason": "build beat, verse2 of shit",
+    "display_start": 25.5,
+    "display_end": 34.0
+   },
+   {
+    "type": "video",
+    "asset_id": "shit",
+    "src": "ytdl_cache/shit.mp4",
+    "source_in": 164.47,
+    "source_out": 168.13,
+    "ah_score": 0.2259,
+    "section": "final_chorus",
+    "tags": [
+     "babymonster",
+     "ahyeon"
+    ],
+    "reason": "peak beat, final_chorus of shit",
+    "display_start": 34.0,
+    "display_end": 48.38
+   }
+  ],
+  "music_cue": "act8",
+  "dur": 61.166667
+ },
+ {
+  "id": "a8x",
+  "scene_id": "s46",
+  "kind": "interlude",
+  "card": null,
+  "voice": 0.0,
+  "lead": 0.8,
+  "slot": 12.133333,
+  "frames": 364,
+  "start": 1711.8667,
+  "voice_at": 1711.8667,
+  "shots": [
+   {
+    "type": "video",
+    "asset_id": "reallylikeyou",
+    "src": "ytdl_cache/reallylikeyou.mp4",
+    "source_in": 144.42,
+    "source_out": 151.68,
+    "ah_score": 0.6853,
+    "section": "chorus2",
+    "tags": [
+     "babymonster",
+     "ahyeon"
+    ],
+    "reason": "peak beat, chorus2 of reallylikeyou",
+    "display_start": 0.0,
+    "display_end": 9.2
+   }
+  ],
+  "music_cue": "act8",
+  "dur": 12.133333
+ },
+ {
+  "id": "a9close",
+  "scene_id": "s47",
+  "kind": "card",
+  "card": {
+   "kind": "close",
+   "lines": [
+    "THE DEBUT HAPPENED WITHOUT HER.",
+    "THE ERA HAPPENED BECAUSE OF HER.",
+    "AHYEON \u2014 WORTH THE WAIT."
+   ]
+  },
+  "voice": 4.248,
+  "lead": 0.8,
+  "slot": 25.033333,
+  "frames": 751,
+  "start": 1724.0,
+  "voice_at": 1724.8,
+  "shots": [
+   {
+    "type": "video",
+    "asset_id": "choom_stage",
+    "src": "ytdl_cache/choom_stage.mp4",
+    "source_in": 138.35,
+    "source_out": 139.92,
+    "reason": "card background loop (blurred)"
+   }
+  ],
+  "music_cue": "act8",
+  "dur": 25.033333
+ },
+ {
+  "id": "a9cred",
+  "scene_id": "s48",
+  "kind": "card",
+  "card": {
+   "kind": "credits",
+   "lines": [
+    "AHYEON \u2014 THE 5TH GEN IT GIRL",
+    "FACTS: WIKIPEDIA \u00b7 YG NOTICE \u00b7 BILLBOARD \u00b7 CHOSUN \u00b7 KOREA HERALD",
+    "VOGUE HONG KONG \u00b7 KGMA \u00b7 MEDIABASE \u00b7 MAMA 2025",
+    "FOOTAGE: BABYMONSTER OFFICIAL CHANNELS",
+    "MUSIC: ORIGINAL SCORE \u2014 CC0 SAMPLES",
+    "PIANO: SALAMANDER GRAND PIANO V3 (CC BY 3.0)",
+    "PRODUCED WITH LAST STOP YT ENGINE",
+    "FAN-MADE DOCUMENTARY \u00b7 NOT AFFILIATED WITH YG"
+   ],
+   "refs": []
+  },
+  "voice": 0.0,
+  "lead": 0.8,
+  "slot": 50.966667,
+  "frames": 1529,
+  "start": 1749.0333,
+  "voice_at": 1749.0333,
+  "shots": [
+   {
+    "type": "video",
+    "asset_id": "likethat",
+    "src": "ytdl_cache/likethat.mp4",
+    "source_in": 94.13,
+    "source_out": 97.05,
+    "reason": "card background loop (blurred)"
+   }
+  ],
+  "music_cue": "act8",
+  "dur": 50.966667
+ }
+]

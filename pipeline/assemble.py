@@ -1,15 +1,20 @@
 #!/usr/bin/env python3
-"""assemble.py — render pipeline (project-parameterized, resumable)
+"""assemble.py v3 — EDITOR: executes the Director's EDL verbatim (T7).
 Stages: plan | segments | audio | final
-  python3 assemble.py <stage> [project]     (default project: blackpink)
+  python3 assemble.py <stage> [project]
 
-Audio path (v2 — kills the sine-drone distortion):
-  narration (hp+normalized) + composed CC0-sample score (music/score_build.py)
-  with opuscar-style ducking (dilate 160ms + smooth 250ms, -9dB under voice),
-  chunked lookahead limiter, two-pass LINEAR loudnorm to -14 LUFS.
-
+v3 editorial contract (kills the playlist randomness):
+  - plan:     reads scene_plan.json (Director-to-Editor contract) as the ONLY
+              source of timing. Narration is the clock; lead/tail/slots come
+              from the Director; frame-exact totals preserved. No pool shuffle,
+              no duration redistribution, no clip lottery.
+  - segments: renders each scene from its shot list — video shots trimmed at
+              real source timecodes (2s preroll seek + frame-accurate trim),
+              images animated with Ken Burns motion, cards over blurred bg
+              loops, word-timed ASS captions burned per scene.
+  - audio:    unchanged v2 path — narration placed at voice_at (authoritative
+              word timings), opuscar-style ducking bed, two-pass loudnorm.
 Spec: 1920x1080 30fps H.264 CRF16, AAC 192k 48kHz stereo, -14 LUFS.
-Captions: word-timed ASS burned per segment (edge-tts WordBoundary data).
 """
 import json, math, os, random, subprocess, sys, wave
 
@@ -65,55 +70,38 @@ def pool_for(beat, sources, rnd):
     rnd.shuffle(pool)
     return pool
 
+# ---------------- v3 PLAN: Director EDL -> timeline ----------------
 def stage_plan():
-    BEATS = syspath()
-    timing = json.load(open(f"{NARR}/timing.json"))
-    sources = {s["video_id"]: s for s in json.load(open(f"{BASE}/subject_sources.json"))}
-    rnd = random.Random(20160808)
-    target = {"title":18.0,"chapter":16.0,"stat":12.0,"close":20.0}
-    tl, used, pools = [], set(), {}
-    for b in BEATS:
-        vd = timing.get(b["id"], {}).get("dur", 0.0)
-        kind = b["kind"]; slot = vd + 0.8
-        if kind == "card":
-            ck = b["card"]["kind"]
-            slot = vd + target.get(ck, 16.0)
-            if ck == "credits": slot = vd + 50.0
-        elif not b["text"].strip():        # interlude
-            slot = 30.0
-        else:                              # clips beat with narration
-            slot = vd + 7.0
-        n = max(1, math.ceil(slot / 9.5)) if kind == "clips" else (2 if kind == "card" else 0)
-        picks = []
-        if n:
-            key = tuple(b.get("vids", [])) or ("tags", tuple(b.get("tags", [])))
-            if key not in pools: pools[key] = pool_for(b, sources, rnd)
-            pool = [c for c in pools[key] if c not in used] or pools[key]
-            picks = (pool * math.ceil(n / max(1, len(pool))))[:n]
-            used.update(picks)
-        tl.append({"id": b["id"], "kind": kind, "card": b.get("card"),
-                   "voice": vd, "slot": round(slot, 4), "clips": picks})
-    # frame-accurate normalization to exactly TOTAL
-    rem = TOTAL - sum(t["slot"] for t in tl)
-    add = rem / len(tl)
-    for t in tl: t["slot"] = round(t["slot"] + add, 4)
-    frames = [round(t["slot"] * FPS) for t in tl]
-    frames[-1] += FPS * round(TOTAL) - sum(frames)   # exact frame count
-    for t, f in zip(tl, frames):
-        t["frames"] = f; t["dur"] = round(f / FPS, 6)
-    off = 0.0
-    for t in tl:
-        t["start"] = round(off, 4); t["voice_at"] = round(off + 0.8, 4)
-        off += t["dur"]
-    tl[-1]["end"] = TOTAL
+    """Convert scene_plan.json (Director) into render/timeline.json + cues +
+    captions. The Director's lead/vd/tail structure is preserved EXACTLY:
+    voice_at = scene.start + lead (word t=0 lands there), frames sum to TOTAL."""
+    sp = None
+    for cand in (f"{RENDER}/scene_plan.json", f"{BASE}/scene_plan.json"):
+        if os.path.exists(cand):
+            sp = json.load(open(cand)); break
+    if sp is None:
+        raise RuntimeError("scene_plan.json not found — run director.py first")
+    tl = []
+    for s in sp["scenes"]:
+        tl.append({"id": s["beat"], "scene_id": s["id"], "kind": s["kind"],
+                   "card": s.get("card"), "voice": s["narration"]["dur"],
+                   "lead": s.get("lead", 0.8),
+                   "slot": s["dur"], "frames": s["frames"],
+                   "start": s["start"], "voice_at": s["voice_at"],
+                   "shots": s.get("shots", []),
+                   "music_cue": s.get("music_cue"), "dur": s["dur"]})
+    total = sum(t["dur"] for t in tl)
+    if abs(total - TOTAL) > 1.0:
+        raise RuntimeError(f"scene_plan total {total:.2f}s != config TOTAL {TOTAL}s")
     json.dump(tl, open(f"{RENDER}/timeline.json", "w"), indent=1)
     build_cues(tl)
     build_caption_master(tl)
-    print(f"plan: {len(tl)} beats, sum={sum(t['dur'] for t in tl):.3f}s, "
-          f"clips assigned={sum(len(t['clips']) for t in tl)}")
+    n_shots = sum(len(t["shots"]) for t in tl)
+    print(f"plan(v3): {len(tl)} scenes, {n_shots} EDL shots, sum={total:.3f}s "
+          f"(frame-exact), voice_at preserved")
 
 def build_cues(tl):
-    """One score cue per act (preset from config.acts), boundaries at beat starts."""
+    """One score cue per act (preset from config.acts), boundaries at scene starts."""
     cfgp = f"{BASE}/config.json"
     cfg = json.load(open(cfgp)) if os.path.exists(cfgp) else {}
     acts = {a["act"]: a for a in cfg.get("acts", [])}
@@ -203,11 +191,11 @@ def build_caption_master(tl):
     print(f"captions: {len(evs)} events")
 
 def segment_ass(t, d):
-    """Write segment-local ASS for beat; returns path or None.
-    Voice starts 0.8s into the segment, so beat-local caption time = 0.8 + word.t."""
+    """Write scene-local ASS; voice starts at t['lead'], so caption time = lead + word.t."""
     evs = []
+    lead = t.get("lead", 0.8)
     if t["voice"] > 0:
-        evs = beat_caption_events(t["id"], 0.8)   # beat-local: voice_at offset = 0.8s
+        evs = beat_caption_events(t["id"], lead)   # scene-local: voice_at offset = lead
     local = []
     for gs, ge, txt in evs:
         ls, le = gs, ge
@@ -229,9 +217,9 @@ def drawtext(txt, font, size, color, y, box=False):
     if box: e += ":box=1:boxcolor=0x0a0a0aB3:boxborderw=18"
     return e
 
-def card_filter(t):
+def card_filter(t, bg_src):
     lines = t["card"].get("lines", []); ck = t["card"]["kind"]; d = t["dur"]
-    bg_in = bool(t.get("clips")) and os.path.exists(t["clips"][0])
+    bg_in = bool(bg_src) and os.path.exists(bg_src)
     fc = []
     if bg_in:
         fc.append(f"[0:v]scale=1920:1080:flags=lanczos,fps={FPS},boxblur=24:2,"
@@ -270,54 +258,123 @@ def _sub_filter(assp):
     a = assp.replace(":", r"\:").replace("'", r"\'")
     return f"subtitles=filename='{a}'"
 
+# ---------------- v3 SEGMENTS: EDL executor ----------------
+def _zb_filter(dur, motion, idx):
+    """Ken Burns for one image shot -> labeled stream [k{idx}]."""
+    frames = max(1, int(round(dur * FPS)))
+    if motion == "pull_out":
+        z = f"1.14-0.14*on/{frames}"
+    else:  # push_in (default)
+        z = f"1.0+0.14*on/{frames}"
+    return (f"[{idx}:v]scale=2304:1296:force_original_aspect_ratio=increase:flags=lanczos,"
+            f"crop=2304:1296,zoompan=z='{z}':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':"
+            f"d={frames}:s=1920x1080:fps={FPS},format=yuv420p,"
+            f"trim=duration={dur:.4f},setpts=PTS-STARTPTS[k{idx}]")
+
+def _vs_filter(shot, idx, want_dur, scene_local_start):
+    """Video shot from real source timecode -> labeled stream [v{idx}].
+    2s preroll input seek + frame-accurate in-filter trim."""
+    want = max(1.2, want_dur)
+    sin = float(shot["source_in"]); sout = float(shot["source_out"])
+    src_dur = sout - sin
+    use = min(want, max(1.2, src_dur))
+    if src_dur + 0.4 < want:
+        use = max(1.2, src_dur)          # shot shorter than window: use it all
+    pre = 2.0 if sin >= 2.0 else sin
+    seek = sin - pre
+    trim0 = pre
+    trim1 = pre + use
+    return (f"[{idx}:v]trim=start={trim0:.3f}:end={trim1:.3f},setpts=PTS-STARTPTS,"
+            f"scale=1920:1080:flags=lanczos,fps={FPS},setsar=1,format=yuv420p,"
+            f"tpad=stop_mode=clone:stop_duration={max(0.0, want - use + 0.2):.3f},"
+            f"trim=duration={want:.4f},setpts=PTS-STARTPTS[v{idx}]"), seek, use
+
 def stage_segments():
+    """Render each scene seg from its EDL shot list, verbatim."""
     tl = json.load(open(f"{RENDER}/timeline.json"))
     os.makedirs(RENDER, exist_ok=True)
     os.makedirs(f"{RENDER}/ass", exist_ok=True)
-    fallback = None
-    for f in sorted(os.listdir(CLIPS)):
-        if f.startswith("seg_") and f.endswith(".mp4"):
-            fallback = f"{CLIPS}/{f}"; break
     for i, t in enumerate(tl):
         out = f"{RENDER}/seg_{t['id']}.mp4"
         if os.path.exists(out) and abs(_dur(out) - t["dur"]) < 0.05:
             continue
         d = t["dur"]
+        lead = t.get("lead", 0.8)
         assp = segment_ass(t, d)
         sub = ("," + _sub_filter(assp)) if assp else ""
-        if t["kind"] == "card" and t["clips"]:
-            src = t["clips"][0] if os.path.exists(t["clips"][0]) else fallback
-            if src is None: continue
-            cf, last = card_filter(t)
+        shots = t.get("shots", [])
+
+        if t["kind"] == "card":
+            bg = next((s for s in shots if s.get("type") == "video"), None)
+            bg_src = f"{BASE}/{bg['src']}" if bg else None
+            cf, last = card_filter(t, bg_src)
             if assp:
                 cf += f";[{last}]{_sub_filter(assp)}[vsub]"; last = "vsub"
-            cmd = ["ffmpeg","-y","-nostdin","-stream_loop","-1","-i",src,
-                   "-filter_complex",cf,"-map",f"[{last}]","-t",f"{d:.4f}"] + ENC + [out]
-        elif t["kind"] == "card":
-            cf, last = card_filter(t)
-            if assp:
-                cf += f";[{last}]{_sub_filter(assp)}[vsub]"; last = "vsub"
+            if bg_src:
+                cmd = ["ffmpeg","-y","-nostdin","-stream_loop","-1","-i",bg_src,
+                       "-filter_complex",cf,"-map",f"[{last}]","-an","-t",f"{d:.4f}"] + ENC + [out]
+            else:
+                cmd = ["ffmpeg","-y","-nostdin","-f","lavfi","-i",
+                       f"color=c=0x0a0a0a:s=1920x1080:r={FPS}:d={d:.4f}",
+                       "-filter_complex",cf,"-map",f"[{last}]","-an","-t",f"{d:.4f}"] + ENC + [out]
+            sh(cmd); print(f"[{i+1}/{len(tl)}] {t['id']} card {d:.1f}s ok", flush=True)
+            continue
+
+        # ---- clips / interlude: build the scene from ordered EDL shots ----
+        inputs, fc, chains = [], [], []
+        idx = 0
+        # scene-local layout: shots span narration [lead, lead+vd]; extend first
+        # shot left over the lead, last shot right over the tail (headroom-clamped)
+        layout = []
+        vd = float(t["voice"])
+        for j, s in enumerate(shots):
+            ds = lead + float(s.get("display_start", 0.0))
+            de = lead + float(s.get("display_end", s.get("display_start", 0.0) + vd))
+            layout.append([s, ds, de])
+        if not layout:
+            # no shots planned -> color fallback (recorded gap), still render scene
             cmd = ["ffmpeg","-y","-nostdin","-f","lavfi","-i",
-                   f"color=c=0x0a0a0a:s=1920x1080:r={FPS}:d={d:.4f}",
-                   "-filter_complex",cf,"-map",f"[{last}]","-t",f"{d:.4f}"] + ENC + [out]
-        else:
-            picks = [c for c in t["clips"] if os.path.exists(c)] or ([fallback] if fallback else [])
-            if not picks: continue
-            n = len(picks); per = d / n
-            cmd = ["ffmpeg","-y","-nostdin"]
-            for c in picks: cmd += ["-stream_loop","-1","-i",c]
-            fc = [f"[{j}:v]scale=1920:1080:flags=lanczos,fps={FPS},setsar=1,"
-                  f"format=yuv420p,trim=duration={per:.4f},setpts=PTS-STARTPTS[c{j}]"
-                  for j in range(n)]
-            chain = "".join(f"[c{j}]" for j in range(n)) + f"concat=n={n}:v=1:a=0"
-            if i == 0: chain += ",fade=t=in:st=0:d=1.2"
-            if t["id"] == tl[-1]["id"]: chain += f",fade=t=out:st={max(0.1,d-2.0)}:d=2.0"
-            chain += sub
-            fc.append(chain + "[vout]")
-            cmd += ["-filter_complex",";".join(fc),"-map","[vout]",
-                    "-t",f"{d:.4f}"] + ENC + [out]
+                   f"color=c=0x101014:s=1920x1080:r={FPS}:d={d:.4f}",
+                   "-vf", f"fade=t=in:st=0:d=1.0{sub}", "-an", "-t", f"{d:.4f}"] + ENC + [out]
+            sh(cmd); print(f"[{i+1}/{len(tl)}] {t['id']} EMPTY-fallback {d:.1f}s", flush=True)
+            continue
+        layout[0][1] = 0.0                    # first shot covers the lead
+        layout[-1][2] = d                     # last shot covers the tail
+        # video/image inputs
+        openers = []
+        for j, (s, ds, de) in enumerate(layout):
+            dur_j = max(1.0, de - ds)
+            if s["type"] == "image":
+                p = f"{BASE}/{s['src']}"
+                if not os.path.exists(p):
+                    p = s["src"]
+                inputs += ["-loop", "1", "-t", f"{dur_j + 0.5:.3f}", "-i", p]
+                fc.append(_zb_filter(dur_j, s.get("motion", "push_in"), idx))
+                chains.append(f"[k{idx}]")
+                idx += 1
+            else:
+                src = s.get("src", "")
+                src = src if os.path.isabs(src) else f"{BASE}/{src}"
+                if not os.path.exists(src):
+                    raise RuntimeError(f"scene {t['id']}: missing source {src}")
+                vf, seek, use = _vs_filter(s, idx, dur_j, ds)
+                inputs += ["-ss", f"{seek:.3f}", "-i", src]
+                fc.append(vf)
+                chains.append(f"[v{idx}]")
+                idx += 1
+        n = len(chains)
+        concat = "".join(chains) + f"concat=n={n}:v=1:a=0"
+        extra = ""
+        if i == 0: extra += ",fade=t=in:st=0:d=1.2"
+        if t["id"] == tl[-1]["id"] or t["id"].endswith("credits"): 
+            extra += f",fade=t=out:st={max(0.1, d-2.0):.2f}:d=2.0"
+        concat += extra + sub + "[vout]"
+        fc.append(concat)
+        cmd = (["ffmpeg","-y","-nostdin"] + inputs +
+               ["-filter_complex", ";".join(fc), "-map", "[vout]", "-an",
+                "-t", f"{d:.4f}"] + ENC + [out])
         sh(cmd)
-        print(f"[{i+1}/{len(tl)}] {t['id']} {d:.1f}s ok", flush=True)
+        print(f"[{i+1}/{len(tl)}] {t['id']} {n} shots {d:.1f}s ok", flush=True)
 
 def _dur(p):
     r = subprocess.run(["ffprobe","-v","error","-show_entries","format=duration",
