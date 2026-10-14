@@ -1,0 +1,3862 @@
+{
+ "version": 2,
+ "project": "ahyeon",
+ "fps": 30,
+ "target_total": 1800.0,
+ "total": 1800.0,
+ "lead": 0.8,
+ "generator": "director.py v2",
+ "seed": 32901,
+ "gaps": [
+  {
+   "beat": "co1",
+   "entity": "ygent",
+   "at": 3.17,
+   "note": "no verified imagery for YG Entertainment"
+  },
+  {
+   "beat": "a1b02",
+   "entity": "ygent",
+   "at": 7.96,
+   "note": "no verified imagery for YG Entertainment"
+  },
+  {
+   "beat": "a1b03",
+   "entity": "ygent",
+   "at": 5.39,
+   "note": "no verified imagery for YG Entertainment"
+  },
+  {
+   "beat": "a1b03",
+   "entity": "ygent",
+   "at": 24.12,
+   "note": "no verified imagery for YG Entertainment"
+  },
+  {
+   "beat": "a2b02",
+   "entity": "ygent",
+   "at": 23.3,
+   "note": "no verified imagery for YG Entertainment"
+  },
+  {
+   "beat": "a2b03",
+   "entity": "ygent",
+   "at": 20.61,
+   "note": "no verified imagery for YG Entertainment"
+  },
+  {
+   "beat": "a3b01",
+   "entity": "ygent",
+   "at": 5.4,
+   "note": "no verified imagery for YG Entertainment"
+  },
+  {
+   "beat": "a3b03",
+   "entity": "ygent",
+   "at": 27.9,
+   "note": "no verified imagery for YG Entertainment"
+  },
+  {
+   "beat": "a3b04",
+   "entity": "ygent",
+   "at": 2.67,
+   "note": "no verified imagery for YG Entertainment"
+  },
+  {
+   "beat": "a4b02",
+   "entity": "ygent",
+   "at": 23.7,
+   "note": "no verified imagery for YG Entertainment"
+  },
+  {
+   "beat": "a8b02",
+   "entity": "ygent",
+   "at": 4.18,
+   "note": "no verified imagery for YG Entertainment"
+  },
+  {
+   "beat": "a8b03",
+   "entity": "chuncheon",
+   "at": 43.34,
+   "note": "no verified imagery for Chuncheon"
+  }
+ ],
+ "scenes": [
+  {
+   "id": "s01",
+   "beat": "co1",
+   "act": 0,
+   "kind": "clips",
+   "purpose": "cold open \u2014 the hook",
+   "editorial_note": "6 footage cuts from batterup, choom, sheesh; place imagery at practice_room",
+   "narration": {
+    "text": "On November 15th, 2023, YG Entertainment posted a notice that stopped a fandom cold. Their most anticipated trainee \u2014 the girl fans had already crowned before she ever officially debuted \u2014 would not be in the group's first music video. Six members would go on without her. One would stay behind, unnamed, in a building full of mirrors. What happened next is the strangest debut arc in modern K-pop: a group that broke YouTube records without its center, a record label that refused to replace her, and a nineteen-year-old who came back from the edge of erasure to become the defining idol of her generation. This is the story of Jung Ahyeon \u2014 and why the industry now calls her the fifth generation's it girl.",
+    "dur": 47.712
+   },
+   "lead": 0.8,
+   "tail": 11.89,
+   "slot": 60.402,
+   "shots": [
+    {
+     "type": "video",
+     "asset_id": "batterup",
+     "src": "ytdl_cache/batterup.mp4",
+     "source_in": 9.36,
+     "source_out": 17.86,
+     "ah_score": 0.1977,
+     "section": "intro",
+     "tags": [
+      "babymonster",
+      "ahyeon"
+     ],
+     "reason": "calm beat, intro of batterup",
+     "display_start": 0.0,
+     "display_end": 8.5
+    },
+    {
+     "type": "video",
+     "asset_id": "choom",
+     "src": "ytdl_cache/choom.mp4",
+     "source_in": 28.66,
+     "source_out": 37.16,
+     "ah_score": null,
+     "section": "verse1",
+     "tags": [
+      "babymonster",
+      "ahyeon"
+     ],
+     "reason": "calm beat, verse1 of choom",
+     "display_start": 8.5,
+     "display_end": 17.0
+    },
+    {
+     "type": "video",
+     "asset_id": "sheesh",
+     "src": "ytdl_cache/sheesh.mp4",
+     "source_in": 98.67,
+     "source_out": 103.88,
+     "ah_score": null,
+     "section": "verse2",
+     "tags": [
+      "babymonster",
+      "ahyeon"
+     ],
+     "reason": "build beat, verse2 of sheesh",
+     "display_start": 17.0,
+     "display_end": 22.21
+    },
+    {
+     "type": "image",
+     "asset_id": "asset-c5195297c25980f67530",
+     "src": "../../assets/ahyeon/originals/floor-boards--cbab825f.jpg",
+     "entity": "practice_room",
+     "license": "CC BY-NC-SA 2.0",
+     "attribution": "akahawkeyefan \u2014 CC BY-NC-SA 2.0 \u2014 via Openverse",
+     "display_start": 22.21,
+     "display_end": 26.21,
+     "motion": "pull_out",
+     "reason": "'practice room' spoken at 22.5s \u2014 show the place"
+    },
+    {
+     "type": "video",
+     "asset_id": "batterup",
+     "src": "ytdl_cache/batterup.mp4",
+     "source_in": 189.32,
+     "source_out": 197.82,
+     "ah_score": 0.2552,
+     "section": "final_chorus",
+     "tags": [
+      "babymonster",
+      "ahyeon"
+     ],
+     "reason": "peak beat, final_chorus of batterup",
+     "display_start": 26.21,
+     "display_end": 34.71
+    },
+    {
+     "type": "video",
+     "asset_id": "batterup",
+     "src": "ytdl_cache/batterup.mp4",
+     "source_in": 180.36,
+     "source_out": 187.82,
+     "ah_score": 0.1178,
+     "section": "final_chorus",
+     "tags": [
+      "babymonster",
+      "ahyeon"
+     ],
+     "reason": "peak beat, final_chorus of batterup",
+     "display_start": 34.71,
+     "display_end": 43.21
+    },
+    {
+     "type": "video",
+     "asset_id": "choom",
+     "src": "ytdl_cache/choom.mp4",
+     "source_in": 122.94,
+     "source_out": 127.44,
+     "ah_score": null,
+     "section": "chorus2",
+     "tags": [
+      "babymonster",
+      "ahyeon"
+     ],
+     "reason": "payoff beat, chorus2 of choom",
+     "display_start": 43.21,
+     "display_end": 47.71
+    }
+   ],
+   "music_cue": "act0",
+   "captions": "word_timed",
+   "validation": "planned",
+   "frames": 1812,
+   "dur": 60.4,
+   "start": 0.0,
+   "voice_at": 0.8
+  },
+  {
+   "id": "s02",
+   "beat": "co2",
+   "act": 0,
+   "kind": "card",
+   "card": {
+    "kind": "title",
+    "lines": [
+     "AHYEON",
+     "THE 5TH GEN IT GIRL"
+    ]
+   },
+   "purpose": "title card \u2014 title",
+   "editorial_note": "typography carries this beat; background = loop of drip",
+   "narration": {
+    "text": "Ahyeon. The fifth generation it girl.",
+    "dur": 2.808
+   },
+   "lead": 0.8,
+   "tail": 18.0,
+   "slot": 21.608,
+   "shots": [
+    {
+     "type": "video",
+     "asset_id": "drip",
+     "src": "ytdl_cache/drip.mp4",
+     "source_in": 155.09,
+     "source_out": 157.05,
+     "reason": "card background loop (blurred)"
+    }
+   ],
+   "music_cue": "act0",
+   "captions": "word_timed",
+   "validation": "planned",
+   "frames": 648,
+   "dur": 21.6,
+   "start": 60.4,
+   "voice_at": 61.2
+  },
+  {
+   "id": "s03",
+   "beat": "a1c",
+   "act": 1,
+   "kind": "card",
+   "card": {
+    "kind": "chapter",
+    "num": "ACT ONE",
+    "title": "CHUNCHEON"
+   },
+   "purpose": "chapter card \u2014 CHUNCHEON",
+   "editorial_note": "typography carries this beat; background = loop of drip",
+   "narration": {
+    "text": "Act One. Chuncheon.",
+    "dur": 1.872
+   },
+   "lead": 0.8,
+   "tail": 16.0,
+   "slot": 18.672,
+   "shots": [
+    {
+     "type": "video",
+     "asset_id": "drip",
+     "src": "ytdl_cache/drip.mp4",
+     "source_in": 150.63,
+     "source_out": 151.92,
+     "reason": "card background loop (blurred)"
+    }
+   ],
+   "music_cue": "act1",
+   "captions": "word_timed",
+   "validation": "planned",
+   "frames": 560,
+   "dur": 18.666667,
+   "start": 82.0,
+   "voice_at": 82.8
+  },
+  {
+   "id": "s04",
+   "beat": "a1b01",
+   "act": 1,
+   "kind": "clips",
+   "purpose": "origin \u2014 place and childhood",
+   "editorial_note": "4 footage cuts from drip, forever, hotsauce, shit; place imagery at seoul",
+   "narration": {
+    "text": "Before the pyramids of light and the dome-sized crowds, there is a map dot two hours east of Seoul. Chuncheon \u2014 a lakeside city in Gangwon Province, known for its dumplings, its autumn leaves, and almost nothing else in the global music economy. On April 11th, 2007, Jung Ahyeon was born there. By her own fans' accounting she was studying English at five and Mandarin by seven \u2014 a trilingual childhood in a city that has produced exactly one global idol.",
+    "dur": 32.328
+   },
+   "lead": 0.8,
+   "tail": 9.51,
+   "slot": 42.638,
+   "shots": [
+    {
+     "type": "video",
+     "asset_id": "drip",
+     "src": "ytdl_cache/drip.mp4",
+     "source_in": 21.09,
+     "source_out": 25.67,
+     "ah_score": 0.6438,
+     "section": "verse1",
+     "tags": [
+      "babymonster",
+      "ahyeon"
+     ],
+     "reason": "calm beat, verse1 of drip",
+     "display_start": 0.0,
+     "display_end": 5.46
+    },
+    {
+     "type": "image",
+     "asset_id": "asset-e7338dc590037baeb8ac",
+     "src": "../../assets/ahyeon/originals/the-magic-of-the-han-river--2c0119d0.jpg",
+     "entity": "seoul",
+     "license": "CC BY 2.0",
+     "attribution": "UNC - CFC - USFK \u2014 CC BY 2.0 \u2014 via Openverse",
+     "display_start": 5.46,
+     "display_end": 9.46,
+     "motion": "pull_out",
+     "reason": "'Seoul' spoken at 5.8s \u2014 show the place"
+    },
+    {
+     "type": "video",
+     "asset_id": "shit",
+     "src": "ytdl_cache/shit.mp4",
+     "source_in": 178.32,
+     "source_out": 186.82,
+     "ah_score": null,
+     "section": "final_chorus",
+     "tags": [
+      "babymonster",
+      "ahyeon"
+     ],
+     "reason": "peak beat, final_chorus of shit",
+     "display_start": 9.46,
+     "display_end": 17.96
+    },
+    {
+     "type": "video",
+     "asset_id": "forever",
+     "src": "ytdl_cache/forever.mp4",
+     "source_in": 225.52,
+     "source_out": 233.03,
+     "ah_score": null,
+     "section": "final_chorus",
+     "tags": [
+      "babymonster",
+      "ahyeon"
+     ],
+     "reason": "peak beat, final_chorus of forever",
+     "display_start": 17.96,
+     "display_end": 26.46
+    },
+    {
+     "type": "video",
+     "asset_id": "hotsauce",
+     "src": "ytdl_cache/hotsauce.mp4",
+     "source_in": 148.88,
+     "source_out": 154.75,
+     "ah_score": null,
+     "section": "final_chorus",
+     "tags": [
+      "babymonster",
+      "ahyeon"
+     ],
+     "reason": "payoff beat, final_chorus of hotsauce",
+     "display_start": 26.46,
+     "display_end": 32.33
+    }
+   ],
+   "music_cue": "act1",
+   "captions": "word_timed",
+   "validation": "planned",
+   "frames": 1279,
+   "dur": 42.633333,
+   "start": 100.6667,
+   "voice_at": 101.4667
+  },
+  {
+   "id": "s05",
+   "beat": "a1b02",
+   "act": 1,
+   "kind": "clips",
+   "purpose": "event \u2014 the debut",
+   "editorial_note": "4 footage cuts from batterup, choom, drip, sheesh; place imagery at practice_room",
+   "narration": {
+    "text": "Somewhere between eight and ten years old, she entered the system that would rebuild her life around a single objective. YG Entertainment \u2014 the company of BigBang, of 2NE1, of Blackpink \u2014 runs the most selective and most secretive training program in K-pop. Trainees practice six to ten hours a day for years without a debut date, without a guarantee, and in most cases without the public ever learning their name. Ahyeon lasted five years in that machine. Hold on to that number. Five years of auditions, evaluations, and eliminations before the outside world saw her face move.",
+    "dur": 41.232
+   },
+   "lead": 0.8,
+   "tail": 10.88,
+   "slot": 52.912,
+   "shots": [
+    {
+     "type": "video",
+     "asset_id": "batterup",
+     "src": "ytdl_cache/batterup.mp4",
+     "source_in": 109.77,
+     "source_out": 115.39,
+     "ah_score": 0.3898,
+     "section": "verse2",
+     "tags": [
+      "babymonster",
+      "ahyeon"
+     ],
+     "reason": "calm beat, verse2 of batterup",
+     "display_start": 0.0,
+     "display_end": 8.5
+    },
+    {
+     "type": "video",
+     "asset_id": "drip",
+     "src": "ytdl_cache/drip.mp4",
+     "source_in": 91.55,
+     "source_out": 101.44,
+     "ah_score": 0.1035,
+     "section": "verse2",
+     "tags": [
+      "babymonster",
+      "ahyeon"
+     ],
+     "reason": "calm beat, verse2 of drip",
+     "display_start": 8.5,
+     "display_end": 18.39
+    },
+    {
+     "type": "image",
+     "asset_id": "asset-c5195297c25980f67530",
+     "src": "../../assets/ahyeon/originals/floor-boards--cbab825f.jpg",
+     "entity": "practice_room",
+     "license": "CC BY-NC-SA 2.0",
+     "attribution": "akahawkeyefan \u2014 CC BY-NC-SA 2.0 \u2014 via Openverse",
+     "display_start": 18.39,
+     "display_end": 22.39,
+     "motion": "push_in",
+     "reason": "'practice room' spoken at 18.7s \u2014 show the place"
+    },
+    {
+     "type": "video",
+     "asset_id": "sheesh",
+     "src": "ytdl_cache/sheesh.mp4",
+     "source_in": 77.86,
+     "source_out": 86.36,
+     "ah_score": null,
+     "section": "chorus1",
+     "tags": [
+      "babymonster",
+      "ahyeon"
+     ],
+     "reason": "peak beat, chorus1 of sheesh",
+     "display_start": 22.39,
+     "display_end": 30.89
+    },
+    {
+     "type": "video",
+     "asset_id": "choom",
+     "src": "ytdl_cache/choom.mp4",
+     "source_in": 71.75,
+     "source_out": 82.1,
+     "ah_score": null,
+     "section": "chorus1",
+     "tags": [
+      "babymonster",
+      "ahyeon"
+     ],
+     "reason": "peak beat, chorus1 of choom",
+     "display_start": 30.89,
+     "display_end": 41.23
+    }
+   ],
+   "music_cue": "act1",
+   "captions": "word_timed",
+   "validation": "planned",
+   "frames": 1587,
+   "dur": 52.9,
+   "start": 143.3,
+   "voice_at": 144.1
+  },
+  {
+   "id": "s06",
+   "beat": "a1b03",
+   "act": 1,
+   "kind": "clips",
+   "purpose": "development \u2014 The first public signal came on New Year's Day, ",
+   "editorial_note": "5 footage cuts from batterup, drip, moon, sheesh",
+   "narration": {
+    "text": "The first public signal came on New Year's Day, 2023. A trailer called YG Next Movement \u2014 ninety seconds of anonymous trainees dancing like the floor owed them money. The internet did what the internet does: it froze frames, zoomed faces, and started building fan accounts for children whose names had never been spoken. Eleven days later, YG began answering. One by one, it released live performance videos of the members. Ahyeon was the second reveal. She was fifteen years old, performing choreography she had been drilling for half a decade, and the comments read like a launch event.",
+    "dur": 40.224
+   },
+   "lead": 0.8,
+   "tail": 10.73,
+   "slot": 51.754,
+   "shots": [
+    {
+     "type": "video",
+     "asset_id": "batterup",
+     "src": "ytdl_cache/batterup.mp4",
+     "source_in": 70.4,
+     "source_out": 77.19,
+     "ah_score": 0.27,
+     "section": "chorus1",
+     "tags": [
+      "babymonster",
+      "ahyeon"
+     ],
+     "reason": "peak beat, chorus1 of batterup",
+     "display_start": 0.0,
+     "display_end": 8.5
+    },
+    {
+     "type": "video",
+     "asset_id": "drip",
+     "src": "ytdl_cache/drip.mp4",
+     "source_in": 113.22,
+     "source_out": 121.72,
+     "ah_score": 0.3556,
+     "section": "chorus2",
+     "tags": [
+      "babymonster",
+      "ahyeon"
+     ],
+     "reason": "peak beat, chorus2 of drip",
+     "display_start": 8.5,
+     "display_end": 17.0
+    },
+    {
+     "type": "video",
+     "asset_id": "moon",
+     "src": "ytdl_cache/moon.mp4",
+     "source_in": 164.41,
+     "source_out": 172.91,
+     "ah_score": null,
+     "section": "final_chorus",
+     "tags": [
+      "babymonster",
+      "ahyeon"
+     ],
+     "reason": "peak beat, final_chorus of moon",
+     "display_start": 17.0,
+     "display_end": 25.5
+    },
+    {
+     "type": "video",
+     "asset_id": "sheesh",
+     "src": "ytdl_cache/sheesh.mp4",
+     "source_in": 160.1,
+     "source_out": 168.6,
+     "ah_score": null,
+     "section": "final_chorus",
+     "tags": [
+      "babymonster",
+      "ahyeon"
+     ],
+     "reason": "peak beat, final_chorus of sheesh",
+     "display_start": 25.5,
+     "display_end": 34.0
+    },
+    {
+     "type": "video",
+     "asset_id": "batterup",
+     "src": "ytdl_cache/batterup.mp4",
+     "source_in": 127.27,
+     "source_out": 132.94,
+     "ah_score": 0.1097,
+     "section": "chorus2",
+     "tags": [
+      "babymonster",
+      "ahyeon"
+     ],
+     "reason": "payoff beat, chorus2 of batterup",
+     "display_start": 34.0,
+     "display_end": 40.22
+    }
+   ],
+   "music_cue": "act1",
+   "captions": "word_timed",
+   "validation": "planned",
+   "frames": 1553,
+   "dur": 51.766667,
+   "start": 196.2,
+   "voice_at": 197.0
+  },
+  {
+   "id": "s07",
+   "beat": "a1b04",
+   "act": 1,
+   "kind": "clips",
+   "purpose": "development \u2014 Behind the scenes, the selection was being filme",
+   "editorial_note": "5 footage cuts from choom, drip, moon, sheesh",
+   "narration": {
+    "text": "Behind the scenes, the selection was being filmed. Last Evaluation \u2014 YG's own documentary series \u2014 followed seven trainees competing for a lineup no one would guarantee. The footage showed a company deliberately withholding the answer, letting the girls \u2014 and the audience \u2014 sit inside the uncertainty. Ahyeon made the label's shortlist of five. And in those episodes, viewers started using a nickname that would follow her for the next three years: Little Jennie. The company had done this before. The question was whether lightning could strike the same building twice.",
+    "dur": 37.776
+   },
+   "lead": 0.8,
+   "tail": 10.35,
+   "slot": 48.926,
+   "shots": [
+    {
+     "type": "video",
+     "asset_id": "drip",
+     "src": "ytdl_cache/drip.mp4",
+     "source_in": 56.21,
+     "source_out": 61.79,
+     "ah_score": 0.341,
+     "section": "chorus1",
+     "tags": [
+      "babymonster",
+      "ahyeon"
+     ],
+     "reason": "peak beat, chorus1 of drip",
+     "display_start": 0.0,
+     "display_end": 8.5
+    },
+    {
+     "type": "video",
+     "asset_id": "moon",
+     "src": "ytdl_cache/moon.mp4",
+     "source_in": 107.95,
+     "source_out": 116.45,
+     "ah_score": null,
+     "section": "chorus2",
+     "tags": [
+      "babymonster",
+      "ahyeon"
+     ],
+     "reason": "peak beat, chorus2 of moon",
+     "display_start": 8.5,
+     "display_end": 17.0
+    },
+    {
+     "type": "video",
+     "asset_id": "choom",
+     "src": "ytdl_cache/choom.mp4",
+     "source_in": 83.79,
+     "source_out": 91.88,
+     "ah_score": null,
+     "section": "chorus1",
+     "tags": [
+      "babymonster",
+      "ahyeon"
+     ],
+     "reason": "peak beat, chorus1 of choom",
+     "display_start": 17.0,
+     "display_end": 25.5
+    },
+    {
+     "type": "video",
+     "asset_id": "sheesh",
+     "src": "ytdl_cache/sheesh.mp4",
+     "source_in": 60.08,
+     "source_out": 68.58,
+     "ah_score": null,
+     "section": "chorus1",
+     "tags": [
+      "babymonster",
+      "ahyeon"
+     ],
+     "reason": "peak beat, chorus1 of sheesh",
+     "display_start": 25.5,
+     "display_end": 34.0
+    },
+    {
+     "type": "video",
+     "asset_id": "drip",
+     "src": "ytdl_cache/drip.mp4",
+     "source_in": 122.19,
+     "source_out": 125.97,
+     "ah_score": 0.3337,
+     "section": "chorus2",
+     "tags": [
+      "babymonster",
+      "ahyeon"
+     ],
+     "reason": "payoff beat, chorus2 of drip",
+     "display_start": 34.0,
+     "display_end": 37.78
+    }
+   ],
+   "music_cue": "act1",
+   "captions": "word_timed",
+   "validation": "planned",
+   "frames": 1468,
+   "dur": 48.933333,
+   "start": 247.9667,
+   "voice_at": 248.7667
+  },
+  {
+   "id": "s08",
+   "beat": "a2c",
+   "act": 2,
+   "kind": "card",
+   "card": {
+    "kind": "chapter",
+    "num": "ACT TWO",
+    "title": "THE VOICE"
+   },
+   "purpose": "chapter card \u2014 THE VOICE",
+   "editorial_note": "typography carries this beat; background = loop of drip",
+   "narration": {
+    "text": "Act Two. The voice they heard first.",
+    "dur": 2.616
+   },
+   "lead": 0.8,
+   "tail": 16.0,
+   "slot": 19.416,
+   "shots": [
+    {
+     "type": "video",
+     "asset_id": "drip",
+     "src": "ytdl_cache/drip.mp4",
+     "source_in": 155.09,
+     "source_out": 157.05,
+     "reason": "card background loop (blurred)"
+    }
+   ],
+   "music_cue": "act2",
+   "captions": "word_timed",
+   "validation": "planned",
+   "frames": 582,
+   "dur": 19.4,
+   "start": 296.9,
+   "voice_at": 297.7
+  },
+  {
+   "id": "s09",
+   "beat": "a2b01",
+   "act": 2,
+   "kind": "clips",
+   "purpose": "crisis \u2014 the withdrawal",
+   "editorial_note": "5 footage cuts from batterup, choom, drip, forever, hotsauce; place imagery at practice_room",
+   "narration": {
+    "text": "Here is the detail that separates Ahyeon's origin from every trainee handbook. Before BABYMONSTER had a name, a logo, or a debut date, a video leaked out of the practice rooms: a teenage girl singing Charlie Puth's Dangerously \u2014 alone, one take, no stage, no styling. It spread the way genuine things spread, unannounced and unkillable. And then it reached the person who wrote the song. Charlie Puth didn't just notice it. He said publicly that he had heard the cover, and that the voice had stopped him.",
+    "dur": 35.832
+   },
+   "lead": 0.8,
+   "tail": 10.05,
+   "slot": 46.682,
+   "shots": [
+    {
+     "type": "video",
+     "asset_id": "forever",
+     "src": "ytdl_cache/forever.mp4",
+     "source_in": 39.27,
+     "source_out": 47.77,
+     "ah_score": null,
+     "section": "verse1",
+     "tags": [
+      "babymonster",
+      "ahyeon"
+     ],
+     "reason": "calm beat, verse1 of forever",
+     "display_start": 0.0,
+     "display_end": 8.5
+    },
+    {
+     "type": "video",
+     "asset_id": "batterup",
+     "src": "ytdl_cache/batterup.mp4",
+     "source_in": 89.79,
+     "source_out": 93.4,
+     "ah_score": 0.16,
+     "section": "verse2",
+     "tags": [
+      "babymonster",
+      "ahyeon"
+     ],
+     "reason": "calm beat, verse2 of batterup",
+     "display_start": 8.5,
+     "display_end": 12.11
+    },
+    {
+     "type": "image",
+     "asset_id": "asset-c5195297c25980f67530",
+     "src": "../../assets/ahyeon/originals/floor-boards--cbab825f.jpg",
+     "entity": "practice_room",
+     "license": "CC BY-NC-SA 2.0",
+     "attribution": "akahawkeyefan \u2014 CC BY-NC-SA 2.0 \u2014 via Openverse",
+     "display_start": 12.11,
+     "display_end": 16.11,
+     "motion": "push_in",
+     "reason": "'practice room' spoken at 12.4s \u2014 show the place"
+    },
+    {
+     "type": "video",
+     "asset_id": "hotsauce",
+     "src": "ytdl_cache/hotsauce.mp4",
+     "source_in": 55.58,
+     "source_out": 64.08,
+     "ah_score": null,
+     "section": "chorus1",
+     "tags": [
+      "babymonster",
+      "ahyeon"
+     ],
+     "reason": "peak beat, chorus1 of hotsauce",
+     "display_start": 16.11,
+     "display_end": 24.61
+    },
+    {
+     "type": "video",
+     "asset_id": "choom",
+     "src": "ytdl_cache/choom.mp4",
+     "source_in": 178.67,
+     "source_out": 186.76,
+     "ah_score": null,
+     "section": "final_chorus",
+     "tags": [
+      "babymonster",
+      "ahyeon"
+     ],
+     "reason": "peak beat, final_chorus of choom",
+     "display_start": 24.61,
+     "display_end": 33.11
+    },
+    {
+     "type": "video",
+     "asset_id": "drip",
+     "src": "ytdl_cache/drip.mp4",
+     "source_in": 110.08,
+     "source_out": 112.8,
+     "ah_score": 0.1823,
+     "section": "chorus2",
+     "tags": [
+      "babymonster",
+      "ahyeon"
+     ],
+     "reason": "payoff beat, chorus2 of drip",
+     "display_start": 33.11,
+     "display_end": 35.83
+    }
+   ],
+   "music_cue": "act2",
+   "captions": "word_timed",
+   "validation": "planned",
+   "frames": 1400,
+   "dur": 46.666667,
+   "start": 316.3,
+   "voice_at": 317.1
+  },
+  {
+   "id": "s10",
+   "beat": "a2b02",
+   "act": 2,
+   "kind": "clips",
+   "purpose": "event \u2014 the debut",
+   "editorial_note": "4 footage cuts from batterup, drip, forever, moon",
+   "narration": {
+    "text": "On May 14th, 2023, the group released Dream \u2014 a pre-debut single that hit number one on Billboard's Hot Trending Songs chart before the group had officially debuted. The YouTube channel crossed one million subscribers in fifty-two days, the fastest in K-pop girl group history at the time. Industry watchers kept asking the same question: why was YG building so much momentum for a group with no release date? The answer, it turned out, was that the date kept moving \u2014 because the lineup wasn't finished. One voice was missing.",
+    "dur": 34.848
+   },
+   "lead": 0.8,
+   "tail": 9.9,
+   "slot": 45.548,
+   "shots": [
+    {
+     "type": "video",
+     "asset_id": "batterup",
+     "src": "ytdl_cache/batterup.mp4",
+     "source_in": 61.73,
+     "source_out": 68.27,
+     "ah_score": 0.1204,
+     "section": "chorus1",
+     "tags": [
+      "babymonster",
+      "ahyeon"
+     ],
+     "reason": "peak beat, chorus1 of batterup",
+     "display_start": 0.0,
+     "display_end": 8.5
+    },
+    {
+     "type": "video",
+     "asset_id": "forever",
+     "src": "ytdl_cache/forever.mp4",
+     "source_in": 92.4,
+     "source_out": 100.9,
+     "ah_score": null,
+     "section": "chorus1",
+     "tags": [
+      "babymonster",
+      "ahyeon"
+     ],
+     "reason": "peak beat, chorus1 of forever",
+     "display_start": 8.5,
+     "display_end": 17.0
+    },
+    {
+     "type": "video",
+     "asset_id": "moon",
+     "src": "ytdl_cache/moon.mp4",
+     "source_in": 48.31,
+     "source_out": 56.81,
+     "ah_score": null,
+     "section": "chorus1",
+     "tags": [
+      "babymonster",
+      "ahyeon"
+     ],
+     "reason": "peak beat, chorus1 of moon",
+     "display_start": 17.0,
+     "display_end": 25.5
+    },
+    {
+     "type": "video",
+     "asset_id": "drip",
+     "src": "ytdl_cache/drip.mp4",
+     "source_in": 64.3,
+     "source_out": 66.34,
+     "ah_score": 0.4041,
+     "section": "chorus1",
+     "tags": [
+      "babymonster",
+      "ahyeon"
+     ],
+     "reason": "peak beat, chorus1 of drip",
+     "display_start": 25.5,
+     "display_end": 34.85
+    }
+   ],
+   "music_cue": "act2",
+   "captions": "word_timed",
+   "validation": "planned",
+   "frames": 1366,
+   "dur": 45.533333,
+   "start": 362.9667,
+   "voice_at": 363.7667
+  },
+  {
+   "id": "s11",
+   "beat": "a2b03",
+   "act": 2,
+   "kind": "clips",
+   "purpose": "development \u2014 Inside the company, Ahyeon was being shaped as a",
+   "editorial_note": "4 footage cuts from batterup, choom, drip, sheesh",
+   "narration": {
+    "text": "Inside the company, Ahyeon was being shaped as a specific weapon: main vocalist, lead rapper, lead dancer, center. That is four job descriptions on one person, and each one is normally a full-time specialty. The rare idols who carry all four are the ones the industry builds eras around. YG had a term for what it saw in her \u2014 and fans had theirs. Both meant the same thing: the group's identity was designed around a voice that could carry hip-hop swagger on one track and pure pop ache on the next, without changing costumes.",
+    "dur": 35.376
+   },
+   "lead": 0.8,
+   "tail": 9.98,
+   "slot": 46.156,
+   "shots": [
+    {
+     "type": "video",
+     "asset_id": "sheesh",
+     "src": "ytdl_cache/sheesh.mp4",
+     "source_in": 175.93,
+     "source_out": 184.43,
+     "ah_score": null,
+     "section": "final_chorus",
+     "tags": [
+      "babymonster",
+      "ahyeon"
+     ],
+     "reason": "peak beat, final_chorus of sheesh",
+     "display_start": 0.0,
+     "display_end": 8.5
+    },
+    {
+     "type": "video",
+     "asset_id": "choom",
+     "src": "ytdl_cache/choom.mp4",
+     "source_in": 129.52,
+     "source_out": 138.02,
+     "ah_score": null,
+     "section": "chorus2",
+     "tags": [
+      "babymonster",
+      "ahyeon"
+     ],
+     "reason": "peak beat, chorus2 of choom",
+     "display_start": 8.5,
+     "display_end": 17.0
+    },
+    {
+     "type": "video",
+     "asset_id": "batterup",
+     "src": "ytdl_cache/batterup.mp4",
+     "source_in": 68.27,
+     "source_out": 70.39,
+     "ah_score": 0.3075,
+     "section": "chorus1",
+     "tags": [
+      "babymonster",
+      "ahyeon"
+     ],
+     "reason": "peak beat, chorus1 of batterup",
+     "display_start": 17.0,
+     "display_end": 25.5
+    },
+    {
+     "type": "video",
+     "asset_id": "drip",
+     "src": "ytdl_cache/drip.mp4",
+     "source_in": 176.93,
+     "source_out": 186.81,
+     "ah_score": null,
+     "section": "final_chorus",
+     "tags": [
+      "babymonster",
+      "ahyeon"
+     ],
+     "reason": "peak beat, final_chorus of drip",
+     "display_start": 25.5,
+     "display_end": 35.38
+    }
+   ],
+   "music_cue": "act2",
+   "captions": "word_timed",
+   "validation": "planned",
+   "frames": 1385,
+   "dur": 46.166667,
+   "start": 408.5,
+   "voice_at": 409.3
+  },
+  {
+   "id": "s12",
+   "beat": "a2b04",
+   "act": 2,
+   "kind": "clips",
+   "purpose": "event \u2014 the debut",
+   "editorial_note": "4 footage cuts from batterup, choom, hotsauce, shit; place imagery at practice_room",
+   "narration": {
+    "text": "The Puth thread didn't end with the cover. Two years later, when the group finally released its first album, track four would be called Like That \u2014 written and gifted by Charlie Puth himself, explicitly in response to that practice-room video. Remember the sequence, because it matters: a cover made in anonymity went up the chain, reached the original artist, and came back down as a song on a debut album. In an industry where Western features are bought and negotiated, one of the biggest pop writers on Earth handed a debut track to a trainee he had never met.",
+    "dur": 35.208
+   },
+   "lead": 0.8,
+   "tail": 9.95,
+   "slot": 45.958,
+   "shots": [
+    {
+     "type": "video",
+     "asset_id": "shit",
+     "src": "ytdl_cache/shit.mp4",
+     "source_in": 27.57,
+     "source_out": 36.0,
+     "ah_score": null,
+     "section": "verse1",
+     "tags": [
+      "babymonster",
+      "ahyeon"
+     ],
+     "reason": "calm beat, verse1 of shit",
+     "display_start": 0.0,
+     "display_end": 8.5
+    },
+    {
+     "type": "video",
+     "asset_id": "hotsauce",
+     "src": "ytdl_cache/hotsauce.mp4",
+     "source_in": 43.55,
+     "source_out": 47.8,
+     "ah_score": null,
+     "section": "verse1",
+     "tags": [
+      "babymonster",
+      "ahyeon"
+     ],
+     "reason": "calm beat, verse1 of hotsauce",
+     "display_start": 8.5,
+     "display_end": 12.75
+    },
+    {
+     "type": "image",
+     "asset_id": "asset-c5195297c25980f67530",
+     "src": "../../assets/ahyeon/originals/floor-boards--cbab825f.jpg",
+     "entity": "practice_room",
+     "license": "CC BY-NC-SA 2.0",
+     "attribution": "akahawkeyefan \u2014 CC BY-NC-SA 2.0 \u2014 via Openverse",
+     "display_start": 12.75,
+     "display_end": 16.75,
+     "motion": "push_in",
+     "reason": "'practice room' spoken at 13.1s \u2014 show the place"
+    },
+    {
+     "type": "video",
+     "asset_id": "batterup",
+     "src": "ytdl_cache/batterup.mp4",
+     "source_in": 58.61,
+     "source_out": 61.73,
+     "ah_score": 0.2712,
+     "section": "chorus1",
+     "tags": [
+      "babymonster",
+      "ahyeon"
+     ],
+     "reason": "peak beat, chorus1 of batterup",
+     "display_start": 16.75,
+     "display_end": 25.25
+    },
+    {
+     "type": "video",
+     "asset_id": "choom",
+     "src": "ytdl_cache/choom.mp4",
+     "source_in": 191.29,
+     "source_out": 201.24,
+     "ah_score": null,
+     "section": "final_chorus",
+     "tags": [
+      "babymonster",
+      "ahyeon"
+     ],
+     "reason": "peak beat, final_chorus of choom",
+     "display_start": 25.25,
+     "display_end": 35.21
+    }
+   ],
+   "music_cue": "act2",
+   "captions": "word_timed",
+   "validation": "planned",
+   "frames": 1379,
+   "dur": 45.966667,
+   "start": 454.6667,
+   "voice_at": 455.4667
+  },
+  {
+   "id": "s13",
+   "beat": "a3c",
+   "act": 3,
+   "kind": "card",
+   "card": {
+    "kind": "chapter",
+    "num": "ACT THREE",
+    "title": "THE WAIT"
+   },
+   "purpose": "chapter card \u2014 THE WAIT",
+   "editorial_note": "typography carries this beat; background = loop of drip",
+   "narration": {
+    "text": "Act Three. The wait.",
+    "dur": 2.04
+   },
+   "lead": 0.8,
+   "tail": 16.0,
+   "slot": 18.84,
+   "shots": [
+    {
+     "type": "video",
+     "asset_id": "drip",
+     "src": "ytdl_cache/drip.mp4",
+     "source_in": 155.09,
+     "source_out": 157.05,
+     "reason": "card background loop (blurred)"
+    }
+   ],
+   "music_cue": "act3",
+   "captions": "word_timed",
+   "validation": "planned",
+   "frames": 565,
+   "dur": 18.833333,
+   "start": 500.6333,
+   "voice_at": 501.4333
+  },
+  {
+   "id": "s14",
+   "beat": "a3b01",
+   "act": 3,
+   "kind": "clips",
+   "purpose": "crisis \u2014 the withdrawal",
+   "editorial_note": "4 footage cuts from drip, forever, hotsauce, sheesh",
+   "narration": {
+    "text": "November 15th, 2023. The notice was three sentences long. YG announced that Ahyeon would not participate in the group's debut activities, citing health and personal circumstances. She would remain a member of BABYMONSTER. No timeline. No diagnosis. No footage. In K-pop, where a nine-month hiatus can quietly end a career, the announcement read like a countdown nobody could see. She was sixteen years old.",
+    "dur": 30.384
+   },
+   "lead": 0.8,
+   "tail": 9.2,
+   "slot": 40.384,
+   "shots": [
+    {
+     "type": "video",
+     "asset_id": "drip",
+     "src": "ytdl_cache/drip.mp4",
+     "source_in": 159.98,
+     "source_out": 168.48,
+     "ah_score": null,
+     "section": "final_chorus",
+     "tags": [
+      "babymonster",
+      "ahyeon"
+     ],
+     "reason": "peak beat, final_chorus of drip",
+     "display_start": 0.0,
+     "display_end": 8.5
+    },
+    {
+     "type": "video",
+     "asset_id": "forever",
+     "src": "ytdl_cache/forever.mp4",
+     "source_in": 207.84,
+     "source_out": 214.72,
+     "ah_score": null,
+     "section": "final_chorus",
+     "tags": [
+      "babymonster",
+      "ahyeon"
+     ],
+     "reason": "peak beat, final_chorus of forever",
+     "display_start": 8.5,
+     "display_end": 17.0
+    },
+    {
+     "type": "video",
+     "asset_id": "sheesh",
+     "src": "ytdl_cache/sheesh.mp4",
+     "source_in": 52.68,
+     "source_out": 60.08,
+     "ah_score": null,
+     "section": "chorus1",
+     "tags": [
+      "babymonster",
+      "ahyeon"
+     ],
+     "reason": "peak beat, chorus1 of sheesh",
+     "display_start": 17.0,
+     "display_end": 25.5
+    },
+    {
+     "type": "video",
+     "asset_id": "hotsauce",
+     "src": "ytdl_cache/hotsauce.mp4",
+     "source_in": 133.35,
+     "source_out": 138.23,
+     "ah_score": null,
+     "section": "final_chorus",
+     "tags": [
+      "babymonster",
+      "ahyeon"
+     ],
+     "reason": "payoff beat, final_chorus of hotsauce",
+     "display_start": 25.5,
+     "display_end": 30.38
+    }
+   ],
+   "music_cue": "act3",
+   "captions": "word_timed",
+   "validation": "planned",
+   "frames": 1212,
+   "dur": 40.4,
+   "start": 519.4667,
+   "voice_at": 520.2667
+  },
+  {
+   "id": "s15",
+   "beat": "a3b02",
+   "act": 3,
+   "kind": "clips",
+   "purpose": "event \u2014 the debut",
+   "editorial_note": "4 footage cuts from batterup",
+   "narration": {
+    "text": "Twelve days later, the six-member BABYMONSTER released Batter Up. The numbers were absurd: twenty-two point five nine million views in twenty-four hours \u2014 at that moment, the most-viewed debut music video in K-pop history. One hundred million views in eighteen days. The group had arrived, loudly, undeniably \u2014 and every article, every comment, every frame of choreography carried the same asterisk. Six of seven. The debut was a triumph shaped exactly like an absence.",
+    "dur": 32.856
+   },
+   "lead": 0.8,
+   "tail": 9.59,
+   "slot": 43.246,
+   "shots": [
+    {
+     "type": "video",
+     "asset_id": "batterup",
+     "src": "ytdl_cache/batterup.mp4",
+     "source_in": 172.15,
+     "source_out": 176.77,
+     "ah_score": 0.1244,
+     "section": "final_chorus",
+     "tags": [
+      "babymonster",
+      "ahyeon"
+     ],
+     "reason": "peak beat, final_chorus of batterup",
+     "display_start": 0.0,
+     "display_end": 8.5
+    },
+    {
+     "type": "video",
+     "asset_id": "batterup",
+     "src": "ytdl_cache/batterup.mp4",
+     "source_in": 122.65,
+     "source_out": 124.82,
+     "ah_score": 0.1482,
+     "section": "chorus2",
+     "tags": [
+      "babymonster",
+      "ahyeon"
+     ],
+     "reason": "peak beat, chorus2 of batterup",
+     "display_start": 8.5,
+     "display_end": 17.0
+    },
+    {
+     "type": "video",
+     "asset_id": "batterup",
+     "src": "ytdl_cache/batterup.mp4",
+     "source_in": 176.77,
+     "source_out": 180.35,
+     "ah_score": 0.1455,
+     "section": "final_chorus",
+     "tags": [
+      "babymonster",
+      "ahyeon"
+     ],
+     "reason": "peak beat, final_chorus of batterup",
+     "display_start": 17.0,
+     "display_end": 25.5
+    },
+    {
+     "type": "video",
+     "asset_id": "batterup",
+     "src": "ytdl_cache/batterup.mp4",
+     "source_in": 124.81,
+     "source_out": 127.27,
+     "ah_score": 0.2321,
+     "section": "chorus2",
+     "tags": [
+      "babymonster",
+      "ahyeon"
+     ],
+     "reason": "payoff beat, chorus2 of batterup",
+     "display_start": 25.5,
+     "display_end": 32.86
+    }
+   ],
+   "music_cue": "act3",
+   "captions": "word_timed",
+   "validation": "planned",
+   "frames": 1297,
+   "dur": 43.233333,
+   "start": 559.8667,
+   "voice_at": 560.6667
+  },
+  {
+   "id": "s16",
+   "beat": "a3s",
+   "act": 3,
+   "kind": "card",
+   "card": {
+    "kind": "stat",
+    "big": "22.59M",
+    "small": "first-24h views \u2014 Batter Up, the most-viewed K-pop debut MV ever, without her"
+   },
+   "purpose": "stat card \u2014 stat",
+   "editorial_note": "typography carries this beat; background = loop of drip",
+   "narration": {
+    "text": "Twenty-two point five nine million views in the first twenty-four hours.",
+    "dur": 4.776
+   },
+   "lead": 0.8,
+   "tail": 12.0,
+   "slot": 17.576,
+   "shots": [
+    {
+     "type": "video",
+     "asset_id": "drip",
+     "src": "ytdl_cache/drip.mp4",
+     "source_in": 21.59,
+     "source_out": 25.67,
+     "reason": "card background loop (blurred)"
+    }
+   ],
+   "music_cue": "act3",
+   "captions": "word_timed",
+   "validation": "planned",
+   "frames": 527,
+   "dur": 17.566667,
+   "start": 603.1,
+   "voice_at": 603.9
+  },
+  {
+   "id": "s17",
+   "beat": "a3b03",
+   "act": 3,
+   "kind": "clips",
+   "purpose": "development \u2014 February 2024 brought Stuck In The Middle \u2014 a ba",
+   "editorial_note": "5 footage cuts from batterup, choom, drip, forever, moon",
+   "narration": {
+    "text": "February 2024 brought Stuck In The Middle \u2014 a ballad-adjacent single that showcased the group's softer register. Again six members. Again the comments. By then, the absence had become the group's most-discussed member. Fan campaigns for her return ran in multiple languages and multiple time zones; the fandom's nickname for the wait \u2014 worth the wait \u2014 stopped being a slogan and became a prediction. Inside YG, sources say, the decision had already been made. The company did not refilm, did not re-cast, did not re-shuffle. It waited for her.",
+    "dur": 38.304
+   },
+   "lead": 0.8,
+   "tail": 10.43,
+   "slot": 49.534,
+   "shots": [
+    {
+     "type": "video",
+     "asset_id": "drip",
+     "src": "ytdl_cache/drip.mp4",
+     "source_in": 72.71,
+     "source_out": 77.59,
+     "ah_score": 0.1826,
+     "section": "chorus1",
+     "tags": [
+      "babymonster",
+      "ahyeon"
+     ],
+     "reason": "peak beat, chorus1 of drip",
+     "display_start": 0.0,
+     "display_end": 8.5
+    },
+    {
+     "type": "video",
+     "asset_id": "choom",
+     "src": "ytdl_cache/choom.mp4",
+     "source_in": 138.22,
+     "source_out": 145.39,
+     "ah_score": null,
+     "section": "chorus2",
+     "tags": [
+      "babymonster",
+      "ahyeon"
+     ],
+     "reason": "peak beat, chorus2 of choom",
+     "display_start": 8.5,
+     "display_end": 17.0
+    },
+    {
+     "type": "video",
+     "asset_id": "forever",
+     "src": "ytdl_cache/forever.mp4",
+     "source_in": 214.72,
+     "source_out": 221.89,
+     "ah_score": null,
+     "section": "final_chorus",
+     "tags": [
+      "babymonster",
+      "ahyeon"
+     ],
+     "reason": "peak beat, final_chorus of forever",
+     "display_start": 17.0,
+     "display_end": 25.5
+    },
+    {
+     "type": "video",
+     "asset_id": "moon",
+     "src": "ytdl_cache/moon.mp4",
+     "source_in": 154.4,
+     "source_out": 160.95,
+     "ah_score": null,
+     "section": "final_chorus",
+     "tags": [
+      "babymonster",
+      "ahyeon"
+     ],
+     "reason": "peak beat, final_chorus of moon",
+     "display_start": 25.5,
+     "display_end": 34.0
+    },
+    {
+     "type": "video",
+     "asset_id": "batterup",
+     "src": "ytdl_cache/batterup.mp4",
+     "source_in": 118.02,
+     "source_out": 121.27,
+     "ah_score": 0.1785,
+     "section": "chorus2",
+     "tags": [
+      "babymonster",
+      "ahyeon"
+     ],
+     "reason": "payoff beat, chorus2 of batterup",
+     "display_start": 34.0,
+     "display_end": 38.3
+    }
+   ],
+   "music_cue": "act3",
+   "captions": "word_timed",
+   "validation": "planned",
+   "frames": 1486,
+   "dur": 49.533333,
+   "start": 620.6667,
+   "voice_at": 621.4667
+  },
+  {
+   "id": "s18",
+   "beat": "a3b04",
+   "act": 3,
+   "kind": "clips",
+   "purpose": "crisis \u2014 the withdrawal",
+   "editorial_note": "5 footage cuts from batterup, drip, forever, sheesh, shit",
+   "narration": {
+    "text": "In the early spring of 2024, YG posted a notice that fans screenshot like a birth certificate: Ahyeon would rejoin the group. The seven-member rebrand was baked into the identity itself \u2014 the debut EP would be stylized BABYMONS7ER, the numeral seven welded into the wordmark. Think about how rare that is. Labels replace members. Labels delay debuts. Labels almost never architect the comeback of a trainee who never debuted into the group's founding mythology. The missing girl was about to become the founding story.",
+    "dur": 37.392
+   },
+   "lead": 0.8,
+   "tail": 10.29,
+   "slot": 48.482,
+   "shots": [
+    {
+     "type": "video",
+     "asset_id": "drip",
+     "src": "ytdl_cache/drip.mp4",
+     "source_in": 61.8,
+     "source_out": 64.3,
+     "ah_score": 0.1789,
+     "section": "chorus1",
+     "tags": [
+      "babymonster",
+      "ahyeon"
+     ],
+     "reason": "peak beat, chorus1 of drip",
+     "display_start": 0.0,
+     "display_end": 8.5
+    },
+    {
+     "type": "video",
+     "asset_id": "sheesh",
+     "src": "ytdl_cache/sheesh.mp4",
+     "source_in": 68.64,
+     "source_out": 76.2,
+     "ah_score": null,
+     "section": "chorus1",
+     "tags": [
+      "babymonster",
+      "ahyeon"
+     ],
+     "reason": "peak beat, chorus1 of sheesh",
+     "display_start": 8.5,
+     "display_end": 17.0
+    },
+    {
+     "type": "video",
+     "asset_id": "shit",
+     "src": "ytdl_cache/shit.mp4",
+     "source_in": 127.67,
+     "source_out": 134.55,
+     "ah_score": null,
+     "section": "chorus2",
+     "tags": [
+      "babymonster",
+      "ahyeon"
+     ],
+     "reason": "peak beat, chorus2 of shit",
+     "display_start": 17.0,
+     "display_end": 25.5
+    },
+    {
+     "type": "video",
+     "asset_id": "batterup",
+     "src": "ytdl_cache/batterup.mp4",
+     "source_in": 77.19,
+     "source_out": 81.15,
+     "ah_score": 0.1566,
+     "section": "chorus1",
+     "tags": [
+      "babymonster",
+      "ahyeon"
+     ],
+     "reason": "peak beat, chorus1 of batterup",
+     "display_start": 25.5,
+     "display_end": 34.0
+    },
+    {
+     "type": "video",
+     "asset_id": "forever",
+     "src": "ytdl_cache/forever.mp4",
+     "source_in": 221.93,
+     "source_out": 225.32,
+     "ah_score": null,
+     "section": "final_chorus",
+     "tags": [
+      "babymonster",
+      "ahyeon"
+     ],
+     "reason": "payoff beat, final_chorus of forever",
+     "display_start": 34.0,
+     "display_end": 37.39
+    }
+   ],
+   "music_cue": "act3",
+   "captions": "word_timed",
+   "validation": "planned",
+   "frames": 1454,
+   "dur": 48.466667,
+   "start": 670.2,
+   "voice_at": 671.0
+  },
+  {
+   "id": "s19",
+   "beat": "a3x",
+   "act": 3,
+   "kind": "interlude",
+   "purpose": "breathing room \u2014 pure footage montage",
+   "editorial_note": "no narration; highest-presence shots, music moment",
+   "narration": {
+    "text": "",
+    "dur": 0.0
+   },
+   "lead": 0.8,
+   "tail": 11.35,
+   "slot": 12.15,
+   "shots": [
+    {
+     "type": "video",
+     "asset_id": "sheesh",
+     "src": "ytdl_cache/sheesh.mp4",
+     "source_in": 121.64,
+     "source_out": 124.32,
+     "ah_score": null,
+     "section": "chorus2",
+     "tags": [
+      "babymonster",
+      "ahyeon"
+     ],
+     "reason": "peak beat, chorus2 of sheesh",
+     "display_start": 0.0,
+     "display_end": 9.2
+    }
+   ],
+   "music_cue": "act3",
+   "captions": null,
+   "validation": "planned",
+   "frames": 364,
+   "dur": 12.133333,
+   "start": 718.6667,
+   "voice_at": 718.6667
+  },
+  {
+   "id": "s20",
+   "beat": "a4c",
+   "act": 4,
+   "kind": "card",
+   "card": {
+    "kind": "chapter",
+    "num": "ACT FOUR",
+    "title": "WORTH THE WAIT"
+   },
+   "purpose": "chapter card \u2014 WORTH THE WAIT",
+   "editorial_note": "typography carries this beat; background = loop of drip",
+   "narration": {
+    "text": "Act Four. Worth the wait.",
+    "dur": 2.208
+   },
+   "lead": 0.8,
+   "tail": 16.0,
+   "slot": 19.008,
+   "shots": [
+    {
+     "type": "video",
+     "asset_id": "drip",
+     "src": "ytdl_cache/drip.mp4",
+     "source_in": 155.09,
+     "source_out": 157.05,
+     "reason": "card background loop (blurred)"
+    }
+   ],
+   "music_cue": "act4",
+   "captions": "word_timed",
+   "validation": "planned",
+   "frames": 570,
+   "dur": 19.0,
+   "start": 730.8,
+   "voice_at": 731.6
+  },
+  {
+   "id": "s21",
+   "beat": "a4b01",
+   "act": 4,
+   "kind": "clips",
+   "purpose": "event \u2014 the debut",
+   "editorial_note": "5 footage cuts from sheesh; place imagery at korea_context",
+   "narration": {
+    "text": "April 1st, 2024. Seven members. BABYMONS7ER. The debut EP pulled over four hundred sixty thousand pre-orders and landed at number three on Korea's Circle Album Chart. The title track Sheesh was engineered as a statement \u2014 brass stabs, chant hooks, a drop built for stadiums \u2014 and it climbed to the top ten of the Circle Digital Chart while posting the highest Spotify debut of any K-pop girl group that year. The center of its choreography, and of nearly every camera move, was the girl who had missed the countdown.",
+    "dur": 35.184
+   },
+   "lead": 0.8,
+   "tail": 9.95,
+   "slot": 45.934,
+   "shots": [
+    {
+     "type": "video",
+     "asset_id": "sheesh",
+     "src": "ytdl_cache/sheesh.mp4",
+     "source_in": 28.98,
+     "source_out": 37.48,
+     "ah_score": null,
+     "section": "verse1",
+     "tags": [
+      "babymonster",
+      "ahyeon"
+     ],
+     "reason": "calm beat, verse1 of sheesh",
+     "display_start": 0.0,
+     "display_end": 8.5
+    },
+    {
+     "type": "video",
+     "asset_id": "sheesh",
+     "src": "ytdl_cache/sheesh.mp4",
+     "source_in": 42.38,
+     "source_out": 44.96,
+     "ah_score": null,
+     "section": "verse1",
+     "tags": [
+      "babymonster",
+      "ahyeon"
+     ],
+     "reason": "calm beat, verse1 of sheesh",
+     "display_start": 8.5,
+     "display_end": 11.08
+    },
+    {
+     "type": "image",
+     "asset_id": "asset-184714b29c22a75f8aba",
+     "src": "../../assets/ahyeon/originals/seoul-at-night--4b2574dd.jpg",
+     "entity": "korea_context",
+     "license": "CC BY-NC-SA 2.0",
+     "attribution": "civ33 \u2014 CC BY-NC-SA 2.0 \u2014 via Openverse",
+     "display_start": 11.08,
+     "display_end": 15.08,
+     "motion": "push_in",
+     "reason": "'South Korea' spoken at 11.4s \u2014 show the place"
+    },
+    {
+     "type": "video",
+     "asset_id": "sheesh",
+     "src": "ytdl_cache/sheesh.mp4",
+     "source_in": 112.8,
+     "source_out": 116.08,
+     "ah_score": null,
+     "section": "chorus2",
+     "tags": [
+      "babymonster",
+      "ahyeon"
+     ],
+     "reason": "peak beat, chorus2 of sheesh",
+     "display_start": 15.08,
+     "display_end": 23.58
+    },
+    {
+     "type": "video",
+     "asset_id": "sheesh",
+     "src": "ytdl_cache/sheesh.mp4",
+     "source_in": 129.8,
+     "source_out": 132.72,
+     "ah_score": null,
+     "section": "chorus2",
+     "tags": [
+      "babymonster",
+      "ahyeon"
+     ],
+     "reason": "peak beat, chorus2 of sheesh",
+     "display_start": 23.58,
+     "display_end": 32.08
+    },
+    {
+     "type": "video",
+     "asset_id": "sheesh",
+     "src": "ytdl_cache/sheesh.mp4",
+     "source_in": 124.32,
+     "source_out": 127.4,
+     "ah_score": null,
+     "section": "chorus2",
+     "tags": [
+      "babymonster",
+      "ahyeon"
+     ],
+     "reason": "payoff beat, chorus2 of sheesh",
+     "display_start": 32.08,
+     "display_end": 35.18
+    }
+   ],
+   "music_cue": "act4",
+   "captions": "word_timed",
+   "validation": "planned",
+   "frames": 1378,
+   "dur": 45.933333,
+   "start": 749.8,
+   "voice_at": 750.6
+  },
+  {
+   "id": "s22",
+   "beat": "a4b02",
+   "act": 4,
+   "kind": "clips",
+   "purpose": "crisis \u2014 the withdrawal",
+   "editorial_note": "3 footage cuts from sheesh; place imagery at practice_room",
+   "narration": {
+    "text": "And there, on the album, sat the full-circle moment: Like That. Written by Charlie Puth. Gifted, by his own account, because a practice-room cover had once stopped him mid-scroll. Ahyeon didn't just get her debut \u2014 she got a debut where one of the world's biggest pop writers had personally co-signed the voice the industry spent sixteen months waiting to hear. Critics noticed what YG had bet on: the group's seven-member sound finally had its missing ceiling.",
+    "dur": 29.328
+   },
+   "lead": 0.8,
+   "tail": 9.04,
+   "slot": 39.168,
+   "shots": [
+    {
+     "type": "video",
+     "asset_id": "sheesh",
+     "src": "ytdl_cache/sheesh.mp4",
+     "source_in": 16.28,
+     "source_out": 24.59,
+     "ah_score": null,
+     "section": "intro",
+     "tags": [
+      "babymonster",
+      "ahyeon"
+     ],
+     "reason": "calm beat, intro of sheesh",
+     "display_start": 0.0,
+     "display_end": 8.31
+    },
+    {
+     "type": "image",
+     "asset_id": "asset-c5195297c25980f67530",
+     "src": "../../assets/ahyeon/originals/floor-boards--cbab825f.jpg",
+     "entity": "practice_room",
+     "license": "CC BY-NC-SA 2.0",
+     "attribution": "akahawkeyefan \u2014 CC BY-NC-SA 2.0 \u2014 via Openverse",
+     "display_start": 8.31,
+     "display_end": 12.31,
+     "motion": "pull_out",
+     "reason": "'practice room' spoken at 8.6s \u2014 show the place"
+    },
+    {
+     "type": "video",
+     "asset_id": "sheesh",
+     "src": "ytdl_cache/sheesh.mp4",
+     "source_in": 116.08,
+     "source_out": 119.08,
+     "ah_score": null,
+     "section": "chorus2",
+     "tags": [
+      "babymonster",
+      "ahyeon"
+     ],
+     "reason": "peak beat, chorus2 of sheesh",
+     "display_start": 12.31,
+     "display_end": 20.81
+    },
+    {
+     "type": "video",
+     "asset_id": "sheesh",
+     "src": "ytdl_cache/sheesh.mp4",
+     "source_in": 168.8,
+     "source_out": 171.08,
+     "ah_score": null,
+     "section": "final_chorus",
+     "tags": [
+      "babymonster",
+      "ahyeon"
+     ],
+     "reason": "peak beat, final_chorus of sheesh",
+     "display_start": 20.81,
+     "display_end": 29.33
+    }
+   ],
+   "music_cue": "act4",
+   "captions": "word_timed",
+   "validation": "planned",
+   "frames": 1175,
+   "dur": 39.166667,
+   "start": 795.7333,
+   "voice_at": 796.5333
+  },
+  {
+   "id": "s23",
+   "beat": "a4b03",
+   "act": 4,
+   "kind": "clips",
+   "purpose": "development \u2014 The press cycle had a field day with the nicknam",
+   "editorial_note": "4 footage cuts from batterup, drip, forever, hotsauce",
+   "narration": {
+    "text": "The press cycle had a field day with the nickname. Little Jennie \u2014 inherited from her Last Evaluation footage, a comparison to the most famous it girl of the fourth generation. It was meant as a compliment. It was also a cage: the fifth generation did not need a repeat, it needed a first. Ahyeon's answer, across interviews and stages, was not a rejection of the comparison but a slow drowning of it \u2014 a rapper's bite on variety shows, live vocals that kept getting steadier, and a stage presence that made the nickname age faster than anyone expected.",
+    "dur": 36.168
+   },
+   "lead": 0.8,
+   "tail": 10.1,
+   "slot": 47.068,
+   "shots": [
+    {
+     "type": "video",
+     "asset_id": "forever",
+     "src": "ytdl_cache/forever.mp4",
+     "source_in": 149.53,
+     "source_out": 155.24,
+     "ah_score": null,
+     "section": "chorus2",
+     "tags": [
+      "babymonster",
+      "ahyeon"
+     ],
+     "reason": "peak beat, chorus2 of forever",
+     "display_start": 0.0,
+     "display_end": 8.5
+    },
+    {
+     "type": "video",
+     "asset_id": "batterup",
+     "src": "ytdl_cache/batterup.mp4",
+     "source_in": 137.11,
+     "source_out": 140.36,
+     "ah_score": 0.1725,
+     "section": "chorus2",
+     "tags": [
+      "babymonster",
+      "ahyeon"
+     ],
+     "reason": "peak beat, chorus2 of batterup",
+     "display_start": 8.5,
+     "display_end": 17.0
+    },
+    {
+     "type": "video",
+     "asset_id": "drip",
+     "src": "ytdl_cache/drip.mp4",
+     "source_in": 66.34,
+     "source_out": 70.3,
+     "ah_score": 0.157,
+     "section": "chorus1",
+     "tags": [
+      "babymonster",
+      "ahyeon"
+     ],
+     "reason": "peak beat, chorus1 of drip",
+     "display_start": 17.0,
+     "display_end": 25.5
+    },
+    {
+     "type": "video",
+     "asset_id": "hotsauce",
+     "src": "ytdl_cache/hotsauce.mp4",
+     "source_in": 48.01,
+     "source_out": 53.85,
+     "ah_score": null,
+     "section": "chorus1",
+     "tags": [
+      "babymonster",
+      "ahyeon"
+     ],
+     "reason": "peak beat, chorus1 of hotsauce",
+     "display_start": 25.5,
+     "display_end": 36.17
+    }
+   ],
+   "music_cue": "act4",
+   "captions": "word_timed",
+   "validation": "planned",
+   "frames": 1412,
+   "dur": 47.066667,
+   "start": 834.9,
+   "voice_at": 835.7
+  },
+  {
+   "id": "s24",
+   "beat": "a4b04",
+   "act": 4,
+   "kind": "clips",
+   "purpose": "event \u2014 the debut",
+   "editorial_note": "5 footage cuts from batterup, drip, forever, hotsauce, shit",
+   "narration": {
+    "text": "The industry's verdict arrived through arithmetic. Within two months of debuting, the group was booked across six Asian territories on a fan-meeting tour, selling twenty-six thousand tickets in Tokyo alone. Music show stages turned into trending clips weekly. The machine that had spent 2019 through 2023 being called too slow, too quiet, too old-fashioned \u2014 YG's patient, scarcity-driven training model \u2014 had just produced the fastest-scaling girl group of the new generation. And at the center of the frame was the one it had refused to replace.",
+    "dur": 36.888
+   },
+   "lead": 0.8,
+   "tail": 10.21,
+   "slot": 47.898,
+   "shots": [
+    {
+     "type": "video",
+     "asset_id": "shit",
+     "src": "ytdl_cache/shit.mp4",
+     "source_in": 163.33,
+     "source_out": 168.33,
+     "ah_score": null,
+     "section": "final_chorus",
+     "tags": [
+      "babymonster",
+      "ahyeon"
+     ],
+     "reason": "peak beat, final_chorus of shit",
+     "display_start": 0.0,
+     "display_end": 8.5
+    },
+    {
+     "type": "video",
+     "asset_id": "batterup",
+     "src": "ytdl_cache/batterup.mp4",
+     "source_in": 140.36,
+     "source_out": 142.69,
+     "ah_score": 0.1865,
+     "section": "chorus2",
+     "tags": [
+      "babymonster",
+      "ahyeon"
+     ],
+     "reason": "peak beat, chorus2 of batterup",
+     "display_start": 8.5,
+     "display_end": 17.0
+    },
+    {
+     "type": "video",
+     "asset_id": "drip",
+     "src": "ytdl_cache/drip.mp4",
+     "source_in": 70.3,
+     "source_out": 72.72,
+     "ah_score": 0.1861,
+     "section": "chorus1",
+     "tags": [
+      "babymonster",
+      "ahyeon"
+     ],
+     "reason": "peak beat, chorus1 of drip",
+     "display_start": 17.0,
+     "display_end": 25.5
+    },
+    {
+     "type": "video",
+     "asset_id": "hotsauce",
+     "src": "ytdl_cache/hotsauce.mp4",
+     "source_in": 138.43,
+     "source_out": 143.6,
+     "ah_score": null,
+     "section": "final_chorus",
+     "tags": [
+      "babymonster",
+      "ahyeon"
+     ],
+     "reason": "peak beat, final_chorus of hotsauce",
+     "display_start": 25.5,
+     "display_end": 34.0
+    },
+    {
+     "type": "video",
+     "asset_id": "forever",
+     "src": "ytdl_cache/forever.mp4",
+     "source_in": 159.54,
+     "source_out": 162.43,
+     "ah_score": null,
+     "section": "chorus2",
+     "tags": [
+      "babymonster",
+      "ahyeon"
+     ],
+     "reason": "payoff beat, chorus2 of forever",
+     "display_start": 34.0,
+     "display_end": 36.89
+    }
+   ],
+   "music_cue": "act4",
+   "captions": "word_timed",
+   "validation": "planned",
+   "frames": 1437,
+   "dur": 47.9,
+   "start": 881.9667,
+   "voice_at": 882.7667
+  },
+  {
+   "id": "s25",
+   "beat": "a5c",
+   "act": 5,
+   "kind": "card",
+   "card": {
+    "kind": "chapter",
+    "num": "ACT FIVE",
+    "title": "MONSTER ERA"
+   },
+   "purpose": "chapter card \u2014 MONSTER ERA",
+   "editorial_note": "typography carries this beat; background = loop of drip",
+   "narration": {
+    "text": "Act Five. The monster era.",
+    "dur": 2.448
+   },
+   "lead": 0.8,
+   "tail": 16.0,
+   "slot": 19.248,
+   "shots": [
+    {
+     "type": "video",
+     "asset_id": "drip",
+     "src": "ytdl_cache/drip.mp4",
+     "source_in": 150.63,
+     "source_out": 151.92,
+     "reason": "card background loop (blurred)"
+    }
+   ],
+   "music_cue": "act5",
+   "captions": "word_timed",
+   "validation": "planned",
+   "frames": 577,
+   "dur": 19.233333,
+   "start": 929.8667,
+   "voice_at": 930.6667
+  },
+  {
+   "id": "s26",
+   "beat": "a5b01",
+   "act": 5,
+   "kind": "clips",
+   "purpose": "event \u2014 the debut",
+   "editorial_note": "4 footage cuts from drip, forever",
+   "narration": {
+    "text": "The singles kept the temperature up. Forever, that July, ran the group's bright-powered register into summer. But the real move came on November 1st, 2024: DRIP, the first studio album. Eight hundred twenty thousand copies in its first week \u2014 for a group eleven months past debut. It crossed a million domestic copies, landed on the Billboard 200, and its title track carried a co-sign no one saw coming: the demo was built by G-Dragon. The pupil of the company, handed material by its architect.",
+    "dur": 33.84
+   },
+   "lead": 0.8,
+   "tail": 9.74,
+   "slot": 44.38,
+   "shots": [
+    {
+     "type": "video",
+     "asset_id": "forever",
+     "src": "ytdl_cache/forever.mp4",
+     "source_in": 101.11,
+     "source_out": 106.7,
+     "ah_score": null,
+     "section": "chorus1",
+     "tags": [
+      "babymonster",
+      "ahyeon"
+     ],
+     "reason": "peak beat, chorus1 of forever",
+     "display_start": 0.0,
+     "display_end": 8.5
+    },
+    {
+     "type": "video",
+     "asset_id": "drip",
+     "src": "ytdl_cache/drip.mp4",
+     "source_in": 77.59,
+     "source_out": 81.17,
+     "ah_score": 0.03,
+     "section": "chorus1",
+     "tags": [
+      "babymonster",
+      "ahyeon"
+     ],
+     "reason": "peak beat, chorus1 of drip",
+     "display_start": 8.5,
+     "display_end": 17.0
+    },
+    {
+     "type": "video",
+     "asset_id": "forever",
+     "src": "ytdl_cache/forever.mp4",
+     "source_in": 78.58,
+     "source_out": 83.21,
+     "ah_score": null,
+     "section": "chorus1",
+     "tags": [
+      "babymonster",
+      "ahyeon"
+     ],
+     "reason": "peak beat, chorus1 of forever",
+     "display_start": 17.0,
+     "display_end": 25.5
+    },
+    {
+     "type": "video",
+     "asset_id": "forever",
+     "src": "ytdl_cache/forever.mp4",
+     "source_in": 142.19,
+     "source_out": 145.99,
+     "ah_score": null,
+     "section": "chorus2",
+     "tags": [
+      "babymonster",
+      "ahyeon"
+     ],
+     "reason": "payoff beat, chorus2 of forever",
+     "display_start": 25.5,
+     "display_end": 33.84
+    }
+   ],
+   "music_cue": "act5",
+   "captions": "word_timed",
+   "validation": "planned",
+   "frames": 1331,
+   "dur": 44.366667,
+   "start": 949.1,
+   "voice_at": 949.9
+  },
+  {
+   "id": "s27",
+   "beat": "a5b02",
+   "act": 5,
+   "kind": "clips",
+   "purpose": "event \u2014 the debut",
+   "editorial_note": "5 footage cuts from batterup, hotsauce, moon, shit; place imagery at seoul",
+   "narration": {
+    "text": "Then came the stat that redrew the tour maps. On January 25th and 26th, 2025, BABYMONSTER opened their Hello Monsters world tour at the KSPO Dome in Seoul \u2014 the Olympic gymnastics arena that functions as K-pop's certification of arrival. No girl group had ever headlined that venue faster. They were eight months past debut. The tour went on to play thirty-two shows across twenty cities for roughly three hundred thousand people, with the Japan leg alone moving a hundred and fifty thousand tickets at a record pace.",
+    "dur": 35.16
+   },
+   "lead": 0.8,
+   "tail": 9.94,
+   "slot": 45.9,
+   "shots": [
+    {
+     "type": "video",
+     "asset_id": "batterup",
+     "src": "ytdl_cache/batterup.mp4",
+     "source_in": 51.23,
+     "source_out": 58.61,
+     "ah_score": 0.2121,
+     "section": "verse1",
+     "tags": [
+      "babymonster",
+      "ahyeon"
+     ],
+     "reason": "calm beat, verse1 of batterup",
+     "display_start": 0.0,
+     "display_end": 8.5
+    },
+    {
+     "type": "video",
+     "asset_id": "moon",
+     "src": "ytdl_cache/moon.mp4",
+     "source_in": 12.22,
+     "source_out": 14.9,
+     "ah_score": null,
+     "section": "intro",
+     "tags": [
+      "babymonster",
+      "ahyeon"
+     ],
+     "reason": "calm beat, intro of moon",
+     "display_start": 8.5,
+     "display_end": 11.18
+    },
+    {
+     "type": "image",
+     "asset_id": "asset-ca54f4eba8ed539bdc14",
+     "src": "../../assets/ahyeon/originals/the-han-river-in-seoul--57f3d63d.jpg",
+     "entity": "seoul",
+     "license": "CC BY 2.0",
+     "attribution": "BBayanaa \u2014 CC BY 2.0 \u2014 via Openverse",
+     "display_start": 11.18,
+     "display_end": 15.18,
+     "motion": "push_in",
+     "reason": "'Seoul' spoken at 11.5s \u2014 show the place"
+    },
+    {
+     "type": "video",
+     "asset_id": "shit",
+     "src": "ytdl_cache/shit.mp4",
+     "source_in": 54.26,
+     "source_out": 60.81,
+     "ah_score": null,
+     "section": "chorus1",
+     "tags": [
+      "babymonster",
+      "ahyeon"
+     ],
+     "reason": "peak beat, chorus1 of shit",
+     "display_start": 15.18,
+     "display_end": 23.68
+    },
+    {
+     "type": "video",
+     "asset_id": "hotsauce",
+     "src": "ytdl_cache/hotsauce.mp4",
+     "source_in": 101.1,
+     "source_out": 106.56,
+     "ah_score": null,
+     "section": "chorus2",
+     "tags": [
+      "babymonster",
+      "ahyeon"
+     ],
+     "reason": "peak beat, chorus2 of hotsauce",
+     "display_start": 23.68,
+     "display_end": 32.18
+    },
+    {
+     "type": "video",
+     "asset_id": "batterup",
+     "src": "ytdl_cache/batterup.mp4",
+     "source_in": 115.4,
+     "source_out": 118.02,
+     "ah_score": 0.1723,
+     "section": "chorus2",
+     "tags": [
+      "babymonster",
+      "ahyeon"
+     ],
+     "reason": "payoff beat, chorus2 of batterup",
+     "display_start": 32.18,
+     "display_end": 35.16
+    }
+   ],
+   "music_cue": "act5",
+   "captions": "word_timed",
+   "validation": "planned",
+   "frames": 1377,
+   "dur": 45.9,
+   "start": 993.4667,
+   "voice_at": 994.2667
+  },
+  {
+   "id": "s28",
+   "beat": "a5b03",
+   "act": 5,
+   "kind": "clips",
+   "purpose": "scale \u2014 the numbers",
+   "editorial_note": "5 footage cuts from choom, drip, forever, hotsauce, shit",
+   "narration": {
+    "text": "November 29th, 2025 \u2014 the MAMA Awards in Hong Kong. Ahyeon, Pharita, and Rora took the stage for a medley from KPop Demon Hunters, and their performance of Golden detonated the internet: six point six eight million views, the most-watched MAMA clip of the year. Then came the part every idol learns to dread \u2014 the reaction economy. Clips of the live vocals circulated with criticism attached. Ahyeon's response was not a statement. It was the next stage, and the one after that, each one tighter, until the argument ran out of footage.",
+    "dur": 37.344
+   },
+   "lead": 0.8,
+   "tail": 10.28,
+   "slot": 48.424,
+   "shots": [
+    {
+     "type": "video",
+     "asset_id": "choom",
+     "src": "ytdl_cache/choom.mp4",
+     "source_in": 174.0,
+     "source_out": 178.67,
+     "ah_score": null,
+     "section": "final_chorus",
+     "tags": [
+      "babymonster",
+      "ahyeon"
+     ],
+     "reason": "peak beat, final_chorus of choom",
+     "display_start": 0.0,
+     "display_end": 8.5
+    },
+    {
+     "type": "video",
+     "asset_id": "shit",
+     "src": "ytdl_cache/shit.mp4",
+     "source_in": 80.83,
+     "source_out": 86.17,
+     "ah_score": null,
+     "section": "chorus1",
+     "tags": [
+      "babymonster",
+      "ahyeon"
+     ],
+     "reason": "peak beat, chorus1 of shit",
+     "display_start": 8.5,
+     "display_end": 17.0
+    },
+    {
+     "type": "video",
+     "asset_id": "hotsauce",
+     "src": "ytdl_cache/hotsauce.mp4",
+     "source_in": 106.56,
+     "source_out": 111.82,
+     "ah_score": null,
+     "section": "chorus2",
+     "tags": [
+      "babymonster",
+      "ahyeon"
+     ],
+     "reason": "peak beat, chorus2 of hotsauce",
+     "display_start": 17.0,
+     "display_end": 25.5
+    },
+    {
+     "type": "video",
+     "asset_id": "drip",
+     "src": "ytdl_cache/drip.mp4",
+     "source_in": 81.17,
+     "source_out": 85.46,
+     "ah_score": 0.0179,
+     "section": "chorus1",
+     "tags": [
+      "babymonster",
+      "ahyeon"
+     ],
+     "reason": "peak beat, chorus1 of drip",
+     "display_start": 25.5,
+     "display_end": 34.0
+    },
+    {
+     "type": "video",
+     "asset_id": "forever",
+     "src": "ytdl_cache/forever.mp4",
+     "source_in": 135.52,
+     "source_out": 138.86,
+     "ah_score": null,
+     "section": "chorus2",
+     "tags": [
+      "babymonster",
+      "ahyeon"
+     ],
+     "reason": "payoff beat, chorus2 of forever",
+     "display_start": 34.0,
+     "display_end": 37.34
+    }
+   ],
+   "music_cue": "act5",
+   "captions": "word_timed",
+   "validation": "planned",
+   "frames": 1453,
+   "dur": 48.433333,
+   "start": 1039.3667,
+   "voice_at": 1040.1667
+  },
+  {
+   "id": "s29",
+   "beat": "a5s",
+   "act": 5,
+   "kind": "card",
+   "card": {
+    "kind": "stat",
+    "big": "6.68M",
+    "small": "views \u2014 the most-watched 2025 MAMA stage (KPop Demon Hunters medley)"
+   },
+   "purpose": "stat card \u2014 stat",
+   "editorial_note": "typography carries this beat; background = loop of drip",
+   "narration": {
+    "text": "Six point six eight million views \u2014 the most-watched MAMA stage of the year.",
+    "dur": 5.328
+   },
+   "lead": 0.8,
+   "tail": 12.0,
+   "slot": 18.128,
+   "shots": [
+    {
+     "type": "video",
+     "asset_id": "drip",
+     "src": "ytdl_cache/drip.mp4",
+     "source_in": 155.09,
+     "source_out": 157.05,
+     "reason": "card background loop (blurred)"
+    }
+   ],
+   "music_cue": "act5",
+   "captions": "word_timed",
+   "validation": "planned",
+   "frames": 544,
+   "dur": 18.133333,
+   "start": 1087.8,
+   "voice_at": 1088.6
+  },
+  {
+   "id": "s30",
+   "beat": "a5b04",
+   "act": 5,
+   "kind": "clips",
+   "purpose": "scale \u2014 the numbers",
+   "editorial_note": "4 footage cuts from drip",
+   "narration": {
+    "text": "Zoom out and the year looks like this: a million-copy album, a dome-level world tour, four hundred forty thousand fans through the turnstiles in twelve months, and a fanbase that had watched a sixteen-year-old almost disappear and come back as the group's gravitational center. By the end of 2025, the industry had stopped describing BABYMONSTER as Blackpink's successors. They were simply the monster era \u2014 and Ahyeon was its face.",
+    "dur": 28.248
+   },
+   "lead": 0.8,
+   "tail": 8.87,
+   "slot": 37.918,
+   "shots": [
+    {
+     "type": "video",
+     "asset_id": "drip",
+     "src": "ytdl_cache/drip.mp4",
+     "source_in": 130.13,
+     "source_out": 134.3,
+     "ah_score": 0.0,
+     "section": "chorus2",
+     "tags": [
+      "babymonster",
+      "ahyeon"
+     ],
+     "reason": "peak beat, chorus2 of drip",
+     "display_start": 0.0,
+     "display_end": 8.5
+    },
+    {
+     "type": "video",
+     "asset_id": "drip",
+     "src": "ytdl_cache/drip.mp4",
+     "source_in": 168.67,
+     "source_out": 172.88,
+     "ah_score": null,
+     "section": "final_chorus",
+     "tags": [
+      "babymonster",
+      "ahyeon"
+     ],
+     "reason": "peak beat, final_chorus of drip",
+     "display_start": 8.5,
+     "display_end": 17.0
+    },
+    {
+     "type": "video",
+     "asset_id": "drip",
+     "src": "ytdl_cache/drip.mp4",
+     "source_in": 126.17,
+     "source_out": 128.3,
+     "ah_score": 0.0508,
+     "section": "chorus2",
+     "tags": [
+      "babymonster",
+      "ahyeon"
+     ],
+     "reason": "peak beat, chorus2 of drip",
+     "display_start": 17.0,
+     "display_end": 25.5
+    },
+    {
+     "type": "video",
+     "asset_id": "drip",
+     "src": "ytdl_cache/drip.mp4",
+     "source_in": 172.88,
+     "source_out": 175.63,
+     "ah_score": null,
+     "section": "final_chorus",
+     "tags": [
+      "babymonster",
+      "ahyeon"
+     ],
+     "reason": "payoff beat, final_chorus of drip",
+     "display_start": 25.5,
+     "display_end": 28.25
+    }
+   ],
+   "music_cue": "act5",
+   "captions": "word_timed",
+   "validation": "planned",
+   "frames": 1138,
+   "dur": 37.933333,
+   "start": 1105.9333,
+   "voice_at": 1106.7333
+  },
+  {
+   "id": "s31",
+   "beat": "a6c",
+   "act": 6,
+   "kind": "card",
+   "card": {
+    "kind": "chapter",
+    "num": "ACT SIX",
+    "title": "IT GIRL"
+   },
+   "purpose": "chapter card \u2014 IT GIRL",
+   "editorial_note": "typography carries this beat; background = loop of drip",
+   "narration": {
+    "text": "Act Six. The it girl year.",
+    "dur": 2.52
+   },
+   "lead": 0.8,
+   "tail": 16.0,
+   "slot": 19.32,
+   "shots": [
+    {
+     "type": "video",
+     "asset_id": "drip",
+     "src": "ytdl_cache/drip.mp4",
+     "source_in": 150.63,
+     "source_out": 151.92,
+     "reason": "card background loop (blurred)"
+    }
+   ],
+   "music_cue": "act6",
+   "captions": "word_timed",
+   "validation": "planned",
+   "frames": 580,
+   "dur": 19.333333,
+   "start": 1143.8667,
+   "voice_at": 1144.6667
+  },
+  {
+   "id": "s32",
+   "beat": "a6b01",
+   "act": 6,
+   "kind": "clips",
+   "purpose": "development \u2014 2026 opened like a victory lap. In January, Real",
+   "editorial_note": "4 footage cuts from choom, moon; place imagery at korea_context",
+   "narration": {
+    "text": "2026 opened like a victory lap. In January, Really Like You spent five consecutive days at number one on YouTube's Viral Fifty music chart. The LOVE MONSTERS tour closed at Taipei Arena \u2014 twenty-four thousand fans across two nights \u2014 and Ahyeon ran the crowd in Mandarin, the third language of a career built on refusing to be one thing. Clips of her switch from Korean to English to Mandarin mid-concert became their own genre on fan timelines.",
+    "dur": 31.032
+   },
+   "lead": 0.8,
+   "tail": 9.3,
+   "slot": 41.132,
+   "shots": [
+    {
+     "type": "video",
+     "asset_id": "moon",
+     "src": "ytdl_cache/moon.mp4",
+     "source_in": 75.25,
+     "source_out": 83.75,
+     "ah_score": null,
+     "section": "verse2",
+     "tags": [
+      "babymonster",
+      "ahyeon"
+     ],
+     "reason": "calm beat, verse2 of moon",
+     "display_start": 0.0,
+     "display_end": 8.5
+    },
+    {
+     "type": "video",
+     "asset_id": "choom",
+     "src": "ytdl_cache/choom.mp4",
+     "source_in": 112.36,
+     "source_out": 120.66,
+     "ah_score": null,
+     "section": "verse2",
+     "tags": [
+      "babymonster",
+      "ahyeon"
+     ],
+     "reason": "calm beat, verse2 of choom",
+     "display_start": 8.5,
+     "display_end": 17.0
+    },
+    {
+     "type": "video",
+     "asset_id": "choom",
+     "src": "ytdl_cache/choom.mp4",
+     "source_in": 97.51,
+     "source_out": 105.04,
+     "ah_score": null,
+     "section": "verse2",
+     "tags": [
+      "babymonster",
+      "ahyeon"
+     ],
+     "reason": "build beat, verse2 of choom",
+     "display_start": 17.0,
+     "display_end": 24.53
+    },
+    {
+     "type": "image",
+     "asset_id": "asset-116f9b81ceeacfd78358",
+     "src": "../../assets/ahyeon/originals/seoul-by-night-south-korea--6121d003.jpg",
+     "entity": "korea_context",
+     "license": "CC BY 2.0",
+     "attribution": "Emmanuel Dyan \u2014 CC BY 2.0 \u2014 via Openverse",
+     "display_start": 24.53,
+     "display_end": 28.53,
+     "motion": "pull_out",
+     "reason": "'South Korea' spoken at 24.8s \u2014 show the place"
+    },
+    {
+     "type": "video",
+     "asset_id": "moon",
+     "src": "ytdl_cache/moon.mp4",
+     "source_in": 151.32,
+     "source_out": 153.82,
+     "ah_score": null,
+     "section": "final_chorus",
+     "tags": [
+      "babymonster",
+      "ahyeon"
+     ],
+     "reason": "payoff beat, final_chorus of moon",
+     "display_start": 28.53,
+     "display_end": 31.03
+    }
+   ],
+   "music_cue": "act6",
+   "captions": "word_timed",
+   "validation": "planned",
+   "frames": 1234,
+   "dur": 41.133333,
+   "start": 1163.2,
+   "voice_at": 1164.0
+  },
+  {
+   "id": "s33",
+   "beat": "a6b02",
+   "act": 6,
+   "kind": "clips",
+   "purpose": "development \u2014 March brought the fashion system's stamp",
+   "editorial_note": "4 footage cuts from choom; place imagery at korea_context",
+   "narration": {
+    "text": "March brought the fashion system's stamp: a Vogue Hong Kong cover. April brought the fans' stamp: at the Korean Global Music Awards, she took Artist of the April \u2014 a solo-female category \u2014 with thirty-three thousand three hundred eighty votes, eighty-five point eight percent of the entire ballot. That is not a win; that is a monopoly. And she turned nineteen that month, which means the it girl conversation was happening about a teenager who was still, in industry terms, at the beginning.",
+    "dur": 30.6
+   },
+   "lead": 0.8,
+   "tail": 9.24,
+   "slot": 40.64,
+   "shots": [
+    {
+     "type": "video",
+     "asset_id": "choom",
+     "src": "ytdl_cache/choom.mp4",
+     "source_in": 13.01,
+     "source_out": 19.02,
+     "ah_score": null,
+     "section": "intro",
+     "tags": [
+      "babymonster",
+      "ahyeon"
+     ],
+     "reason": "calm beat, intro of choom",
+     "display_start": 0.0,
+     "display_end": 6.84
+    },
+    {
+     "type": "image",
+     "asset_id": "asset-6bce0a96fcfc4145b3a7",
+     "src": "../../assets/ahyeon/originals/seoul-by-night--e4214edf.jpg",
+     "entity": "korea_context",
+     "license": "CC BY-SA 2.0",
+     "attribution": "doegox \u2014 CC BY-SA 2.0 \u2014 via Openverse",
+     "display_start": 6.84,
+     "display_end": 10.84,
+     "motion": "pull_out",
+     "reason": "'South Korea' spoken at 7.1s \u2014 show the place"
+    },
+    {
+     "type": "video",
+     "asset_id": "choom",
+     "src": "ytdl_cache/choom.mp4",
+     "source_in": 59.85,
+     "source_out": 63.6,
+     "ah_score": null,
+     "section": "chorus1",
+     "tags": [
+      "babymonster",
+      "ahyeon"
+     ],
+     "reason": "peak beat, chorus1 of choom",
+     "display_start": 10.84,
+     "display_end": 19.34
+    },
+    {
+     "type": "video",
+     "asset_id": "choom",
+     "src": "ytdl_cache/choom.mp4",
+     "source_in": 51.8,
+     "source_out": 59.85,
+     "ah_score": null,
+     "section": "verse1",
+     "tags": [
+      "babymonster",
+      "ahyeon"
+     ],
+     "reason": "peak beat, verse1 of choom",
+     "display_start": 19.34,
+     "display_end": 27.84
+    },
+    {
+     "type": "video",
+     "asset_id": "choom",
+     "src": "ytdl_cache/choom.mp4",
+     "source_in": 3.98,
+     "source_out": 6.74,
+     "ah_score": null,
+     "section": "intro",
+     "tags": [
+      "babymonster",
+      "ahyeon"
+     ],
+     "reason": "payoff beat, intro of choom",
+     "display_start": 27.84,
+     "display_end": 30.6
+    }
+   ],
+   "music_cue": "act6",
+   "captions": "word_timed",
+   "validation": "planned",
+   "frames": 1219,
+   "dur": 40.633333,
+   "start": 1204.3333,
+   "voice_at": 1205.1333
+  },
+  {
+   "id": "s34",
+   "beat": "a6b03",
+   "act": 6,
+   "kind": "clips",
+   "purpose": "scale \u2014 the numbers",
+   "editorial_note": "4 footage cuts from choom",
+   "narration": {
+    "text": "May 4th \u2014 third mini album, CHOOM: a record built for movement, and a title-track move so clean it escaped the song entirely. The Ahyeon March \u2014 her shoulder-led strut from the challenge video \u2014 went viral on TikTok, Douyin, and Xiaohongshu, remixed by dancers who had never streamed a BABYMONSTER track in their lives. That is the it girl signature: when your choreography becomes infrastructure. When the culture takes one piece of you and runs without asking.",
+    "dur": 31.44
+   },
+   "lead": 0.8,
+   "tail": 9.37,
+   "slot": 41.61,
+   "shots": [
+    {
+     "type": "video",
+     "asset_id": "choom",
+     "src": "ytdl_cache/choom.mp4",
+     "source_in": 43.79,
+     "source_out": 47.54,
+     "ah_score": null,
+     "section": "verse1",
+     "tags": [
+      "babymonster",
+      "ahyeon"
+     ],
+     "reason": "peak beat, verse1 of choom",
+     "display_start": 0.0,
+     "display_end": 8.5
+    },
+    {
+     "type": "video",
+     "asset_id": "choom",
+     "src": "ytdl_cache/choom.mp4",
+     "source_in": 163.12,
+     "source_out": 167.75,
+     "ah_score": null,
+     "section": "bridge",
+     "tags": [
+      "babymonster",
+      "ahyeon"
+     ],
+     "reason": "peak beat, bridge of choom",
+     "display_start": 8.5,
+     "display_end": 17.0
+    },
+    {
+     "type": "video",
+     "asset_id": "choom",
+     "src": "ytdl_cache/choom.mp4",
+     "source_in": 167.75,
+     "source_out": 171.8,
+     "ah_score": null,
+     "section": "bridge",
+     "tags": [
+      "babymonster",
+      "ahyeon"
+     ],
+     "reason": "peak beat, bridge of choom",
+     "display_start": 17.0,
+     "display_end": 25.5
+    },
+    {
+     "type": "video",
+     "asset_id": "choom",
+     "src": "ytdl_cache/choom.mp4",
+     "source_in": 19.01,
+     "source_out": 24.02,
+     "ah_score": null,
+     "section": "intro",
+     "tags": [
+      "babymonster",
+      "ahyeon"
+     ],
+     "reason": "payoff beat, intro of choom",
+     "display_start": 25.5,
+     "display_end": 31.44
+    }
+   ],
+   "music_cue": "act6",
+   "captions": "word_timed",
+   "validation": "planned",
+   "frames": 1248,
+   "dur": 41.6,
+   "start": 1244.9667,
+   "voice_at": 1245.7667
+  },
+  {
+   "id": "s35",
+   "beat": "a6b04",
+   "act": 6,
+   "kind": "clips",
+   "purpose": "event \u2014 the debut",
+   "editorial_note": "4 footage cuts from shit",
+   "narration": {
+    "text": "June's SUGAR HONEY ICE TEA hit number one on YouTube's global daily music chart and blew past a hundred million views. In July, CHOOM debuted at number thirty-five on US Mediabase Top Forty \u2014 the group's first American radio entry, a wall that has stopped bigger acts cold. And on September 3rd, the channel crossed ten billion cumulative views: the fastest K-pop girl group ever to get there, the second in history after Blackpink. The company's slow-cooked model now had a number the whole industry could read.",
+    "dur": 34.344
+   },
+   "lead": 0.8,
+   "tail": 9.82,
+   "slot": 44.964,
+   "shots": [
+    {
+     "type": "video",
+     "asset_id": "shit",
+     "src": "ytdl_cache/shit.mp4",
+     "source_in": 124.04,
+     "source_out": 127.67,
+     "ah_score": null,
+     "section": "chorus2",
+     "tags": [
+      "babymonster",
+      "ahyeon"
+     ],
+     "reason": "peak beat, chorus2 of shit",
+     "display_start": 0.0,
+     "display_end": 8.5
+    },
+    {
+     "type": "video",
+     "asset_id": "shit",
+     "src": "ytdl_cache/shit.mp4",
+     "source_in": 171.88,
+     "source_out": 177.51,
+     "ah_score": null,
+     "section": "final_chorus",
+     "tags": [
+      "babymonster",
+      "ahyeon"
+     ],
+     "reason": "peak beat, final_chorus of shit",
+     "display_start": 8.5,
+     "display_end": 17.0
+    },
+    {
+     "type": "video",
+     "asset_id": "shit",
+     "src": "ytdl_cache/shit.mp4",
+     "source_in": 73.7,
+     "source_out": 78.95,
+     "ah_score": null,
+     "section": "chorus1",
+     "tags": [
+      "babymonster",
+      "ahyeon"
+     ],
+     "reason": "peak beat, chorus1 of shit",
+     "display_start": 17.0,
+     "display_end": 25.5
+    },
+    {
+     "type": "video",
+     "asset_id": "shit",
+     "src": "ytdl_cache/shit.mp4",
+     "source_in": 60.81,
+     "source_out": 64.23,
+     "ah_score": null,
+     "section": "chorus1",
+     "tags": [
+      "babymonster",
+      "ahyeon"
+     ],
+     "reason": "peak beat, chorus1 of shit",
+     "display_start": 25.5,
+     "display_end": 34.34
+    }
+   ],
+   "music_cue": "act6",
+   "captions": "word_timed",
+   "validation": "planned",
+   "frames": 1349,
+   "dur": 44.966667,
+   "start": 1286.5667,
+   "voice_at": 1287.3667
+  },
+  {
+   "id": "s36",
+   "beat": "a6s",
+   "act": 6,
+   "kind": "card",
+   "card": {
+    "kind": "stat",
+    "big": "10,000,000,000",
+    "small": "cumulative channel views \u2014 fastest K-pop girl group ever (Sep 3, 2026)"
+   },
+   "purpose": "stat card \u2014 stat",
+   "editorial_note": "typography carries this beat; background = loop of drip",
+   "narration": {
+    "text": "Ten billion cumulative views \u2014 faster than any girl group in history.",
+    "dur": 5.328
+   },
+   "lead": 0.8,
+   "tail": 12.0,
+   "slot": 18.128,
+   "shots": [
+    {
+     "type": "video",
+     "asset_id": "drip",
+     "src": "ytdl_cache/drip.mp4",
+     "source_in": 155.09,
+     "source_out": 157.05,
+     "reason": "card background loop (blurred)"
+    }
+   ],
+   "music_cue": "act6",
+   "captions": "word_timed",
+   "validation": "planned",
+   "frames": 544,
+   "dur": 18.133333,
+   "start": 1331.5333,
+   "voice_at": 1332.3333
+  },
+  {
+   "id": "s37",
+   "beat": "a6b05",
+   "act": 6,
+   "kind": "clips",
+   "purpose": "turn \u2014 the return",
+   "editorial_note": "4 footage cuts from choom",
+   "narration": {
+    "text": "September's award season produced the clip that tells the whole story. At an international music awards show in Hong Kong, Ahyeon walked up for a group honor and delivered the acceptance speech entirely in Mandarin \u2014 fluent, unhurried, ending with a line fans translated and re-translated across every platform: I would give my whole world to you. By then the fan archives had a name for the year. Not the comeback. Not the victory tour. The it girl year \u2014 a phrase that used to belong to whoever magazines chose, now anchored to someone the internet chose first.",
+    "dur": 35.592
+   },
+   "lead": 0.8,
+   "tail": 10.01,
+   "slot": 46.402,
+   "shots": [
+    {
+     "type": "video",
+     "asset_id": "choom",
+     "src": "ytdl_cache/choom.mp4",
+     "source_in": 105.14,
+     "source_out": 109.56,
+     "ah_score": null,
+     "section": "verse2",
+     "tags": [
+      "babymonster",
+      "ahyeon"
+     ],
+     "reason": "peak beat, verse2 of choom",
+     "display_start": 0.0,
+     "display_end": 8.5
+    },
+    {
+     "type": "video",
+     "asset_id": "choom",
+     "src": "ytdl_cache/choom.mp4",
+     "source_in": 146.6,
+     "source_out": 150.73,
+     "ah_score": null,
+     "section": "bridge",
+     "tags": [
+      "babymonster",
+      "ahyeon"
+     ],
+     "reason": "peak beat, bridge of choom",
+     "display_start": 8.5,
+     "display_end": 17.0
+    },
+    {
+     "type": "video",
+     "asset_id": "choom",
+     "src": "ytdl_cache/choom.mp4",
+     "source_in": 37.37,
+     "source_out": 40.75,
+     "ah_score": null,
+     "section": "verse1",
+     "tags": [
+      "babymonster",
+      "ahyeon"
+     ],
+     "reason": "peak beat, verse1 of choom",
+     "display_start": 17.0,
+     "display_end": 25.5
+    },
+    {
+     "type": "video",
+     "asset_id": "choom",
+     "src": "ytdl_cache/choom.mp4",
+     "source_in": 47.54,
+     "source_out": 50.33,
+     "ah_score": null,
+     "section": "verse1",
+     "tags": [
+      "babymonster",
+      "ahyeon"
+     ],
+     "reason": "peak beat, verse1 of choom",
+     "display_start": 25.5,
+     "display_end": 35.59
+    }
+   ],
+   "music_cue": "act6",
+   "captions": "word_timed",
+   "validation": "planned",
+   "frames": 1392,
+   "dur": 46.4,
+   "start": 1349.6667,
+   "voice_at": 1350.4667
+  },
+  {
+   "id": "s38",
+   "beat": "a7c",
+   "act": 7,
+   "kind": "card",
+   "card": {
+    "kind": "chapter",
+    "num": "ACT SEVEN",
+    "title": "THE CRAFT"
+   },
+   "purpose": "chapter card \u2014 THE CRAFT",
+   "editorial_note": "typography carries this beat; background = loop of drip",
+   "narration": {
+    "text": "Act Seven. Why she lands.",
+    "dur": 2.544
+   },
+   "lead": 0.8,
+   "tail": 16.0,
+   "slot": 19.344,
+   "shots": [
+    {
+     "type": "video",
+     "asset_id": "drip",
+     "src": "ytdl_cache/drip.mp4",
+     "source_in": 150.63,
+     "source_out": 151.92,
+     "reason": "card background loop (blurred)"
+    }
+   ],
+   "music_cue": "act7",
+   "captions": "word_timed",
+   "validation": "planned",
+   "frames": 580,
+   "dur": 19.333333,
+   "start": 1396.0667,
+   "voice_at": 1396.8667
+  },
+  {
+   "id": "s39",
+   "beat": "a7b01",
+   "act": 7,
+   "kind": "clips",
+   "purpose": "development \u2014 Strip the narrative away and what remains is tec",
+   "editorial_note": "3 footage cuts from batterup, drip, sheesh; place imagery at seoul",
+   "narration": {
+    "text": "Strip the narrative away and what remains is technique. The voice: a bright, cut-through register with a rapper's sense of rhythm underneath it \u2014 the reason she can pivot from a sung hook to a verse without the song changing shape. On the CHOOM tour's Seoul dates, her solo cover of Ariana Grande's Problem was reported as the loudest turn of the night \u2014 a whistle-adjacent vocal stunt that most twenty-year-old idols wouldn't attempt in a practice room, performed by a nineteen-year-old in front of a home crowd.",
+    "dur": 30.552
+   },
+   "lead": 0.8,
+   "tail": 9.23,
+   "slot": 40.582,
+   "shots": [
+    {
+     "type": "video",
+     "asset_id": "drip",
+     "src": "ytdl_cache/drip.mp4",
+     "source_in": 10.93,
+     "source_out": 19.43,
+     "ah_score": 0.1037,
+     "section": "intro",
+     "tags": [
+      "babymonster",
+      "ahyeon"
+     ],
+     "reason": "calm beat, intro of drip",
+     "display_start": 0.0,
+     "display_end": 8.5
+    },
+    {
+     "type": "video",
+     "asset_id": "batterup",
+     "src": "ytdl_cache/batterup.mp4",
+     "source_in": 30.52,
+     "source_out": 36.1,
+     "ah_score": 0.1819,
+     "section": "verse1",
+     "tags": [
+      "babymonster",
+      "ahyeon"
+     ],
+     "reason": "calm beat, verse1 of batterup",
+     "display_start": 8.5,
+     "display_end": 15.22
+    },
+    {
+     "type": "image",
+     "asset_id": "asset-04b6421e5e8f54e19b1c",
+     "src": "../../assets/ahyeon/originals/seoul-han-river-yeouido-yoi-island-national-assembly-building--fda97642.jpg",
+     "entity": "seoul",
+     "license": "CC BY 2.0",
+     "attribution": "IchStyle \u2014 CC BY 2.0 \u2014 via Openverse",
+     "display_start": 15.22,
+     "display_end": 19.22,
+     "motion": "push_in",
+     "reason": "'Seoul' spoken at 15.5s \u2014 show the place"
+    },
+    {
+     "type": "video",
+     "asset_id": "sheesh",
+     "src": "ytdl_cache/sheesh.mp4",
+     "source_in": 91.68,
+     "source_out": 97.28,
+     "ah_score": null,
+     "section": "verse2",
+     "tags": [
+      "babymonster",
+      "ahyeon"
+     ],
+     "reason": "build beat, verse2 of sheesh",
+     "display_start": 19.22,
+     "display_end": 30.55
+    }
+   ],
+   "music_cue": "act7",
+   "captions": "word_timed",
+   "validation": "planned",
+   "frames": 1217,
+   "dur": 40.566667,
+   "start": 1415.4,
+   "voice_at": 1416.2
+  },
+  {
+   "id": "s40",
+   "beat": "a7b02",
+   "act": 7,
+   "kind": "clips",
+   "purpose": "turn \u2014 the return",
+   "editorial_note": "4 footage cuts from batterup, forever, hotsauce, shit",
+   "narration": {
+    "text": "The comeback after MAMA is the part the highlight reels skip. Live-vocal criticism in K-pop is not a news cycle; it is a permanent search result. The only working answer is repetition in public \u2014 more stages, steadier takes, no hiding behind backing tracks. Watch the arc from that November night through the dome concerts ten months later and you can hear the difference in real time: tighter breath control, cleaner pitch under choreography, a performer who stopped treating the camera as a witness and started treating it as an instrument.",
+    "dur": 34.152
+   },
+   "lead": 0.8,
+   "tail": 9.79,
+   "slot": 44.742,
+   "shots": [
+    {
+     "type": "video",
+     "asset_id": "hotsauce",
+     "src": "ytdl_cache/hotsauce.mp4",
+     "source_in": 64.27,
+     "source_out": 68.61,
+     "ah_score": null,
+     "section": "chorus1",
+     "tags": [
+      "babymonster",
+      "ahyeon"
+     ],
+     "reason": "peak beat, chorus1 of hotsauce",
+     "display_start": 0.0,
+     "display_end": 8.5
+    },
+    {
+     "type": "video",
+     "asset_id": "forever",
+     "src": "ytdl_cache/forever.mp4",
+     "source_in": 203.54,
+     "source_out": 207.84,
+     "ah_score": null,
+     "section": "final_chorus",
+     "tags": [
+      "babymonster",
+      "ahyeon"
+     ],
+     "reason": "peak beat, final_chorus of forever",
+     "display_start": 8.5,
+     "display_end": 17.0
+    },
+    {
+     "type": "video",
+     "asset_id": "batterup",
+     "src": "ytdl_cache/batterup.mp4",
+     "source_in": 168.11,
+     "source_out": 172.15,
+     "ah_score": 0.1215,
+     "section": "final_chorus",
+     "tags": [
+      "babymonster",
+      "ahyeon"
+     ],
+     "reason": "peak beat, final_chorus of batterup",
+     "display_start": 17.0,
+     "display_end": 25.5
+    },
+    {
+     "type": "video",
+     "asset_id": "shit",
+     "src": "ytdl_cache/shit.mp4",
+     "source_in": 64.23,
+     "source_out": 68.28,
+     "ah_score": null,
+     "section": "chorus1",
+     "tags": [
+      "babymonster",
+      "ahyeon"
+     ],
+     "reason": "peak beat, chorus1 of shit",
+     "display_start": 25.5,
+     "display_end": 34.15
+    }
+   ],
+   "music_cue": "act7",
+   "captions": "word_timed",
+   "validation": "planned",
+   "frames": 1342,
+   "dur": 44.733333,
+   "start": 1455.9667,
+   "voice_at": 1456.7667
+  },
+  {
+   "id": "s41",
+   "beat": "a7b03",
+   "act": 7,
+   "kind": "clips",
+   "purpose": "development \u2014 And then the layer almost nobody gets",
+   "editorial_note": "4 footage cuts from batterup, drip, forever, hotsauce; place imagery at korea_context",
+   "narration": {
+    "text": "And then the layer almost nobody gets: language. Korean for the members and the fans at home. English from age five \u2014 the interviews, the global press, the Vogue sit-downs. Mandarin from age seven \u2014 Taipei, Macau, Hong Kong, Kai Tak. Three audiences, three registers, one person. The it girl label usually describes an aesthetic. Hers is logistics: the ability to be understood in three economies without a translator, and to make each crowd feel like the show was mounted for them alone.",
+    "dur": 34.224
+   },
+   "lead": 0.8,
+   "tail": 9.8,
+   "slot": 44.824,
+   "shots": [
+    {
+     "type": "video",
+     "asset_id": "drip",
+     "src": "ytdl_cache/drip.mp4",
+     "source_in": 30.44,
+     "source_out": 33.7,
+     "ah_score": 0.1052,
+     "section": "verse1",
+     "tags": [
+      "babymonster",
+      "ahyeon"
+     ],
+     "reason": "calm beat, verse1 of drip",
+     "display_start": 0.0,
+     "display_end": 3.26
+    },
+    {
+     "type": "image",
+     "asset_id": "asset-cb7ebd948ec89b193a1c",
+     "src": "../../assets/ahyeon/originals/seoul-korea--70133c0e.jpg",
+     "entity": "korea_context",
+     "license": "CC BY-NC 2.0",
+     "attribution": "Jaako \u2014 CC BY-NC 2.0 \u2014 via Openverse",
+     "display_start": 3.26,
+     "display_end": 7.26,
+     "motion": "pull_out",
+     "reason": "'South Korea' spoken at 3.6s \u2014 show the place"
+    },
+    {
+     "type": "video",
+     "asset_id": "forever",
+     "src": "ytdl_cache/forever.mp4",
+     "source_in": 145.98,
+     "source_out": 149.53,
+     "ah_score": null,
+     "section": "chorus2",
+     "tags": [
+      "babymonster",
+      "ahyeon"
+     ],
+     "reason": "peak beat, chorus2 of forever",
+     "display_start": 7.26,
+     "display_end": 15.76
+    },
+    {
+     "type": "video",
+     "asset_id": "batterup",
+     "src": "ytdl_cache/batterup.mp4",
+     "source_in": 81.15,
+     "source_out": 84.98,
+     "ah_score": 0.0,
+     "section": "chorus1",
+     "tags": [
+      "babymonster",
+      "ahyeon"
+     ],
+     "reason": "peak beat, chorus1 of batterup",
+     "display_start": 15.76,
+     "display_end": 24.26
+    },
+    {
+     "type": "video",
+     "asset_id": "hotsauce",
+     "src": "ytdl_cache/hotsauce.mp4",
+     "source_in": 145.27,
+     "source_out": 148.61,
+     "ah_score": null,
+     "section": "final_chorus",
+     "tags": [
+      "babymonster",
+      "ahyeon"
+     ],
+     "reason": "peak beat, final_chorus of hotsauce",
+     "display_start": 24.26,
+     "display_end": 34.22
+    }
+   ],
+   "music_cue": "act7",
+   "captions": "word_timed",
+   "validation": "planned",
+   "frames": 1345,
+   "dur": 44.833333,
+   "start": 1500.7,
+   "voice_at": 1501.5
+  },
+  {
+   "id": "s42",
+   "beat": "a8c",
+   "act": 8,
+   "kind": "card",
+   "card": {
+    "kind": "chapter",
+    "num": "ACT EIGHT",
+    "title": "THE DOME"
+   },
+   "purpose": "chapter card \u2014 THE DOME",
+   "editorial_note": "typography carries this beat; background = loop of drip",
+   "narration": {
+    "text": "Act Eight. The dome.",
+    "dur": 1.896
+   },
+   "lead": 0.8,
+   "tail": 16.0,
+   "slot": 18.696,
+   "shots": [
+    {
+     "type": "video",
+     "asset_id": "drip",
+     "src": "ytdl_cache/drip.mp4",
+     "source_in": 155.09,
+     "source_out": 157.05,
+     "reason": "card background loop (blurred)"
+    }
+   ],
+   "music_cue": "act8",
+   "captions": "word_timed",
+   "validation": "planned",
+   "frames": 561,
+   "dur": 18.7,
+   "start": 1545.5333,
+   "voice_at": 1546.3333
+  },
+  {
+   "id": "s43",
+   "beat": "a8b01",
+   "act": 8,
+   "kind": "clips",
+   "purpose": "event \u2014 the debut",
+   "editorial_note": "4 footage cuts from batterup, hotsauce, moon, shit",
+   "narration": {
+    "text": "September 22nd and 23rd, 2026. Kyocera Dome, Osaka \u2014 fifty-five thousand seats, the kind of building where the ceiling has its own weather. BABYMONSTER's first solo dome concerts, two nights, announced without qualifiers. For a group three and a half years past a trailer and two and a half past a debut that almost didn't include its center, the dome is not a venue. It is a verdict.",
+    "dur": 29.304
+   },
+   "lead": 0.8,
+   "tail": 9.04,
+   "slot": 39.144,
+   "shots": [
+    {
+     "type": "video",
+     "asset_id": "moon",
+     "src": "ytdl_cache/moon.mp4",
+     "source_in": 68.36,
+     "source_out": 70.78,
+     "ah_score": null,
+     "section": "chorus1",
+     "tags": [
+      "babymonster",
+      "ahyeon"
+     ],
+     "reason": "peak beat, chorus1 of moon",
+     "display_start": 0.0,
+     "display_end": 8.5
+    },
+    {
+     "type": "video",
+     "asset_id": "shit",
+     "src": "ytdl_cache/shit.mp4",
+     "source_in": 115.24,
+     "source_out": 118.74,
+     "ah_score": null,
+     "section": "chorus2",
+     "tags": [
+      "babymonster",
+      "ahyeon"
+     ],
+     "reason": "peak beat, chorus2 of shit",
+     "display_start": 8.5,
+     "display_end": 17.0
+    },
+    {
+     "type": "video",
+     "asset_id": "batterup",
+     "src": "ytdl_cache/batterup.mp4",
+     "source_in": 132.94,
+     "source_out": 135.65,
+     "ah_score": 0.1512,
+     "section": "chorus2",
+     "tags": [
+      "babymonster",
+      "ahyeon"
+     ],
+     "reason": "peak beat, chorus2 of batterup",
+     "display_start": 17.0,
+     "display_end": 25.5
+    },
+    {
+     "type": "video",
+     "asset_id": "hotsauce",
+     "src": "ytdl_cache/hotsauce.mp4",
+     "source_in": 94.02,
+     "source_out": 97.82,
+     "ah_score": null,
+     "section": "chorus2",
+     "tags": [
+      "babymonster",
+      "ahyeon"
+     ],
+     "reason": "payoff beat, chorus2 of hotsauce",
+     "display_start": 25.5,
+     "display_end": 29.3
+    }
+   ],
+   "music_cue": "act8",
+   "captions": "word_timed",
+   "validation": "planned",
+   "frames": 1174,
+   "dur": 39.133333,
+   "start": 1564.2333,
+   "voice_at": 1565.0333
+  },
+  {
+   "id": "s44",
+   "beat": "a8b02",
+   "act": 8,
+   "kind": "clips",
+   "purpose": "development \u2014 Ahyeon stood on that stage at nineteen. She has ",
+   "editorial_note": "5 footage cuts from choom",
+   "narration": {
+    "text": "Ahyeon stood on that stage at nineteen. She has now been inside the YG system for more than a third of her life \u2014 five years of training, three years of public career, one sixteen-month absence that would have ended most trajectories. The industry's pattern says idols peak in year three. Her pattern says otherwise: every measurable thing \u2014 streams, votes, covers, crowds, languages \u2014 is still pointing up. The fifth generation needed an it girl who couldn't be duplicated, and it got one forged in the one crucible nobody could script.",
+    "dur": 36.408
+   },
+   "lead": 0.8,
+   "tail": 10.14,
+   "slot": 47.348,
+   "shots": [
+    {
+     "type": "video",
+     "asset_id": "choom",
+     "src": "ytdl_cache/choom.mp4",
+     "source_in": 8.09,
+     "source_out": 10.38,
+     "ah_score": null,
+     "section": "intro",
+     "tags": [
+      "babymonster",
+      "ahyeon"
+     ],
+     "reason": "peak beat, intro of choom",
+     "display_start": 0.0,
+     "display_end": 8.5
+    },
+    {
+     "type": "video",
+     "asset_id": "choom",
+     "src": "ytdl_cache/choom.mp4",
+     "source_in": 150.73,
+     "source_out": 153.69,
+     "ah_score": null,
+     "section": "bridge",
+     "tags": [
+      "babymonster",
+      "ahyeon"
+     ],
+     "reason": "peak beat, bridge of choom",
+     "display_start": 8.5,
+     "display_end": 17.0
+    },
+    {
+     "type": "video",
+     "asset_id": "choom",
+     "src": "ytdl_cache/choom.mp4",
+     "source_in": 171.79,
+     "source_out": 174.0,
+     "ah_score": null,
+     "section": "bridge",
+     "tags": [
+      "babymonster",
+      "ahyeon"
+     ],
+     "reason": "peak beat, bridge of choom",
+     "display_start": 17.0,
+     "display_end": 25.5
+    },
+    {
+     "type": "video",
+     "asset_id": "choom",
+     "src": "ytdl_cache/choom.mp4",
+     "source_in": 153.69,
+     "source_out": 157.32,
+     "ah_score": null,
+     "section": "bridge",
+     "tags": [
+      "babymonster",
+      "ahyeon"
+     ],
+     "reason": "peak beat, bridge of choom",
+     "display_start": 25.5,
+     "display_end": 34.0
+    },
+    {
+     "type": "video",
+     "asset_id": "choom",
+     "src": "ytdl_cache/choom.mp4",
+     "source_in": 109.74,
+     "source_out": 112.15,
+     "ah_score": null,
+     "section": "verse2",
+     "tags": [
+      "babymonster",
+      "ahyeon"
+     ],
+     "reason": "payoff beat, verse2 of choom",
+     "display_start": 34.0,
+     "display_end": 36.41
+    }
+   ],
+   "music_cue": "act8",
+   "captions": "word_timed",
+   "validation": "planned",
+   "frames": 1420,
+   "dur": 47.333333,
+   "start": 1603.3667,
+   "voice_at": 1604.1667
+  },
+  {
+   "id": "s45",
+   "beat": "a8b03",
+   "act": 8,
+   "kind": "clips",
+   "purpose": "origin \u2014 place and childhood",
+   "editorial_note": "6 footage cuts from sheesh, shit; place imagery at practice_room",
+   "narration": {
+    "text": "So here is the answer to the question the title keeps asking. An it girl is not made by a magazine cover, a viral march, or ten billion views \u2014 those are receipts, not reasons. Jung Ahyeon is the fifth generation's it girl because she is the rarest thing the system can produce: a center who was removable, who wasn't removed, and who came back indispensable. The debut happened without her. The era happened because of her. And whatever comes next \u2014 the encore tours, the solo era the fans already campaign for, the second dome \u2014 the industry will be watching the same way it has watched her since a practice-room cover leaked: unable to look away, and unable to explain why the girl from Chuncheon keeps doing the impossible quietly, in three languages, at nineteen.",
+    "dur": 48.384
+   },
+   "lead": 0.8,
+   "tail": 11.99,
+   "slot": 61.174,
+   "shots": [
+    {
+     "type": "video",
+     "asset_id": "sheesh",
+     "src": "ytdl_cache/sheesh.mp4",
+     "source_in": 45.16,
+     "source_out": 52.68,
+     "ah_score": null,
+     "section": "verse1",
+     "tags": [
+      "babymonster",
+      "ahyeon"
+     ],
+     "reason": "calm beat, verse1 of sheesh",
+     "display_start": 0.0,
+     "display_end": 8.5
+    },
+    {
+     "type": "video",
+     "asset_id": "shit",
+     "src": "ytdl_cache/shit.mp4",
+     "source_in": 35.99,
+     "source_out": 39.74,
+     "ah_score": null,
+     "section": "verse1",
+     "tags": [
+      "babymonster",
+      "ahyeon"
+     ],
+     "reason": "calm beat, verse1 of shit",
+     "display_start": 8.5,
+     "display_end": 17.0
+    },
+    {
+     "type": "video",
+     "asset_id": "sheesh",
+     "src": "ytdl_cache/sheesh.mp4",
+     "source_in": 104.08,
+     "source_out": 108.48,
+     "ah_score": null,
+     "section": "verse2",
+     "tags": [
+      "babymonster",
+      "ahyeon"
+     ],
+     "reason": "build beat, verse2 of sheesh",
+     "display_start": 17.0,
+     "display_end": 25.5
+    },
+    {
+     "type": "video",
+     "asset_id": "shit",
+     "src": "ytdl_cache/shit.mp4",
+     "source_in": 88.17,
+     "source_out": 92.51,
+     "ah_score": null,
+     "section": "verse2",
+     "tags": [
+      "babymonster",
+      "ahyeon"
+     ],
+     "reason": "build beat, verse2 of shit",
+     "display_start": 25.5,
+     "display_end": 34.0
+    },
+    {
+     "type": "video",
+     "asset_id": "shit",
+     "src": "ytdl_cache/shit.mp4",
+     "source_in": 160.08,
+     "source_out": 163.33,
+     "ah_score": null,
+     "section": "final_chorus",
+     "tags": [
+      "babymonster",
+      "ahyeon"
+     ],
+     "reason": "peak beat, final_chorus of shit",
+     "display_start": 34.0,
+     "display_end": 37.66
+    },
+    {
+     "type": "image",
+     "asset_id": "asset-c5195297c25980f67530",
+     "src": "../../assets/ahyeon/originals/floor-boards--cbab825f.jpg",
+     "entity": "practice_room",
+     "license": "CC BY-NC-SA 2.0",
+     "attribution": "akahawkeyefan \u2014 CC BY-NC-SA 2.0 \u2014 via Openverse",
+     "display_start": 37.66,
+     "display_end": 41.66,
+     "motion": "pull_out",
+     "reason": "'practice room' spoken at 38.0s \u2014 show the place"
+    },
+    {
+     "type": "video",
+     "asset_id": "shit",
+     "src": "ytdl_cache/shit.mp4",
+     "source_in": 112.53,
+     "source_out": 115.24,
+     "ah_score": null,
+     "section": "chorus2",
+     "tags": [
+      "babymonster",
+      "ahyeon"
+     ],
+     "reason": "payoff beat, chorus2 of shit",
+     "display_start": 41.66,
+     "display_end": 48.38
+    }
+   ],
+   "music_cue": "act8",
+   "captions": "word_timed",
+   "validation": "planned",
+   "frames": 1835,
+   "dur": 61.166667,
+   "start": 1650.7,
+   "voice_at": 1651.5
+  },
+  {
+   "id": "s46",
+   "beat": "a8x",
+   "act": 8,
+   "kind": "interlude",
+   "purpose": "breathing room \u2014 pure footage montage",
+   "editorial_note": "no narration; highest-presence shots, music moment",
+   "narration": {
+    "text": "",
+    "dur": 0.0
+   },
+   "lead": 0.8,
+   "tail": 11.35,
+   "slot": 12.15,
+   "shots": [
+    {
+     "type": "video",
+     "asset_id": "forever",
+     "src": "ytdl_cache/forever.mp4",
+     "source_in": 155.24,
+     "source_out": 159.45,
+     "ah_score": null,
+     "section": "chorus2",
+     "tags": [
+      "babymonster",
+      "ahyeon"
+     ],
+     "reason": "peak beat, chorus2 of forever",
+     "display_start": 0.0,
+     "display_end": 9.2
+    }
+   ],
+   "music_cue": "act8",
+   "captions": null,
+   "validation": "planned",
+   "frames": 364,
+   "dur": 12.133333,
+   "start": 1711.8667,
+   "voice_at": 1711.8667
+  },
+  {
+   "id": "s47",
+   "beat": "a9close",
+   "act": 8,
+   "kind": "card",
+   "card": {
+    "kind": "close",
+    "lines": [
+     "THE DEBUT HAPPENED WITHOUT HER.",
+     "THE ERA HAPPENED BECAUSE OF HER.",
+     "AHYEON \u2014 WORTH THE WAIT."
+    ]
+   },
+   "purpose": "close card \u2014 close",
+   "editorial_note": "typography carries this beat; background = loop of drip",
+   "narration": {
+    "text": "The debut happened without her. The era happened because of her.",
+    "dur": 4.248
+   },
+   "lead": 0.8,
+   "tail": 20.0,
+   "slot": 25.048,
+   "shots": [
+    {
+     "type": "video",
+     "asset_id": "drip",
+     "src": "ytdl_cache/drip.mp4",
+     "source_in": 150.63,
+     "source_out": 151.92,
+     "reason": "card background loop (blurred)"
+    }
+   ],
+   "music_cue": "act8",
+   "captions": "word_timed",
+   "validation": "planned",
+   "frames": 751,
+   "dur": 25.033333,
+   "start": 1724.0,
+   "voice_at": 1724.8
+  },
+  {
+   "id": "s48",
+   "beat": "a9cred",
+   "act": 8,
+   "kind": "card",
+   "card": {
+    "kind": "credits",
+    "lines": [
+     "AHYEON \u2014 THE 5TH GEN IT GIRL",
+     "FACTS: WIKIPEDIA \u00b7 YG NOTICE \u00b7 BILLBOARD \u00b7 CHOSUN \u00b7 KOREA HERALD",
+     "VOGUE HONG KONG \u00b7 KGMA \u00b7 MEDIABASE \u00b7 MAMA 2025",
+     "FOOTAGE: BABYMONSTER OFFICIAL CHANNELS",
+     "MUSIC: ORIGINAL SCORE \u2014 CC0 SAMPLES",
+     "PIANO: SALAMANDER GRAND PIANO V3 (CC BY 3.0)",
+     "PRODUCED WITH LAST STOP YT ENGINE",
+     "FAN-MADE DOCUMENTARY \u00b7 NOT AFFILIATED WITH YG"
+    ],
+    "refs": []
+   },
+   "purpose": "credits card \u2014 credits",
+   "editorial_note": "typography carries this beat; background = loop of drip",
+   "narration": {
+    "text": "",
+    "dur": 0.0
+   },
+   "lead": 0.8,
+   "tail": 50.0,
+   "slot": 50.8,
+   "shots": [
+    {
+     "type": "video",
+     "asset_id": "drip",
+     "src": "ytdl_cache/drip.mp4",
+     "source_in": 155.09,
+     "source_out": 157.05,
+     "reason": "card background loop (blurred)"
+    }
+   ],
+   "music_cue": "act8",
+   "captions": "word_timed",
+   "validation": "planned",
+   "frames": 1529,
+   "dur": 50.966667,
+   "start": 1749.0333,
+   "voice_at": 1749.0333
+  }
+ ]
+}
