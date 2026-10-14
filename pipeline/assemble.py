@@ -331,7 +331,10 @@ SR = 48000
 def stage_audio():
     tl = json.load(open(f"{RENDER}/timeline.json"))
     os.makedirs(f"{RENDER}/wav", exist_ok=True)
-    from scipy.signal import butter, sosfilt, maximum_filter1d, uniform_filter1d
+    from scipy.signal import butter, sosfilt
+    from scipy.ndimage import maximum_filter1d, uniform_filter1d
+    sys.path.insert(0, "/home/z/my-project/engine/pipeline/music")
+    from sfx import limit
     import numpy as np
     N = int(round(TOTAL * SR))
     hp = butter(2, 85, "high", fs=SR, output="sos")
@@ -380,9 +383,8 @@ def stage_audio():
             vo[:ve - vs] = voice[vs:ve]
             dk = np.zeros(len(bed), np.float32)
             dk[:ve - vs] = duck[vs:ve]
-            mix = vo * 0.92 + bed * (dk * 0.5)[:, None]
+            mix = vo[:, None] * 0.92 + bed * (dk * 0.5)[:, None]
             for c in range(2):
-                from sfx import limit
                 mix[:, c] = limit(mix[:, c].astype(np.float64), .97).astype(np.float32)
             o0 = s0 - bs
             chunk = mix[o0:o0 + (e0 - s0)]
@@ -398,9 +400,7 @@ def stage_final():
     tl = json.load(open(f"{RENDER}/timeline.json"))
     with open(f"{RENDER}/concat.txt", "w") as f:
         for t in tl: f.write(f"file '{RENDER}/seg_{t['id']}.mp4'\n")
-    sh(["ffmpeg","-y","-nostdin","-f","concat","-safe","0","-i",f"{RENDER}/concat.txt",
-        "-c","copy",f"{RENDER}/video.mp4"])
-    # two-pass LINEAR loudnorm (no dynamic pumping -> no distortion)
+    # single-pass: concat + audio + LINEAR loudnorm (no pumping) -> final.mp4
     ln_p = f"{RENDER}/loudnorm.json"
     if not os.path.exists(ln_p):
         r = subprocess.run(["ffmpeg","-nostdin","-i",f"{RENDER}/mix.wav",
@@ -414,8 +414,9 @@ def stage_final():
     meas = json.load(open(ln_p))
     af = (f"loudnorm=I=-14:TP=-1.5:LRA=11:linear=true"
           f":measured_I={meas['input_i']}:measured_TP={meas['input_tp']}"
-          f":measured_LRA={meas['input_lra']}:measured_threshold={meas['input_thresh']}")
-    sh(["ffmpeg","-y","-nostdin","-i",f"{RENDER}/video.mp4","-i",f"{RENDER}/mix.wav",
+          f":measured_LRA={meas['input_lra']}:measured_thresh={meas["input_thresh"]}")
+    sh(["ffmpeg","-y","-nostdin","-f","concat","-safe","0","-i",f"{RENDER}/concat.txt",
+        "-i",f"{RENDER}/mix.wav",
         "-filter_complex",f"[1:a]{af}[outa]",
         "-map","0:v","-map","[outa]","-c:v","copy",
         "-c:a","aac","-b:a","192k","-ar","48000","-ac","2",
