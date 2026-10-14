@@ -24,7 +24,11 @@ YTDLP = ["python3", "-m", "yt_dlp"]
 REJECT = ["karaoke", "instrumental", "reaction", "reacting", "lyric", "lyrics",
           "chipmunk", "sped up", "slowed", "nightcore", "line distribution",
           "color coded", "teacup", "8d audio", "clean version"]
+
 STOPW = {"the", "and", "mv", "m/v", "official", "video", "ep", "yg", "babymonster"}
+
+def is_ok(v):
+    return v == "ok" or (isinstance(v, dict) and v.get("status") == "ok")
 
 def norm(s):
     return re.sub(r"[^a-z0-9 ]", " ", s.lower())
@@ -49,6 +53,7 @@ def probe_dur(p):
 def ytdlp_fetch(url, out, log):
     """Download best mp4 <=1080p. Returns (ok, title)."""
     cmd = YTDLP + ["--no-playlist", "--socket-timeout", "20", "--retries", "2",
+                   "--impersonate", "firefox",
                    "-f", "bv*[height<=1080][ext=mp4]+ba[ext=m4a]/b[height<=1080][ext=mp4]/bv*+ba/b[height<=720]",
                    "--merge-output-format", "mp4", "--print", "after_move:%(title)s",
                    "-o", out, "--no-progress", url]
@@ -69,24 +74,32 @@ def load_faceapp():
     import numpy as np
     from insightface.app import FaceAnalysis
     app = FaceAnalysis(name="buffalo_l", providers=["CPUExecutionProvider"])
-    app.prepare(ctx_id=-1, det_size=(320, 320))
+    app.prepare(ctx_id=-1, det_size=(640, 640))
     refs = json.load(open("/home/z/my-project/engine/tools/cce_references/refs_summary.json"))
     cents = {m: np.array(v["centroid"], dtype=np.float32)
              for m, v in refs["members"].items()}
     return app, cents
 
-def content_gate(path, app, cents, key, log, n_frames=8):
-    """Sample n_frames, require >=2 frames containing a member face.
-    Returns (ok, ah_present, best_scores)."""
+def content_gate(path, app, cents, key, log, n_frames=10):
+    """Sample frames, classify: ('strong'|'weak'|'reject', ah_present, best).
+    strong: >=2 frames with a member face (cos >= 0.55)
+    weak:   faces present in >=30% frames + best member cos >= 0.25 — real footage
+            whose styling/lighting drifts the embedding (covers, interviews,
+            pre-debut). Titles are already gated; wrong-content uploads (protest
+            videos, karaoke screens) have no faces at all and stay rejected.
+            Weak sources get per-shot face scoring later (faceverify.py), and the
+            Director only uses shots that pass individually."""
     import numpy as np, cv2
     dur = probe_dur(path)
-    if dur <= 0: return False, False, {}
-    times = [dur * (i + 0.5) / n_frames for i in range(n_frames)]
-    frames_hit, ah, best = 0, False, {}
+    if dur <= 0: return "reject", False, {}
+    base = [dur * (i + 0.5) / n_frames for i in range(n_frames)]
+    times = sorted(set([round(t, 2) for t in base] +
+                       [round(dur * f, 2) for f in (0.4, 0.5, 0.55, 0.6, 0.65)]))
+    frames_hit, frames_face, ah, best = 0, 0, False, {}
     for t in times:
         try:
             r = subprocess.run(["ffmpeg", "-nostdin", "-ss", f"{t:.2f}", "-i", path,
-                                "-frames:v", "1", "-vf", "scale=480:-2",
+                                "-frames:v", "1", "-vf", "scale=640:-2",
                                 "-f", "image2pipe", "-vcodec", "png", "-"],
                                capture_output=True, timeout=60)
         except subprocess.TimeoutExpired:
@@ -104,9 +117,16 @@ def content_gate(path, app, cents, key, log, n_frames=8):
                     got_face = True
                     if m == "ahyeon": ah = True
         if got_face: frames_hit += 1
-    ok = frames_hit >= 2
-    log(f"    CONTENT frames_hit={frames_hit}/8 ah={ah} best={ {k:v for k,v in sorted(best.items(), key=lambda x:-x[1])[:2]} }")
-    return ok, ah, best
+        if app.get(img): frames_face += 1
+    best_any = max(best.values()) if best else 0.0
+    if frames_hit >= 2:
+        verdict = "strong"
+    elif frames_face / max(1, len(times)) >= 0.3 and best_any >= 0.25:
+        verdict = "weak"
+    else:
+        verdict = "reject"
+    log(f"    CONTENT {verdict} strong_hit={frames_hit}/{len(times)} face_rate={frames_face}/{len(times)} ah={ah} best={ {k:v for k,v in sorted(best.items(), key=lambda x:-x[1])[:2]} }")
+    return verdict, ah, best
 
 def dm_discover(q, toks, kind, log):
     """Dailymotion open API mirror discovery -> candidate URLs."""
@@ -124,6 +144,7 @@ def dm_discover(q, toks, kind, log):
     want = (140, 480) if kind == "mv" else (200, 1800)
     out = []
     for v in data.get("list", []):
+        if "babymon" not in norm(v.get("title", "")): continue
         if not title_ok(v.get("title", ""), toks): continue
         d = v.get("duration", 0)
         if not (want[0] <= d <= want[1]): continue
@@ -140,58 +161,82 @@ def main():
     state = json.load(open(f"{base}/download_state.json"))
 
     pending = [s for s in plan if s["key"] != "_comment"
-               and not str(state.get(s["key"], "")).startswith("ok")]
+               and not is_ok(state.get(s["key"]))]
+    # sources that failed >=2 runs go last; per-source wall-clock budget
+    def prio(i_s):
+        i, s = i_s
+        fails = isinstance(state.get(s["key"]), dict) and state[s["key"]].get("fails", 0)
+        return (1 if fails >= 2 else 0, i)
+    pending = [s for _, s in sorted(enumerate(pending), key=prio)]
     print(f"[mirror_dl] pending {len(pending)}/{len(plan)}", flush=True)
     if not pending: return
     app, cents = load_faceapp()
 
     done = 0
+    run_t0 = time.time()
     for s in pending:
         if done >= chunk: break
+        if time.time() - run_t0 > 430:
+            print("[mirror_dl] run budget nearly spent — deferring rest", flush=True)
+            break
         key, q, kind = s["key"], s["q"], s.get("kind", "mv")
         toks = expected_tokens(q)
         out = f"{base}/ytdl_cache/{key}.mp4"
         def log(m): print(m, flush=True)
+        src_t0 = time.time()
 
         print(f"[{key}] {q}", flush=True)
         got, meta = False, {}
         # 1) committed mirrors
         for u in mirrors.get(key, []):
-            if got: break
+            if got or time.time() - src_t0 > 210: break
             ok, title = ytdlp_fetch(u, out, log)
             if not ok: continue
             if not title_ok(title or "", toks):
                 log(f"    TITLE_REJECT '{(title or '')[:60]}'"); os.remove(out); continue
-            okc, ah, best = content_gate(out, app, cents, key, log)
-            if okc:
-                got, meta = True, {"mirror": u, "title": title, "ah_present": ah}
+            verdict, ah, best = content_gate(out, app, cents, key, log)
+            if verdict in ("strong", "weak"):
+                got, meta = True, {"mirror": u, "title": title, "ah_present": ah,
+                                   "verify": verdict}
             else:
                 log("    CONTENT_REJECT"); os.remove(out)
-        # 2) dailymotion discovery
+        # 2) dailymotion discovery (primary + alt queries)
         if not got:
-            for u in dm_discover(q, toks, kind, log):
-                if got: break
+            urls = []
+            for qv in [q] + s.get("alt_q", []):
+                urls += dm_discover(qv, expected_tokens(qv), kind, log)
+            for u in urls:
+                if got or time.time() - src_t0 > 240: break
                 ok, title = ytdlp_fetch(u, out, log)
                 if not ok: continue
                 if not title_ok(title or "", toks):
                     log(f"    TITLE_REJECT '{(title or '')[:60]}'"); os.remove(out); continue
-                okc, ah, best = content_gate(out, app, cents, key, log)
-                if okc:
-                    got, meta = True, {"mirror": u, "title": title, "ah_present": ah}
+                verdict, ah, best = content_gate(out, app, cents, key, log)
+                if verdict in ("strong", "weak"):
+                    got, meta = True, {"mirror": u, "title": title, "ah_present": ah,
+                                       "verify": verdict}
                 else:
                     log("    CONTENT_REJECT"); os.remove(out)
+        if not got and os.path.exists(out):
+            # file present from an interrupted run: verify instead of re-downloading
+            verdict, ah, best = content_gate(out, app, cents, key, log)
+            if verdict in ("strong", "weak"):
+                got, meta = True, {"mirror": "recovered", "title": None,
+                                   "ah_present": ah, "verify": verdict}
+            else: os.remove(out)
         if got:
             d = probe_dur(out)
             state[key] = {"status": "ok", "dur": round(d, 1), **meta, "faces_ok": True}
             print(f"[{key}] OK dur={d:.0f}s via {meta['mirror'][:60]}", flush=True)
             done += 1
         else:
-            state[key] = {"status": "failed", "tries": time.strftime("%H:%M")}
+            prev = state.get(key) if isinstance(state.get(key), dict) else {}
+            state[key] = {"status": "failed", "fails": prev.get("fails", 0) + 1,
+                          "tries": time.strftime("%H:%M")}
             print(f"[{key}] FAILED this run (will retry next chunk)", flush=True)
         json.dump(state, open(f"{base}/download_state.json", "w"), indent=1)
 
-    n_ok = sum(1 for v in state.values() if str(v).startswith("ok")
-               or (isinstance(v, dict) and v.get("status") == "ok"))
+    n_ok = sum(1 for v in state.values() if is_ok(v))
     print(f"[mirror_dl] chunk done: {n_ok}/{len(plan)} sources ok", flush=True)
 
 if __name__ == "__main__":

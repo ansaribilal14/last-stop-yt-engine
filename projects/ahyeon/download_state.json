@@ -10,9 +10,119 @@
  "sheesh": {
   "status": "ok",
   "dur": 176.0,
-  "mirror": "https://vkvideo.ru/video-228475198_456239067",
-  "title": "BABYMONSTER - SHEESH",
+  "mirror": "https://vkvideo.ru/video-233955030_456240809",
+  "title": "[4K 60FPS] BABYMONSTER(\ubca0\uc774\ube44\ubaac\uc2a4\ud130) 'SHEESH' MV  [2160p]",
   "ah_present": false,
+  "faces_ok": true
+ },
+ "forever": {
+  "status": "ok",
+  "dur": 233.6,
+  "mirror": "https://vkvideo.ru/video-225496127_456239328",
+  "title": "BABYMONSTER - FOREVER | MV [4K]",
+  "ah_present": false,
+  "faces_ok": true
+ },
+ "drip": {
+  "status": "ok",
+  "dur": 187.1,
+  "mirror": "https://vkvideo.ru/video-72546015_456254660",
+  "title": "BABYMONSTER - 'DRIP' M/V",
+  "ah_present": false,
+  "faces_ok": true
+ },
+ "hotsauce": {
+  "status": "ok",
+  "dur": 150.8,
+  "mirror": "https://www.dailymotion.com/video/x9nb9h0",
+  "title": "\ucfe8\ub8e9 LIVE \u25b7 BABYMONSTER(\ubca0\uc774\ube44\ubaac\uc2a4\ud130) \u2018HOT SAUCE\u2019   [\uc774\uc740\uc9c0\uc758 \uac00\uc694\uad11\uc7a5] I KBS 250708 \ubc29\uc1a1",
+  "ah_present": true,
+  "faces_ok": true
+ },
+ "shit": {
+  "status": "ok",
+  "dur": 187.1,
+  "mirror": "https://vkvideo.ru/video-187734511_456250124",
+  "title": "[BABYMONSTER] BABYMONSTER - 'SUGAR HONEY ICE TEA' M/V (2160p)",
+  "ah_present": true,
+  "faces_ok": true
+ },
+ "choom": {
+  "status": "ok",
+  "dur": 204.2,
+  "mirror": "https://vkvideo.ru/video-71299670_456243100",
+  "title": "BABYMONSTER - '\ucda4 (CHOOM)' M\u29f8V (4 K)",
+  "ah_present": false,
+  "faces_ok": true
+ },
+ "moon": {
+  "status": "ok",
+  "dur": 174.2,
+  "mirror": "https://vkvideo.ru/video-71299670_456243259",
+  "title": "BABYMONSTER - 'MOON' M/V (2K)",
+  "ah_present": false,
+  "faces_ok": true
+ },
+ "sitm": {
+  "status": "ok",
+  "dur": 257.4,
+  "mirror": "https://vkvideo.ru/video-224763217_456239085",
+  "title": "BABYMONSTER - 'Stuck In The Middle' M\u29f8V [4K]",
+  "ah_present": false,
+  "faces_ok": true
+ },
+ "dream": {
+  "status": "ok",
+  "dur": 194.8,
+  "mirror": "https://vkvideo.ru/video-239914036_456239382",
+  "title": "BABYMONSTER - 'DREAM' (PRE-DEBUT SONG)",
+  "ah_present": true,
+  "faces_ok": true
+ },
+ "nextmovement": {
+  "status": "failed",
+  "fails": 9,
+  "tries": "manually-deferred"
+ },
+ "leval1": {
+  "status": "ok",
+  "dur": 1047.7,
+  "mirror": "https://vkvideo.ru/video-240036795_456239036",
+  "title": "BABYMONSTER - 'Last Evaluation' EP.1",
+  "ah_present": true,
+  "faces_ok": true
+ },
+ "leval_ahyeon": {
+  "status": "failed",
+  "fails": 2,
+  "tries": "15:09"
+ },
+ "reveal_ahyeon": {
+  "status": "failed",
+  "fails": 2,
+  "tries": "15:25"
+ },
+ "dangerously": {
+  "status": "ok",
+  "dur": 146.1,
+  "mirror": "https://vkvideo.ru/video-96686549_456241638",
+  "title": "[\u0440\u0443\u0441.\u0441\u0430\u0431] AHYEON (BABYMONSTER) \u2013 Dangerously (Charlie Puth cover)",
+  "ah_present": false,
+  "verify": "weak",
+  "faces_ok": true
+ },
+ "batterup_stage": {
+  "status": "failed",
+  "fails": 1,
+  "tries": "15:37"
+ },
+ "sheesh_stage": {
+  "status": "ok",
+  "dur": 188.1,
+  "mirror": "https://vkvideo.ru/video-218040067_456239984",
+  "title": "SHEESH\u2502BABYMONSTER ONE TAKE STAGE\u2502INKIGAYO 240414 |",
+  "ah_present": false,
+  "verify": "weak",
   "faces_ok": true
  }
 }

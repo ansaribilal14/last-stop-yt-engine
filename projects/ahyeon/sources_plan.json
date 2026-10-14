@@ -1,29 +1,274 @@
 {
-  "_comment": "Source plan for ahyeon film. Resolver fills video_id from ytsearch (local-only, R8).",
-  "sources": [
-    {"key": "batterup",      "q": "BABYMONSTER - 'BATTER UP' M/V",                    "tags": ["babymonster", "ahyeon"], "kind": "mv"},
-    {"key": "sheesh",        "q": "BABYMONSTER - 'SHEESH' M/V",                       "tags": ["babymonster", "ahyeon"], "kind": "mv"},
-    {"key": "forever",       "q": "BABYMONSTER - 'FOREVER' M/V",                      "tags": ["babymonster", "ahyeon"], "kind": "mv"},
-    {"key": "drip",          "q": "BABYMONSTER - 'DRIP' M/V",                         "tags": ["babymonster", "ahyeon"], "kind": "mv"},
-    {"key": "hotsauce",      "q": "BABYMONSTER - 'HOT SAUCE' M/V",                    "tags": ["babymonster", "ahyeon"], "kind": "mv"},
-    {"key": "shit",          "q": "BABYMONSTER - 'SUGAR HONEY ICE TEA' M/V",          "tags": ["babymonster", "ahyeon"], "kind": "mv"},
-    {"key": "choom",         "q": "BABYMONSTER - 'CHOOM' M/V",                        "tags": ["babymonster", "ahyeon"], "kind": "mv"},
-    {"key": "moon",          "q": "BABYMONSTER - 'MOON' M/V",                         "tags": ["babymonster", "ahyeon"], "kind": "mv"},
-    {"key": "sitm",          "q": "BABYMONSTER - 'STUCK IN THE MIDDLE' M/V",          "tags": ["babymonster"],           "kind": "mv"},
-    {"key": "dream",         "q": "BABYMONSTER - 'DREAM' M/V",                        "tags": ["babymonster"],           "kind": "mv"},
-    {"key": "nextmovement",  "q": "BABYMONSTER 'YG NEXT MOVEMENT'",                   "tags": ["babymonster", "ahyeon", "ygent"], "kind": "doc"},
-    {"key": "leval1",        "q": "BABYMONSTER Last Evaluation EP.1 YG",              "tags": ["babymonster", "ygent"],  "kind": "doc"},
-    {"key": "leval_ahyeon",  "q": "BABYMONSTER Last Evaluation Ahyeon",               "tags": ["ahyeon", "babymonster"], "kind": "doc"},
-    {"key": "reveal_ahyeon", "q": "BABYMONSTER 'AHYEON' live performance reveal",     "tags": ["ahyeon"],                "kind": "doc"},
-    {"key": "dangerously",   "q": "BABYMONSTER Ahyeon Dangerously Charlie Puth cover","tags": ["ahyeon"],                "kind": "doc"},
-    {"key": "batterup_stage","q": "BABYMONSTER BATTER UP Inkigayo debut stage",       "tags": ["babymonster", "ahyeon"], "kind": "stage"},
-    {"key": "sheesh_stage",  "q": "BABYMONSTER SHEESH Inkigayo comeback stage",       "tags": ["babymonster", "ahyeon"], "kind": "stage"},
-    {"key": "mama_golden",   "q": "BABYMONSTER GOLDEN 2025 MAMA Awards stage",        "tags": ["ahyeon", "babymonster"], "kind": "stage"},
-    {"key": "kspo",          "q": "BABYMONSTER KSPO DOME Hello Monsters tour",        "tags": ["babymonster", "ahyeon"], "kind": "stage"},
-    {"key": "dome_fancam",   "q": "BABYMONSTER Kyocera Dome Osaka concert",           "tags": ["babymonster", "ahyeon"], "kind": "stage"},
-    {"key": "choom_stage",   "q": "BABYMONSTER CHOOM Music Core comeback stage",      "tags": ["ahyeon", "babymonster"], "kind": "stage"},
-    {"key": "likethat",      "q": "BABYMONSTER LIKE THAT audio",                      "tags": ["ahyeon", "babymonster"], "kind": "misc"},
-    {"key": "reallylikeyou", "q": "BABYMONSTER REALLY LIKE YOU",                      "tags": ["babymonster", "ahyeon"], "kind": "misc"},
-    {"key": "interview",     "q": "BABYMONSTER Ahyeon interview english",             "tags": ["ahyeon", "babymonster"], "kind": "misc"}
-  ]
+ "_comment": "Source plan for ahyeon film. Resolver fills video_id from ytsearch (local-only, R8).",
+ "sources": [
+  {
+   "key": "batterup",
+   "q": "BABYMONSTER - 'BATTER UP' M/V",
+   "tags": [
+    "babymonster",
+    "ahyeon"
+   ],
+   "kind": "mv"
+  },
+  {
+   "key": "sheesh",
+   "q": "BABYMONSTER - 'SHEESH' M/V",
+   "tags": [
+    "babymonster",
+    "ahyeon"
+   ],
+   "kind": "mv"
+  },
+  {
+   "key": "forever",
+   "q": "BABYMONSTER - 'FOREVER' M/V",
+   "tags": [
+    "babymonster",
+    "ahyeon"
+   ],
+   "kind": "mv"
+  },
+  {
+   "key": "drip",
+   "q": "BABYMONSTER - 'DRIP' M/V",
+   "tags": [
+    "babymonster",
+    "ahyeon"
+   ],
+   "kind": "mv"
+  },
+  {
+   "key": "hotsauce",
+   "q": "BABYMONSTER - 'HOT SAUCE' M/V",
+   "tags": [
+    "babymonster",
+    "ahyeon"
+   ],
+   "kind": "mv"
+  },
+  {
+   "key": "shit",
+   "q": "BABYMONSTER - 'SUGAR HONEY ICE TEA' M/V",
+   "tags": [
+    "babymonster",
+    "ahyeon"
+   ],
+   "kind": "mv"
+  },
+  {
+   "key": "choom",
+   "q": "BABYMONSTER - 'CHOOM' M/V",
+   "tags": [
+    "babymonster",
+    "ahyeon"
+   ],
+   "kind": "mv"
+  },
+  {
+   "key": "moon",
+   "q": "BABYMONSTER - 'MOON' M/V",
+   "tags": [
+    "babymonster",
+    "ahyeon"
+   ],
+   "kind": "mv"
+  },
+  {
+   "key": "sitm",
+   "q": "BABYMONSTER - 'STUCK IN THE MIDDLE' M/V",
+   "tags": [
+    "babymonster"
+   ],
+   "kind": "mv"
+  },
+  {
+   "key": "dream",
+   "q": "BABYMONSTER - 'DREAM' M/V",
+   "tags": [
+    "babymonster"
+   ],
+   "kind": "mv"
+  },
+  {
+   "key": "nextmovement",
+   "q": "BABYMONSTER 'YG NEXT MOVEMENT'",
+   "tags": [
+    "babymonster",
+    "ahyeon",
+    "ygent"
+   ],
+   "kind": "doc",
+   "alt_q": [
+    "YG NEXT MOVEMENT BABYMONSTER",
+    "BABYMONSTER NEXT MOVEMENT reaction YG"
+   ]
+  },
+  {
+   "key": "leval1",
+   "q": "BABYMONSTER Last Evaluation EP.1 YG",
+   "tags": [
+    "babymonster",
+    "ygent"
+   ],
+   "kind": "doc",
+   "alt_q": [
+    "BABYMONSTER Last Evaluation EP 1",
+    "BABYMONSTER last evaluation ep1 eng"
+   ]
+  },
+  {
+   "key": "leval_ahyeon",
+   "q": "BABYMONSTER Last Evaluation Ahyeon",
+   "tags": [
+    "ahyeon",
+    "babymonster"
+   ],
+   "kind": "doc",
+   "alt_q": [
+    "BABYMONSTER Last Evaluation Ahyeon",
+    "BABYMONSTER last evaluation ahyeon rap"
+   ]
+  },
+  {
+   "key": "reveal_ahyeon",
+   "q": "BABYMONSTER 'AHYEON' live performance reveal",
+   "tags": [
+    "ahyeon"
+   ],
+   "kind": "doc",
+   "alt_q": [
+    "BABYMONSTER AHYEON reveal",
+    "BABYMONSTER ahyeon last evaluation perform"
+   ]
+  },
+  {
+   "key": "dangerously",
+   "q": "BABYMONSTER Ahyeon Dangerously Charlie Puth cover",
+   "tags": [
+    "ahyeon"
+   ],
+   "kind": "doc",
+   "alt_q": [
+    "BABYMONSTER Ahyeon Dangerously cover",
+    "Ahyeon dangerously charlie puth"
+   ]
+  },
+  {
+   "key": "batterup_stage",
+   "q": "BABYMONSTER BATTER UP Inkigayo debut stage",
+   "tags": [
+    "babymonster",
+    "ahyeon"
+   ],
+   "kind": "stage",
+   "alt_q": [
+    "BABYMONSTER BATTER UP Inkigayo",
+    "BABYMONSTER batter up debut stage"
+   ]
+  },
+  {
+   "key": "sheesh_stage",
+   "q": "BABYMONSTER SHEESH Inkigayo comeback stage",
+   "tags": [
+    "babymonster",
+    "ahyeon"
+   ],
+   "kind": "stage",
+   "alt_q": [
+    "BABYMONSTER SHEESH Inkigayo",
+    "BABYMONSTER sheesh comeback stage"
+   ]
+  },
+  {
+   "key": "mama_golden",
+   "q": "BABYMONSTER GOLDEN 2025 MAMA Awards stage",
+   "tags": [
+    "ahyeon",
+    "babymonster"
+   ],
+   "kind": "stage",
+   "alt_q": [
+    "BABYMONSTER MAMA Awards 2025",
+    "BABYMONSTER golden mama stage"
+   ]
+  },
+  {
+   "key": "kspo",
+   "q": "BABYMONSTER KSPO DOME Hello Monsters tour",
+   "tags": [
+    "babymonster",
+    "ahyeon"
+   ],
+   "kind": "stage",
+   "alt_q": [
+    "BABYMONSTER Hello Monsters KSPO",
+    "BABYMONSTER kspo dome tour"
+   ]
+  },
+  {
+   "key": "dome_fancam",
+   "q": "BABYMONSTER Kyocera Dome Osaka concert",
+   "tags": [
+    "babymonster",
+    "ahyeon"
+   ],
+   "kind": "stage",
+   "alt_q": [
+    "BABYMONSTER Kyocera Dome",
+    "BABYMONSTER osaka dome concert"
+   ]
+  },
+  {
+   "key": "choom_stage",
+   "q": "BABYMONSTER CHOOM Music Core comeback stage",
+   "tags": [
+    "ahyeon",
+    "babymonster"
+   ],
+   "kind": "stage",
+   "alt_q": [
+    "BABYMONSTER CHOOM Music Core",
+    "BABYMONSTER choom stage comeback"
+   ]
+  },
+  {
+   "key": "likethat",
+   "q": "BABYMONSTER LIKE THAT audio",
+   "tags": [
+    "ahyeon",
+    "babymonster"
+   ],
+   "kind": "misc",
+   "alt_q": [
+    "BABYMONSTER LIKE THAT",
+    "babymonster like that audio"
+   ]
+  },
+  {
+   "key": "reallylikeyou",
+   "q": "BABYMONSTER REALLY LIKE YOU",
+   "tags": [
+    "babymonster",
+    "ahyeon"
+   ],
+   "kind": "misc",
+   "alt_q": [
+    "BABYMONSTER REALLY LIKE YOU",
+    "babymonster really like you mv"
+   ]
+  },
+  {
+   "key": "interview",
+   "q": "BABYMONSTER Ahyeon interview english",
+   "tags": [
+    "ahyeon",
+    "babymonster"
+   ],
+   "kind": "misc",
+   "alt_q": [
+    "BABYMONSTER Ahyeon interview",
+    "babymonster ahyeon english interview"
+   ]
+  }
+ ]
 }
