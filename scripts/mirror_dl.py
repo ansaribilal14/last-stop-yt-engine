@@ -76,7 +76,7 @@ def ytdlp_fetch(url, out, log):
 def load_faceapp():
     import numpy as np
     from insightface.app import FaceAnalysis
-    app = FaceAnalysis(name="buffalo_l", providers=["CPUExecutionProvider"])
+    app = FaceAnalysis(name="buffalo_l", allowed_modules=["detection", "recognition"], providers=["CPUExecutionProvider"])
     app.prepare(ctx_id=-1, det_size=(640, 640))
     refs = json.load(open("/home/z/my-project/engine/tools/cce_references/refs_summary.json"))
     cents = {m: np.array(v["centroid"], dtype=np.float32)
