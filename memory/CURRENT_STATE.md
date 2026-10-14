@@ -1,6 +1,9 @@
 # CURRENT STATE (authoritative, update at every stage end)
-- DATE: 2026-10-13 · PROJECT: blackpink ("Why there will be no next BLACKPINK")
-- STATUS: **DELIVERED** — Release v1.0-blackpink, final.mp4 2006.5MB SHA 0f54b894...
-- Stages: S0-S8 ALL COMPLETE (research 83 facts / 43 sources cached / 146 clips /
-  53-beat script / TTS 1436.8s / render QC PASS 2040.0s 1080p30 / release verified)
-- Next project: say "build a documentary on <subject>" → S0-S8 loop in this repo.
+- DATE: 2026-10-14 · PROJECT: ahyeon ("Ahyeon — The 5th Gen It Girl")
+- STATUS: **DELIVERED** — Release v1.0-ahyeon, final.mp4 1920325193B SHA ec312f5b1dc1fd14...
+  1800.02s (30:00) · 1080p30 · AAC 192k 48k stereo · -14 LUFS · captions burned · QC PASS
+- AUDIO v2 SHIPPED: opuscar-method composed score (CC0/CC-BY samples, 10 cues) replaced
+  the sine-drone bed — distortion fixed (user report from v1.0-blackpink).
+- EGRESS NOTE: direct YouTube = bot-walled this sandbox; free proxy lists dead on TLS.
+  Acquisition went via vkvideo.ru/dailymotion mirrors (R8 local-only) — 24/24 sources.
+- Pending: user downloads release -> DELETE asset final.mp4 (R8 policy, log in storage/DELETION_LOG.md).
