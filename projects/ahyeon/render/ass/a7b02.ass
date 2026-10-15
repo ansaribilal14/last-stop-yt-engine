@@ -1,0 +1,21 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1920
+PlayResY: 1080
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Noto Serif SC,44,&H00EAF2F5,&H00FFFFFF,&H00140D06,&H90000000,0,0,0,0,100,100,0,0,1,2.4,1.2,2,230,230,56,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.92,0:00:05.65,Cap,,0,0,0,,The comeback after MAMA is the part\Nthe highlight reels skip Live-vocal
+Dialogue: 0,0:00:05.53,0:00:11.38,Cap,,0,0,0,,criticism in K-pop is not a news cycle\Nit is a permanent search result The
+Dialogue: 0,0:00:11.24,0:00:17.26,Cap,,0,0,0,,only working answer is repetition in\Npublic more stages steadier takes no
+Dialogue: 0,0:00:17.14,0:00:21.51,Cap,,0,0,0,,hiding behind backing tracks Watch the\Narc from that November night through
+Dialogue: 0,0:00:21.37,0:00:25.33,Cap,,0,0,0,,the dome concerts ten months later and\Nyou can hear the difference in real
+Dialogue: 0,0:00:25.22,0:00:28.39,Cap,,0,0,0,,time\Ntighter breath control cleaner pitch
+Dialogue: 0,0:00:28.29,0:00:32.07,Cap,,0,0,0,,under choreography a performer who\Nstopped treating the camera as a
+Dialogue: 0,0:00:31.83,0:00:34.68,Cap,,0,0,0,,witness and started treating it as an\Ninstrument

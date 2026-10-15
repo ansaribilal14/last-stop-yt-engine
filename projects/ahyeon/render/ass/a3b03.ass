@@ -1,0 +1,21 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1920
+PlayResY: 1080
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Noto Serif SC,44,&H00EAF2F5,&H00FFFFFF,&H00140D06,&H90000000,0,0,0,0,100,100,0,0,1,2.4,1.2,2,230,230,56,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.97,0:00:03.97,Cap,,0,0,0,,February 2024 brought Stuck In The\NMiddle
+Dialogue: 0,0:00:04.41,0:00:08.68,Cap,,0,0,0,,a ballad-adjacent single that\Nshowcased the group's softer register
+Dialogue: 0,0:00:08.96,0:00:14.37,Cap,,0,0,0,,Again six members Again the comments\NBy then the absence had become the
+Dialogue: 0,0:00:14.16,0:00:18.96,Cap,,0,0,0,,group's most-discussed member Fan\Ncampaigns for her return ran in
+Dialogue: 0,0:00:18.78,0:00:23.39,Cap,,0,0,0,,multiple languages and multiple time\Nzones the fandom's nickname for the
+Dialogue: 0,0:00:23.18,0:00:28.82,Cap,,0,0,0,,wait worth the wait stopped being a\Nslogan and became a prediction Inside
+Dialogue: 0,0:00:28.70,0:00:33.72,Cap,,0,0,0,,YG sources say the decision had\Nalready been made The company did not
+Dialogue: 0,0:00:33.61,0:00:38.83,Cap,,0,0,0,,refilm did not re-cast did not\Nre-shuffle It waited for her

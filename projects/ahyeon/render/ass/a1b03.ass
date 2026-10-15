@@ -1,0 +1,21 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1920
+PlayResY: 1080
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Noto Serif SC,44,&H00EAF2F5,&H00FFFFFF,&H00140D06,&H90000000,0,0,0,0,100,100,0,0,1,2.4,1.2,2,230,230,56,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.92,0:00:06.91,Cap,,0,0,0,,The first public signal came on New\NYear's Day 2023 A trailer called YG
+Dialogue: 0,0:00:06.81,0:00:11.77,Cap,,0,0,0,,Next Movement ninety seconds of\Nanonymous trainees dancing like the
+Dialogue: 0,0:00:11.55,0:00:17.17,Cap,,0,0,0,,floor owed them money The internet did\Nwhat the internet does it froze frames
+Dialogue: 0,0:00:17.28,0:00:22.20,Cap,,0,0,0,,zoomed faces and started building fan\Naccounts for children whose names had
+Dialogue: 0,0:00:22.01,0:00:28.32,Cap,,0,0,0,,never been spoken Eleven days later YG\Nbegan answering One by one it released
+Dialogue: 0,0:00:28.20,0:00:33.28,Cap,,0,0,0,,live performance videos of the members\NAhyeon was the second reveal She was
+Dialogue: 0,0:00:33.15,0:00:37.52,Cap,,0,0,0,,fifteen years old performing\Nchoreography she had been drilling for
+Dialogue: 0,0:00:37.40,0:00:40.77,Cap,,0,0,0,,half a decade and the comments read\Nlike a launch event

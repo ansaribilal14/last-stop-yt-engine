@@ -1,0 +1,21 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1920
+PlayResY: 1080
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Noto Serif SC,44,&H00EAF2F5,&H00FFFFFF,&H00140D06,&H90000000,0,0,0,0,100,100,0,0,1,2.4,1.2,2,230,230,56,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.90,0:00:05.64,Cap,,0,0,0,,September's award season produced the\Nclip that tells the whole story At an
+Dialogue: 0,0:00:05.41,0:00:09.77,Cap,,0,0,0,,international music awards show in\NHong Kong Ahyeon walked up for a group
+Dialogue: 0,0:00:09.67,0:00:14.58,Cap,,0,0,0,,honor and delivered the acceptance\Nspeech entirely in Mandarin fluent
+Dialogue: 0,0:00:14.72,0:00:19.27,Cap,,0,0,0,,unhurried ending with a line fans\Ntranslated and re-translated across
+Dialogue: 0,0:00:19.28,0:00:23.94,Cap,,0,0,0,,every platform I would give my whole\Nworld to you By then the fan archives
+Dialogue: 0,0:00:23.83,0:00:28.52,Cap,,0,0,0,,had a name for the year Not the\Ncomeback Not the victory tour The it
+Dialogue: 0,0:00:28.38,0:00:33.65,Cap,,0,0,0,,girl year a phrase that used to belong\Nto whoever magazines chose now
+Dialogue: 0,0:00:33.67,0:00:36.11,Cap,,0,0,0,,anchored to someone the internet chose\Nfirst

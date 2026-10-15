@@ -1,0 +1,23 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1920
+PlayResY: 1080
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Noto Serif SC,44,&H00EAF2F5,&H00FFFFFF,&H00140D06,&H90000000,0,0,0,0,100,100,0,0,1,2.4,1.2,2,230,230,56,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.89,0:00:06.18,Cap,,0,0,0,,On November 15th, 2023 YG\NEntertainment posted a notice that
+Dialogue: 0,0:00:06.03,0:00:11.31,Cap,,0,0,0,,stopped a fandom cold Their most\Nanticipated trainee the girl fans had
+Dialogue: 0,0:00:11.15,0:00:15.34,Cap,,0,0,0,,already crowned before she ever\Nofficially debuted would not be in the
+Dialogue: 0,0:00:15.10,0:00:20.29,Cap,,0,0,0,,group's first music video Six members\Nwould go on without her One would stay
+Dialogue: 0,0:00:20.17,0:00:26.14,Cap,,0,0,0,,behind unnamed in a building full of\Nmirrors What happened next is the
+Dialogue: 0,0:00:25.93,0:00:31.27,Cap,,0,0,0,,strangest debut arc in modern K-pop a\Ngroup that broke YouTube records
+Dialogue: 0,0:00:31.15,0:00:34.77,Cap,,0,0,0,,without its center a record label that\Nrefused to replace her
+Dialogue: 0,0:00:35.21,0:00:39.12,Cap,,0,0,0,,and a nineteen-year-old who came back\Nfrom the edge of erasure to become the
+Dialogue: 0,0:00:38.93,0:00:45.08,Cap,,0,0,0,,defining idol of her generation This\Nis the story of Jung Ahyeon and why
+Dialogue: 0,0:00:44.96,0:00:48.23,Cap,,0,0,0,,the industry now calls her the fifth\Ngeneration's it girl

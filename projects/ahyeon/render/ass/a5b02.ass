@@ -1,0 +1,20 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1920
+PlayResY: 1080
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Noto Serif SC,44,&H00EAF2F5,&H00FFFFFF,&H00140D06,&H90000000,0,0,0,0,100,100,0,0,1,2.4,1.2,2,230,230,56,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.88,0:00:06.51,Cap,,0,0,0,,Then came the stat that redrew the\Ntour maps On January 25th and 26th
+Dialogue: 0,0:00:06.68,0:00:12.30,Cap,,0,0,0,,2025 BABYMONSTER opened their Hello\NMonsters world tour at the KSPO Dome
+Dialogue: 0,0:00:12.18,0:00:16.49,Cap,,0,0,0,,in Seoul the Olympic gymnastics arena\Nthat functions as K-pop's
+Dialogue: 0,0:00:16.37,0:00:21.45,Cap,,0,0,0,,certification of arrival No girl group\Nhad ever headlined that venue faster
+Dialogue: 0,0:00:21.75,0:00:26.59,Cap,,0,0,0,,They were eight months past debut The\Ntour went on to play thirty-two shows
+Dialogue: 0,0:00:26.47,0:00:31.49,Cap,,0,0,0,,across twenty cities for roughly three\Nhundred thousand people with the Japan
+Dialogue: 0,0:00:31.37,0:00:35.73,Cap,,0,0,0,,leg alone moving a hundred and fifty\Nthousand tickets at a record pace

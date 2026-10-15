@@ -15,31 +15,31 @@
     "type": "video",
     "asset_id": "sheesh",
     "src": "ytdl_cache/sheesh.mp4",
-    "source_in": 45.16,
-    "source_out": 52.68,
-    "ah_score": 0.3272,
-    "section": "verse1",
+    "source_in": 52.68,
+    "source_out": 60.08,
+    "ah_score": 0.5416,
+    "section": "chorus1",
     "tags": [
      "babymonster",
      "ahyeon"
     ],
-    "reason": "calm beat, verse1 of sheesh",
+    "reason": "build beat, chorus1 of sheesh",
     "display_start": 0.0,
     "display_end": 8.5
    },
    {
     "type": "video",
-    "asset_id": "batterup",
-    "src": "ytdl_cache/batterup.mp4",
-    "source_in": 109.77,
-    "source_out": 115.39,
-    "ah_score": 0.3898,
-    "section": "verse2",
+    "asset_id": "sheesh",
+    "src": "ytdl_cache/sheesh.mp4",
+    "source_in": 60.08,
+    "source_out": 68.58,
+    "ah_score": 0.5009,
+    "section": "chorus1",
     "tags": [
      "babymonster",
      "ahyeon"
     ],
-    "reason": "calm beat, verse2 of batterup",
+    "reason": "build beat, chorus1 of sheesh",
     "display_start": 8.5,
     "display_end": 17.0
    },
@@ -47,15 +47,15 @@
     "type": "video",
     "asset_id": "choom",
     "src": "ytdl_cache/choom.mp4",
-    "source_in": 72.3,
-    "source_out": 77.51,
-    "ah_score": 0.4147,
-    "section": "chorus1",
+    "source_in": 122.09,
+    "source_out": 127.3,
+    "ah_score": 0.5971,
+    "section": "chorus2",
     "tags": [
      "babymonster",
      "ahyeon"
     ],
-    "reason": "build beat, chorus1 of choom",
+    "reason": "build beat, chorus2 of choom",
     "display_start": 17.0,
     "display_end": 22.21
    },
@@ -73,49 +73,49 @@
    },
    {
     "type": "video",
-    "asset_id": "choom",
-    "src": "ytdl_cache/choom.mp4",
-    "source_in": 120.66,
-    "source_out": 127.5,
-    "ah_score": 0.5971,
-    "section": "chorus2",
+    "asset_id": "batterup",
+    "src": "ytdl_cache/batterup.mp4",
+    "source_in": 109.77,
+    "source_out": 115.39,
+    "ah_score": 0.3898,
+    "section": "verse2",
     "tags": [
      "babymonster",
      "ahyeon"
     ],
-    "reason": "peak beat, chorus2 of choom",
+    "reason": "build beat, verse2 of batterup",
     "display_start": 26.21,
     "display_end": 34.71
    },
    {
     "type": "video",
-    "asset_id": "sheesh",
-    "src": "ytdl_cache/sheesh.mp4",
-    "source_in": 52.68,
-    "source_out": 60.08,
-    "ah_score": 0.5416,
-    "section": "chorus1",
-    "tags": [
-     "babymonster",
-     "ahyeon"
-    ],
-    "reason": "peak beat, chorus1 of sheesh",
-    "display_start": 34.71,
-    "display_end": 43.21
-   },
-   {
-    "type": "video",
-    "asset_id": "batterup",
-    "src": "ytdl_cache/batterup.mp4",
-    "source_in": 191.29,
-    "source_out": 195.79,
-    "ah_score": 0.2552,
+    "asset_id": "choom",
+    "src": "ytdl_cache/choom.mp4",
+    "source_in": 174.0,
+    "source_out": 178.67,
+    "ah_score": 0.5467,
     "section": "final_chorus",
     "tags": [
      "babymonster",
      "ahyeon"
     ],
-    "reason": "payoff beat, final_chorus of batterup",
+    "reason": "payoff beat, final_chorus of choom",
+    "display_start": 34.71,
+    "display_end": 43.21
+   },
+   {
+    "type": "video",
+    "asset_id": "choom",
+    "src": "ytdl_cache/choom.mp4",
+    "source_in": 43.79,
+    "source_out": 47.54,
+    "ah_score": 0.5864,
+    "section": "verse1",
+    "tags": [
+     "babymonster",
+     "ahyeon"
+    ],
+    "reason": "payoff beat, verse1 of choom",
     "display_start": 43.21,
     "display_end": 47.71
    }
@@ -143,10 +143,10 @@
   "shots": [
    {
     "type": "video",
-    "asset_id": "reallylikeyou",
-    "src": "ytdl_cache/reallylikeyou.mp4",
-    "source_in": 125.98,
-    "source_out": 129.03,
+    "asset_id": "shit",
+    "src": "ytdl_cache/shit.mp4",
+    "source_in": 107.15,
+    "source_out": 109.61,
     "reason": "card background loop (blurred)"
    }
   ],
@@ -197,16 +197,16 @@
     "type": "video",
     "asset_id": "nextmovement",
     "src": "ytdl_cache/nextmovement.mp4",
-    "source_in": 40.02,
-    "source_out": 45.48,
-    "ah_score": 0.2321,
-    "section": "verse1",
+    "source_in": 62.27,
+    "source_out": 67.23,
+    "ah_score": 0.4394,
+    "section": "chorus1",
     "tags": [
      "babymonster",
      "ahyeon",
      "ygent"
     ],
-    "reason": "calm beat, verse1 of nextmovement",
+    "reason": "payoff beat, chorus1 of nextmovement",
     "display_start": 0.0,
     "display_end": 5.46
    },
@@ -226,16 +226,16 @@
     "type": "video",
     "asset_id": "nextmovement",
     "src": "ytdl_cache/nextmovement.mp4",
-    "source_in": 62.27,
-    "source_out": 67.23,
-    "ah_score": 0.4394,
-    "section": "chorus1",
+    "source_in": 111.61,
+    "source_out": 117.95,
+    "ah_score": 0.094,
+    "section": "chorus2",
     "tags": [
      "babymonster",
      "ahyeon",
      "ygent"
     ],
-    "reason": "peak beat, chorus1 of nextmovement",
+    "reason": "payoff beat, chorus2 of nextmovement",
     "display_start": 9.46,
     "display_end": 17.96
    },
@@ -243,8 +243,8 @@
     "type": "video",
     "asset_id": "nextmovement",
     "src": "ytdl_cache/nextmovement.mp4",
-    "source_in": 165.86,
-    "source_out": 174.36,
+    "source_in": 164.8,
+    "source_out": 173.3,
     "ah_score": 0.0,
     "section": "final_chorus",
     "tags": [
@@ -252,7 +252,7 @@
      "ahyeon",
      "ygent"
     ],
-    "reason": "peak beat, final_chorus of nextmovement",
+    "reason": "payoff beat, final_chorus of nextmovement",
     "display_start": 17.96,
     "display_end": 26.46
    },
@@ -260,9 +260,9 @@
     "type": "video",
     "asset_id": "nextmovement",
     "src": "ytdl_cache/nextmovement.mp4",
-    "source_in": 111.88,
-    "source_out": 117.75,
-    "ah_score": 0.094,
+    "source_in": 121.62,
+    "source_out": 127.49,
+    "ah_score": 0.0,
     "section": "chorus2",
     "tags": [
      "babymonster",
@@ -284,8 +284,8 @@
   "card": null,
   "voice": 41.232,
   "lead": 0.8,
-  "slot": 52.9,
-  "frames": 1587,
+  "slot": 52.933333,
+  "frames": 1588,
   "start": 143.3,
   "voice_at": 144.1,
   "shots": [
@@ -293,15 +293,15 @@
     "type": "video",
     "asset_id": "leval1",
     "src": "ytdl_cache/leval1.mp4",
-    "source_in": 96.93,
-    "source_out": 105.1,
-    "ah_score": 0.5883,
-    "section": "intro",
+    "source_in": 523.65,
+    "source_out": 528.65,
+    "ah_score": 0.6013,
+    "section": "verse2",
     "tags": [
      "babymonster",
      "ygent"
     ],
-    "reason": "calm beat, intro of leval1",
+    "reason": "build beat, verse2 of leval1",
     "display_start": 0.0,
     "display_end": 8.5
    },
@@ -309,15 +309,15 @@
     "type": "video",
     "asset_id": "leval1",
     "src": "ytdl_cache/leval1.mp4",
-    "source_in": 89.8,
-    "source_out": 94.43,
-    "ah_score": 0.6719,
-    "section": "intro",
+    "source_in": 743.78,
+    "source_out": 752.21,
+    "ah_score": 0.6778,
+    "section": "chorus2",
     "tags": [
      "babymonster",
      "ygent"
     ],
-    "reason": "calm beat, intro of leval1",
+    "reason": "peak beat, chorus2 of leval1",
     "display_start": 8.5,
     "display_end": 18.39
    },
@@ -337,22 +337,6 @@
     "type": "video",
     "asset_id": "leval1",
     "src": "ytdl_cache/leval1.mp4",
-    "source_in": 743.78,
-    "source_out": 752.21,
-    "ah_score": 0.6778,
-    "section": "chorus2",
-    "tags": [
-     "babymonster",
-     "ygent"
-    ],
-    "reason": "peak beat, chorus2 of leval1",
-    "display_start": 22.39,
-    "display_end": 30.89
-   },
-   {
-    "type": "video",
-    "asset_id": "leval1",
-    "src": "ytdl_cache/leval1.mp4",
     "source_in": 740.61,
     "source_out": 743.78,
     "ah_score": 0.6699,
@@ -361,13 +345,29 @@
      "babymonster",
      "ygent"
     ],
-    "reason": "peak beat, chorus2 of leval1",
+    "reason": "payoff beat, chorus2 of leval1",
+    "display_start": 22.39,
+    "display_end": 30.89
+   },
+   {
+    "type": "video",
+    "asset_id": "leval1",
+    "src": "ytdl_cache/leval1.mp4",
+    "source_in": 905.32,
+    "source_out": 908.16,
+    "ah_score": 0.6243,
+    "section": "final_chorus",
+    "tags": [
+     "babymonster",
+     "ygent"
+    ],
+    "reason": "payoff beat, final_chorus of leval1",
     "display_start": 30.89,
     "display_end": 41.23
    }
   ],
   "music_cue": "act1",
-  "dur": 52.9
+  "dur": 52.933333
  },
  {
   "id": "a1b03",
@@ -378,81 +378,15 @@
   "lead": 0.8,
   "slot": 51.766667,
   "frames": 1553,
-  "start": 196.2,
-  "voice_at": 197.0,
+  "start": 196.2333,
+  "voice_at": 197.0333,
   "shots": [
    {
     "type": "video",
     "asset_id": "nextmovement",
     "src": "ytdl_cache/nextmovement.mp4",
-    "source_in": 56.56,
-    "source_out": 62.27,
-    "ah_score": 0.1177,
-    "section": "chorus1",
-    "tags": [
-     "babymonster",
-     "ahyeon",
-     "ygent"
-    ],
-    "reason": "peak beat, chorus1 of nextmovement",
-    "display_start": 0.0,
-    "display_end": 8.5
-   },
-   {
-    "type": "video",
-    "asset_id": "nextmovement",
-    "src": "ytdl_cache/nextmovement.mp4",
-    "source_in": 70.61,
-    "source_out": 77.41,
-    "ah_score": 0.0,
-    "section": "chorus1",
-    "tags": [
-     "babymonster",
-     "ahyeon",
-     "ygent"
-    ],
-    "reason": "peak beat, chorus1 of nextmovement",
-    "display_start": 8.5,
-    "display_end": 17.0
-   },
-   {
-    "type": "video",
-    "asset_id": "nextmovement",
-    "src": "ytdl_cache/nextmovement.mp4",
-    "source_in": 67.23,
-    "source_out": 70.61,
-    "ah_score": 0.1702,
-    "section": "chorus1",
-    "tags": [
-     "babymonster",
-     "ahyeon",
-     "ygent"
-    ],
-    "reason": "peak beat, chorus1 of nextmovement",
-    "display_start": 17.0,
-    "display_end": 25.5
-   },
-   {
-    "type": "video",
-    "asset_id": "reveal_ahyeon",
-    "src": "ytdl_cache/reveal_ahyeon.mp4",
-    "source_in": 27.29,
-    "source_out": 35.79,
-    "ah_score": 0.0,
-    "section": "verse2",
-    "tags": [
-     "ahyeon"
-    ],
-    "reason": "peak beat, verse2 of reveal_ahyeon",
-    "display_start": 25.5,
-    "display_end": 34.0
-   },
-   {
-    "type": "video",
-    "asset_id": "nextmovement",
-    "src": "ytdl_cache/nextmovement.mp4",
-    "source_in": 121.62,
-    "source_out": 127.58,
+    "source_in": 127.59,
+    "source_out": 133.3,
     "ah_score": 0.0,
     "section": "chorus2",
     "tags": [
@@ -461,6 +395,72 @@
      "ygent"
     ],
     "reason": "payoff beat, chorus2 of nextmovement",
+    "display_start": 0.0,
+    "display_end": 8.5
+   },
+   {
+    "type": "video",
+    "asset_id": "reveal_ahyeon",
+    "src": "ytdl_cache/reveal_ahyeon.mp4",
+    "source_in": 28.58,
+    "source_out": 37.08,
+    "ah_score": 0.0,
+    "section": "verse2",
+    "tags": [
+     "ahyeon"
+    ],
+    "reason": "payoff beat, verse2 of reveal_ahyeon",
+    "display_start": 8.5,
+    "display_end": 17.0
+   },
+   {
+    "type": "video",
+    "asset_id": "nextmovement",
+    "src": "ytdl_cache/nextmovement.mp4",
+    "source_in": 117.95,
+    "source_out": 121.62,
+    "ah_score": 0.0,
+    "section": "chorus2",
+    "tags": [
+     "babymonster",
+     "ahyeon",
+     "ygent"
+    ],
+    "reason": "payoff beat, chorus2 of nextmovement",
+    "display_start": 17.0,
+    "display_end": 25.5
+   },
+   {
+    "type": "video",
+    "asset_id": "nextmovement",
+    "src": "ytdl_cache/nextmovement.mp4",
+    "source_in": 37.7,
+    "source_out": 46.2,
+    "ah_score": 0.2321,
+    "section": "verse1",
+    "tags": [
+     "babymonster",
+     "ahyeon",
+     "ygent"
+    ],
+    "reason": "payoff beat, verse1 of nextmovement",
+    "display_start": 25.5,
+    "display_end": 34.0
+   },
+   {
+    "type": "video",
+    "asset_id": "nextmovement",
+    "src": "ytdl_cache/nextmovement.mp4",
+    "source_in": 3.67,
+    "source_out": 9.89,
+    "ah_score": 0.0,
+    "section": "intro",
+    "tags": [
+     "babymonster",
+     "ahyeon",
+     "ygent"
+    ],
+    "reason": "payoff beat, intro of nextmovement",
     "display_start": 34.0,
     "display_end": 40.22
    }
@@ -477,25 +477,9 @@
   "lead": 0.8,
   "slot": 48.933333,
   "frames": 1468,
-  "start": 247.9667,
-  "voice_at": 248.7667,
+  "start": 248.0,
+  "voice_at": 248.8,
   "shots": [
-   {
-    "type": "video",
-    "asset_id": "leval1",
-    "src": "ytdl_cache/leval1.mp4",
-    "source_in": 905.32,
-    "source_out": 908.16,
-    "ah_score": 0.6243,
-    "section": "final_chorus",
-    "tags": [
-     "babymonster",
-     "ygent"
-    ],
-    "reason": "peak beat, final_chorus of leval1",
-    "display_start": 0.0,
-    "display_end": 8.5
-   },
    {
     "type": "video",
     "asset_id": "leval1",
@@ -508,25 +492,9 @@
      "babymonster",
      "ygent"
     ],
-    "reason": "peak beat, final_chorus of leval1",
-    "display_start": 8.5,
-    "display_end": 17.0
-   },
-   {
-    "type": "video",
-    "asset_id": "leval1",
-    "src": "ytdl_cache/leval1.mp4",
-    "source_in": 351.52,
-    "source_out": 359.07,
-    "ah_score": 0.5722,
-    "section": "chorus1",
-    "tags": [
-     "babymonster",
-     "ygent"
-    ],
-    "reason": "peak beat, chorus1 of leval1",
-    "display_start": 17.0,
-    "display_end": 25.5
+    "reason": "payoff beat, final_chorus of leval1",
+    "display_start": 0.0,
+    "display_end": 8.5
    },
    {
     "type": "video",
@@ -540,7 +508,39 @@
      "babymonster",
      "ygent"
     ],
-    "reason": "peak beat, final_chorus of leval1",
+    "reason": "payoff beat, final_chorus of leval1",
+    "display_start": 8.5,
+    "display_end": 17.0
+   },
+   {
+    "type": "video",
+    "asset_id": "leval1",
+    "src": "ytdl_cache/leval1.mp4",
+    "source_in": 908.16,
+    "source_out": 910.37,
+    "ah_score": 0.6243,
+    "section": "final_chorus",
+    "tags": [
+     "babymonster",
+     "ygent"
+    ],
+    "reason": "payoff beat, final_chorus of leval1",
+    "display_start": 17.0,
+    "display_end": 25.5
+   },
+   {
+    "type": "video",
+    "asset_id": "leval1",
+    "src": "ytdl_cache/leval1.mp4",
+    "source_in": 638.43,
+    "source_out": 641.85,
+    "ah_score": 0.6226,
+    "section": "chorus2",
+    "tags": [
+     "babymonster",
+     "ygent"
+    ],
+    "reason": "payoff beat, chorus2 of leval1",
     "display_start": 25.5,
     "display_end": 34.0
    },
@@ -548,15 +548,15 @@
     "type": "video",
     "asset_id": "leval1",
     "src": "ytdl_cache/leval1.mp4",
-    "source_in": 680.79,
-    "source_out": 684.57,
-    "ah_score": 0.1928,
-    "section": "chorus2",
+    "source_in": 951.12,
+    "source_out": 953.12,
+    "ah_score": 0.5499,
+    "section": "final_chorus",
     "tags": [
      "babymonster",
      "ygent"
     ],
-    "reason": "payoff beat, chorus2 of leval1",
+    "reason": "payoff beat, final_chorus of leval1",
     "display_start": 34.0,
     "display_end": 37.78
    }
@@ -577,8 +577,8 @@
   "lead": 0.8,
   "slot": 19.4,
   "frames": 582,
-  "start": 296.9,
-  "voice_at": 297.7,
+  "start": 296.9333,
+  "voice_at": 297.7333,
   "shots": [
    {
     "type": "video",
@@ -599,23 +599,23 @@
   "card": null,
   "voice": 35.832,
   "lead": 0.8,
-  "slot": 46.666667,
-  "frames": 1400,
-  "start": 316.3,
-  "voice_at": 317.1,
+  "slot": 46.7,
+  "frames": 1401,
+  "start": 316.3333,
+  "voice_at": 317.1333,
   "shots": [
    {
     "type": "video",
     "asset_id": "dream",
     "src": "ytdl_cache/dream.mp4",
-    "source_in": 88.43,
-    "source_out": 96.65,
-    "ah_score": 0.2718,
-    "section": "verse2",
+    "source_in": 145.46,
+    "source_out": 153.96,
+    "ah_score": 0.5931,
+    "section": "bridge",
     "tags": [
      "babymonster"
     ],
-    "reason": "calm beat, verse2 of dream",
+    "reason": "payoff beat, bridge of dream",
     "display_start": 0.0,
     "display_end": 8.5
    },
@@ -623,14 +623,14 @@
     "type": "video",
     "asset_id": "dream",
     "src": "ytdl_cache/dream.mp4",
-    "source_in": 39.54,
-    "source_out": 41.71,
-    "ah_score": 0.5478,
-    "section": "verse1",
+    "source_in": 85.84,
+    "source_out": 88.43,
+    "ah_score": 0.5355,
+    "section": "chorus1",
     "tags": [
      "babymonster"
     ],
-    "reason": "calm beat, verse1 of dream",
+    "reason": "payoff beat, chorus1 of dream",
     "display_start": 8.5,
     "display_end": 12.11
    },
@@ -648,65 +648,34 @@
    },
    {
     "type": "video",
-    "asset_id": "dangerously",
-    "src": "ytdl_cache/dangerously.mp4",
-    "source_in": 137.81,
-    "source_out": 146.07,
-    "ah_score": 0.0,
-    "section": "final_chorus",
+    "asset_id": "dream",
+    "src": "ytdl_cache/dream.mp4",
+    "source_in": 141.02,
+    "source_out": 144.65,
+    "ah_score": 0.507,
+    "section": "bridge",
     "tags": [
-     "ahyeon"
+     "babymonster"
     ],
-    "reason": "peak beat, final_chorus of dangerously",
+    "reason": "payoff beat, bridge of dream",
     "display_start": 16.11,
     "display_end": 24.61
    },
    {
     "type": "video",
-    "asset_id": "dangerously",
-    "src": "ytdl_cache/dangerously.mp4",
-    "source_in": 31.76,
-    "source_out": 40.26,
-    "ah_score": 0.2487,
-    "section": "chorus1",
-    "tags": [
-     "ahyeon"
-    ],
-    "reason": "peak beat, chorus1 of dangerously",
-    "display_start": 24.61,
-    "display_end": 33.11
-   },
-   {
-    "type": "video",
     "asset_id": "dream",
     "src": "ytdl_cache/dream.mp4",
-    "source_in": 125.0,
-    "source_out": 127.72,
-    "ah_score": 0.4291,
-    "section": "chorus2",
+    "source_in": 39.54,
+    "source_out": 41.71,
+    "ah_score": 0.5478,
+    "section": "verse1",
     "tags": [
      "babymonster"
     ],
-    "reason": "payoff beat, chorus2 of dream",
-    "display_start": 33.11,
-    "display_end": 35.83
-   }
-  ],
-  "music_cue": "act2",
-  "dur": 46.666667
- },
- {
-  "id": "a2b02",
-  "scene_id": "s10",
-  "kind": "clips",
-  "card": null,
-  "voice": 34.848,
-  "lead": 0.8,
-  "slot": 45.533333,
-  "frames": 1366,
-  "start": 362.9667,
-  "voice_at": 363.7667,
-  "shots": [
+    "reason": "payoff beat, verse1 of dream",
+    "display_start": 24.61,
+    "display_end": 33.11
+   },
    {
     "type": "video",
     "asset_id": "dream",
@@ -718,39 +687,40 @@
     "tags": [
      "babymonster"
     ],
-    "reason": "peak beat, chorus1 of dream",
+    "reason": "payoff beat, chorus1 of dream",
+    "display_start": 33.11,
+    "display_end": 35.83
+   }
+  ],
+  "music_cue": "act2",
+  "dur": 46.7
+ },
+ {
+  "id": "a2b02",
+  "scene_id": "s10",
+  "kind": "clips",
+  "card": null,
+  "voice": 34.848,
+  "lead": 0.8,
+  "slot": 45.566667,
+  "frames": 1367,
+  "start": 363.0333,
+  "voice_at": 363.8333,
+  "shots": [
+   {
+    "type": "video",
+    "asset_id": "dream",
+    "src": "ytdl_cache/dream.mp4",
+    "source_in": 123.5,
+    "source_out": 127.84,
+    "ah_score": 0.4291,
+    "section": "chorus2",
+    "tags": [
+     "babymonster"
+    ],
+    "reason": "payoff beat, chorus2 of dream",
     "display_start": 0.0,
     "display_end": 8.5
-   },
-   {
-    "type": "video",
-    "asset_id": "dream",
-    "src": "ytdl_cache/dream.mp4",
-    "source_in": 85.84,
-    "source_out": 88.43,
-    "ah_score": 0.5355,
-    "section": "chorus1",
-    "tags": [
-     "babymonster"
-    ],
-    "reason": "peak beat, chorus1 of dream",
-    "display_start": 8.5,
-    "display_end": 17.0
-   },
-   {
-    "type": "video",
-    "asset_id": "dream",
-    "src": "ytdl_cache/dream.mp4",
-    "source_in": 186.09,
-    "source_out": 194.59,
-    "ah_score": 0.0,
-    "section": "final_chorus",
-    "tags": [
-     "babymonster"
-    ],
-    "reason": "peak beat, final_chorus of dream",
-    "display_start": 17.0,
-    "display_end": 25.5
    },
    {
     "type": "video",
@@ -763,13 +733,43 @@
     "tags": [
      "babymonster"
     ],
-    "reason": "peak beat, final_chorus of dream",
+    "reason": "payoff beat, final_chorus of dream",
+    "display_start": 8.5,
+    "display_end": 17.0
+   },
+   {
+    "type": "video",
+    "asset_id": "dream",
+    "src": "ytdl_cache/dream.mp4",
+    "source_in": 176.14,
+    "source_out": 179.23,
+    "ah_score": 0.0096,
+    "section": "final_chorus",
+    "tags": [
+     "babymonster"
+    ],
+    "reason": "payoff beat, final_chorus of dream",
+    "display_start": 17.0,
+    "display_end": 25.5
+   },
+   {
+    "type": "video",
+    "asset_id": "dream",
+    "src": "ytdl_cache/dream.mp4",
+    "source_in": 185.24,
+    "source_out": 194.59,
+    "ah_score": 0.0,
+    "section": "final_chorus",
+    "tags": [
+     "babymonster"
+    ],
+    "reason": "payoff beat, final_chorus of dream",
     "display_start": 25.5,
     "display_end": 34.85
    }
   ],
   "music_cue": "act2",
-  "dur": 45.533333
+  "dur": 45.566667
  },
  {
   "id": "a2b03",
@@ -780,8 +780,8 @@
   "lead": 0.8,
   "slot": 46.166667,
   "frames": 1385,
-  "start": 408.5,
-  "voice_at": 409.3,
+  "start": 408.6,
+  "voice_at": 409.4,
   "shots": [
    {
     "type": "video",
@@ -803,15 +803,15 @@
     "type": "video",
     "asset_id": "leval_ahyeon",
     "src": "ytdl_cache/leval_ahyeon.mp4",
-    "source_in": 335.71,
-    "source_out": 340.13,
-    "ah_score": 0.6395,
-    "section": "chorus1",
+    "source_in": 302.47,
+    "source_out": 305.76,
+    "ah_score": 0.7187,
+    "section": "verse1",
     "tags": [
      "ahyeon",
      "babymonster"
     ],
-    "reason": "peak beat, chorus1 of leval_ahyeon",
+    "reason": "payoff beat, verse1 of leval_ahyeon",
     "display_start": 8.5,
     "display_end": 17.0
    },
@@ -819,15 +819,15 @@
     "type": "video",
     "asset_id": "leval_ahyeon",
     "src": "ytdl_cache/leval_ahyeon.mp4",
-    "source_in": 918.0,
-    "source_out": 920.63,
-    "ah_score": 0.4694,
-    "section": "final_chorus",
+    "source_in": 289.79,
+    "source_out": 294.75,
+    "ah_score": 0.7292,
+    "section": "verse1",
     "tags": [
      "ahyeon",
      "babymonster"
     ],
-    "reason": "peak beat, final_chorus of leval_ahyeon",
+    "reason": "payoff beat, verse1 of leval_ahyeon",
     "display_start": 17.0,
     "display_end": 25.5
    },
@@ -835,15 +835,15 @@
     "type": "video",
     "asset_id": "leval_ahyeon",
     "src": "ytdl_cache/leval_ahyeon.mp4",
-    "source_in": 332.5,
-    "source_out": 335.71,
-    "ah_score": 0.6358,
-    "section": "chorus1",
+    "source_in": 299.22,
+    "source_out": 302.47,
+    "ah_score": 0.6933,
+    "section": "verse1",
     "tags": [
      "ahyeon",
      "babymonster"
     ],
-    "reason": "peak beat, chorus1 of leval_ahyeon",
+    "reason": "payoff beat, verse1 of leval_ahyeon",
     "display_start": 25.5,
     "display_end": 35.38
    }
@@ -860,23 +860,21 @@
   "lead": 0.8,
   "slot": 45.966667,
   "frames": 1379,
-  "start": 454.6667,
-  "voice_at": 455.4667,
+  "start": 454.7667,
+  "voice_at": 455.5667,
   "shots": [
    {
     "type": "video",
-    "asset_id": "nextmovement",
-    "src": "ytdl_cache/nextmovement.mp4",
-    "source_in": 16.97,
-    "source_out": 25.47,
-    "ah_score": 0.0,
-    "section": "intro",
+    "asset_id": "dream",
+    "src": "ytdl_cache/dream.mp4",
+    "source_in": 88.43,
+    "source_out": 96.65,
+    "ah_score": 0.2718,
+    "section": "verse2",
     "tags": [
-     "babymonster",
-     "ahyeon",
-     "ygent"
+     "babymonster"
     ],
-    "reason": "calm beat, intro of nextmovement",
+    "reason": "build beat, verse2 of dream",
     "display_start": 0.0,
     "display_end": 8.5
    },
@@ -884,14 +882,14 @@
     "type": "video",
     "asset_id": "dream",
     "src": "ytdl_cache/dream.mp4",
-    "source_in": 55.41,
-    "source_out": 59.66,
-    "ah_score": 0.0356,
-    "section": "verse1",
+    "source_in": 119.54,
+    "source_out": 121.54,
+    "ah_score": 0.4306,
+    "section": "chorus2",
     "tags": [
      "babymonster"
     ],
-    "reason": "calm beat, verse1 of dream",
+    "reason": "payoff beat, chorus2 of dream",
     "display_start": 8.5,
     "display_end": 12.75
    },
@@ -911,29 +909,31 @@
     "type": "video",
     "asset_id": "dream",
     "src": "ytdl_cache/dream.mp4",
-    "source_in": 176.14,
-    "source_out": 179.23,
-    "ah_score": 0.0096,
+    "source_in": 179.23,
+    "source_out": 184.32,
+    "ah_score": 0.1312,
     "section": "final_chorus",
     "tags": [
      "babymonster"
     ],
-    "reason": "peak beat, final_chorus of dream",
+    "reason": "payoff beat, final_chorus of dream",
     "display_start": 16.75,
     "display_end": 25.25
    },
    {
     "type": "video",
-    "asset_id": "dream",
-    "src": "ytdl_cache/dream.mp4",
-    "source_in": 119.54,
-    "source_out": 121.54,
-    "ah_score": 0.4306,
-    "section": "chorus2",
+    "asset_id": "nextmovement",
+    "src": "ytdl_cache/nextmovement.mp4",
+    "source_in": 136.33,
+    "source_out": 146.28,
+    "ah_score": 0.0,
+    "section": "bridge",
     "tags": [
-     "babymonster"
+     "babymonster",
+     "ahyeon",
+     "ygent"
     ],
-    "reason": "peak beat, chorus2 of dream",
+    "reason": "payoff beat, bridge of nextmovement",
     "display_start": 25.25,
     "display_end": 35.21
    }
@@ -954,15 +954,15 @@
   "lead": 0.8,
   "slot": 18.833333,
   "frames": 565,
-  "start": 500.6333,
-  "voice_at": 501.4333,
+  "start": 500.7333,
+  "voice_at": 501.5333,
   "shots": [
    {
     "type": "video",
-    "asset_id": "likethat",
-    "src": "ytdl_cache/likethat.mp4",
-    "source_in": 94.13,
-    "source_out": 97.05,
+    "asset_id": "shit",
+    "src": "ytdl_cache/shit.mp4",
+    "source_in": 107.15,
+    "source_out": 109.61,
     "reason": "card background loop (blurred)"
    }
   ],
@@ -978,22 +978,22 @@
   "lead": 0.8,
   "slot": 40.4,
   "frames": 1212,
-  "start": 519.4667,
-  "voice_at": 520.2667,
+  "start": 519.5667,
+  "voice_at": 520.3667,
   "shots": [
    {
     "type": "video",
     "asset_id": "leval1",
     "src": "ytdl_cache/leval1.mp4",
-    "source_in": 311.58,
-    "source_out": 320.08,
-    "ah_score": 0.5491,
-    "section": "chorus1",
+    "source_in": 775.34,
+    "source_out": 783.84,
+    "ah_score": 0.5013,
+    "section": "bridge",
     "tags": [
      "babymonster",
      "ygent"
     ],
-    "reason": "peak beat, chorus1 of leval1",
+    "reason": "payoff beat, bridge of leval1",
     "display_start": 0.0,
     "display_end": 8.5
    },
@@ -1001,32 +1001,31 @@
     "type": "video",
     "asset_id": "leval1",
     "src": "ytdl_cache/leval1.mp4",
-    "source_in": 1014.47,
-    "source_out": 1022.85,
-    "ah_score": 0.1073,
-    "section": "final_chorus",
+    "source_in": 96.93,
+    "source_out": 105.1,
+    "ah_score": 0.5883,
+    "section": "intro",
     "tags": [
      "babymonster",
      "ygent"
     ],
-    "reason": "peak beat, final_chorus of leval1",
+    "reason": "payoff beat, intro of leval1",
     "display_start": 8.5,
     "display_end": 17.0
    },
    {
     "type": "video",
-    "asset_id": "nextmovement",
-    "src": "ytdl_cache/nextmovement.mp4",
-    "source_in": 127.59,
-    "source_out": 133.3,
-    "ah_score": 0.0,
-    "section": "chorus2",
+    "asset_id": "leval1",
+    "src": "ytdl_cache/leval1.mp4",
+    "source_in": 752.21,
+    "source_out": 756.76,
+    "ah_score": 0.6178,
+    "section": "bridge",
     "tags": [
      "babymonster",
-     "ahyeon",
      "ygent"
     ],
-    "reason": "peak beat, chorus2 of nextmovement",
+    "reason": "payoff beat, bridge of leval1",
     "display_start": 17.0,
     "display_end": 25.5
    },
@@ -1034,15 +1033,15 @@
     "type": "video",
     "asset_id": "leval1",
     "src": "ytdl_cache/leval1.mp4",
-    "source_in": 638.43,
-    "source_out": 641.85,
-    "ah_score": 0.6226,
-    "section": "chorus2",
+    "source_in": 800.47,
+    "source_out": 804.72,
+    "ah_score": 0.5046,
+    "section": "bridge",
     "tags": [
      "babymonster",
      "ygent"
     ],
-    "reason": "payoff beat, chorus2 of leval1",
+    "reason": "payoff beat, bridge of leval1",
     "display_start": 25.5,
     "display_end": 30.38
    }
@@ -1057,24 +1056,24 @@
   "card": null,
   "voice": 32.856,
   "lead": 0.8,
-  "slot": 43.233333,
-  "frames": 1297,
-  "start": 559.8667,
-  "voice_at": 560.6667,
+  "slot": 43.266667,
+  "frames": 1298,
+  "start": 559.9667,
+  "voice_at": 560.7667,
   "shots": [
    {
     "type": "video",
     "asset_id": "batterup",
     "src": "ytdl_cache/batterup.mp4",
-    "source_in": 70.4,
-    "source_out": 77.19,
-    "ah_score": 0.27,
-    "section": "chorus1",
+    "source_in": 189.32,
+    "source_out": 197.82,
+    "ah_score": 0.2552,
+    "section": "final_chorus",
     "tags": [
      "babymonster",
      "ahyeon"
     ],
-    "reason": "peak beat, chorus1 of batterup",
+    "reason": "payoff beat, final_chorus of batterup",
     "display_start": 0.0,
     "display_end": 8.5
    },
@@ -1090,25 +1089,9 @@
      "babymonster",
      "ahyeon"
     ],
-    "reason": "peak beat, final_chorus of batterup",
+    "reason": "payoff beat, final_chorus of batterup",
     "display_start": 8.5,
     "display_end": 17.0
-   },
-   {
-    "type": "video",
-    "asset_id": "batterup",
-    "src": "ytdl_cache/batterup.mp4",
-    "source_in": 61.73,
-    "source_out": 68.27,
-    "ah_score": 0.1204,
-    "section": "chorus1",
-    "tags": [
-     "babymonster",
-     "ahyeon"
-    ],
-    "reason": "peak beat, chorus1 of batterup",
-    "display_start": 17.0,
-    "display_end": 25.5
    },
    {
     "type": "video",
@@ -1123,12 +1106,28 @@
      "ahyeon"
     ],
     "reason": "payoff beat, chorus2 of batterup",
+    "display_start": 17.0,
+    "display_end": 25.5
+   },
+   {
+    "type": "video",
+    "asset_id": "batterup",
+    "src": "ytdl_cache/batterup.mp4",
+    "source_in": 124.81,
+    "source_out": 127.27,
+    "ah_score": 0.2321,
+    "section": "chorus2",
+    "tags": [
+     "babymonster",
+     "ahyeon"
+    ],
+    "reason": "payoff beat, chorus2 of batterup",
     "display_start": 25.5,
     "display_end": 32.86
    }
   ],
   "music_cue": "act3",
-  "dur": 43.233333
+  "dur": 43.266667
  },
  {
   "id": "a3s",
@@ -1143,15 +1142,15 @@
   "lead": 0.8,
   "slot": 17.566667,
   "frames": 527,
-  "start": 603.1,
-  "voice_at": 603.9,
+  "start": 603.2333,
+  "voice_at": 604.0333,
   "shots": [
    {
     "type": "video",
-    "asset_id": "shit",
-    "src": "ytdl_cache/shit.mp4",
-    "source_in": 110.11,
-    "source_out": 112.53,
+    "asset_id": "leval_ahyeon",
+    "src": "ytdl_cache/leval_ahyeon.mp4",
+    "source_in": 290.29,
+    "source_out": 294.75,
     "reason": "card background loop (blurred)"
    }
   ],
@@ -1167,39 +1166,9 @@
   "lead": 0.8,
   "slot": 49.533333,
   "frames": 1486,
-  "start": 620.6667,
-  "voice_at": 621.4667,
+  "start": 620.8,
+  "voice_at": 621.6,
   "shots": [
-   {
-    "type": "video",
-    "asset_id": "sitm",
-    "src": "ytdl_cache/sitm.mp4",
-    "source_in": 164.04,
-    "source_out": 170.59,
-    "ah_score": 0.2421,
-    "section": "chorus2",
-    "tags": [
-     "babymonster"
-    ],
-    "reason": "peak beat, chorus2 of sitm",
-    "display_start": 0.0,
-    "display_end": 8.5
-   },
-   {
-    "type": "video",
-    "asset_id": "sitm",
-    "src": "ytdl_cache/sitm.mp4",
-    "source_in": 248.74,
-    "source_out": 257.24,
-    "ah_score": 0.0,
-    "section": "final_chorus",
-    "tags": [
-     "babymonster"
-    ],
-    "reason": "peak beat, final_chorus of sitm",
-    "display_start": 8.5,
-    "display_end": 17.0
-   },
    {
     "type": "video",
     "asset_id": "sitm",
@@ -1211,7 +1180,37 @@
     "tags": [
      "babymonster"
     ],
-    "reason": "peak beat, final_chorus of sitm",
+    "reason": "payoff beat, final_chorus of sitm",
+    "display_start": 0.0,
+    "display_end": 8.5
+   },
+   {
+    "type": "video",
+    "asset_id": "sitm",
+    "src": "ytdl_cache/sitm.mp4",
+    "source_in": 229.82,
+    "source_out": 232.07,
+    "ah_score": 0.413,
+    "section": "final_chorus",
+    "tags": [
+     "babymonster"
+    ],
+    "reason": "payoff beat, final_chorus of sitm",
+    "display_start": 8.5,
+    "display_end": 17.0
+   },
+   {
+    "type": "video",
+    "asset_id": "sitm",
+    "src": "ytdl_cache/sitm.mp4",
+    "source_in": 247.85,
+    "source_out": 256.35,
+    "ah_score": 0.0,
+    "section": "final_chorus",
+    "tags": [
+     "babymonster"
+    ],
+    "reason": "payoff beat, final_chorus of sitm",
     "display_start": 17.0,
     "display_end": 25.5
    },
@@ -1219,14 +1218,14 @@
     "type": "video",
     "asset_id": "sitm",
     "src": "ytdl_cache/sitm.mp4",
-    "source_in": 172.51,
-    "source_out": 178.52,
-    "ah_score": 0.1447,
+    "source_in": 164.04,
+    "source_out": 170.59,
+    "ah_score": 0.2421,
     "section": "chorus2",
     "tags": [
      "babymonster"
     ],
-    "reason": "peak beat, chorus2 of sitm",
+    "reason": "payoff beat, chorus2 of sitm",
     "display_start": 25.5,
     "display_end": 34.0
    },
@@ -1234,9 +1233,9 @@
     "type": "video",
     "asset_id": "sitm",
     "src": "ytdl_cache/sitm.mp4",
-    "source_in": 161.92,
-    "source_out": 164.05,
-    "ah_score": 0.1959,
+    "source_in": 174.15,
+    "source_out": 178.45,
+    "ah_score": 0.1447,
     "section": "chorus2",
     "tags": [
      "babymonster"
@@ -1256,24 +1255,24 @@
   "card": null,
   "voice": 37.392,
   "lead": 0.8,
-  "slot": 48.466667,
-  "frames": 1454,
-  "start": 670.2,
-  "voice_at": 671.0,
+  "slot": 48.5,
+  "frames": 1455,
+  "start": 670.3333,
+  "voice_at": 671.1333,
   "shots": [
    {
     "type": "video",
     "asset_id": "leval_ahyeon",
     "src": "ytdl_cache/leval_ahyeon.mp4",
-    "source_in": 447.7,
-    "source_out": 453.54,
-    "ah_score": 0.1561,
+    "source_in": 335.71,
+    "source_out": 340.13,
+    "ah_score": 0.6395,
     "section": "chorus1",
     "tags": [
      "ahyeon",
      "babymonster"
     ],
-    "reason": "peak beat, chorus1 of leval_ahyeon",
+    "reason": "build beat, chorus1 of leval_ahyeon",
     "display_start": 0.0,
     "display_end": 8.5
    },
@@ -1281,15 +1280,15 @@
     "type": "video",
     "asset_id": "leval_ahyeon",
     "src": "ytdl_cache/leval_ahyeon.mp4",
-    "source_in": 724.53,
-    "source_out": 733.03,
-    "ah_score": 0.0346,
-    "section": "chorus2",
+    "source_in": 309.85,
+    "source_out": 312.19,
+    "ah_score": 0.7051,
+    "section": "verse1",
     "tags": [
      "ahyeon",
      "babymonster"
     ],
-    "reason": "peak beat, chorus2 of leval_ahyeon",
+    "reason": "payoff beat, verse1 of leval_ahyeon",
     "display_start": 8.5,
     "display_end": 17.0
    },
@@ -1297,15 +1296,15 @@
     "type": "video",
     "asset_id": "leval_ahyeon",
     "src": "ytdl_cache/leval_ahyeon.mp4",
-    "source_in": 952.08,
-    "source_out": 958.59,
-    "ah_score": 0.0,
-    "section": "final_chorus",
+    "source_in": 201.26,
+    "source_out": 209.76,
+    "ah_score": 0.5528,
+    "section": "verse1",
     "tags": [
      "ahyeon",
      "babymonster"
     ],
-    "reason": "peak beat, final_chorus of leval_ahyeon",
+    "reason": "payoff beat, verse1 of leval_ahyeon",
     "display_start": 17.0,
     "display_end": 25.5
    },
@@ -1313,38 +1312,37 @@
     "type": "video",
     "asset_id": "leval_ahyeon",
     "src": "ytdl_cache/leval_ahyeon.mp4",
-    "source_in": 697.92,
-    "source_out": 706.42,
-    "ah_score": 0.0,
-    "section": "chorus2",
+    "source_in": 111.45,
+    "source_out": 119.95,
+    "ah_score": 0.5613,
+    "section": "intro",
     "tags": [
      "ahyeon",
      "babymonster"
     ],
-    "reason": "peak beat, chorus2 of leval_ahyeon",
+    "reason": "payoff beat, intro of leval_ahyeon",
     "display_start": 25.5,
     "display_end": 34.0
    },
    {
     "type": "video",
-    "asset_id": "nextmovement",
-    "src": "ytdl_cache/nextmovement.mp4",
-    "source_in": 118.03,
-    "source_out": 121.42,
-    "ah_score": 0.0,
-    "section": "chorus2",
+    "asset_id": "leval_ahyeon",
+    "src": "ytdl_cache/leval_ahyeon.mp4",
+    "source_in": 242.91,
+    "source_out": 246.25,
+    "ah_score": 0.5571,
+    "section": "verse1",
     "tags": [
-     "babymonster",
      "ahyeon",
-     "ygent"
+     "babymonster"
     ],
-    "reason": "payoff beat, chorus2 of nextmovement",
+    "reason": "payoff beat, verse1 of leval_ahyeon",
     "display_start": 34.0,
     "display_end": 37.39
    }
   ],
   "music_cue": "act3",
-  "dur": 48.466667
+  "dur": 48.5
  },
  {
   "id": "a3x",
@@ -1353,30 +1351,30 @@
   "card": null,
   "voice": 0.0,
   "lead": 0.8,
-  "slot": 12.133333,
-  "frames": 364,
-  "start": 718.6667,
-  "voice_at": 718.6667,
+  "slot": 12.166667,
+  "frames": 365,
+  "start": 718.8333,
+  "voice_at": 718.8333,
   "shots": [
    {
     "type": "video",
     "asset_id": "sheesh",
     "src": "ytdl_cache/sheesh.mp4",
-    "source_in": 60.08,
-    "source_out": 68.64,
-    "ah_score": 0.5009,
-    "section": "chorus1",
+    "source_in": 175.29,
+    "source_out": 184.49,
+    "ah_score": 0.0,
+    "section": "final_chorus",
     "tags": [
      "babymonster",
      "ahyeon"
     ],
-    "reason": "peak beat, chorus1 of sheesh",
+    "reason": "payoff beat, final_chorus of sheesh",
     "display_start": 0.0,
     "display_end": 9.2
    }
   ],
   "music_cue": "act3",
-  "dur": 12.133333
+  "dur": 12.166667
  },
  {
   "id": "a4c",
@@ -1391,15 +1389,15 @@
   "lead": 0.8,
   "slot": 19.0,
   "frames": 570,
-  "start": 730.8,
-  "voice_at": 731.6,
+  "start": 731.0,
+  "voice_at": 731.8,
   "shots": [
    {
     "type": "video",
-    "asset_id": "choom_stage",
-    "src": "ytdl_cache/choom_stage.mp4",
-    "source_in": 138.35,
-    "source_out": 139.92,
+    "asset_id": "shit",
+    "src": "ytdl_cache/shit.mp4",
+    "source_in": 103.23,
+    "source_out": 106.65,
     "reason": "card background loop (blurred)"
    }
   ],
@@ -1415,22 +1413,22 @@
   "lead": 0.8,
   "slot": 45.933333,
   "frames": 1378,
-  "start": 749.8,
-  "voice_at": 750.6,
+  "start": 750.0,
+  "voice_at": 750.8,
   "shots": [
    {
     "type": "video",
     "asset_id": "sheesh",
     "src": "ytdl_cache/sheesh.mp4",
-    "source_in": 98.6,
-    "source_out": 104.08,
-    "ah_score": 0.1923,
-    "section": "verse2",
+    "source_in": 160.1,
+    "source_out": 168.6,
+    "ah_score": 0.0,
+    "section": "final_chorus",
     "tags": [
      "babymonster",
      "ahyeon"
     ],
-    "reason": "calm beat, verse2 of sheesh",
+    "reason": "payoff beat, final_chorus of sheesh",
     "display_start": 0.0,
     "display_end": 8.5
    },
@@ -1438,15 +1436,15 @@
     "type": "video",
     "asset_id": "sheesh",
     "src": "ytdl_cache/sheesh.mp4",
-    "source_in": 8.3,
-    "source_out": 10.88,
-    "ah_score": 0.1602,
-    "section": "intro",
+    "source_in": 116.3,
+    "source_out": 118.88,
+    "ah_score": 0.1533,
+    "section": "chorus2",
     "tags": [
      "babymonster",
      "ahyeon"
     ],
-    "reason": "calm beat, intro of sheesh",
+    "reason": "payoff beat, chorus2 of sheesh",
     "display_start": 8.5,
     "display_end": 11.08
    },
@@ -1466,15 +1464,15 @@
     "type": "video",
     "asset_id": "sheesh",
     "src": "ytdl_cache/sheesh.mp4",
-    "source_in": 68.64,
-    "source_out": 76.2,
-    "ah_score": 0.344,
-    "section": "chorus1",
+    "source_in": 112.8,
+    "source_out": 116.08,
+    "ah_score": 0.1533,
+    "section": "chorus2",
     "tags": [
      "babymonster",
      "ahyeon"
     ],
-    "reason": "peak beat, chorus1 of sheesh",
+    "reason": "payoff beat, chorus2 of sheesh",
     "display_start": 15.08,
     "display_end": 23.58
    },
@@ -1482,15 +1480,15 @@
     "type": "video",
     "asset_id": "sheesh",
     "src": "ytdl_cache/sheesh.mp4",
-    "source_in": 175.96,
-    "source_out": 184.46,
-    "ah_score": 0.0,
-    "section": "final_chorus",
+    "source_in": 127.4,
+    "source_out": 129.8,
+    "ah_score": 0.1541,
+    "section": "chorus2",
     "tags": [
      "babymonster",
      "ahyeon"
     ],
-    "reason": "peak beat, final_chorus of sheesh",
+    "reason": "payoff beat, chorus2 of sheesh",
     "display_start": 23.58,
     "display_end": 32.08
    },
@@ -1498,9 +1496,9 @@
     "type": "video",
     "asset_id": "sheesh",
     "src": "ytdl_cache/sheesh.mp4",
-    "source_in": 116.08,
-    "source_out": 119.08,
-    "ah_score": 0.1533,
+    "source_in": 119.08,
+    "source_out": 121.64,
+    "ah_score": 0.0902,
     "section": "chorus2",
     "tags": [
      "babymonster",
@@ -1523,8 +1521,8 @@
   "lead": 0.8,
   "slot": 39.166667,
   "frames": 1175,
-  "start": 795.7333,
-  "voice_at": 796.5333,
+  "start": 795.9333,
+  "voice_at": 796.7333,
   "shots": [
    {
     "type": "video",
@@ -1538,7 +1536,7 @@
      "ahyeon",
      "babymonster"
     ],
-    "reason": "calm beat, verse2 of likethat",
+    "reason": "build beat, verse2 of likethat",
     "display_start": 0.0,
     "display_end": 8.31
    },
@@ -1556,33 +1554,33 @@
    },
    {
     "type": "video",
-    "asset_id": "sheesh",
-    "src": "ytdl_cache/sheesh.mp4",
-    "source_in": 77.86,
-    "source_out": 86.36,
-    "ah_score": 0.0,
-    "section": "chorus1",
+    "asset_id": "likethat",
+    "src": "ytdl_cache/likethat.mp4",
+    "source_in": 98.34,
+    "source_out": 100.84,
+    "ah_score": 0.6569,
+    "section": "verse2",
     "tags": [
-     "babymonster",
-     "ahyeon"
+     "ahyeon",
+     "babymonster"
     ],
-    "reason": "peak beat, chorus1 of sheesh",
+    "reason": "payoff beat, verse2 of likethat",
     "display_start": 12.31,
     "display_end": 20.81
    },
    {
     "type": "video",
-    "asset_id": "sheesh",
-    "src": "ytdl_cache/sheesh.mp4",
-    "source_in": 160.08,
-    "source_out": 168.6,
-    "ah_score": 0.0,
-    "section": "final_chorus",
+    "asset_id": "likethat",
+    "src": "ytdl_cache/likethat.mp4",
+    "source_in": 137.13,
+    "source_out": 141.84,
+    "ah_score": 0.514,
+    "section": "bridge",
     "tags": [
-     "babymonster",
-     "ahyeon"
+     "ahyeon",
+     "babymonster"
     ],
-    "reason": "peak beat, final_chorus of sheesh",
+    "reason": "payoff beat, bridge of likethat",
     "display_start": 20.81,
     "display_end": 29.33
    }
@@ -1599,24 +1597,40 @@
   "lead": 0.8,
   "slot": 47.066667,
   "frames": 1412,
-  "start": 834.9,
-  "voice_at": 835.7,
+  "start": 835.1,
+  "voice_at": 835.9,
   "shots": [
    {
     "type": "video",
     "asset_id": "interview",
     "src": "ytdl_cache/interview.mp4",
-    "source_in": 140.05,
-    "source_out": 148.55,
+    "source_in": 143.72,
+    "source_out": 152.22,
     "ah_score": 0.523,
     "section": "chorus1",
     "tags": [
      "ahyeon",
      "babymonster"
     ],
-    "reason": "peak beat, chorus1 of interview",
+    "reason": "build beat, chorus1 of interview",
     "display_start": 0.0,
     "display_end": 8.5
+   },
+   {
+    "type": "video",
+    "asset_id": "interview",
+    "src": "ytdl_cache/interview.mp4",
+    "source_in": 89.0,
+    "source_out": 97.5,
+    "ah_score": 0.6749,
+    "section": "verse1",
+    "tags": [
+     "ahyeon",
+     "babymonster"
+    ],
+    "reason": "build beat, verse1 of interview",
+    "display_start": 8.5,
+    "display_end": 17.0
    },
    {
     "type": "video",
@@ -1630,39 +1644,23 @@
      "babymonster",
      "ahyeon"
     ],
-    "reason": "peak beat, chorus2 of sheesh_stage",
-    "display_start": 8.5,
-    "display_end": 17.0
+    "reason": "build beat, chorus2 of sheesh_stage",
+    "display_start": 17.0,
+    "display_end": 25.5
    },
    {
     "type": "video",
     "asset_id": "sheesh_stage",
     "src": "ytdl_cache/sheesh_stage.mp4",
-    "source_in": 172.91,
-    "source_out": 181.41,
+    "source_in": 173.08,
+    "source_out": 183.75,
     "ah_score": 0.0,
     "section": "final_chorus",
     "tags": [
      "babymonster",
      "ahyeon"
     ],
-    "reason": "peak beat, final_chorus of sheesh_stage",
-    "display_start": 17.0,
-    "display_end": 25.5
-   },
-   {
-    "type": "video",
-    "asset_id": "interview",
-    "src": "ytdl_cache/interview.mp4",
-    "source_in": 89.17,
-    "source_out": 99.84,
-    "ah_score": 0.6749,
-    "section": "verse1",
-    "tags": [
-     "ahyeon",
-     "babymonster"
-    ],
-    "reason": "peak beat, verse1 of interview",
+    "reason": "payoff beat, final_chorus of sheesh_stage",
     "display_start": 25.5,
     "display_end": 36.17
    }
@@ -1679,9 +1677,25 @@
   "lead": 0.8,
   "slot": 47.9,
   "frames": 1437,
-  "start": 881.9667,
-  "voice_at": 882.7667,
+  "start": 882.1667,
+  "voice_at": 882.9667,
   "shots": [
+   {
+    "type": "video",
+    "asset_id": "batterup_stage",
+    "src": "ytdl_cache/batterup_stage.mp4",
+    "source_in": 177.47,
+    "source_out": 185.97,
+    "ah_score": 0.0635,
+    "section": "final_chorus",
+    "tags": [
+     "babymonster",
+     "ahyeon"
+    ],
+    "reason": "payoff beat, final_chorus of batterup_stage",
+    "display_start": 0.0,
+    "display_end": 8.5
+   },
    {
     "type": "video",
     "asset_id": "batterup_stage",
@@ -1694,9 +1708,9 @@
      "babymonster",
      "ahyeon"
     ],
-    "reason": "peak beat, final_chorus of batterup_stage",
-    "display_start": 0.0,
-    "display_end": 8.5
+    "reason": "payoff beat, final_chorus of batterup_stage",
+    "display_start": 8.5,
+    "display_end": 17.0
    },
    {
     "type": "video",
@@ -1710,39 +1724,23 @@
      "babymonster",
      "ahyeon"
     ],
-    "reason": "peak beat, final_chorus of batterup_stage",
-    "display_start": 8.5,
-    "display_end": 17.0
-   },
-   {
-    "type": "video",
-    "asset_id": "sheesh_stage",
-    "src": "ytdl_cache/sheesh_stage.mp4",
-    "source_in": 82.88,
-    "source_out": 84.88,
-    "ah_score": 0.2079,
-    "section": "chorus1",
-    "tags": [
-     "babymonster",
-     "ahyeon"
-    ],
-    "reason": "peak beat, chorus1 of sheesh_stage",
+    "reason": "payoff beat, final_chorus of batterup_stage",
     "display_start": 17.0,
     "display_end": 25.5
    },
    {
     "type": "video",
-    "asset_id": "batterup_stage",
-    "src": "ytdl_cache/batterup_stage.mp4",
-    "source_in": 177.47,
-    "source_out": 185.97,
-    "ah_score": 0.0635,
-    "section": "final_chorus",
+    "asset_id": "sheesh_stage",
+    "src": "ytdl_cache/sheesh_stage.mp4",
+    "source_in": 129.3,
+    "source_out": 132.2,
+    "ah_score": 0.0,
+    "section": "chorus2",
     "tags": [
      "babymonster",
      "ahyeon"
     ],
-    "reason": "peak beat, final_chorus of batterup_stage",
+    "reason": "payoff beat, chorus2 of sheesh_stage",
     "display_start": 25.5,
     "display_end": 34.0
    },
@@ -1779,15 +1777,15 @@
   "lead": 0.8,
   "slot": 19.233333,
   "frames": 577,
-  "start": 929.8667,
-  "voice_at": 930.6667,
+  "start": 930.0667,
+  "voice_at": 930.8667,
   "shots": [
    {
     "type": "video",
-    "asset_id": "leval_ahyeon",
-    "src": "ytdl_cache/leval_ahyeon.mp4",
-    "source_in": 302.97,
-    "source_out": 305.76,
+    "asset_id": "shit",
+    "src": "ytdl_cache/shit.mp4",
+    "source_in": 107.15,
+    "source_out": 109.61,
     "reason": "card background loop (blurred)"
    }
   ],
@@ -1801,24 +1799,24 @@
   "card": null,
   "voice": 33.84,
   "lead": 0.8,
-  "slot": 44.366667,
-  "frames": 1331,
-  "start": 949.1,
-  "voice_at": 949.9,
+  "slot": 44.4,
+  "frames": 1332,
+  "start": 949.3,
+  "voice_at": 950.1,
   "shots": [
    {
     "type": "video",
     "asset_id": "drip",
     "src": "ytdl_cache/drip.mp4",
-    "source_in": 172.88,
-    "source_out": 175.67,
-    "ah_score": 0.6694,
-    "section": "final_chorus",
+    "source_in": 113.22,
+    "source_out": 121.72,
+    "ah_score": 0.3556,
+    "section": "chorus2",
     "tags": [
      "babymonster",
      "ahyeon"
     ],
-    "reason": "peak beat, final_chorus of drip",
+    "reason": "payoff beat, chorus2 of drip",
     "display_start": 0.0,
     "display_end": 8.5
    },
@@ -1834,7 +1832,7 @@
      "babymonster",
      "ahyeon"
     ],
-    "reason": "peak beat, chorus2 of forever",
+    "reason": "payoff beat, chorus2 of forever",
     "display_start": 8.5,
     "display_end": 17.0
    },
@@ -1842,15 +1840,15 @@
     "type": "video",
     "asset_id": "drip",
     "src": "ytdl_cache/drip.mp4",
-    "source_in": 113.22,
-    "source_out": 121.72,
-    "ah_score": 0.3556,
-    "section": "chorus2",
+    "source_in": 172.88,
+    "source_out": 175.67,
+    "ah_score": 0.6694,
+    "section": "final_chorus",
     "tags": [
      "babymonster",
      "ahyeon"
     ],
-    "reason": "peak beat, chorus2 of drip",
+    "reason": "payoff beat, final_chorus of drip",
     "display_start": 17.0,
     "display_end": 25.5
    },
@@ -1872,7 +1870,7 @@
    }
   ],
   "music_cue": "act5",
-  "dur": 44.366667
+  "dur": 44.4
  },
  {
   "id": "a5b02",
@@ -1881,24 +1879,24 @@
   "card": null,
   "voice": 35.16,
   "lead": 0.8,
-  "slot": 45.9,
-  "frames": 1377,
-  "start": 993.4667,
-  "voice_at": 994.2667,
+  "slot": 45.933333,
+  "frames": 1378,
+  "start": 993.7,
+  "voice_at": 994.5,
   "shots": [
    {
     "type": "video",
     "asset_id": "kspo",
     "src": "ytdl_cache/kspo.mp4",
-    "source_in": 228.1,
-    "source_out": 234.98,
-    "ah_score": 0.5712,
-    "section": "verse1",
+    "source_in": 682.01,
+    "source_out": 689.06,
+    "ah_score": 0.5192,
+    "section": "chorus2",
     "tags": [
      "babymonster",
      "ahyeon"
     ],
-    "reason": "calm beat, verse1 of kspo",
+    "reason": "payoff beat, chorus2 of kspo",
     "display_start": 0.0,
     "display_end": 8.5
    },
@@ -1906,15 +1904,15 @@
     "type": "video",
     "asset_id": "kspo",
     "src": "ytdl_cache/kspo.mp4",
-    "source_in": 559.39,
-    "source_out": 562.07,
-    "ah_score": 0.5137,
-    "section": "verse2",
+    "source_in": 728.15,
+    "source_out": 730.83,
+    "ah_score": 0.6229,
+    "section": "chorus2",
     "tags": [
      "babymonster",
      "ahyeon"
     ],
-    "reason": "calm beat, verse2 of kspo",
+    "reason": "payoff beat, chorus2 of kspo",
     "display_start": 8.5,
     "display_end": 11.18
    },
@@ -1934,22 +1932,6 @@
     "type": "video",
     "asset_id": "kspo",
     "src": "ytdl_cache/kspo.mp4",
-    "source_in": 682.01,
-    "source_out": 689.06,
-    "ah_score": 0.5192,
-    "section": "chorus2",
-    "tags": [
-     "babymonster",
-     "ahyeon"
-    ],
-    "reason": "peak beat, chorus2 of kspo",
-    "display_start": 15.18,
-    "display_end": 23.68
-   },
-   {
-    "type": "video",
-    "asset_id": "kspo",
-    "src": "ytdl_cache/kspo.mp4",
     "source_in": 664.93,
     "source_out": 673.43,
     "ah_score": 0.4704,
@@ -1958,7 +1940,23 @@
      "babymonster",
      "ahyeon"
     ],
-    "reason": "peak beat, chorus2 of kspo",
+    "reason": "payoff beat, chorus2 of kspo",
+    "display_start": 15.18,
+    "display_end": 23.68
+   },
+   {
+    "type": "video",
+    "asset_id": "kspo",
+    "src": "ytdl_cache/kspo.mp4",
+    "source_in": 742.78,
+    "source_out": 747.08,
+    "ah_score": 0.5486,
+    "section": "chorus2",
+    "tags": [
+     "babymonster",
+     "ahyeon"
+    ],
+    "reason": "payoff beat, chorus2 of kspo",
     "display_start": 23.68,
     "display_end": 32.18
    },
@@ -1980,7 +1978,7 @@
    }
   ],
   "music_cue": "act5",
-  "dur": 45.9
+  "dur": 45.933333
  },
  {
   "id": "a5b03",
@@ -1991,8 +1989,8 @@
   "lead": 0.8,
   "slot": 48.433333,
   "frames": 1453,
-  "start": 1039.3667,
-  "voice_at": 1040.1667,
+  "start": 1039.6333,
+  "voice_at": 1040.4333,
   "shots": [
    {
     "type": "video",
@@ -2006,7 +2004,7 @@
      "ahyeon",
      "babymonster"
     ],
-    "reason": "peak beat, final_chorus of mama_golden",
+    "reason": "payoff beat, final_chorus of mama_golden",
     "display_start": 0.0,
     "display_end": 8.5
    },
@@ -2022,9 +2020,25 @@
      "ahyeon",
      "babymonster"
     ],
-    "reason": "peak beat, chorus2 of mama_golden",
+    "reason": "payoff beat, chorus2 of mama_golden",
     "display_start": 8.5,
     "display_end": 17.0
+   },
+   {
+    "type": "video",
+    "asset_id": "mama_golden",
+    "src": "ytdl_cache/mama_golden.mp4",
+    "source_in": 26.35,
+    "source_out": 34.85,
+    "ah_score": 0.4184,
+    "section": "intro",
+    "tags": [
+     "ahyeon",
+     "babymonster"
+    ],
+    "reason": "payoff beat, intro of mama_golden",
+    "display_start": 17.0,
+    "display_end": 25.5
    },
    {
     "type": "video",
@@ -2038,23 +2052,7 @@
      "ahyeon",
      "babymonster"
     ],
-    "reason": "peak beat, chorus2 of mama_golden",
-    "display_start": 17.0,
-    "display_end": 25.5
-   },
-   {
-    "type": "video",
-    "asset_id": "mama_golden",
-    "src": "ytdl_cache/mama_golden.mp4",
-    "source_in": 81.76,
-    "source_out": 88.53,
-    "ah_score": 0.1598,
-    "section": "chorus1",
-    "tags": [
-     "ahyeon",
-     "babymonster"
-    ],
-    "reason": "peak beat, chorus1 of mama_golden",
+    "reason": "payoff beat, chorus2 of mama_golden",
     "display_start": 25.5,
     "display_end": 34.0
    },
@@ -2062,15 +2060,15 @@
     "type": "video",
     "asset_id": "mama_golden",
     "src": "ytdl_cache/mama_golden.mp4",
-    "source_in": 165.31,
-    "source_out": 168.65,
-    "ah_score": 0.1253,
-    "section": "chorus2",
+    "source_in": 212.87,
+    "source_out": 216.21,
+    "ah_score": 0.4778,
+    "section": "bridge",
     "tags": [
      "ahyeon",
      "babymonster"
     ],
-    "reason": "payoff beat, chorus2 of mama_golden",
+    "reason": "payoff beat, bridge of mama_golden",
     "display_start": 34.0,
     "display_end": 37.34
    }
@@ -2091,15 +2089,15 @@
   "lead": 0.8,
   "slot": 18.133333,
   "frames": 544,
-  "start": 1087.8,
-  "voice_at": 1088.6,
+  "start": 1088.0667,
+  "voice_at": 1088.8667,
   "shots": [
    {
     "type": "video",
-    "asset_id": "choom_stage",
-    "src": "ytdl_cache/choom_stage.mp4",
-    "source_in": 138.35,
-    "source_out": 139.92,
+    "asset_id": "leval_ahyeon",
+    "src": "ytdl_cache/leval_ahyeon.mp4",
+    "source_in": 290.29,
+    "source_out": 294.75,
     "reason": "card background loop (blurred)"
    }
   ],
@@ -2115,22 +2113,22 @@
   "lead": 0.8,
   "slot": 37.933333,
   "frames": 1138,
-  "start": 1105.9333,
-  "voice_at": 1106.7333,
+  "start": 1106.2,
+  "voice_at": 1107.0,
   "shots": [
    {
     "type": "video",
     "asset_id": "kspo",
     "src": "ytdl_cache/kspo.mp4",
-    "source_in": 727.94,
-    "source_out": 731.03,
-    "ah_score": 0.6229,
+    "source_in": 722.6,
+    "source_out": 724.64,
+    "ah_score": 0.6318,
     "section": "chorus2",
     "tags": [
      "babymonster",
      "ahyeon"
     ],
-    "reason": "peak beat, chorus2 of kspo",
+    "reason": "payoff beat, chorus2 of kspo",
     "display_start": 0.0,
     "display_end": 8.5
    },
@@ -2138,15 +2136,15 @@
     "type": "video",
     "asset_id": "drip",
     "src": "ytdl_cache/drip.mp4",
-    "source_in": 168.67,
-    "source_out": 172.88,
-    "ah_score": 0.4601,
-    "section": "final_chorus",
+    "source_in": 21.09,
+    "source_out": 25.67,
+    "ah_score": 0.6438,
+    "section": "verse1",
     "tags": [
      "babymonster",
      "ahyeon"
     ],
-    "reason": "peak beat, final_chorus of drip",
+    "reason": "payoff beat, verse1 of drip",
     "display_start": 8.5,
     "display_end": 17.0
    },
@@ -2154,15 +2152,15 @@
     "type": "video",
     "asset_id": "kspo",
     "src": "ytdl_cache/kspo.mp4",
-    "source_in": 1089.14,
-    "source_out": 1097.64,
-    "ah_score": 0.3436,
-    "section": "final_chorus",
+    "source_in": 831.15,
+    "source_out": 839.65,
+    "ah_score": 0.5531,
+    "section": "bridge",
     "tags": [
      "babymonster",
      "ahyeon"
     ],
-    "reason": "peak beat, final_chorus of kspo",
+    "reason": "payoff beat, bridge of kspo",
     "display_start": 17.0,
     "display_end": 25.5
    },
@@ -2170,15 +2168,15 @@
     "type": "video",
     "asset_id": "kspo",
     "src": "ytdl_cache/kspo.mp4",
-    "source_in": 744.15,
-    "source_out": 746.9,
-    "ah_score": 0.5486,
-    "section": "chorus2",
+    "source_in": 559.32,
+    "source_out": 562.07,
+    "ah_score": 0.5137,
+    "section": "verse2",
     "tags": [
      "babymonster",
      "ahyeon"
     ],
-    "reason": "payoff beat, chorus2 of kspo",
+    "reason": "payoff beat, verse2 of kspo",
     "display_start": 25.5,
     "display_end": 28.25
    }
@@ -2199,15 +2197,15 @@
   "lead": 0.8,
   "slot": 19.333333,
   "frames": 580,
-  "start": 1143.8667,
-  "voice_at": 1144.6667,
+  "start": 1144.1333,
+  "voice_at": 1144.9333,
   "shots": [
    {
     "type": "video",
-    "asset_id": "leval_ahyeon",
-    "src": "ytdl_cache/leval_ahyeon.mp4",
-    "source_in": 290.29,
-    "source_out": 294.75,
+    "asset_id": "choom_stage",
+    "src": "ytdl_cache/choom_stage.mp4",
+    "source_in": 138.35,
+    "source_out": 139.92,
     "reason": "card background loop (blurred)"
    }
   ],
@@ -2221,40 +2219,40 @@
   "card": null,
   "voice": 31.032,
   "lead": 0.8,
-  "slot": 41.133333,
-  "frames": 1234,
-  "start": 1163.2,
-  "voice_at": 1164.0,
+  "slot": 41.166667,
+  "frames": 1235,
+  "start": 1163.4667,
+  "voice_at": 1164.2667,
   "shots": [
    {
     "type": "video",
-    "asset_id": "choom",
-    "src": "ytdl_cache/choom.mp4",
-    "source_in": 43.79,
-    "source_out": 47.54,
-    "ah_score": 0.5864,
-    "section": "verse1",
+    "asset_id": "moon",
+    "src": "ytdl_cache/moon.mp4",
+    "source_in": 154.4,
+    "source_out": 160.95,
+    "ah_score": 0.553,
+    "section": "final_chorus",
     "tags": [
      "babymonster",
      "ahyeon"
     ],
-    "reason": "calm beat, verse1 of choom",
+    "reason": "payoff beat, final_chorus of moon",
     "display_start": 0.0,
     "display_end": 8.5
    },
    {
     "type": "video",
-    "asset_id": "moon",
-    "src": "ytdl_cache/moon.mp4",
-    "source_in": 90.44,
-    "source_out": 98.94,
-    "ah_score": 0.1169,
-    "section": "verse2",
+    "asset_id": "choom",
+    "src": "ytdl_cache/choom.mp4",
+    "source_in": 120.66,
+    "source_out": 127.5,
+    "ah_score": 0.5971,
+    "section": "chorus2",
     "tags": [
      "babymonster",
      "ahyeon"
     ],
-    "reason": "calm beat, verse2 of moon",
+    "reason": "payoff beat, chorus2 of choom",
     "display_start": 8.5,
     "display_end": 17.0
    },
@@ -2262,15 +2260,15 @@
     "type": "video",
     "asset_id": "choom",
     "src": "ytdl_cache/choom.mp4",
-    "source_in": 97.51,
-    "source_out": 105.04,
-    "ah_score": 0.1889,
-    "section": "verse2",
+    "source_in": 120.66,
+    "source_out": 127.5,
+    "ah_score": 0.5971,
+    "section": "chorus2",
     "tags": [
      "babymonster",
      "ahyeon"
     ],
-    "reason": "build beat, verse2 of choom",
+    "reason": "payoff beat, chorus2 of choom",
     "display_start": 17.0,
     "display_end": 24.53
    },
@@ -2288,23 +2286,23 @@
    },
    {
     "type": "video",
-    "asset_id": "moon",
-    "src": "ytdl_cache/moon.mp4",
-    "source_in": 156.17,
-    "source_out": 158.67,
-    "ah_score": 0.553,
-    "section": "final_chorus",
+    "asset_id": "choom",
+    "src": "ytdl_cache/choom.mp4",
+    "source_in": 122.65,
+    "source_out": 125.15,
+    "ah_score": 0.5971,
+    "section": "chorus2",
     "tags": [
      "babymonster",
      "ahyeon"
     ],
-    "reason": "payoff beat, final_chorus of moon",
+    "reason": "payoff beat, chorus2 of choom",
     "display_start": 28.53,
     "display_end": 31.03
    }
   ],
   "music_cue": "act6",
-  "dur": 41.133333
+  "dur": 41.166667
  },
  {
   "id": "a6b02",
@@ -2313,24 +2311,24 @@
   "card": null,
   "voice": 30.6,
   "lead": 0.8,
-  "slot": 40.633333,
-  "frames": 1219,
-  "start": 1204.3333,
-  "voice_at": 1205.1333,
+  "slot": 40.666667,
+  "frames": 1220,
+  "start": 1204.6333,
+  "voice_at": 1205.4333,
   "shots": [
    {
     "type": "video",
     "asset_id": "choom",
     "src": "ytdl_cache/choom.mp4",
-    "source_in": 29.56,
-    "source_out": 36.4,
-    "ah_score": 0.1984,
-    "section": "verse1",
+    "source_in": 72.0,
+    "source_out": 78.84,
+    "ah_score": 0.4147,
+    "section": "chorus1",
     "tags": [
      "babymonster",
      "ahyeon"
     ],
-    "reason": "calm beat, verse1 of choom",
+    "reason": "build beat, chorus1 of choom",
     "display_start": 0.0,
     "display_end": 6.84
    },
@@ -2350,15 +2348,15 @@
     "type": "video",
     "asset_id": "choom",
     "src": "ytdl_cache/choom.mp4",
-    "source_in": 174.0,
-    "source_out": 178.67,
-    "ah_score": 0.5467,
-    "section": "final_chorus",
+    "source_in": 97.51,
+    "source_out": 105.14,
+    "ah_score": 0.1889,
+    "section": "verse2",
     "tags": [
      "babymonster",
      "ahyeon"
     ],
-    "reason": "peak beat, final_chorus of choom",
+    "reason": "build beat, verse2 of choom",
     "display_start": 10.84,
     "display_end": 19.34
    },
@@ -2366,15 +2364,15 @@
     "type": "video",
     "asset_id": "choom",
     "src": "ytdl_cache/choom.mp4",
-    "source_in": 178.67,
-    "source_out": 186.76,
-    "ah_score": 0.304,
-    "section": "final_chorus",
+    "source_in": 120.66,
+    "source_out": 127.5,
+    "ah_score": 0.5971,
+    "section": "chorus2",
     "tags": [
      "babymonster",
      "ahyeon"
     ],
-    "reason": "peak beat, final_chorus of choom",
+    "reason": "payoff beat, chorus2 of choom",
     "display_start": 19.34,
     "display_end": 27.84
    },
@@ -2382,9 +2380,9 @@
     "type": "video",
     "asset_id": "choom",
     "src": "ytdl_cache/choom.mp4",
-    "source_in": 140.03,
-    "source_out": 142.79,
-    "ah_score": 0.1585,
+    "source_in": 122.6,
+    "source_out": 125.36,
+    "ah_score": 0.5971,
     "section": "chorus2",
     "tags": [
      "babymonster",
@@ -2396,7 +2394,7 @@
    }
   ],
   "music_cue": "act6",
-  "dur": 40.633333
+  "dur": 40.666667
  },
  {
   "id": "a6b03",
@@ -2405,10 +2403,10 @@
   "card": null,
   "voice": 31.44,
   "lead": 0.8,
-  "slot": 41.6,
-  "frames": 1248,
-  "start": 1244.9667,
-  "voice_at": 1245.7667,
+  "slot": 41.633333,
+  "frames": 1249,
+  "start": 1245.3,
+  "voice_at": 1246.1,
   "shots": [
    {
     "type": "video",
@@ -2422,7 +2420,7 @@
      "ahyeon",
      "babymonster"
     ],
-    "reason": "peak beat, final_chorus of choom_stage",
+    "reason": "payoff beat, final_chorus of choom_stage",
     "display_start": 0.0,
     "display_end": 8.5
    },
@@ -2438,45 +2436,45 @@
      "ahyeon",
      "babymonster"
     ],
-    "reason": "peak beat, chorus2 of choom_stage",
+    "reason": "payoff beat, chorus2 of choom_stage",
     "display_start": 8.5,
     "display_end": 17.0
    },
    {
     "type": "video",
-    "asset_id": "choom",
-    "src": "ytdl_cache/choom.mp4",
-    "source_in": 192.41,
-    "source_out": 200.91,
-    "ah_score": 0.2284,
-    "section": "final_chorus",
+    "asset_id": "choom_stage",
+    "src": "ytdl_cache/choom_stage.mp4",
+    "source_in": 137.85,
+    "source_out": 139.92,
+    "ah_score": 0.7109,
+    "section": "verse2",
     "tags": [
-     "babymonster",
-     "ahyeon"
+     "ahyeon",
+     "babymonster"
     ],
-    "reason": "peak beat, final_chorus of choom",
+    "reason": "payoff beat, verse2 of choom_stage",
     "display_start": 17.0,
     "display_end": 25.5
    },
    {
     "type": "video",
-    "asset_id": "choom_stage",
-    "src": "ytdl_cache/choom_stage.mp4",
-    "source_in": 242.49,
-    "source_out": 247.16,
-    "ah_score": 0.1636,
-    "section": "final_chorus",
+    "asset_id": "choom",
+    "src": "ytdl_cache/choom.mp4",
+    "source_in": 121.36,
+    "source_out": 127.3,
+    "ah_score": 0.5971,
+    "section": "chorus2",
     "tags": [
-     "ahyeon",
-     "babymonster"
+     "babymonster",
+     "ahyeon"
     ],
-    "reason": "payoff beat, final_chorus of choom_stage",
+    "reason": "payoff beat, chorus2 of choom",
     "display_start": 25.5,
     "display_end": 31.44
    }
   ],
   "music_cue": "act6",
-  "dur": 41.6
+  "dur": 41.633333
  },
  {
   "id": "a6b04",
@@ -2487,22 +2485,22 @@
   "lead": 0.8,
   "slot": 44.966667,
   "frames": 1349,
-  "start": 1286.5667,
-  "voice_at": 1287.3667,
+  "start": 1286.9333,
+  "voice_at": 1287.7333,
   "shots": [
    {
     "type": "video",
     "asset_id": "shit",
     "src": "ytdl_cache/shit.mp4",
-    "source_in": 54.26,
-    "source_out": 60.81,
-    "ah_score": 0.4707,
-    "section": "chorus1",
+    "source_in": 171.88,
+    "source_out": 177.51,
+    "ah_score": 0.5505,
+    "section": "final_chorus",
     "tags": [
      "babymonster",
      "ahyeon"
     ],
-    "reason": "peak beat, chorus1 of shit",
+    "reason": "payoff beat, final_chorus of shit",
     "display_start": 0.0,
     "display_end": 8.5
    },
@@ -2518,7 +2516,7 @@
      "babymonster",
      "ahyeon"
     ],
-    "reason": "peak beat, chorus2 of shit",
+    "reason": "payoff beat, chorus2 of shit",
     "display_start": 8.5,
     "display_end": 17.0
    },
@@ -2526,15 +2524,15 @@
     "type": "video",
     "asset_id": "shit",
     "src": "ytdl_cache/shit.mp4",
-    "source_in": 171.88,
-    "source_out": 177.51,
-    "ah_score": 0.5505,
+    "source_in": 178.32,
+    "source_out": 186.82,
+    "ah_score": 0.0,
     "section": "final_chorus",
     "tags": [
      "babymonster",
      "ahyeon"
     ],
-    "reason": "peak beat, final_chorus of shit",
+    "reason": "payoff beat, final_chorus of shit",
     "display_start": 17.0,
     "display_end": 25.5
    },
@@ -2542,15 +2540,15 @@
     "type": "video",
     "asset_id": "shit",
     "src": "ytdl_cache/shit.mp4",
-    "source_in": 60.81,
-    "source_out": 64.23,
-    "ah_score": 0.677,
-    "section": "chorus1",
+    "source_in": 127.67,
+    "source_out": 134.55,
+    "ah_score": 0.232,
+    "section": "chorus2",
     "tags": [
      "babymonster",
      "ahyeon"
     ],
-    "reason": "peak beat, chorus1 of shit",
+    "reason": "payoff beat, chorus2 of shit",
     "display_start": 25.5,
     "display_end": 34.34
    }
@@ -2571,15 +2569,15 @@
   "lead": 0.8,
   "slot": 18.133333,
   "frames": 544,
-  "start": 1331.5333,
-  "voice_at": 1332.3333,
+  "start": 1331.9,
+  "voice_at": 1332.7,
   "shots": [
    {
     "type": "video",
     "asset_id": "shit",
     "src": "ytdl_cache/shit.mp4",
-    "source_in": 107.15,
-    "source_out": 109.61,
+    "source_in": 110.11,
+    "source_out": 112.53,
     "reason": "card background loop (blurred)"
    }
   ],
@@ -2595,22 +2593,22 @@
   "lead": 0.8,
   "slot": 46.4,
   "frames": 1392,
-  "start": 1349.6667,
-  "voice_at": 1350.4667,
+  "start": 1350.0333,
+  "voice_at": 1350.8333,
   "shots": [
    {
     "type": "video",
-    "asset_id": "choom",
-    "src": "ytdl_cache/choom.mp4",
-    "source_in": 83.79,
-    "source_out": 91.88,
-    "ah_score": 0.0799,
-    "section": "chorus1",
+    "asset_id": "interview",
+    "src": "ytdl_cache/interview.mp4",
+    "source_in": 329.1,
+    "source_out": 337.6,
+    "ah_score": 0.5693,
+    "section": "bridge",
     "tags": [
-     "babymonster",
-     "ahyeon"
+     "ahyeon",
+     "babymonster"
     ],
-    "reason": "peak beat, chorus1 of choom",
+    "reason": "payoff beat, bridge of interview",
     "display_start": 0.0,
     "display_end": 8.5
    },
@@ -2618,47 +2616,47 @@
     "type": "video",
     "asset_id": "interview",
     "src": "ytdl_cache/interview.mp4",
-    "source_in": 424.53,
-    "source_out": 428.0,
-    "ah_score": 0.0,
-    "section": "final_chorus",
+    "source_in": 0.0,
+    "source_out": 6.77,
+    "ah_score": 0.612,
+    "section": "intro",
     "tags": [
      "ahyeon",
      "babymonster"
     ],
-    "reason": "peak beat, final_chorus of interview",
+    "reason": "payoff beat, intro of interview",
     "display_start": 8.5,
     "display_end": 17.0
    },
    {
     "type": "video",
-    "asset_id": "choom",
-    "src": "ytdl_cache/choom.mp4",
-    "source_in": 129.52,
-    "source_out": 138.02,
-    "ah_score": 0.0,
-    "section": "chorus2",
+    "asset_id": "interview",
+    "src": "ytdl_cache/interview.mp4",
+    "source_in": 30.72,
+    "source_out": 39.22,
+    "ah_score": 0.5756,
+    "section": "intro",
     "tags": [
-     "babymonster",
-     "ahyeon"
+     "ahyeon",
+     "babymonster"
     ],
-    "reason": "peak beat, chorus2 of choom",
+    "reason": "payoff beat, intro of interview",
     "display_start": 17.0,
     "display_end": 25.5
    },
    {
     "type": "video",
-    "asset_id": "choom",
-    "src": "ytdl_cache/choom.mp4",
-    "source_in": 59.85,
-    "source_out": 63.6,
-    "ah_score": 0.1518,
-    "section": "chorus1",
+    "asset_id": "interview",
+    "src": "ytdl_cache/interview.mp4",
+    "source_in": 120.03,
+    "source_out": 124.0,
+    "ah_score": 0.6123,
+    "section": "verse1",
     "tags": [
-     "babymonster",
-     "ahyeon"
+     "ahyeon",
+     "babymonster"
     ],
-    "reason": "peak beat, chorus1 of choom",
+    "reason": "payoff beat, verse1 of interview",
     "display_start": 25.5,
     "display_end": 35.59
    }
@@ -2679,15 +2677,15 @@
   "lead": 0.8,
   "slot": 19.333333,
   "frames": 580,
-  "start": 1396.0667,
-  "voice_at": 1396.8667,
+  "start": 1396.4333,
+  "voice_at": 1397.2333,
   "shots": [
    {
     "type": "video",
-    "asset_id": "leval_ahyeon",
-    "src": "ytdl_cache/leval_ahyeon.mp4",
-    "source_in": 290.29,
-    "source_out": 294.75,
+    "asset_id": "choom_stage",
+    "src": "ytdl_cache/choom_stage.mp4",
+    "source_in": 59.44,
+    "source_out": 60.44,
     "reason": "card background loop (blurred)"
    }
   ],
@@ -2701,40 +2699,40 @@
   "card": null,
   "voice": 30.552,
   "lead": 0.8,
-  "slot": 40.566667,
-  "frames": 1217,
-  "start": 1415.4,
-  "voice_at": 1416.2,
+  "slot": 40.6,
+  "frames": 1218,
+  "start": 1415.7667,
+  "voice_at": 1416.5667,
   "shots": [
    {
     "type": "video",
     "asset_id": "choom_stage",
     "src": "ytdl_cache/choom_stage.mp4",
-    "source_in": 137.85,
-    "source_out": 139.92,
-    "ah_score": 0.7109,
+    "source_in": 150.96,
+    "source_out": 153.03,
+    "ah_score": 0.5898,
     "section": "verse2",
     "tags": [
      "ahyeon",
      "babymonster"
     ],
-    "reason": "calm beat, verse2 of choom_stage",
+    "reason": "payoff beat, verse2 of choom_stage",
     "display_start": 0.0,
     "display_end": 8.5
    },
    {
     "type": "video",
-    "asset_id": "sheesh_stage",
-    "src": "ytdl_cache/sheesh_stage.mp4",
-    "source_in": 9.73,
-    "source_out": 16.45,
-    "ah_score": 0.0949,
-    "section": "intro",
+    "asset_id": "choom_stage",
+    "src": "ytdl_cache/choom_stage.mp4",
+    "source_in": 124.74,
+    "source_out": 127.18,
+    "ah_score": 0.5395,
+    "section": "verse2",
     "tags": [
-     "babymonster",
-     "ahyeon"
+     "ahyeon",
+     "babymonster"
     ],
-    "reason": "calm beat, intro of sheesh_stage",
+    "reason": "payoff beat, verse2 of choom_stage",
     "display_start": 8.5,
     "display_end": 15.22
    },
@@ -2754,21 +2752,21 @@
     "type": "video",
     "asset_id": "choom_stage",
     "src": "ytdl_cache/choom_stage.mp4",
-    "source_in": 127.17,
-    "source_out": 131.64,
-    "ah_score": 0.3667,
-    "section": "verse2",
+    "source_in": 235.65,
+    "source_out": 242.29,
+    "ah_score": 0.6442,
+    "section": "final_chorus",
     "tags": [
      "ahyeon",
      "babymonster"
     ],
-    "reason": "build beat, verse2 of choom_stage",
+    "reason": "payoff beat, final_chorus of choom_stage",
     "display_start": 19.22,
     "display_end": 30.55
    }
   ],
   "music_cue": "act7",
-  "dur": 40.566667
+  "dur": 40.6
  },
  {
   "id": "a7b02",
@@ -2777,59 +2775,11 @@
   "card": null,
   "voice": 34.152,
   "lead": 0.8,
-  "slot": 44.733333,
-  "frames": 1342,
-  "start": 1455.9667,
-  "voice_at": 1456.7667,
+  "slot": 44.766667,
+  "frames": 1343,
+  "start": 1456.3667,
+  "voice_at": 1457.1667,
   "shots": [
-   {
-    "type": "video",
-    "asset_id": "kspo",
-    "src": "ytdl_cache/kspo.mp4",
-    "source_in": 778.99,
-    "source_out": 784.33,
-    "ah_score": 0.4965,
-    "section": "chorus2",
-    "tags": [
-     "babymonster",
-     "ahyeon"
-    ],
-    "reason": "peak beat, chorus2 of kspo",
-    "display_start": 0.0,
-    "display_end": 8.5
-   },
-   {
-    "type": "video",
-    "asset_id": "mama_golden",
-    "src": "ytdl_cache/mama_golden.mp4",
-    "source_in": 92.97,
-    "source_out": 100.78,
-    "ah_score": 0.1149,
-    "section": "chorus1",
-    "tags": [
-     "ahyeon",
-     "babymonster"
-    ],
-    "reason": "peak beat, chorus1 of mama_golden",
-    "display_start": 8.5,
-    "display_end": 17.0
-   },
-   {
-    "type": "video",
-    "asset_id": "kspo",
-    "src": "ytdl_cache/kspo.mp4",
-    "source_in": 722.6,
-    "source_out": 724.64,
-    "ah_score": 0.6318,
-    "section": "chorus2",
-    "tags": [
-     "babymonster",
-     "ahyeon"
-    ],
-    "reason": "peak beat, chorus2 of kspo",
-    "display_start": 17.0,
-    "display_end": 25.5
-   },
    {
     "type": "video",
     "asset_id": "kspo",
@@ -2842,13 +2792,61 @@
      "babymonster",
      "ahyeon"
     ],
-    "reason": "peak beat, chorus1 of kspo",
+    "reason": "build beat, chorus1 of kspo",
+    "display_start": 0.0,
+    "display_end": 8.5
+   },
+   {
+    "type": "video",
+    "asset_id": "mama_golden",
+    "src": "ytdl_cache/mama_golden.mp4",
+    "source_in": 137.88,
+    "source_out": 144.19,
+    "ah_score": 0.4061,
+    "section": "verse2",
+    "tags": [
+     "ahyeon",
+     "babymonster"
+    ],
+    "reason": "build beat, verse2 of mama_golden",
+    "display_start": 8.5,
+    "display_end": 17.0
+   },
+   {
+    "type": "video",
+    "asset_id": "kspo",
+    "src": "ytdl_cache/kspo.mp4",
+    "source_in": 556.6,
+    "source_out": 559.23,
+    "ah_score": 0.5575,
+    "section": "verse2",
+    "tags": [
+     "babymonster",
+     "ahyeon"
+    ],
+    "reason": "build beat, verse2 of kspo",
+    "display_start": 17.0,
+    "display_end": 25.5
+   },
+   {
+    "type": "video",
+    "asset_id": "kspo",
+    "src": "ytdl_cache/kspo.mp4",
+    "source_in": 1089.87,
+    "source_out": 1098.52,
+    "ah_score": 0.3436,
+    "section": "final_chorus",
+    "tags": [
+     "babymonster",
+     "ahyeon"
+    ],
+    "reason": "payoff beat, final_chorus of kspo",
     "display_start": 25.5,
     "display_end": 34.15
    }
   ],
   "music_cue": "act7",
-  "dur": 44.733333
+  "dur": 44.766667
  },
  {
   "id": "a7b03",
@@ -2859,22 +2857,22 @@
   "lead": 0.8,
   "slot": 44.833333,
   "frames": 1345,
-  "start": 1500.7,
-  "voice_at": 1501.5,
+  "start": 1501.1333,
+  "voice_at": 1501.9333,
   "shots": [
    {
     "type": "video",
     "asset_id": "interview",
     "src": "ytdl_cache/interview.mp4",
-    "source_in": 28.68,
-    "source_out": 31.94,
-    "ah_score": 0.5756,
-    "section": "intro",
+    "source_in": 424.54,
+    "source_out": 427.8,
+    "ah_score": 0.0,
+    "section": "final_chorus",
     "tags": [
      "ahyeon",
      "babymonster"
     ],
-    "reason": "calm beat, intro of interview",
+    "reason": "payoff beat, final_chorus of interview",
     "display_start": 0.0,
     "display_end": 3.26
    },
@@ -2894,31 +2892,30 @@
     "type": "video",
     "asset_id": "interview",
     "src": "ytdl_cache/interview.mp4",
-    "source_in": 340.62,
-    "source_out": 349.12,
-    "ah_score": 0.5693,
-    "section": "bridge",
+    "source_in": 220.83,
+    "source_out": 229.33,
+    "ah_score": 0.0,
+    "section": "verse2",
     "tags": [
      "ahyeon",
      "babymonster"
     ],
-    "reason": "peak beat, bridge of interview",
+    "reason": "payoff beat, verse2 of interview",
     "display_start": 7.26,
     "display_end": 15.76
    },
    {
     "type": "video",
-    "asset_id": "interview",
-    "src": "ytdl_cache/interview.mp4",
-    "source_in": 0.0,
-    "source_out": 6.77,
-    "ah_score": 0.612,
-    "section": "intro",
+    "asset_id": "reveal_ahyeon",
+    "src": "ytdl_cache/reveal_ahyeon.mp4",
+    "source_in": 27.21,
+    "source_out": 35.71,
+    "ah_score": 0.0,
+    "section": "verse2",
     "tags": [
-     "ahyeon",
-     "babymonster"
+     "ahyeon"
     ],
-    "reason": "peak beat, intro of interview",
+    "reason": "payoff beat, verse2 of reveal_ahyeon",
     "display_start": 15.76,
     "display_end": 24.26
    },
@@ -2926,15 +2923,15 @@
     "type": "video",
     "asset_id": "interview",
     "src": "ytdl_cache/interview.mp4",
-    "source_in": 120.03,
-    "source_out": 124.0,
-    "ah_score": 0.6123,
+    "source_in": 92.32,
+    "source_out": 102.29,
+    "ah_score": 0.6749,
     "section": "verse1",
     "tags": [
      "ahyeon",
      "babymonster"
     ],
-    "reason": "peak beat, verse1 of interview",
+    "reason": "payoff beat, verse1 of interview",
     "display_start": 24.26,
     "display_end": 34.22
    }
@@ -2955,8 +2952,8 @@
   "lead": 0.8,
   "slot": 18.7,
   "frames": 561,
-  "start": 1545.5333,
-  "voice_at": 1546.3333,
+  "start": 1545.9667,
+  "voice_at": 1546.7667,
   "shots": [
    {
     "type": "video",
@@ -2975,12 +2972,12 @@
   "scene_id": "s43",
   "kind": "clips",
   "card": null,
-  "voice": 29.304,
+  "voice": 28.944,
   "lead": 0.8,
-  "slot": 39.133333,
-  "frames": 1174,
-  "start": 1564.2333,
-  "voice_at": 1565.0333,
+  "slot": 38.733333,
+  "frames": 1162,
+  "start": 1564.6667,
+  "voice_at": 1565.4667,
   "shots": [
    {
     "type": "video",
@@ -2994,7 +2991,7 @@
      "babymonster",
      "ahyeon"
     ],
-    "reason": "peak beat, chorus1 of kspo",
+    "reason": "build beat, chorus1 of kspo",
     "display_start": 0.0,
     "display_end": 8.5
    },
@@ -3002,33 +2999,17 @@
     "type": "video",
     "asset_id": "kspo",
     "src": "ytdl_cache/kspo.mp4",
-    "source_in": 987.65,
-    "source_out": 993.45,
-    "ah_score": 0.2843,
-    "section": "final_chorus",
+    "source_in": 778.99,
+    "source_out": 784.33,
+    "ah_score": 0.4965,
+    "section": "chorus2",
     "tags": [
      "babymonster",
      "ahyeon"
     ],
-    "reason": "peak beat, final_chorus of kspo",
+    "reason": "payoff beat, chorus2 of kspo",
     "display_start": 8.5,
     "display_end": 17.0
-   },
-   {
-    "type": "video",
-    "asset_id": "kspo",
-    "src": "ytdl_cache/kspo.mp4",
-    "source_in": 425.68,
-    "source_out": 429.31,
-    "ah_score": 0.4067,
-    "section": "chorus1",
-    "tags": [
-     "babymonster",
-     "ahyeon"
-    ],
-    "reason": "peak beat, chorus1 of kspo",
-    "display_start": 17.0,
-    "display_end": 25.5
    },
    {
     "type": "video",
@@ -3043,12 +3024,28 @@
      "ahyeon"
     ],
     "reason": "payoff beat, final_chorus of kspo",
+    "display_start": 17.0,
+    "display_end": 25.5
+   },
+   {
+    "type": "video",
+    "asset_id": "kspo",
+    "src": "ytdl_cache/kspo.mp4",
+    "source_in": 1002.42,
+    "source_out": 1005.09,
+    "ah_score": 0.4906,
+    "section": "final_chorus",
+    "tags": [
+     "babymonster",
+     "ahyeon"
+    ],
+    "reason": "payoff beat, final_chorus of kspo",
     "display_start": 25.5,
-    "display_end": 29.3
+    "display_end": 28.94
    }
   ],
   "music_cue": "act8",
-  "dur": 39.133333
+  "dur": 38.733333
  },
  {
   "id": "a8b02",
@@ -3057,24 +3054,24 @@
   "card": null,
   "voice": 36.408,
   "lead": 0.8,
-  "slot": 47.333333,
-  "frames": 1420,
-  "start": 1603.3667,
-  "voice_at": 1604.1667,
+  "slot": 47.366667,
+  "frames": 1421,
+  "start": 1603.4,
+  "voice_at": 1604.2,
   "shots": [
    {
     "type": "video",
     "asset_id": "choom",
     "src": "ytdl_cache/choom.mp4",
-    "source_in": 13.01,
-    "source_out": 19.02,
-    "ah_score": 0.1628,
-    "section": "intro",
+    "source_in": 120.66,
+    "source_out": 127.5,
+    "ah_score": 0.5971,
+    "section": "chorus2",
     "tags": [
      "babymonster",
      "ahyeon"
     ],
-    "reason": "peak beat, intro of choom",
+    "reason": "payoff beat, chorus2 of choom",
     "display_start": 0.0,
     "display_end": 8.5
    },
@@ -3082,15 +3079,15 @@
     "type": "video",
     "asset_id": "choom",
     "src": "ytdl_cache/choom.mp4",
-    "source_in": 153.69,
-    "source_out": 157.32,
-    "ah_score": 0.3108,
-    "section": "bridge",
+    "source_in": 120.66,
+    "source_out": 127.5,
+    "ah_score": 0.5971,
+    "section": "chorus2",
     "tags": [
      "babymonster",
      "ahyeon"
     ],
-    "reason": "peak beat, bridge of choom",
+    "reason": "payoff beat, chorus2 of choom",
     "display_start": 8.5,
     "display_end": 17.0
    },
@@ -3098,15 +3095,15 @@
     "type": "video",
     "asset_id": "choom",
     "src": "ytdl_cache/choom.mp4",
-    "source_in": 105.14,
-    "source_out": 109.56,
-    "ah_score": 0.3338,
-    "section": "verse2",
+    "source_in": 120.66,
+    "source_out": 127.5,
+    "ah_score": 0.5971,
+    "section": "chorus2",
     "tags": [
      "babymonster",
      "ahyeon"
     ],
-    "reason": "peak beat, verse2 of choom",
+    "reason": "payoff beat, chorus2 of choom",
     "display_start": 17.0,
     "display_end": 25.5
    },
@@ -3114,15 +3111,15 @@
     "type": "video",
     "asset_id": "choom",
     "src": "ytdl_cache/choom.mp4",
-    "source_in": 51.8,
-    "source_out": 59.85,
-    "ah_score": 0.0396,
-    "section": "verse1",
+    "source_in": 120.66,
+    "source_out": 127.5,
+    "ah_score": 0.5971,
+    "section": "chorus2",
     "tags": [
      "babymonster",
      "ahyeon"
     ],
-    "reason": "peak beat, verse1 of choom",
+    "reason": "payoff beat, chorus2 of choom",
     "display_start": 25.5,
     "display_end": 34.0
    },
@@ -3130,21 +3127,21 @@
     "type": "video",
     "asset_id": "choom",
     "src": "ytdl_cache/choom.mp4",
-    "source_in": 47.72,
-    "source_out": 50.13,
-    "ah_score": 0.3945,
-    "section": "verse1",
+    "source_in": 122.39,
+    "source_out": 124.8,
+    "ah_score": 0.5971,
+    "section": "chorus2",
     "tags": [
      "babymonster",
      "ahyeon"
     ],
-    "reason": "payoff beat, verse1 of choom",
+    "reason": "payoff beat, chorus2 of choom",
     "display_start": 34.0,
     "display_end": 36.41
    }
   ],
   "music_cue": "act8",
-  "dur": 47.333333
+  "dur": 47.366667
  },
  {
   "id": "a8b03",
@@ -3153,10 +3150,10 @@
   "card": null,
   "voice": 48.384,
   "lead": 0.8,
-  "slot": 61.166667,
-  "frames": 1835,
-  "start": 1650.7,
-  "voice_at": 1651.5,
+  "slot": 61.2,
+  "frames": 1836,
+  "start": 1650.7667,
+  "voice_at": 1651.5667,
   "shots": [
    {
     "type": "video",
@@ -3170,23 +3167,23 @@
      "babymonster",
      "ahyeon"
     ],
-    "reason": "calm beat, verse1 of shit",
+    "reason": "payoff beat, verse1 of shit",
     "display_start": 0.0,
     "display_end": 8.5
    },
    {
     "type": "video",
-    "asset_id": "sheesh",
-    "src": "ytdl_cache/sheesh.mp4",
-    "source_in": 16.28,
-    "source_out": 24.72,
-    "ah_score": 0.1108,
-    "section": "intro",
+    "asset_id": "shit",
+    "src": "ytdl_cache/shit.mp4",
+    "source_in": 134.55,
+    "source_out": 142.22,
+    "ah_score": 0.5289,
+    "section": "bridge",
     "tags": [
      "babymonster",
      "ahyeon"
     ],
-    "reason": "calm beat, intro of sheesh",
+    "reason": "payoff beat, bridge of shit",
     "display_start": 8.5,
     "display_end": 17.0
    },
@@ -3202,7 +3199,7 @@
      "babymonster",
      "ahyeon"
     ],
-    "reason": "build beat, verse2 of shit",
+    "reason": "payoff beat, verse2 of shit",
     "display_start": 17.0,
     "display_end": 25.5
    },
@@ -3218,7 +3215,7 @@
      "babymonster",
      "ahyeon"
     ],
-    "reason": "build beat, verse2 of shit",
+    "reason": "payoff beat, verse2 of shit",
     "display_start": 25.5,
     "display_end": 34.0
    },
@@ -3226,21 +3223,21 @@
     "type": "video",
     "asset_id": "shit",
     "src": "ytdl_cache/shit.mp4",
-    "source_in": 164.47,
-    "source_out": 168.13,
-    "ah_score": 0.2259,
-    "section": "final_chorus",
+    "source_in": 60.81,
+    "source_out": 64.23,
+    "ah_score": 0.677,
+    "section": "chorus1",
     "tags": [
      "babymonster",
      "ahyeon"
     ],
-    "reason": "peak beat, final_chorus of shit",
+    "reason": "payoff beat, chorus1 of shit",
     "display_start": 34.0,
     "display_end": 48.38
    }
   ],
   "music_cue": "act8",
-  "dur": 61.166667
+  "dur": 61.2
  },
  {
   "id": "a8x",
@@ -3249,10 +3246,10 @@
   "card": null,
   "voice": 0.0,
   "lead": 0.8,
-  "slot": 12.133333,
-  "frames": 364,
-  "start": 1711.8667,
-  "voice_at": 1711.8667,
+  "slot": 12.166667,
+  "frames": 365,
+  "start": 1711.9667,
+  "voice_at": 1711.9667,
   "shots": [
    {
     "type": "video",
@@ -3266,13 +3263,13 @@
      "babymonster",
      "ahyeon"
     ],
-    "reason": "peak beat, chorus2 of reallylikeyou",
+    "reason": "payoff beat, chorus2 of reallylikeyou",
     "display_start": 0.0,
     "display_end": 9.2
    }
   ],
   "music_cue": "act8",
-  "dur": 12.133333
+  "dur": 12.166667
  },
  {
   "id": "a9close",
@@ -3290,15 +3287,15 @@
   "lead": 0.8,
   "slot": 25.033333,
   "frames": 751,
-  "start": 1724.0,
-  "voice_at": 1724.8,
+  "start": 1724.1333,
+  "voice_at": 1724.9333,
   "shots": [
    {
     "type": "video",
-    "asset_id": "choom_stage",
-    "src": "ytdl_cache/choom_stage.mp4",
-    "source_in": 138.35,
-    "source_out": 139.92,
+    "asset_id": "reallylikeyou",
+    "src": "ytdl_cache/reallylikeyou.mp4",
+    "source_in": 125.98,
+    "source_out": 129.03,
     "reason": "card background loop (blurred)"
    }
   ],
@@ -3325,21 +3322,21 @@
   },
   "voice": 0.0,
   "lead": 0.8,
-  "slot": 50.966667,
-  "frames": 1529,
-  "start": 1749.0333,
-  "voice_at": 1749.0333,
+  "slot": 50.833333,
+  "frames": 1525,
+  "start": 1749.1667,
+  "voice_at": 1749.1667,
   "shots": [
    {
     "type": "video",
-    "asset_id": "likethat",
-    "src": "ytdl_cache/likethat.mp4",
-    "source_in": 94.13,
-    "source_out": 97.05,
+    "asset_id": "shit",
+    "src": "ytdl_cache/shit.mp4",
+    "source_in": 103.23,
+    "source_out": 106.65,
     "reason": "card background loop (blurred)"
    }
   ],
   "music_cue": "act8",
-  "dur": 50.966667
+  "dur": 50.833333
  }
 ]

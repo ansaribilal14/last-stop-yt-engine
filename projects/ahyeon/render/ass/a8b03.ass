@@ -1,0 +1,24 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1920
+PlayResY: 1080
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Noto Serif SC,44,&H00EAF2F5,&H00FFFFFF,&H00140D06,&H90000000,0,0,0,0,100,100,0,0,1,2.4,1.2,2,230,230,56,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.90,0:00:04.90,Cap,,0,0,0,,So here is the answer to the question\Nthe title keeps asking An it girl is
+Dialogue: 0,0:00:04.70,0:00:10.29,Cap,,0,0,0,,not made by a magazine cover a viral\Nmarch or ten billion views those are
+Dialogue: 0,0:00:10.07,0:00:15.52,Cap,,0,0,0,,receipts not reasons Jung Ahyeon is\Nthe fifth generation's it girl because
+Dialogue: 0,0:00:15.41,0:00:20.47,Cap,,0,0,0,,she is the rarest thing the system can\Nproduce a center who was removable who
+Dialogue: 0,0:00:20.23,0:00:24.89,Cap,,0,0,0,,wasn't removed and who came back\Nindispensable The debut happened
+Dialogue: 0,0:00:24.77,0:00:30.11,Cap,,0,0,0,,without her The era happened because\Nof her And whatever comes next the
+Dialogue: 0,0:00:30.01,0:00:35.51,Cap,,0,0,0,,encore tours the solo era the fans\Nalready campaign for the second dome
+Dialogue: 0,0:00:35.92,0:00:39.01,Cap,,0,0,0,,the industry will be watching the same\Nway it has watched her since a
+Dialogue: 0,0:00:38.76,0:00:43.66,Cap,,0,0,0,,practice-room cover leaked unable to\Nlook away and unable to explain why
+Dialogue: 0,0:00:43.54,0:00:47.71,Cap,,0,0,0,,the girl from Chuncheon keeps doing\Nthe impossible quietly in three
+Dialogue: 0,0:00:47.59,0:00:48.94,Cap,,0,0,0,,languages at nineteen

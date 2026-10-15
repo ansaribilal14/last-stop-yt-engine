@@ -125,11 +125,17 @@ def section_for(intent):
     return {"calm": ("verse1", "verse2", "intro"), "build": ("verse2", "chorus1"),
             "peak": ("chorus2", "chorus1", "final_chorus"), "payoff": ("final_chorus", "chorus2")}.get(intent, ("chorus1",))
 
-def score_shot(sh, want_dur, intent, recent_sources, used_shots, primary, rnd):
+def score_shot(sh, want_dur, intent, recent_sources, used_shots, primary, rnd,
+               subject_named=False):
     s = 0.0
     sec = section_for(intent)
     s += 2.2 if sh.get("section_hint") in sec else 0.0
     s += 2.4 * sh.get("ah_score", 0.0)                       # character edge
+    if subject_named:
+        # the sentence names Ahyeon: demand her on screen — verified presence
+        # is rewarded hard, unverified group-wide shots are pushed down
+        s += 2.6 if sh.get("ah_score", 0.0) >= 0.5 else 0.0
+        if sh.get("ah_score", 0.0) < 0.35: s -= 1.6
     dur_fit = 1.0 if sh["dur"] >= min(want_dur + 0.6, 8.0) else (sh["dur"] / max(0.5, want_dur))
     s += 1.2 * dur_fit
     target_motion = {"calm": 0.12, "build": 0.3, "peak": 0.55, "payoff": 0.45}.get(intent, 0.3)
@@ -178,14 +184,16 @@ def plan_scene_shots(beat, vd, words, shots_index, sources, manifest, state):
                 pool += shots_index[v]["shots"]
 
     # build display windows across the narration span [0, vd]
-    windows = []  # (t0, t1, intent)
+    windows = []  # (t0, t1, intent, subject_named)
     if not sents:
-        windows.append((0.0, vd, "build"))
+        windows.append((0.0, vd, "build", False))
     for i, sent in enumerate(sents):
         s0, s1 = sent[0]["t"], sent[-1]["t"] + sent[-1].get("d", 0.25)
         pos = (i + 1) / len(sents)
         intent = "build" if pos < 0.6 else ("payoff" if pos >= 0.8 else "peak")
-        windows.append((s0, s1, intent))
+        named = any(w.get("w", "").strip().lower().strip(".,!?\"'()").replace("'s", "")
+                    in ("ahyeon", "she", "her") for w in sent)
+        windows.append((s0, s1, intent, named))
     # interleave image anchors -> split windows
     shots = []
     wbounds = [(w[0], w[1]) for w in windows]
@@ -199,11 +207,12 @@ def plan_scene_shots(beat, vd, words, shots_index, sources, manifest, state):
         img_events.append((t, ent, a))
     # build final cut list: walk windows; place images inside their window
     used = state["used_shots"]; recent = state["recent_sources"]
-    def take_shot(t0, t1, intent, note_ctx):
+    def take_shot(t0, t1, intent, note_ctx, subject_named=False):
         need = t1 - t0
         if need < 2.0 or not pool:
             return None
-        ranked = sorted(pool, key=lambda sh: -score_shot(sh, need, intent, recent, used, primary, rnd))
+        ranked = sorted(pool, key=lambda sh: -score_shot(sh, need, intent, recent, used, primary, rnd,
+                                                          subject_named=subject_named))
         for sh in ranked[:8]:
             if sh["dur"] < min(2.0, need): continue
             # cut mid-shot: start 25-40% in, but keep enough tail
@@ -225,6 +234,13 @@ def plan_scene_shots(beat, vd, words, shots_index, sources, manifest, state):
 
     cur = 0.0
     MAX_SHOT = 8.5   # editor rule: no single shot longer than ~8.5s under narration
+    # map each footage span to the window (and subject flag) it falls in
+    def span_intent(a, b):
+        mid = (a + b) / 2
+        for (w0, w1, it, named) in windows:
+            if w0 <= mid < w1 or (w0 <= a and b <= w1):
+                return it, named
+        return ("peak", False)
     for t, ent, asset in img_events:
         hold = min(IMAGE_MAX_HOLD, max(IMAGE_MIN_HOLD, 4.0))
         t0 = max(0.0, t - 0.3)
@@ -236,8 +252,8 @@ def plan_scene_shots(beat, vd, words, shots_index, sources, manifest, state):
             seg = min(MAX_SHOT, t0 - cur)
             if t0 - cur - seg > 0.0 and t0 - cur - seg < 2.2:
                 seg = t0 - cur  # avoid a stubby remainder
-            intent = "calm" if cur < vd * 0.3 else ("build" if cur < vd * 0.7 else "peak")
-            shv = take_shot(cur, cur + seg, intent, None)
+            intent, named = span_intent(cur, cur + seg)
+            shv = take_shot(cur, cur + seg, intent, None, subject_named=named)
             if not shv: break
             shv["display_start"] = round(cur, 2)
             shv["display_end"] = round(cur + seg, 2)
@@ -257,8 +273,8 @@ def plan_scene_shots(beat, vd, words, shots_index, sources, manifest, state):
     while cur < vd - 0.4:
         seg = min(MAX_SHOT, vd - cur)
         if vd - cur - seg < 2.2: seg = vd - cur
-        intent = "payoff" if cur > vd * 0.75 else "peak"
-        shv = take_shot(cur, cur + seg, intent, None)
+        intent, named = span_intent(cur, cur + seg)
+        shv = take_shot(cur, cur + seg, intent, None, subject_named=named)
         if not shv:
             # widen last shot to cover the remainder
             for sh in reversed(shots):

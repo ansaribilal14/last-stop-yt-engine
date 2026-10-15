@@ -1,0 +1,20 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1920
+PlayResY: 1080
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Noto Serif SC,44,&H00EAF2F5,&H00FFFFFF,&H00140D06,&H90000000,0,0,0,0,100,100,0,0,1,2.4,1.2,2,230,230,56,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.90,0:00:05.74,Cap,,0,0,0,,And there on the album sat the\Nfull-circle moment Like That Written
+Dialogue: 0,0:00:05.62,0:00:10.56,Cap,,0,0,0,,by Charlie Puth Gifted by his own\Naccount because a practice-room cover
+Dialogue: 0,0:00:10.45,0:00:15.08,Cap,,0,0,0,,had once stopped him mid-scroll Ahyeon\Ndidn't just get her debut
+Dialogue: 0,0:00:15.54,0:00:18.77,Cap,,0,0,0,,she got a debut where one of the\Nworld's biggest pop writers had
+Dialogue: 0,0:00:18.64,0:00:22.83,Cap,,0,0,0,,personally co-signed the voice the\Nindustry spent sixteen months waiting
+Dialogue: 0,0:00:22.71,0:00:27.78,Cap,,0,0,0,,to hear Critics noticed what YG had\Nbet on the group's seven-member sound
+Dialogue: 0,0:00:27.67,0:00:29.88,Cap,,0,0,0,,finally had its missing ceiling

@@ -222,7 +222,7 @@ def card_filter(t, bg_src):
     bg_in = bool(bg_src) and os.path.exists(bg_src)
     fc = []
     if bg_in:
-        fc.append(f"[0:v]scale=1920:1080:flags=lanczos,fps={FPS},boxblur=24:2,"
+        fc.append(f"[0:v]fps={FPS},scale=1920:1080:flags=fast_bilinear,boxblur=24:2,"
                   f"eq=brightness=-0.18:saturation=0.55,format=yuv420p[bg]")
     else:
         fc.append(f"color=c=0x0a0a0a:s=1920x1080:r={FPS}:d={d:.4f}[bg]")
@@ -260,42 +260,92 @@ def _sub_filter(assp):
 
 # ---------------- v3 SEGMENTS: EDL executor ----------------
 def _zb_filter(dur, motion, idx):
-    """Ken Burns for one image shot -> labeled stream [k{idx}]."""
+    """Ken Burns for one image shot -> labeled stream [k{idx}].
+    zoompan at 1280x720 (2.25x cheaper than 1080p) then lanczos upscale —
+    photographic context plates, visually indistinguishable."""
     frames = max(1, int(round(dur * FPS)))
     if motion == "pull_out":
         z = f"1.14-0.14*on/{frames}"
     else:  # push_in (default)
         z = f"1.0+0.14*on/{frames}"
-    return (f"[{idx}:v]scale=2304:1296:force_original_aspect_ratio=increase:flags=lanczos,"
-            f"crop=2304:1296,zoompan=z='{z}':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':"
-            f"d={frames}:s=1920x1080:fps={FPS},format=yuv420p,"
+    return (f"[{idx}:v]scale=1536:864:force_original_aspect_ratio=increase:flags=lanczos,"
+            f"crop=1536:864,setsar=1,zoompan=z='{z}':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':"
+            f"d={frames}:s=1280x720:fps={FPS},scale=1920:1080:flags=lanczos,format=yuv420p,setsar=1,"
             f"trim=duration={dur:.4f},setpts=PTS-STARTPTS[k{idx}]")
 
-def _vs_filter(shot, idx, want_dur, scene_local_start):
+def _vs_filter(shot, idx, want_dur, scene_local_start, file_dur=None):
     """Video shot from real source timecode -> labeled stream [v{idx}].
-    2s preroll input seek + frame-accurate in-filter trim."""
+    2s preroll input seek + frame-accurate in-filter trim. EDL ranges are
+    clamped to the real file duration. If the display window exceeds the
+    EDL source range, source_in is pulled BACKWARD into the same source
+    (real footage, editors' 'start a beat earlier') — tpad clone is kept
+    only as a sub-second rounding guard because long clones render at
+    ~0.15x realtime."""
     want = max(1.2, want_dur)
     sin = float(shot["source_in"]); sout = float(shot["source_out"])
-    src_dur = sout - sin
-    use = min(want, max(1.2, src_dur))
-    if src_dur + 0.4 < want:
-        use = max(1.2, src_dur)          # shot shorter than window: use it all
+    if file_dur and file_dur > 0:
+        sout = min(sout, file_dur - 0.08)
+    src_dur = max(0.5, sout - sin)
+    if want > src_dur:
+        sin = max(0.0, sin - (want - src_dur + 0.25))
+        src_dur = max(0.5, sout - sin)
+    use = min(want, src_dur)
     pre = 2.0 if sin >= 2.0 else sin
     seek = sin - pre
     trim0 = pre
     trim1 = pre + use
+    pad = max(0.0, want - use + 0.15)
     return (f"[{idx}:v]trim=start={trim0:.3f}:end={trim1:.3f},setpts=PTS-STARTPTS,"
             f"scale=1920:1080:flags=lanczos,fps={FPS},setsar=1,format=yuv420p,"
-            f"tpad=stop_mode=clone:stop_duration={max(0.0, want - use + 0.2):.3f},"
+            f"tpad=stop_mode=clone:stop_duration={pad:.3f},"
             f"trim=duration={want:.4f},setpts=PTS-STARTPTS[v{idx}]"), seek, use
+
+def _kb_clip(p, dur, motion):
+    """Animated context plate for one image, rendered ONCE and cached.
+    zoompan is ~1s/frame at 720p (120s per clip) — replaced with:
+      1. pre-scale the still once to 2112x1188
+      2. loop it at 30fps, animate a 1920x1080 crop window across it
+         (crop = pure slicing, no resample — near-zero cost)
+    motion: push_in -> pan left-to-right, pull_out -> right-to-left,
+            tilt -> downward tilt."""
+    import hashlib
+    h = hashlib.sha1(f"{p}|{dur:.3f}|{motion}".encode()).hexdigest()[:12]
+    cdir = f"{RENDER}/kb_cache"
+    os.makedirs(cdir, exist_ok=True)
+    out = f"{cdir}/kb_{h}.mp4"
+    if os.path.exists(out) and abs(_dur(out) - dur) < 0.06:
+        return out
+    tmp = out.replace(".mp4", ".tmp.mp4")
+    scaled = f"{cdir}/s_{h}.png"
+    if not os.path.exists(scaled):
+        sh(["ffmpeg", "-y", "-nostdin", "-i", p,
+            "-vf", "scale=2112:1188:force_original_aspect_ratio=increase:flags=lanczos,"
+                    "crop=2112:1188", "-frames:v", "1", scaled])
+    if motion == "pull_out":
+        x = f"(iw-ow)*(1-t/{dur:.3f})"
+    elif motion == "tilt":
+        x = "(iw-ow)/2"
+    else:  # push_in
+        x = f"(iw-ow)*t/{dur:.3f}"
+    y = f"(ih-oh)*t/{dur:.3f}" if motion == "tilt" else "(ih-oh)/2"
+    fc = (f"[0:v]crop=1920:1080:x='{x}':y='{y}',setsar=1,format=yuv420p,"
+          f"trim=duration={dur:.4f},setpts=PTS-STARTPTS[v]")
+    sh(["ffmpeg", "-y", "-nostdin", "-loop", "1", "-framerate", str(FPS),
+        "-t", f"{dur + 0.3:.3f}", "-i", scaled,
+        "-filter_complex", fc, "-map", "[v]", "-an",
+        "-t", f"{dur:.4f}"] + ENC + [tmp])
+    os.replace(tmp, out)
+    return out
 
 def stage_segments():
     """Render each scene seg from its EDL shot list, verbatim."""
     tl = json.load(open(f"{RENDER}/timeline.json"))
     os.makedirs(RENDER, exist_ok=True)
     os.makedirs(f"{RENDER}/ass", exist_ok=True)
+    failures = []
     for i, t in enumerate(tl):
         out = f"{RENDER}/seg_{t['id']}.mp4"
+        tmp = out.replace(".mp4", ".tmp.mp4")
         if os.path.exists(out) and abs(_dur(out) - t["dur"]) < 0.05:
             continue
         d = t["dur"]
@@ -312,17 +362,23 @@ def stage_segments():
                 cf += f";[{last}]{_sub_filter(assp)}[vsub]"; last = "vsub"
             if bg_src:
                 cmd = ["ffmpeg","-y","-nostdin","-stream_loop","-1","-i",bg_src,
-                       "-filter_complex",cf,"-map",f"[{last}]","-an","-t",f"{d:.4f}"] + ENC + [out]
+                       "-filter_complex",cf,"-map",f"[{last}]","-an","-t",f"{d:.4f}"] + ENC + [tmp]
             else:
                 cmd = ["ffmpeg","-y","-nostdin","-f","lavfi","-i",
                        f"color=c=0x0a0a0a:s=1920x1080:r={FPS}:d={d:.4f}",
-                       "-filter_complex",cf,"-map",f"[{last}]","-an","-t",f"{d:.4f}"] + ENC + [out]
-            sh(cmd); print(f"[{i+1}/{len(tl)}] {t['id']} card {d:.1f}s ok", flush=True)
+                       "-filter_complex",cf,"-map",f"[{last}]","-an","-t",f"{d:.4f}"] + ENC + [tmp]
+            sh(cmd); os.replace(tmp, out)
+            print(f"[{i+1}/{len(tl)}] {t['id']} card {d:.1f}s ok", flush=True)
             continue
 
         # ---- clips / interlude: build the scene from ordered EDL shots ----
         inputs, fc, chains = [], [], []
         idx = 0
+        _fdur_cache = {}
+        def _fdur(p):
+            if p not in _fdur_cache:
+                _fdur_cache[p] = _dur(p)
+            return _fdur_cache[p]
         # scene-local layout: shots span narration [lead, lead+vd]; extend first
         # shot left over the lead, last shot right over the tail (headroom-clamped)
         layout = []
@@ -335,8 +391,9 @@ def stage_segments():
             # no shots planned -> color fallback (recorded gap), still render scene
             cmd = ["ffmpeg","-y","-nostdin","-f","lavfi","-i",
                    f"color=c=0x101014:s=1920x1080:r={FPS}:d={d:.4f}",
-                   "-vf", f"fade=t=in:st=0:d=1.0{sub}", "-an", "-t", f"{d:.4f}"] + ENC + [out]
-            sh(cmd); print(f"[{i+1}/{len(tl)}] {t['id']} EMPTY-fallback {d:.1f}s", flush=True)
+                   "-vf", f"fade=t=in:st=0:d=1.0{sub}", "-an", "-t", f"{d:.4f}"] + ENC + [tmp]
+            sh(cmd); os.replace(tmp, out)
+            print(f"[{i+1}/{len(tl)}] {t['id']} EMPTY-fallback {d:.1f}s", flush=True)
             continue
         layout[0][1] = 0.0                    # first shot covers the lead
         layout[-1][2] = d                     # last shot covers the tail
@@ -348,8 +405,11 @@ def stage_segments():
                 p = f"{BASE}/{s['src']}"
                 if not os.path.exists(p):
                     p = s["src"]
-                inputs += ["-loop", "1", "-t", f"{dur_j + 0.5:.3f}", "-i", p]
-                fc.append(_zb_filter(dur_j, s.get("motion", "push_in"), idx))
+                # Ken Burns rendered once per (image,dur,motion), cached
+                kbp = _kb_clip(p, dur_j, s.get("motion", "push_in"))
+                inputs += ["-i", kbp]
+                fc.append(f"[{idx}:v]fps={FPS},format=yuv420p,setsar=1,"
+                          f"trim=duration={dur_j:.4f},setpts=PTS-STARTPTS[k{idx}]")
                 chains.append(f"[k{idx}]")
                 idx += 1
             else:
@@ -357,7 +417,7 @@ def stage_segments():
                 src = src if os.path.isabs(src) else f"{BASE}/{src}"
                 if not os.path.exists(src):
                     raise RuntimeError(f"scene {t['id']}: missing source {src}")
-                vf, seek, use = _vs_filter(s, idx, dur_j, ds)
+                vf, seek, use = _vs_filter(s, idx, dur_j, ds, file_dur=_fdur(src))
                 inputs += ["-ss", f"{seek:.3f}", "-i", src]
                 fc.append(vf)
                 chains.append(f"[v{idx}]")
@@ -372,9 +432,19 @@ def stage_segments():
         fc.append(concat)
         cmd = (["ffmpeg","-y","-nostdin"] + inputs +
                ["-filter_complex", ";".join(fc), "-map", "[vout]", "-an",
-                "-t", f"{d:.4f}"] + ENC + [out])
-        sh(cmd)
-        print(f"[{i+1}/{len(tl)}] {t['id']} {n} shots {d:.1f}s ok", flush=True)
+                "-t", f"{d:.4f}"] + ENC + [tmp])
+        try:
+            sh(cmd)
+            os.replace(tmp, out)
+            print(f"[{i+1}/{len(tl)}] {t['id']} {n} shots {d:.1f}s ok", flush=True)
+        except RuntimeError as e:
+            print(f"[{i+1}/{len(tl)}] {t['id']} FAILED: {str(e)[-300:]}", flush=True)
+            failures.append(t["id"])
+            if os.path.exists(tmp): os.remove(tmp)
+    if failures:
+        print(f"SEGMENTS: {len(failures)} failed: {failures}", flush=True)
+        raise RuntimeError(f"{len(failures)} scenes failed: {failures[:6]}")
+    print("SEGMENTS: all scenes rendered", flush=True)
 
 def _dur(p):
     r = subprocess.run(["ffprobe","-v","error","-show_entries","format=duration",
