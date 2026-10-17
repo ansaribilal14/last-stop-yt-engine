@@ -47,6 +47,10 @@ TAIL_CLIPS = 4.5         # default air after narration in footage scenes
 TAIL_MIN = 2.2
 CARD_TARGET = {"title": 18.0, "chapter": 16.0, "stat": 12.0, "close": 20.0, "credits": 50.0}
 INTERLUDE_DUR = 12.0
+# R-v3: scene openers — the first video cut of these beats MUST come from the
+# preferred source (fact-image alignment: s32 opens on the Incheon solo night
+# the narration describes; s44 opens on the Taipei flower-cart moment).
+OPENERS = {"a6b01": ["apt_incheon", "icn_2026"], "a8b02": ["taipei_moment"]}
 
 def load_beats(proj):
     sys.path.insert(0, f"/home/z/my-project/engine/projects/{proj}")
@@ -136,6 +140,9 @@ def score_shot(sh, want_dur, intent, recent_sources, used_shots, primary, rnd,
         # is rewarded hard, unverified group-wide shots are pushed down
         s += 2.6 if sh.get("ah_score", 0.0) >= 0.5 else 0.0
         if sh.get("ah_score", 0.0) < 0.35: s -= 1.6
+        # R-v3 (issue #12): closeup preference — facecam sources are literal
+        # closeups of her; reward them hard when she is named
+        if "facecam" in (sh.get("src", "") or ""): s += 0.8
     dur_fit = 1.0 if sh["dur"] >= min(want_dur + 0.6, 8.0) else (sh["dur"] / max(0.5, want_dur))
     s += 1.2 * dur_fit
     target_motion = {"calm": 0.12, "build": 0.3, "peak": 0.55, "payoff": 0.45}.get(intent, 0.3)
@@ -207,18 +214,52 @@ def plan_scene_shots(beat, vd, words, shots_index, sources, manifest, state):
         img_events.append((t, ent, a))
     # build final cut list: walk windows; place images inside their window
     used = state["used_shots"]; recent = state["recent_sources"]
+    pref = OPENERS.get(beat.get("id"), [])
+
     def take_shot(t0, t1, intent, note_ctx, subject_named=False):
         need = t1 - t0
         if need < 2.0 or not pool:
             return None
-        ranked = sorted(pool, key=lambda sh: -score_shot(sh, need, intent, recent, used, primary, rnd,
+        # R-v3: rank only UNUSED shots — top-8 cap previously exhausted early
+        # when its members were already used elsewhere in the film
+        avail = [sh for sh in pool if (sh.get("src"), sh["start"]) not in used]
+        if not avail:
+            return None
+        ranked = sorted(avail, key=lambda sh: -score_shot(sh, need, intent, recent, used, primary, rnd,
                                                           subject_named=subject_named))
+        no_video_yet = not any(s["type"] == "video" for s in shots)
+        if pref and no_video_yet:
+            # R-v3: opener enforcement must NOT be subject to the top-8 cap —
+            # the preferred source can rank below a crowd of high-score shots
+            ranked_pref = sorted([sh for sh in avail if sh.get("label") in pref],
+                                 key=lambda sh: -score_shot(sh, need, intent, recent, used, primary, rnd,
+                                                            subject_named=subject_named))
+            for passes in ((ranked_pref, ranked), (ranked,)):
+                for sh in passes[0]:
+                    if sh["dur"] < min(2.0, need): continue
+                    if (sh.get("src"), sh["start"]) in used: continue
+                    off = sh["dur"] * (0.25 + 0.1 * rnd.random())
+                    if sh["dur"] - off < need: off = max(0.0, sh["dur"] - need - 0.2)
+                    use = min(need, sh["dur"] - off)
+                    if use < 2.0: continue
+                    used.add((sh.get("src"), sh["start"]))
+                    recent.append(sh.get("label")); del recent[:-3]
+                    return {"type": "video", "asset_id": sh.get("label"), "src": sh.get("src"),
+                            "source_in": round(sh["start"] + off, 2),
+                            "source_out": round(sh["start"] + off + use, 2),
+                            "ah_score": sh.get("ah_score"), "section": sh.get("section_hint"),
+                            "tags": sh.get("tags"), "reason": note_ctx or
+                            f"opener — {sh.get('section_hint')} of {sh.get('label')}"}
+            return None
         for sh in ranked[:8]:
             if sh["dur"] < min(2.0, need): continue
+            # R-v3 (s44 bug): HARD-block shot reuse — the −4.0 penalty let weak
+            # pools (dropped sources) reuse one window 4× inside a scene.
+            if (sh.get("src"), sh["start"]) in used: continue
             # cut mid-shot: start 25-40% in, but keep enough tail
             off = sh["dur"] * (0.25 + 0.1 * rnd.random())
-            avail = sh["dur"] - off
-            if avail < need: off = max(0.0, sh["dur"] - need - 0.2)
+            avail_tail = sh["dur"] - off
+            if avail_tail < need: off = max(0.0, sh["dur"] - need - 0.2)
             use = min(need, sh["dur"] - off)
             if use < 2.0: continue
             src_in = round(sh["start"] + off, 2)
@@ -306,7 +347,11 @@ def plan_bg_shot(beat, shots_index, sources, primary, state):
         if v in shots_index: pool += shots_index[v]["shots"]
     if not pool: return None
     rnd = state["rnd"]
-    sh = max(pool, key=lambda s: s.get("ah_score", 0) + rnd.random() * 0.3)
+    # R-v3: card backgrounds must not double-book a shot the editor already uses
+    cand = [s for s in pool if (s.get("src"), s["start"]) not in state["used_shots"]]
+    if not cand: cand = pool
+    sh = max(cand, key=lambda s: s.get("ah_score", 0) + rnd.random() * 0.3)
+    state["used_shots"].add((sh.get("src"), sh["start"]))
     return {"type": "video", "asset_id": sh.get("label"), "src": sh.get("src"),
             "source_in": round(sh["start"] + 0.5, 2),
             "source_out": round(min(sh["end"], sh["start"] + 8.0), 2),
