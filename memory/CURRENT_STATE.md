@@ -1,24 +1,22 @@
 # CURRENT STATE (authoritative, update at every stage end)
-- DATE: 2026-10-15 · PROJECT: ahyeon ("Ahyeon — The 5th Gen It Girl")
-- STATUS: **DELIVERED v2.0-ahyeon (Director's Cut)** — editorial overhaul complete
-  https://github.com/ansaribilal14/last-stop-yt-engine/releases/tag/v2.0-ahyeon
-  final.mp4 1379585365B · 1800.07s (30:00) · 1080p30 · AAC 192k 48k stereo · -14 LUFS · captions burned
-- v1.0-ahyeon deleted (user-permitted) before v2.0 publish.
-- SYSTEM v3 (all issues #1-#11 closed):
-  1. Verified acquisition: scripts/mirror_dl.py (title gate + strong/weak face-content gate +
-     DM discovery + per-source budgets). 23/24 sources; dome_fancam dropped w/ reason.
-     ⚠ ALL sources genpts-normalized; DM FixupM3U8 files (nextmovement/hotsauce/batterup_stage)
-     FULLY RE-ENCODED — they deadlock ffmpeg multi-input concat otherwise.
-  2. Shot index: 1692 shots / 23 sources (scdet) + face scores on ALL shots
-     (faceverify v3: segmented kill-safe, largest-face-only, landmark models skipped).
-  3. Contextual images: 15 rights-verified plates (7 entities) via imgagent_client;
-     ygent = recorded gap (policy E).
-  4. Director v2.1: scene_plan.json EDL — 48 scenes / 167 shots / 12 image placements,
-     word-level entity anchoring, subject-named-sentence closeup preference, exact 1800.0s.
-  5. Editor (assemble v3): EDL executor — real timecode trims, crop-pan KB cache,
-     atomic .tmp.mp4 segs, per-scene resume. NO randomness anywhere.
-  6. QA: qa_sync.py + qa_ahyeon_claims.py (5/20 verified closeups at spoken mentions,
-     9 group/wide, 2 likely, 4 no-face = cards/backlit wide — visually reviewed).
-- KNOWN LIMITS: corr metric false-alarms on night plates (human-reviewed correct);
-  interview ah=weak tier (drifted embeddings, real footage); sandbox CPU throttling varies.
-- Pending: none. User may revoke GH token after use.
+- DATE: 2026-10-17 · PROJECT: ahyeon ("Ahyeon — The 5th Gen It Girl")
+- STATUS: **DELIVERED v3.0-ahyeon** (user brief v3.0 FINAL applied verbatim)
+  https://github.com/ansaribilal14/last-stop-yt-engine/releases/tag/v3.0-ahyeon
+  final.mp4 1611610666B · 1800.000s (30:00) · 1080p30 · AAC 192k 48k stereo · -14 LUFS · captions burned
+- v3.0 editorial: s07/s23 Jennie purge (trilingual origin / body-of-work); s32 airport
+  it-girl proof (icn_2026 opener, gmp_ot7 crowd, sumersonic); s43-44 dome+flower-cart
+  close (kyocera_hype/taipei_moment/soundcheck); s21/s24/s28 facecam wide-fixes.
+- SYSTEM v3.1 deltas: director hard shot-reuse block (s44 bug closed), avail-pool
+  ranking, card-bg no-double-book, OPENERS fact-alignment (a6b01→icn_2026,
+  a8b02→taipei_moment), facecam closeup bonus; faceverify det160+priority queue
+  (1704/1704 scored in ~25 min on 2 cores); mirror_dl key-filter + dur_win +
+  ffmpeg downloader; seek_v3 rebuilt (DM API + archive.org + sections + direct URLs).
+- SOURCES: 31 on disk (20/24 library ok + 11/12 v3.0). GAPS (documented):
+  nextmovement (mirror rot), kspo (all mirrors dead), choom_stage (KOCOWA geo),
+  taipei_4k (no live DM mirror), gayo26 (dead id). ygent imagery = policy E gap.
+- AUTOMATION: scripts/resume_v3.sh (self-healing, idempotent phases, git
+  checkpoint every chunk) + memory/SESSION_HANDOFF.md (fresh-session protocol).
+  State branch: v3-wip. Tokens in .ghtoken(superz1402) + backup scripts(ansaribilal14).
+- KNOWN LIMITS: corr metric false-alarms on dark plates; closeup-at-mention 4/19
+  (v2.0 band); sandbox disk 10GB — segments/kb_cache/wav are regenerable, delete
+  after final render (done this round).
