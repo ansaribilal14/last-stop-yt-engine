@@ -3,78 +3,78 @@
  "cues": [
   {
    "t0": 0.0,
-   "t1": 82.0,
+   "t1": 82.1,
    "preset": "overture",
    "intensity": 0.55,
    "root": "D3",
    "minor": true
   },
   {
-   "t0": 82.0,
-   "t1": 296.93,
+   "t0": 82.1,
+   "t1": 307.4,
    "preset": "trainee",
    "intensity": 0.42,
    "root": "C3",
    "minor": false
   },
   {
-   "t0": 296.93,
-   "t1": 500.73,
+   "t0": 307.4,
+   "t1": 512.67,
    "preset": "dawn",
    "intensity": 0.5,
    "root": "G3",
    "minor": false
   },
   {
-   "t0": 500.73,
-   "t1": 731.0,
+   "t0": 512.67,
+   "t1": 744.43,
    "preset": "tension",
    "intensity": 0.68,
    "root": "D3",
    "minor": true
   },
   {
-   "t0": 731.0,
-   "t1": 930.07,
+   "t0": 744.43,
+   "t1": 941.8,
    "preset": "dawn",
    "intensity": 0.62,
    "root": "A3",
    "minor": false
   },
   {
-   "t0": 930.07,
-   "t1": 1144.13,
+   "t0": 941.8,
+   "t1": 1157.27,
    "preset": "triumph",
    "intensity": 0.8,
    "root": "C3",
    "minor": false
   },
   {
-   "t0": 1144.13,
-   "t1": 1396.43,
+   "t0": 1157.27,
+   "t1": 1427.37,
    "preset": "warm",
    "intensity": 0.75,
    "root": "F3",
    "minor": false
   },
   {
-   "t0": 1396.43,
-   "t1": 1545.97,
+   "t0": 1427.37,
+   "t1": 1577.97,
    "preset": "trainee",
    "intensity": 0.45,
    "root": "D3",
    "minor": false
   },
   {
-   "t0": 1545.97,
-   "t1": 1724.13,
+   "t0": 1577.97,
+   "t1": 1723.13,
    "preset": "resolve",
    "intensity": 0.6,
    "root": "C3",
    "minor": false
   },
   {
-   "t0": 1724.13,
+   "t0": 1723.13,
    "t1": 1800.0,
    "preset": "overture",
    "intensity": 0.5,
