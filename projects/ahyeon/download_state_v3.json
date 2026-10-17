@@ -67,5 +67,21 @@
   "title": "BABYMONSTER",
   "verify": "weak",
   "ah": false
+ },
+ "sheesh_facecam": {
+  "status": "ok",
+  "dur": 175.9,
+  "mirror": "https://www.dailymotion.com/video/x8w5cq4",
+  "title": "BabyMonster: Sheesh M V - Galactic Battle of the Little Beast\"",
+  "verify": "weak",
+  "ah": false
+ },
+ "drip_facecam": {
+  "status": "ok",
+  "dur": 187.0,
+  "mirror": "https://www.dailymotion.com/video/x98esig",
+  "title": "BABYMONSTER \"DRIP\"",
+  "verify": "weak",
+  "ah": false
  }
 }
