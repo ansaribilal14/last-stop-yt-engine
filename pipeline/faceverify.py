@@ -33,10 +33,13 @@ def main():
     from insightface.app import FaceAnalysis
     # landmark/genderage models cost more than det+rec combined (1k3d68 = 143MB
     # per face) — scoring only needs detection + recognition
+    # R-v3 PERF: det 320->160 (~4x faster on the 2-core throttled sandbox);
+    # scoring (not gate) tolerates the recall hit on small faces.
     app = FaceAnalysis(name="buffalo_l", allowed_modules=["detection", "recognition"],
                        providers=["CPUExecutionProvider"])
-    app.prepare(ctx_id=-1, det_size=(320, 320))
+    app.prepare(ctx_id=-1, det_size=(160, 160))
     import cv2
+    cv2.setNumThreads(2)
 
     summ = json.load(open(f"{REFS}/refs_summary.json"))
     cents = {m: np.array(v["centroid"], dtype=np.float32)
@@ -58,6 +61,16 @@ def main():
             if inside:
                 units.append((label, si, a, b, inside))
     total_pending = sum(len(u[4]) for u in units)
+    # R-v3: priority order — v3.0 flagged-scene sources score first so a
+    # killed run always leaves the edit-critical shots scored.
+    PRIO = ["sheesh_facecam", "drip_facecam", "apt_incheon", "icn_2026", "gmp_ot7",
+            "hnd_2026", "gmp_short", "sumersonic", "mama_golden", "taipei_moment",
+            "kyocera_hype", "soundcheck", "choom", "shit", "reallylikeyou",
+            "likethat", "sheesh", "moon", "interview", "reveal_ahyeon",
+            "dangerously", "sitm", "forever", "drip", "hotsauce", "batterup",
+            "batterup_stage", "sheesh_stage", "dream", "leval1", "leval_ahyeon"]
+    prio_ix = {k: i for i, k in enumerate(PRIO)}
+    units.sort(key=lambda u: prio_ix.get(u[0], 99))
     print(f"[faceverify] {len(units)} segment units, {total_pending} shots pending", flush=True)
 
     for label, si, a, b, shots in units:
@@ -73,7 +86,7 @@ def main():
             continue
         avg_dur = (b - a) / max(1, len([s for s in entry["shots"]
                                         if a <= s["start"] < b]))
-        s_fps = 1.0 if avg_dur < 4 else (0.5 if avg_dur < 8 else 0.33)
+        s_fps = 0.5 if avg_dur < 4 else (0.33 if avg_dur < 8 else 0.2)
         with tempfile.TemporaryDirectory(prefix=f"fv_") as td:
             subprocess.run(["ffmpeg", "-nostdin", "-ss", f"{a:.2f}", "-t", f"{b - a:.2f}",
                             "-i", src, "-vf", f"fps={s_fps},scale='min(640,iw)':-2",
