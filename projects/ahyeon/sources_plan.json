@@ -79,7 +79,11 @@
    "tags": [
     "babymonster"
    ],
-   "kind": "mv"
+   "kind": "mv",
+   "alt_q": [
+    "BABYMONSTER STUCK IN THE MIDDLE official MV",
+    "BABYMONSTER stuck in the middle audio"
+   ]
   },
   {
    "key": "dream",
@@ -99,8 +103,8 @@
    ],
    "kind": "doc",
    "alt_q": [
-    "YG NEXT MOVEMENT BABYMONSTER",
-    "BABYMONSTER NEXT MOVEMENT reaction YG"
+    "YG NEXT MOVEMENT trailer BABYMONSTER",
+    "BABYMONSTER next movement"
    ],
    "title_tokens": [
     "next",
@@ -147,8 +151,8 @@
    ],
    "kind": "doc",
    "alt_q": [
-    "BABYMONSTER AHYEON reveal",
-    "BABYMONSTER ahyeon last evaluation perform"
+    "BABYMONSTER AHYEON live performance",
+    "BABYMONSTER AHYEON reveal video"
    ],
    "title_tokens": [
     "ahyeon",
@@ -237,8 +241,9 @@
    ],
    "kind": "stage",
    "alt_q": [
-    "BABYMONSTER Hello Monsters KSPO",
-    "BABYMONSTER kspo dome tour"
+    "BABYMONSTER HELLO MONSTERS tour",
+    "BABYMONSTER KSPO DOME fancam",
+    "BABYMONSTER concert Seoul KSPO"
    ],
    "title_tokens": [
     "kspo",
@@ -247,6 +252,10 @@
     "tour",
     "seoul",
     "dome"
+   ],
+   "dur_win": [
+    200,
+    3400
    ]
   },
   {
@@ -279,8 +288,9 @@
    ],
    "kind": "stage",
    "alt_q": [
-    "BABYMONSTER CHOOM Music Core",
-    "BABYMONSTER choom stage comeback"
+    "BABYMONSTER CHOOM music core stage fancam",
+    "\uc544\ud604 \ucda4 \uc9c1\ucea0",
+    "BABYMONSTER CHOOM comeback stage 4K"
    ],
    "title_tokens": [
     "choom",
@@ -335,6 +345,21 @@
     "interview",
     "english"
    ]
+  },
+  {
+   "key": "gayo26",
+   "q": "BABYMONSTER 2026 SBS Gayo DAESANG stage CHOOM SUGAR HONEY ICE TEA",
+   "kind": "stage",
+   "title_tokens": [
+    "gayo",
+    "choom",
+    "sugar",
+    "honey",
+    "stage",
+    "sbs"
+   ],
+   "alt_q": [],
+   "note": "v3.0 gap-fill: replaces lost Music Core choom_stage windows; covers s19/s21/s47"
   }
  ]
 }

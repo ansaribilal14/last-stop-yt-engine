@@ -72,9 +72,12 @@
   "faces_ok": true
  },
  "sitm": {
-  "status": "failed",
-  "fails": 2,
-  "tries": "00:30"
+  "status": "ok",
+  "dur": 257.3,
+  "mirror": "local-manual",
+  "title": "sitm.mp4",
+  "ah_present": false,
+  "verify": "strong"
  },
  "dream": {
   "status": "ok",
@@ -87,8 +90,8 @@
  },
  "nextmovement": {
   "status": "failed",
-  "fails": 2,
-  "tries": "00:49"
+  "fails": 3,
+  "tries": "02:34"
  },
  "leval1": {
   "status": "ok",
@@ -109,9 +112,13 @@
   "faces_ok": true
  },
  "reveal_ahyeon": {
-  "status": "failed",
-  "fails": 2,
-  "tries": "01:20"
+  "status": "ok",
+  "dur": 88.0,
+  "mirror": "https://vkvideo.ru/video-224763217_456239063",
+  "title": "BABYMONSTER (#2) - AHYEON (Live Performance)",
+  "ah_present": false,
+  "verify": "weak",
+  "faces_ok": true
  },
  "dangerously": {
   "status": "ok",
@@ -151,31 +158,44 @@
  },
  "kspo": {
   "status": "failed",
-  "fails": 1,
-  "tries": "01:33"
+  "fails": 2,
+  "tries": "01:38"
  },
  "dome_fancam": {
-  "status": "dropped",
-  "reason": "no clean mirror after 20+ attempts; kspo tour footage + contextual images cover dome narrative"
+  "status": "failed",
+  "fails": 2,
+  "tries": "02:09"
  },
  "choom_stage": {
   "status": "failed",
-  "fails": 0,
-  "note": "cache lost in reset, re-download"
+  "fails": 2,
+  "tries": "02:17"
  },
  "likethat": {
-  "status": "failed",
-  "fails": 0,
-  "note": "cache lost in reset, re-download"
+  "status": "ok",
+  "dur": 177.2,
+  "mirror": "https://vkvideo.ru/video-228263160_456240546",
+  "title": "BABYMONSTER - 'LIKE THAT' EXCLUSIVE PERFORMANCE VIDEO [M8r3x4Re8-I]",
+  "ah_present": true,
+  "verify": "strong",
+  "faces_ok": true
  },
  "reallylikeyou": {
-  "status": "failed",
-  "fails": 0,
-  "note": "cache lost in reset, re-download"
+  "status": "ok",
+  "dur": 226.0,
+  "mirror": "https://m.vk.com/video-225727512_456239698",
+  "title": "[\u0440\u0443\u0441.\u0441\u0430\u0431] Babymonster - Really like you M/V",
+  "ah_present": true,
+  "verify": "strong",
+  "faces_ok": true
  },
  "interview": {
-  "status": "failed",
-  "fails": 0,
-  "note": "cache lost in reset, re-download"
+  "status": "ok",
+  "dur": 428.0,
+  "mirror": "https://vkvideo.ru/video-213294280_456244690",
+  "title": "BABYMONSTER (\ubca0\uc774\ube44\ubaac\uc2a4\ud130) AHYEON (\uc544\ud604) / s voice memo / 2026.06.29",
+  "ah_present": true,
+  "verify": "strong",
+  "faces_ok": true
  }
 }

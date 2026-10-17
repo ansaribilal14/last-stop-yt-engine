@@ -134,8 +134,9 @@ def content_gate(path, app, cents, key, log, n_frames=10):
     log(f"    CONTENT {verdict} strong_hit={frames_hit}/{len(times)} face_rate={frames_face}/{len(times)} ah={ah} best={ {k:v for k,v in sorted(best.items(), key=lambda x:-x[1])[:2]} }")
     return verdict, ah, best
 
-def dm_discover(q, toks, kind, log):
-    """Dailymotion open API mirror discovery -> candidate URLs."""
+def dm_discover(q, toks, kind, log, want=None):
+    """Dailymotion open API mirror discovery -> candidate URLs.
+    want=(min,max) duration window; default by kind (R-v3: per-source override)."""
     import urllib.request
     qs = "+".join(t for t in norm(q).split() if t not in {"m", "v"})
     url = (f"https://api.dailymotion.com/videos?search={urllib.parse.quote(qs)}"
@@ -147,7 +148,8 @@ def dm_discover(q, toks, kind, log):
     except Exception as e:
         log(f"    DM_API_FAIL {e}")
         return []
-    want = (140, 480) if kind == "mv" else (200, 1800)
+    if want is None:
+        want = (140, 480) if kind == "mv" else (200, 1800)
     out = []
     for v in data.get("list", []):
         if "babymon" not in norm(v.get("title", "")): continue
@@ -174,6 +176,10 @@ def main():
         fails = isinstance(state.get(s["key"]), dict) and state[s["key"]].get("fails", 0)
         return (1 if fails >= 2 else 0, i)
     pending = [s for _, s in sorted(enumerate(pending), key=prio)]
+    # R-v3: optional 3rd arg = comma-separated key filter (targeted gap-fill)
+    only = set(sys.argv[3].split(",")) if len(sys.argv) > 3 else None
+    if only:
+        pending = [s for s in pending if s["key"] in only]
     print(f"[mirror_dl] pending {len(pending)}/{len(plan)}", flush=True)
     if not pending: return
     app, cents = load_faceapp()
@@ -210,7 +216,8 @@ def main():
         if not got:
             urls = []
             for qv in [q] + s.get("alt_q", []):
-                urls += dm_discover(qv, expected_tokens(qv), kind, log)
+                urls += dm_discover(qv, expected_tokens(qv), kind, log,
+                                    want=tuple(s["dur_win"]) if s.get("dur_win") else None)
             for u in urls:
                 if got or time.time() - src_t0 > 240: break
                 ok, title = ytdlp_fetch(u, out, log)
