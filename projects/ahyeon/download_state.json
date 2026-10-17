@@ -1,18 +1,30 @@
 {
  "batterup": {
-  "status": "failed",
-  "fails": 0,
-  "note": "cache lost in reset, re-download"
+  "status": "ok",
+  "dur": 198.4,
+  "mirror": "https://vkvideo.ru/video-229903698_456239020",
+  "title": "BABYMONSTER - 'BATTER UP' M V",
+  "ah_present": false,
+  "verify": "weak",
+  "faces_ok": true
  },
  "sheesh": {
-  "status": "failed",
-  "fails": 0,
-  "note": "cache lost in reset, re-download"
+  "status": "ok",
+  "dur": 185.2,
+  "mirror": "https://vkvideo.ru/video-233955030_456240809",
+  "title": "[4K 60FPS] BABYMONSTER(\ubca0\uc774\ube44\ubaac\uc2a4\ud130) 'SHEESH' MV  [2160p]",
+  "ah_present": true,
+  "verify": "weak",
+  "faces_ok": true
  },
  "forever": {
-  "status": "failed",
-  "fails": 0,
-  "note": "cache lost in reset, re-download"
+  "status": "ok",
+  "dur": 233.6,
+  "mirror": "https://vkvideo.ru/video-225496127_456239328",
+  "title": "BABYMONSTER - FOREVER | MV [4K]",
+  "ah_present": false,
+  "verify": "strong",
+  "faces_ok": true
  },
  "drip": {
   "status": "failed",
