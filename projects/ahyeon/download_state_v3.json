@@ -41,14 +41,30 @@
  },
  "taipei_4k": {
   "status": "failed",
-  "fails": 1,
-  "tries": "00:13"
+  "fails": 2,
+  "tries": "00:17"
  },
  "taipei_moment": {
   "status": "ok",
   "dur": 186.1,
   "mirror": "https://www.dailymotion.com/video/xa4dt22",
   "title": "BABYMONSTER  LOVE MONSTERS  JAPAN FAN CONCERT 2025_25",
+  "verify": "weak",
+  "ah": false
+ },
+ "kyocera_hype": {
+  "status": "ok",
+  "dur": 127.4,
+  "mirror": "https://www.dailymotion.com/video/x9l3joc",
+  "title": "babymonster cover blackpink kill this love today's biggest hit\u2764\ufe0f\ud83d\ude18\ud83d\ude0a\ud83d\ude0a follow me your favorite n\ud83d\udc4c",
+  "verify": "weak",
+  "ah": false
+ },
+ "soundcheck": {
+  "status": "ok",
+  "dur": 182.8,
+  "mirror": "https://www.dailymotion.com/video/x8wfb4s",
+  "title": "BABYMONSTER",
   "verify": "weak",
   "ah": false
  }
