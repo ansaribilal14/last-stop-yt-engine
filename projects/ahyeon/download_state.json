@@ -73,18 +73,22 @@
  },
  "sitm": {
   "status": "failed",
-  "fails": 1,
-  "tries": "00:24"
+  "fails": 2,
+  "tries": "00:30"
  },
  "dream": {
-  "status": "failed",
-  "fails": 0,
-  "note": "cache lost in reset, re-download"
+  "status": "ok",
+  "dur": 196.0,
+  "mirror": "https://vkvideo.ru/video-239914036_456239382",
+  "title": "BABYMONSTER - 'DREAM' (PRE-DEBUT SONG)",
+  "ah_present": true,
+  "verify": "weak",
+  "faces_ok": true
  },
  "nextmovement": {
   "status": "failed",
-  "fails": 0,
-  "note": "cache lost in reset, re-download"
+  "fails": 1,
+  "tries": "00:45"
  },
  "leval1": {
   "status": "failed",
