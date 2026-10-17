@@ -41,8 +41,8 @@
  },
  "taipei_4k": {
   "status": "failed",
-  "fails": 2,
-  "tries": "00:17"
+  "fails": 3,
+  "tries": "00:30"
  },
  "taipei_moment": {
   "status": "ok",
@@ -82,6 +82,13 @@
   "mirror": "https://www.dailymotion.com/video/x98esig",
   "title": "BABYMONSTER \"DRIP\"",
   "verify": "weak",
+  "ah": false
+ },
+ "sumersonic": {
+  "status": "ok",
+  "dur": 1971.3,
+  "mirror": "https://www.dailymotion.com/video/x9b5d1a",
+  "verify": "strong",
   "ah": false
  }
 }
