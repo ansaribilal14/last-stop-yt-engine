@@ -53,11 +53,14 @@ def probe_dur(p):
 def ytdlp_fetch(url, out, log):
     """Download best mp4 <=1080p. Returns (ok, title)."""
     cmd = YTDLP + ["--no-playlist", "--socket-timeout", "20", "--retries", "2"]
-    # curl_cffi impersonation breaks some vkvideo servers (Invalid Content-Length);
-    # only Dailymotion's extractor requires it.
+    # R-v3: native hlsnative downloader hangs on vod3.cf.dmcdn.net (T13 diagnosis);
+    # ffmpeg handles both vk direct HTTP and DM HLS reliably. Impersonation only for DM
+    # (breaks vkvideo with Invalid Content-Length).
     if "dailymotion.com" in url:
         cmd += ["--impersonate", "firefox"]
-    cmd += ["-f", "bv*[height<=1080][ext=mp4]+ba[ext=m4a]/b[height<=1080][ext=mp4]/bv*+ba/b[height<=720]",
+    cmd += ["--downloader", "ffmpeg"]
+    # R-v3: 720p cap (v2.0 render parity) — 1080p across 35 sources blows the disk budget
+    cmd += ["-f", "bv*[height<=720][ext=mp4]+ba[ext=m4a]/b[height<=720][ext=mp4]/bv*+ba/b[height<=480]",
             "--merge-output-format", "mp4", "--print", "after_move:%(title)s",
             "-o", out, "--no-progress", url]
     try:
