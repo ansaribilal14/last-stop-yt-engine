@@ -14,5 +14,21 @@
   "title": "BABYMONSTER Answers Fan Mail",
   "verify": "strong",
   "ah": true
+ },
+ "hnd_2026": {
+  "status": "ok",
+  "dur": 186.1,
+  "mirror": "https://www.dailymotion.com/video/xa4dt22",
+  "title": "BABYMONSTER  LOVE MONSTERS  JAPAN FAN CONCERT 2025_25",
+  "verify": "weak",
+  "ah": false
+ },
+ "icn_2026": {
+  "status": "ok",
+  "dur": 46.9,
+  "mirror": "https://www.dailymotion.com/video/xb4d3we",
+  "title": "AHYEON \ud83d\udd25 Unstoppable Stage Presence | BABYMONSTER",
+  "verify": "strong",
+  "ah": true
  }
 }
