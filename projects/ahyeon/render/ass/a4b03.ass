@@ -11,11 +11,10 @@ Style: Cap,Noto Serif SC,44,&H00EAF2F5,&H00FFFFFF,&H00140D06,&H90000000,0,0,0,0,
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
-Dialogue: 0,0:00:00.92,0:00:06.02,Cap,,0,0,0,,The press cycle had a field day with\Nthe nickname Little Jennie inherited
-Dialogue: 0,0:00:05.90,0:00:10.80,Cap,,0,0,0,,from her Last Evaluation footage a\Ncomparison to the most famous it girl
-Dialogue: 0,0:00:10.92,0:00:16.07,Cap,,0,0,0,,of the fourth generation It was meant\Nas a compliment It was also a cage the
-Dialogue: 0,0:00:15.88,0:00:21.41,Cap,,0,0,0,,fifth generation did not need a repeat\Nit needed a first Ahyeon's answer
-Dialogue: 0,0:00:21.46,0:00:26.19,Cap,,0,0,0,,across interviews and stages was not a\Nrejection of the comparison but a slow
-Dialogue: 0,0:00:26.07,0:00:31.16,Cap,,0,0,0,,drowning of it a rapper's bite on\Nvariety shows live vocals that kept
-Dialogue: 0,0:00:31.04,0:00:35.82,Cap,,0,0,0,,getting steadier and a stage presence\Nthat made the nickname age faster than
-Dialogue: 0,0:00:35.70,0:00:36.71,Cap,,0,0,0,,anyone expected
+Dialogue: 0,0:00:00.90,0:00:06.58,Cap,,0,0,0,,The press cycle wanted a shortcut a\Nreference a familiar frame to explain
+Dialogue: 0,0:00:06.46,0:00:11.42,Cap,,0,0,0,,a new face Ahyeon didn't give them one\NHer answer was never a press release
+Dialogue: 0,0:00:11.73,0:00:16.90,Cap,,0,0,0,,It was a body of work a rapper's bite\Non variety shows live vocals that kept
+Dialogue: 0,0:00:16.79,0:00:21.60,Cap,,0,0,0,,getting steadier under the harshest\Nopen mics choreography that read clean
+Dialogue: 0,0:00:21.48,0:00:26.85,Cap,,0,0,0,,on a phone screen and even cleaner on\Na 55,000-seat dome cam The fifth
+Dialogue: 0,0:00:26.74,0:00:32.02,Cap,,0,0,0,,generation didn't need a repeat It\Nneeded a first and she was already
+Dialogue: 0,0:00:31.90,0:00:33.92,Cap,,0,0,0,,becoming it one stage at a time
