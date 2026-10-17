@@ -30,5 +30,26 @@
   "title": "AHYEON \ud83d\udd25 Unstoppable Stage Presence | BABYMONSTER",
   "verify": "strong",
   "ah": true
+ },
+ "gmp_short": {
+  "status": "ok",
+  "dur": 46.9,
+  "mirror": "https://www.dailymotion.com/video/xb4d3we",
+  "title": "AHYEON \ud83d\udd25 Unstoppable Stage Presence | BABYMONSTER",
+  "verify": "strong",
+  "ah": true
+ },
+ "taipei_4k": {
+  "status": "failed",
+  "fails": 1,
+  "tries": "00:13"
+ },
+ "taipei_moment": {
+  "status": "ok",
+  "dur": 186.1,
+  "mirror": "https://www.dailymotion.com/video/xa4dt22",
+  "title": "BABYMONSTER  LOVE MONSTERS  JAPAN FAN CONCERT 2025_25",
+  "verify": "weak",
+  "ah": false
  }
 }
